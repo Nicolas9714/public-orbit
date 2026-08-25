@@ -30,9 +30,9 @@ Al hacer explícito y compartible este conocimiento de navegación, el Sistema b
 
 ## Cómo funciona
 
-El Sistema Atlas articula los Atlas de Navegación de Colombia: define el estándar que comparten, registra qué atlas existen y qué entidades cubre cada uno, y mantiene un Nodo Nacional (la skill de orquestación [`atlas-orquestador-colombia`](atlas/nacional/skills/atlas-orquestador-colombia/SKILL.md)) que conecta sus ámbitos de información.
+Un Atlas de Navegación reúne e integra skills que documentan cómo encontrar, comprender y usar la información pública de un sector. Cada entidad cuenta con una skill que describe sus rutas y fuentes, mientras una skill orquestadora organiza los recorridos que involucran a varias entidades del mismo ámbito.
 
-Cada Atlas de Navegación es una colección abierta de skills que documentan y sistematizan cómo encontrar, usar y apropiar la información pública de un sector. A cada entidad le corresponde una skill, y a cada atlas una skill orquestadora que organiza los recorridos dentro de su ámbito.
+El Sistema Atlas Colombia articula estos atlas bajo una estructura común. Define el estándar que comparten, registra los atlas existentes y las entidades que cubren, y mantiene un Nodo Nacional (la skill de orquestación [`atlas-orquestador-colombia`](atlas/nacional/skills/atlas-orquestador-colombia/SKILL.md)) que conecta sus ámbitos y coordina recorridos entre sectores.
 
 Cada skill por entidad se compone de tres archivos complementarios: `SKILL.md` describe la entidad y orienta la navegación; `mapa-web.md` representa como un árbol curado la estructura de su sitio oficial; y `fuentes.md` reúne los sistemas, geovisores, portales, publicaciones y documentos clave. Las skills orquestadoras contienen solo un `SKILL.md`: no duplican esa información, sino que conectan las skills de entidad y dirigen hacia ellas según la consulta.
 
@@ -40,7 +40,7 @@ El Nodo Nacional incorpora una capa de articulación entre atlas. Hace explícit
 
 Estas conexiones pertenecen a la arquitectura del Sistema antes de que una consulta las active. Una pregunta permite recorrerlas, pero no las crea ni delimita su alcance. Ante una necesidad concreta, el nodo reconoce los ámbitos involucrados, localiza la información, conecta los tramos y coordina su recorrido mediante las orquestadoras sectoriales. Cómo se construye cada skill está definido en la [especificación](estandar/especificacion.md).
 
-Esta estructura permite que las skills de entidad y los atlas funcionen de forma modular e independiente. La información específica permanece en la skill que documenta cada entidad. Si solo tienes un atlas instalado, este conserva toda su capacidad sectorial y señala dónde debería continuar un recorrido que supera su cobertura.
+Cada atlas puede instalarse y funcionar por separado sin perder capacidad sectorial. La información específica permanece en la skill de cada entidad y, cuando una consulta supera ese ámbito, el atlas no sustituye el conocimiento de otros sectores: señala hacia dónde debe continuar el recorrido.
 
 ## Atlas registrados
 
