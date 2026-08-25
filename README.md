@@ -24,7 +24,9 @@
 
 Sistema Atlas Colombia es un proyecto abierto que busca democratizar el acceso a la información pública de Colombia. Este proyecto parte de la convicción de que hacer pública la información también implica hacer públicas sus rutas y conexiones. Gran parte de la información ya es accesible en portales web, micrositios, sistemas de información, geovisores, entre otros. Pero saber navegar esta información (dónde buscar, qué priorizar, qué ignorar, qué fuente contrastar) es un conocimiento práctico que suele permanecer invisible, acumulado en la experiencia de quienes conocen cada sector.
 
-Cada Atlas de Navegación convierte ese saber en una estructura abierta, documentada y reutilizable que opera directamente en herramientas y modelos de IA.
+Cada Atlas de Navegación convierte ese saber en una estructura abierta, documentada y reutilizable que opera directamente en herramientas y agentes de IA como Claude Code, Codex y OpenCode.
+
+Al hacer explícito y compartible este conocimiento de navegación, el Sistema busca ampliar la autonomía de quienes consultan información pública: ofrecer puntos de entrada, criterios y recorridos que permitan formular mejores preguntas, contrastar fuentes y comprender cómo se organiza digitalmente el conocimiento de cada sector.
 
 ## Cómo funciona
 
@@ -32,11 +34,13 @@ El Sistema Atlas articula los Atlas de Navegación de Colombia: define el están
 
 Cada Atlas de Navegación es una colección abierta de skills que documentan y sistematizan cómo encontrar, usar y apropiar la información pública de un sector. A cada entidad le corresponde una skill, y a cada atlas una skill orquestadora que organiza los recorridos dentro de su ámbito.
 
+Cada skill por entidad se compone de tres archivos complementarios: `SKILL.md` describe la entidad y orienta la navegación; `mapa-web.md` representa como un árbol curado la estructura de su sitio oficial; y `fuentes.md` reúne los sistemas, geovisores, portales, publicaciones y documentos clave. Las skills orquestadoras contienen solo un `SKILL.md`: no duplican esa información, sino que conectan las skills de entidad y dirigen hacia ellas según la consulta.
+
 El Nodo Nacional incorpora una capa de articulación entre atlas. Hace explícitas las conexiones entre sectores, reconoce dónde vive cada parte de un asunto y permite recorrer de forma conjunta información distribuida entre distintas entidades y competencias.
 
 Estas conexiones pertenecen a la arquitectura del Sistema antes de que una consulta las active. Una pregunta permite recorrerlas, pero no las crea ni delimita su alcance. Ante una necesidad concreta, el nodo reconoce los ámbitos involucrados, localiza la información, conecta los tramos y coordina su recorrido mediante las orquestadoras sectoriales. Cómo se construye cada skill está definido en la [especificación](estandar/especificacion.md).
 
-Esta estructura permite que las skills de entidad y los atlas funcionen de forma modular e independiente. La información específica permanece en la skill de la entidad que la documenta. Si solo tienes un atlas instalado, este conserva toda su capacidad sectorial y señala dónde debería continuar un recorrido que supera su cobertura.
+Esta estructura permite que las skills de entidad y los atlas funcionen de forma modular e independiente. La información específica permanece en la skill que documenta cada entidad. Si solo tienes un atlas instalado, este conserva toda su capacidad sectorial y señala dónde debería continuar un recorrido que supera su cobertura.
 
 ## Atlas registrados
 
@@ -109,7 +113,7 @@ bash ../sistema-atlas-colombia/instalar.sh --atlas todos
 | Qué hace | PowerShell | Bash |
 | --- | --- | --- |
 | Elige atlas específicos | `-Atlas ambiental,minero-energetico` | `--atlas ambiental,minero-energetico` |
-| Instala una sola skill de entidad | `-Entidad navegar-anla` | `--entidad navegar-anla` |
+| Instala una sola skill por entidad | `-Entidad navegar-anla` | `--entidad navegar-anla` |
 | Instala para Codex en vez de Claude Code | `-Destino .agents\skills` | `--destino .agents/skills` |
 | Instala en tu carpeta de usuario (global) | `-Global` | `--global` |
 | Hace `git pull` del monorepo antes de copiar | `-Actualizar` | `--actualizar` |
