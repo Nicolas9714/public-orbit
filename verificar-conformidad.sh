@@ -317,7 +317,7 @@ verificar_atlas() {
 }
 
 # --- Main ---
-printf 'Verificación de conformidad — Sistema Atlas Colombia\n'
+printf 'Verificación de conformidad — Constellation Colombia\n'
 printf '=====================================================\n'
 
 if [ $# -ge 1 ]; then

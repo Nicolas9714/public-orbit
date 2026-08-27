@@ -1,9 +1,9 @@
 ---
 name: atlas-orquestador-colombia
-description: "Nodo nacional del Sistema Atlas Colombia: articula los Atlas de Navegación registrados, identifica conexiones entre sectores y coordina recorridos y consultas interatlas."
+description: "Nodo nacional de Constellation Colombia: articula los Atlas de Navegación registrados, identifica conexiones entre sectores y coordina recorridos y consultas interatlas."
 ---
 
-# Sistema Atlas Colombia: Skill Orquestadora Nacional
+# Constellation Colombia: Skill Orquestadora Nacional
 
 Esta skill articula los Atlas de Navegación registrados. Sus unidades son atlas completos: reconoce los ámbitos de información que intervienen en un asunto, localiza dónde vive cada parte y coordina el recorrido entre ellos.
 

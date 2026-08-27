@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Instala skills de los atlas sectoriales del Sistema Atlas Colombia.
+# Instala skills de los atlas sectoriales de Constellation Colombia.
 #
 # Copia las skills de uno o varios atlas sectoriales (subcarpetas atlas/<alias>
 # de este monorepo) hacia una carpeta destino, típicamente dentro del proyecto
@@ -156,7 +156,7 @@ fi
 
 # --- Actualizar repos fuente (y este repo) antes de copiar ---
 if [ "$actualizar" -eq 1 ]; then
-    echo "Actualizando el monorepo (Sistema Atlas Colombia)..."
+    echo "Actualizando el monorepo (Constellation Colombia)..."
     if ! git -C "$raiz_sistema" pull; then
         echo "Advertencia: git pull falló en $raiz_sistema, se continúa con la versión local." >&2
     fi

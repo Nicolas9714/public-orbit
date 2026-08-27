@@ -1,6 +1,6 @@
 # Guía de contribución
 
-Gracias por querer mejorar el Sistema Atlas Colombia. Aquí se explica cómo proponer cambios. Si tu contribución es sobre el contenido de un sector (una fuente nueva, un enlace roto, una entidad sin cubrir), ubícala en la subcarpeta del atlas correspondiente — ver [Atlas registrados](README.md#atlas-registrados). El mismo monorepo recibe cambios al contenido sectorial y a las piezas compartidas del Sistema: registro, estándar, instaladores y orquestadora nacional.
+Gracias por querer mejorar Constellation Colombia. Aquí se explica cómo proponer cambios. Si tu contribución es sobre el contenido de un sector (una fuente nueva, un enlace roto, una entidad sin cubrir), ubícala en la subcarpeta del atlas correspondiente — ver [Atlas registrados](README.md#atlas-registrados). El mismo monorepo recibe cambios al contenido sectorial y a las piezas compartidas del Sistema: registro, estándar, instaladores y orquestadora nacional.
 
 ## Cómo enviar un cambio
 

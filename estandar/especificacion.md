@@ -42,7 +42,7 @@ El orquestador de cada nivel no reemplaza a las unidades inferiores: solo enruta
 
 La skill orquestadora de cada atlas incluye una línea estandarizada apuntando al nodo nacional del Sistema (`atlas/nacional/`), para consultas que cruzan a otros sectores. El enlace se resuelve según el layout: con la ruta relativa correcta al nodo nacional si el atlas vive como subcarpeta del monorepo, o con la URL del repositorio del Sistema si el atlas vive como repositorio propio.
 
-> Para consultas que cruzan a otros sectores, el enrutamiento entre atlas vive en el nodo nacional Sistema Atlas Colombia.
+> Para consultas que cruzan a otros sectores, el enrutamiento entre atlas vive en el nodo nacional de Constellation Colombia.
 
 ### Autocontención
 

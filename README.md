@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="assets/Logo_sistema_atlas.svg" width="250" alt="Sistema Atlas Colombia">
-  <h1>Sistema Atlas Colombia</h1>
-  <p><em>Marco común y registro abierto de atlas sectoriales: el sistema que conecta las rutas hacia la información pública de Colombia.</em></p>
+  <img src="assets/Logo_sistema_atlas.svg" width="250" alt="Constellation Colombia">
+  <h1>Constellation Colombia</h1>
+  <p><em>Infraestructura abierta de Atlas de Navegación: rutas, fuentes y conexiones para recorrer la información pública de Colombia.</em></p>
   <table>
     <tr>
       <td align="center" width="180">
@@ -22,7 +22,7 @@
 
 ---
 
-Sistema Atlas Colombia es un proyecto abierto que busca democratizar el acceso a la información pública de Colombia. Este proyecto parte de la convicción de que hacer pública la información también implica hacer públicas sus rutas y conexiones. Gran parte de la información ya es accesible en portales web, micrositios, sistemas de información, geovisores, entre otros. Pero saber navegar esta información (dónde buscar, qué priorizar, qué ignorar, qué fuente contrastar) es un conocimiento práctico que suele permanecer invisible, acumulado en la experiencia de quienes conocen cada sector.
+Constellation Colombia es un proyecto abierto que convierte en estructura compartida un conocimiento que suele permanecer tácito: cómo navegar la información pública del país. Hacer pública la información también implica hacer públicas sus rutas y conexiones. Gran parte de ella ya es accesible en portales web, micrositios, sistemas de información y geovisores. Pero saber dónde buscar, qué priorizar, qué ignorar y qué fuente contrastar es un conocimiento práctico acumulado en la experiencia de quienes conocen cada sector.
 
 Cada Atlas de Navegación convierte ese saber en una estructura abierta, documentada y reutilizable que opera directamente en herramientas y agentes de IA como Claude Code, Codex y OpenCode.
 
@@ -32,7 +32,7 @@ Al hacer explícito y compartible este conocimiento de navegación, el Sistema b
 
 Un Atlas de Navegación reúne e integra skills que documentan cómo encontrar, comprender y usar la información pública de un sector. Cada entidad cuenta con una skill que describe sus rutas y fuentes, mientras una skill orquestadora organiza los recorridos que involucran a varias entidades del mismo ámbito.
 
-El Sistema Atlas Colombia articula estos atlas bajo una estructura común. Define el estándar que comparten, registra los atlas existentes y las entidades que cubren, y mantiene un Nodo Nacional (la skill de orquestación [`atlas-orquestador-colombia`](atlas/nacional/skills/atlas-orquestador-colombia/SKILL.md)) que conecta sus ámbitos y coordina recorridos entre sectores.
+Constellation Colombia articula estos atlas bajo una estructura común. Define el estándar que comparten, registra los atlas existentes y las entidades que cubren, y mantiene un Nodo Nacional (la skill de orquestación [`atlas-orquestador-colombia`](atlas/nacional/skills/atlas-orquestador-colombia/SKILL.md)) que conecta sus ámbitos y coordina recorridos entre sectores.
 
 Cada skill por entidad se compone de tres archivos complementarios: `SKILL.md` describe la entidad y orienta la navegación; `mapa-web.md` representa como un árbol curado la estructura de su sitio oficial; y `fuentes.md` reúne los sistemas, geovisores, portales, publicaciones y documentos clave. Las skills orquestadoras contienen solo un `SKILL.md`: no duplican esa información, sino que conectan las skills de entidad y dirigen hacia ellas según la consulta.
 
@@ -49,7 +49,7 @@ Cada atlas puede instalarse y funcionar por separado sin perder capacidad sector
 | Atlas de Navegación Minero Energético de Colombia | Minero energético | 12 | [`atlas/minero-energetico/`](atlas/minero-energetico/) |
 | Atlas de Navegación Ambiental de Colombia | Ambiental | 7 | [`atlas/ambiental/`](atlas/ambiental/) |
 
-<img src="assets/estructura-sistema-atlas.svg" width="100%" alt="Árbol de la estructura del Sistema Atlas Colombia">
+<img src="assets/estructura-sistema-atlas.svg" width="100%" alt="Árbol de la estructura de Constellation Colombia">
 
 El trazo discontinuo marca los atlas en construcción: el Intersectorial y el de Transporte tienen sus entidades definidas, pero todavía no sus skills ni su orquestadora, así que aún no se registran arriba.
 
@@ -57,7 +57,7 @@ El detalle de entidades vive en [`registro.md`](registro.md).
 
 ## Sitio web
 
-El Sistema Atlas Colombia puede explorarse en su [sitio web provisional](https://sistema-atlas-colombia.nicolasmcfc.workers.dev), que reúne los atlas, las entidades, las skills y la documentación del proyecto.
+Constellation Colombia puede explorarse en su [sitio web provisional](https://sistema-atlas-colombia.nicolasmcfc.workers.dev), que reúne los atlas, las entidades, las skills y la documentación del proyecto.
 
 El sitio también presenta las [morfologías web](https://sistema-atlas-colombia.nicolasmcfc.workers.dev/morfologias), representaciones visuales construidas a partir del `mapa-web.md` de cada entidad.
 
@@ -176,7 +176,7 @@ Las rutas esperadas de estas consultas viven en [`examples/consultas-de-ejemplo.
 3. Comprueba la conformidad con `bash verificar-conformidad.sh <alias>` antes de proponer nada. Ver [Cómo se comprueba la conformidad](#cómo-se-comprueba-la-conformidad).
 4. Cuando el atlas esté publicado, propón su registro con un pull request a [`registro.md`](registro.md), declarando la versión del estándar que cumple y agregando su tarjeta al banner de este README.
 
-El Sistema Atlas Colombia captura el hecho de que la información pública se organiza según las competencias de las instituciones que la producen, mientras los asuntos reales suelen atravesar varias. Cada atlas nuevo amplía los ámbitos, rutas y conexiones que el Sistema puede reconocer y recorrer.
+Constellation Colombia parte de un hecho: la información pública se organiza según las competencias de las instituciones que la producen, mientras los asuntos reales suelen atravesar varias. Cada atlas nuevo amplía los ámbitos, rutas y conexiones que el Sistema puede reconocer y recorrer.
 
 El estándar aplica a cualquier sector (agro, salud, transporte) y a cualquier país: un nodo nacional de otro país puede usar esta misma estructura y los sistemas nacionales que comparten el estándar formarían, entre sí, una red.
 
