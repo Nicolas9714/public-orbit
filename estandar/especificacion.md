@@ -4,7 +4,7 @@
 **Versionado:** semántico (`mayor.menor.parche`). Mientras la versión mayor sea 0, la especificación está en incubación y cualquier cambio puede exigir ajustes a los atlas registrados.
 **Última actualización:** 2026-07-23 — se agregó la conformidad de layout (un atlas puede vivir como subcarpeta o como repositorio propio) y la regla de autocontención; N5 pasó a ser agnóstico del layout. El número se mantiene en v0.1 por estar el estándar en incubación y sin implementadores externos.
 
-Un Atlas de Navegación sistematiza las rutas hacia la información pública de un sector: qué entidad consultar, qué sistema priorizar, qué fuente contrastar. Esta especificación define la forma común que ese saber toma y qué debe cumplir un atlas para ser compatible con el Sistema y registrarse en él.
+Un Atlas de Navegación sistematiza las rutas hacia la información pública de un sector: qué entidad consultar, qué sistema priorizar, qué fuente contrastar. Esta especificación define la forma común que ese saber toma y qué debe cumplir un atlas para ser compatible con Public Orbit y registrarse en él.
 
 ## Parte normativa
 
@@ -12,7 +12,7 @@ Criterio: es normativo lo que rompe la interoperabilidad si falta. Un atlas que 
 
 ### Layout conforme
 
-Un atlas es una unidad definida por su estructura (N1–N5), no por su frontera de repositorio. Es conforme tanto si vive como repositorio propio como si vive como subcarpeta de un sistema (`atlas/<sector>/` dentro del monorepo del Sistema). Ambos layouts son equivalentes para el estándar; el registro (`registro.md`) puede listar atlas de los dos tipos.
+Un atlas es una unidad definida por su estructura (N1–N5), no por su frontera de repositorio. Es conforme tanto si vive como repositorio propio como si vive como subcarpeta de un monorepo (`atlas/<sector>/` dentro del monorepo de Public Orbit). Ambos layouts son equivalentes para el estándar; el registro (`registro.md`) puede listar atlas de los dos tipos.
 
 ### N1 — Tres archivos por entidad
 
@@ -32,7 +32,7 @@ Las skills de entidad se nombran `navegar-<entidad>` (p. ej. `navegar-ideam`, `n
 
 Todo atlas tiene una skill orquestadora, nombrada `atlas-orquestador-<sector>` (p. ej. `atlas-orquestador-ambiental`, `atlas-orquestador-minero-energetico`), con: el mapa de skills por subsector, el procedimiento de navegación y rutas sugeridas para consultas que cruzan varias entidades del sector.
 
-El sufijo de sector es obligatorio — nunca `atlas-orquestador` a secas — porque el nombre de cada skill debe ser único en todo el Sistema: instalar varios atlas en un mismo proyecto copia sus skills a una sola carpeta, y dos orquestadoras con el mismo nombre se sobrescribirían entre sí. Aplica tanto al nombre de la carpeta como al campo `name` del `SKILL.md`.
+El sufijo de sector es obligatorio — nunca `atlas-orquestador` a secas — porque el nombre de cada skill debe ser único en todo Public Orbit: instalar varios atlas en un mismo proyecto copia sus skills a una sola carpeta, y dos orquestadoras con el mismo nombre se sobrescribirían entre sí. Aplica tanto al nombre de la carpeta como al campo `name` del `SKILL.md`.
 
 ### N4 — Patrón de enrutamiento
 
@@ -40,9 +40,9 @@ El orquestador de cada nivel no reemplaza a las unidades inferiores: solo enruta
 
 ### N5 — Línea vertical
 
-La skill orquestadora de cada atlas incluye una línea estandarizada apuntando al nodo nacional del Sistema (`atlas/nacional/`), para consultas que cruzan a otros sectores. El enlace se resuelve según el layout: con la ruta relativa correcta al nodo nacional si el atlas vive como subcarpeta del monorepo, o con la URL del repositorio del Sistema si el atlas vive como repositorio propio.
+La skill orquestadora de cada atlas incluye una línea estandarizada apuntando al nodo nacional de Public Orbit (`atlas/nacional/`), para consultas que cruzan a otros sectores. El enlace se resuelve según el layout: con la ruta relativa correcta al nodo nacional si el atlas vive como subcarpeta del monorepo, o con la URL del repositorio de Public Orbit si el atlas vive como repositorio propio.
 
-> Para consultas que cruzan a otros sectores, el enrutamiento entre atlas vive en el nodo nacional de Constellation Colombia.
+> Para consultas que cruzan a otros sectores, el enrutamiento entre atlas vive en el nodo nacional de Public Orbit.
 
 ### Autocontención
 
@@ -52,7 +52,7 @@ Nada dentro de la carpeta de un atlas referencia archivos de otro atlas. El cruc
 
 Un tercero debe poder construir un atlas de otro sector — o de otro país — cumpliendo solo la parte normativa (N1–N5 y autocontención), y sus skills deben poder convivir con las de los atlas registrados sin colisiones de nombres ni de competencias. En un atlas que vive como repositorio propio la autocontención se satisface por construcción, al no haber otro atlas en el mismo árbol.
 
-Esta especificación tiene una implementación de referencia que la verifica: [`../verificar-conformidad.sh`](../verificar-conformidad.sh), que comprueba N1–N5 y la autocontención tratando cada atlas como la raíz de su propio repositorio. Correrlo sobre un atlas candidato responde la pregunta de si es compatible. La parte recomendada queda fuera de su alcance. El README del Sistema explica sus modos de evaluación y cómo se ejecuta.
+Esta especificación tiene una implementación de referencia que la verifica: [`../verificar-conformidad.sh`](../verificar-conformidad.sh), que comprueba N1–N5 y la autocontención tratando cada atlas como la raíz de su propio repositorio. Correrlo sobre un atlas candidato responde la pregunta de si es compatible. La parte recomendada queda fuera de su alcance. El README de Public Orbit explica sus modos de evaluación y cómo se ejecuta.
 
 ## Parte recomendada
 
@@ -63,8 +63,8 @@ Buenas prácticas de los atlas fundadores (el Atlas de Navegación Minero Energ�
 - **Carpeta `examples/`:** una vitrina de consultas (`consultas-de-ejemplo.md`: prompt + ruta esperada, sin URLs) y casos de análisis reproducibles que recorren las capas completas del atlas.
 - **Verificación en vivo:** las URLs y afirmaciones sobre sistemas se contrastan contra el sitio real antes de publicarse.
 - **Reglas de competencia en la orquestadora:** cómo combinar resultados sin atribuir datos de una entidad a otra.
-- **Identidad visual:** logo propio en SVG monocromo dentro de la familia visual del Sistema.
+- **Identidad visual:** logo propio en SVG monocromo dentro de la familia visual de Public Orbit.
 
 ## Registro
 
-Un atlas se registra en el Sistema mediante pull request a [`../registro.md`](../registro.md), declarando la versión de esta especificación que cumple.
+Un atlas se registra en Public Orbit mediante pull request a [`../registro.md`](../registro.md), declarando la versión de esta especificación que cumple.

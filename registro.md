@@ -1,6 +1,6 @@
 # Registro de atlas
 
-Único lugar del Sistema con el conocimiento estructural: qué atlas existen y qué entidades cubre cada uno. Registra conjuntos cerrados y verificables; el enrutamiento entre sectores lo resuelve el nodo nacional a partir de la consulta.
+Único lugar de Public Orbit con el conocimiento estructural: qué atlas existen y qué entidades cubre cada uno. Registra conjuntos cerrados y verificables; el enrutamiento entre sectores lo resuelve el nodo nacional a partir de la consulta.
 
 ## Atlas registrados
 

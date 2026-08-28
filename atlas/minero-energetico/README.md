@@ -14,7 +14,7 @@ Este atlas parte de la convicción de que hacer pública la información tambié
 
 Así, el atlas convierte ese conocimiento disperso en una primera estructura abierta, documentada y reutilizable. A través de sus skills, permite identificar dónde buscar, qué fuentes priorizar y cómo orientarse dentro del complejo ecosistema institucional del sector minero energético colombiano.
 
-Este atlas hace parte de [Constellation Colombia](../../README.md) y cumple la versión v0.1 de su [especificación](../../estandar/especificacion.md).
+Este atlas hace parte de [Public Orbit](../../README.md) y cumple la versión v0.1 de su [especificación](../../estandar/especificacion.md).
 
 ## Entidades cubiertas
 
@@ -55,4 +55,4 @@ Más ejemplos:
 
 ## Instalación
 
-Las skills de este atlas se instalan con el instalador del Sistema — un solo comando para uno, varios o todos los atlas. Ver [instalación en el README de Constellation Colombia](../../README.md#instalación).
+Las skills de este atlas se instalan con el instalador de Public Orbit — un solo comando para uno, varios o todos los atlas. Ver [instalación en el README de Public Orbit](../../README.md#instalación).

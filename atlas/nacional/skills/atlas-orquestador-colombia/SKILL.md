@@ -1,9 +1,9 @@
 ---
 name: atlas-orquestador-colombia
-description: "Nodo nacional de Constellation Colombia: articula los Atlas de Navegación registrados, identifica conexiones entre sectores y coordina recorridos y consultas interatlas."
+description: "Nodo nacional de Public Orbit: articula los Atlas de Navegación registrados, identifica conexiones entre sectores y coordina recorridos y consultas interatlas."
 ---
 
-# Constellation Colombia: Skill Orquestadora Nacional
+# Public Orbit: Skill Orquestadora Nacional
 
 Esta skill articula los Atlas de Navegación registrados. Sus unidades son atlas completos: reconoce los ámbitos de información que intervienen en un asunto, localiza dónde vive cada parte y coordina el recorrido entre ellos.
 
@@ -24,7 +24,7 @@ La tabla incluye únicamente atlas registrados y operativos. Los atlas en constr
 
 Buena parte de la información pública adquiere sentido en relación con información que vive fuera de su sector. Un territorio, un proyecto, una infraestructura o un recurso pueden reunir datos ambientales, energéticos, territoriales, económicos o de transporte, aunque cada componente permanezca bajo la competencia de la entidad que lo publica.
 
-El nodo nacional hace explícitas esas conexiones: reconoce qué ámbitos intervienen, dónde se encuentra cada parte y qué recorrido permite llegar hasta ella. Las conexiones existen en la arquitectura del Sistema antes de que una consulta las active; una pregunta permite recorrerlas, pero no las crea ni delimita su alcance.
+El nodo nacional hace explícitas esas conexiones: reconoce qué ámbitos intervienen, dónde se encuentra cada parte y qué recorrido permite llegar hasta ella. Las conexiones existen en la arquitectura de Public Orbit antes de que una consulta las active; una pregunta permite recorrerlas, pero no las crea ni delimita su alcance.
 
 ## Cómo opera el nodo nacional
 
@@ -33,7 +33,7 @@ El nodo nacional hace explícitas esas conexiones: reconoce qué ámbitos interv
 3. **Conectar los tramos**: establecer un recorrido entre los atlas que intervienen, sin forzar todo el asunto dentro de un único sector.
 4. **Recorrer cada atlas**: entrar por su orquestadora y continuar con las skills de entidad correspondientes.
 5. **Integrar los resultados**: conservar la procedencia, el contexto y la competencia de cada fuente.
-6. **Declarar los límites**: señalar qué parte no puede recorrerse cuando un atlas no está instalado o el Sistema todavía no cubre ese ámbito.
+6. **Declarar los límites**: señalar qué parte no puede recorrerse cuando un atlas no está instalado o Public Orbit todavía no cubre ese ámbito.
 
 ## Consultas interatlas
 
@@ -54,7 +54,7 @@ La lista orienta el juicio y admite casos nuevos. [`examples/consultas-de-ejempl
 
 - Si el atlas pertinente está registrado e instalado, recorrerlo mediante su orquestadora.
 - Si está registrado pero no instalado, resolver con los atlas disponibles e indicar cuál hace falta para continuar.
-- Si ningún atlas registrado cubre una parte del asunto, explicitar el límite del Sistema y señalar dónde debería continuar la investigación cuando pueda identificarse, sin presentar como disponible una skill que todavía no existe.
+- Si ningún atlas registrado cubre una parte del asunto, explicitar el límite de Public Orbit y señalar dónde debería continuar la investigación cuando pueda identificarse, sin presentar como disponible una skill que todavía no existe.
 
 ## Registro
 

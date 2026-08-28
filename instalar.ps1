@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-    Instala skills de los atlas sectoriales de Constellation Colombia.
+    Instala skills de los atlas sectoriales de Public Orbit.
 
 .DESCRIPTION
     Copia las skills de uno o varios atlas sectoriales (subcarpetas atlas/<alias>
@@ -105,7 +105,7 @@ if ([IO.Path]::IsPathRooted($Destino)) {
 
 # --- Actualizar repos fuente (y este repo) antes de copiar ---
 if ($Actualizar) {
-    Write-Host "Actualizando el monorepo (Constellation Colombia)..."
+    Write-Host "Actualizando el monorepo (Public Orbit)..."
     git -C $PSScriptRoot pull
     if ($LASTEXITCODE -ne 0) {
         Write-Host "Advertencia: git pull falló en $PSScriptRoot, se continúa con la versión local." -ForegroundColor Yellow

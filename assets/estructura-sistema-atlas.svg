@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1264" role="img" aria-labelledby="titulo descripcion">
-<title id="titulo">Estructura de Constellation Colombia</title>
+<title id="titulo">Estructura de Public Orbit</title>
 <desc id="descripcion">Árbol del sistema nacional, los 4 atlas sectoriales, sus skills orquestadoras y las 30 entidades registradas.</desc>
 <style>
   .fondo { fill: #0D1117; stroke: #30363D; stroke-width: 2; }
@@ -63,8 +63,7 @@
   <g class="nodo sistema"><title>atlas-orquestador-colombia</title>
     <circle class="exterior" cx="145" cy="632" r="15"/>
     <circle class="interior" cx="145" cy="632" r="8"/>
-    <text x="145" y="576" class="titulo" text-anchor="middle">Constellation</text>
-    <text x="145" y="599" class="titulo" text-anchor="middle">Colombia</text>
+    <text x="145" y="588" class="titulo" text-anchor="middle">Public Orbit</text>
     <text x="145" y="674" class="skill" text-anchor="middle">atlas-orquestador-colombia</text>
   </g>
   <g class="nodo atlas"><title>Atlas de Navegación Minero Energético de Colombia</title>

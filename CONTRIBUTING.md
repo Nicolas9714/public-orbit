@@ -1,6 +1,6 @@
 # Guía de contribución
 
-Gracias por querer mejorar Constellation Colombia. Aquí se explica cómo proponer cambios. Si tu contribución es sobre el contenido de un sector (una fuente nueva, un enlace roto, una entidad sin cubrir), ubícala en la subcarpeta del atlas correspondiente — ver [Atlas registrados](README.md#atlas-registrados). El mismo monorepo recibe cambios al contenido sectorial y a las piezas compartidas del Sistema: registro, estándar, instaladores y orquestadora nacional.
+Gracias por querer mejorar Public Orbit. Aquí se explica cómo proponer cambios. Si tu contribución es sobre el contenido de un sector (una fuente nueva, un enlace roto, una entidad sin cubrir), ubícala en la subcarpeta del atlas correspondiente — ver [Atlas registrados](README.md#atlas-registrados). El mismo monorepo recibe cambios al contenido sectorial y a las piezas compartidas de Public Orbit: registro, estándar, instaladores y orquestadora nacional.
 
 ## Cómo enviar un cambio
 
@@ -26,7 +26,7 @@ Si construiste un atlas compatible con el estándar (ver [Cómo crear un atlas n
 
 ### 2. Proponer cambios al estándar
 
-`estandar/especificacion.md` es el único documento versionado del Sistema, y los atlas registrados declaran la versión que cumplen — por eso sus cambios piden un paso previo:
+`estandar/especificacion.md` es el único documento versionado de Public Orbit, y los atlas registrados declaran la versión que cumplen — por eso sus cambios piden un paso previo:
 
 1. Abre primero un *Issue* describiendo el cambio y su motivación.
 2. Indica qué componente de la versión subiría: parche (redacción, sin alterar lo exigido), menor (adición que no obliga a ajustar atlas) o mayor (cambio que sí los obliga).

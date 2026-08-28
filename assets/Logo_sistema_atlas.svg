@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 720" width="540" height="720">
-  <!-- Constellation Colombia — silueta de Colombia en curvas de nivel con nodo central · #3ECF8E -->
+  <!-- Public Orbit — silueta de Colombia en curvas de nivel con nodo central · #3ECF8E -->
   <!-- Silueta v2 (2026-07-16): sur, occidente y Amazonas ajustados contra el contorno real (GeoJSON) -->
   <g fill="none" stroke="#3ECF8E" stroke-linejoin="round">
     <path stroke-width="9" d="M312 26 L328 52 292 76 264 108 248 156 272 180 288 200 284 228 340 242 380 246 408 280 480 274 464 324 486 380 470 440 505 475 466 455 390 455 392 480 408 492 382 505 382 530 404 584 388 690 360 672 350 612 312 610 262 616 236 572 207 545 172 526 150 518 124 510 90 505 76 488 32 464 28 452 42 450 42 430 52 416 72 412 98 370 88 358 92 334 85 300 90 272 72 234 86 177 104 196 116 170 156 144 160 100 188 84 212 72 240 74 280 56 302 34 Z"/>
