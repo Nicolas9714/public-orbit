@@ -51,7 +51,7 @@ Cada atlas puede instalarse y funcionar por separado sin perder capacidad sector
 | Atlas de Navegación Minero Energético de Colombia | Minero energético | 12 | [`atlas/minero-energetico/`](atlas/minero-energetico/) |
 | Atlas de Navegación Ambiental de Colombia | Ambiental | 7 | [`atlas/ambiental/`](atlas/ambiental/) |
 
-<img src="assets/estructura-sistema-atlas.svg" width="100%" alt="Árbol de la estructura de Public Orbit">
+<img src="assets/orbita-public-orbit.svg" width="100%" alt="Diagrama orbital de Public Orbit: Nodo Nacional, atlas, skills orquestadoras y entidades">
 
 El trazo discontinuo marca los atlas en construcción: el Intersectorial y el de Transporte tienen sus entidades definidas, pero todavía no sus skills ni su orquestadora, así que aún no se registran arriba.
 
