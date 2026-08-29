@@ -66,7 +66,7 @@ El sitio también presenta las [morfologías web](https://sistema-atlas-colombia
 ## Qué contiene este repositorio
 
 ```text
-sistema-atlas-colombia/
+public-orbit/
 ├── registro.md       → Atlas existentes y entidades de cada uno
 ├── instalar.ps1 / instalar.sh       → Instaladores de skills (interfaces equivalentes)
 ├── estandar/
@@ -91,7 +91,7 @@ Instala uno, varios o todos los atlas con un solo comando. Cada atlas funciona c
 Clona el monorepo junto a tu proyecto:
 
 ```bash
-git clone https://github.com/Nicolas9714/sistema-atlas-colombia.git
+git clone https://github.com/Nicolas9714/public-orbit.git
 ```
 
 Un solo comando ejecutado desde la raíz de tu proyecto instala los atlas que pidas, y, si son dos o más, agrega automáticamente la orquestadora nacional:
@@ -102,12 +102,12 @@ Un solo comando ejecutado desde la raíz de tu proyecto instala los atlas que pi
 
 ```powershell
 # Windows (PowerShell)
-..\sistema-atlas-colombia\instalar.ps1 -Atlas todos
+..\public-orbit\instalar.ps1 -Atlas todos
 ```
 
 ```bash
 # macOS / Linux / Git Bash
-bash ../sistema-atlas-colombia/instalar.sh --atlas todos
+bash ../public-orbit/instalar.sh --atlas todos
 ```
 
 **Opciones** (PowerShell / bash):
@@ -131,14 +131,14 @@ Copia las skills de cada atlas desde su subcarpeta del monorepo a la carpeta de 
 macOS / Linux / Git Bash:
 
 ```bash
-cp -r ../sistema-atlas-colombia/atlas/ambiental/skills/* .claude/skills/
+cp -r ../public-orbit/atlas/ambiental/skills/* .claude/skills/
 ```
 
 Windows (PowerShell):
 
 ```powershell
 Copy-Item -Recurse -Force `
-  "..\sistema-atlas-colombia\atlas\ambiental\skills\*" `
+  "..\public-orbit\atlas\ambiental\skills\*" `
   ".claude\skills\"
 ```
 
@@ -147,7 +147,7 @@ Cambia `ambiental` por `minero-energetico` para el otro atlas, y `.claude\skills
 Si instalas dos o más atlas, agrega también la orquestadora nacional desde `atlas/nacional/`:
 
 ```bash
-cp -r ../sistema-atlas-colombia/atlas/nacional/skills/atlas-orquestador-colombia .claude/skills/
+cp -r ../public-orbit/atlas/nacional/skills/atlas-orquestador-colombia .claude/skills/
 ```
 
 Para instalación global, usa la carpeta del usuario en vez del proyecto (`~/.claude/skills/`, `~/.agents/skills/`, `~/.opencode/skills/`; en Windows `~` corresponde a `$env:USERPROFILE`).

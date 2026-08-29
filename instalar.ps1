@@ -158,7 +158,7 @@ foreach ($a in $aliasPedidos) {
 if ($aliasPedidos.Count -gt 1) {
     $rutaOrquestador = Join-Path $PSScriptRoot "atlas\nacional\skills\atlas-orquestador-colombia"
     Copy-SkillExacta -Origen $rutaOrquestador -Nombre "atlas-orquestador-colombia"
-    $instaladas += [PSCustomObject]@{ Skill = "atlas-orquestador-colombia"; Atlas = "sistema-atlas-colombia" }
+    $instaladas += [PSCustomObject]@{ Skill = "atlas-orquestador-colombia"; Atlas = "public-orbit" }
 }
 
 # --- Higiene: aviso de carpeta vieja sin sufijo de sector ---

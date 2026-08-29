@@ -204,7 +204,7 @@ if [ "${#alias_pedidos[@]}" -gt 1 ]; then
     ruta_orquestador="$raiz_sistema/atlas/nacional/skills/atlas-orquestador-colombia"
     copiar_skill_exacta "$ruta_orquestador" "atlas-orquestador-colombia"
     instaladas_skill+=("atlas-orquestador-colombia")
-    instaladas_atlas+=("sistema-atlas-colombia")
+    instaladas_atlas+=("public-orbit")
 fi
 
 # --- Higiene: aviso de carpeta vieja sin sufijo de sector ---

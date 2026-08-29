@@ -171,7 +171,7 @@ verificar_sectorial() {
     if [ -n "$orq_skill" ]; then
         if ! grep -qiE 'consultas que cruzan a otros sectores.*enrutamiento entre atlas.*nodo nacional' "$orq_skill"; then
             falla "N5: falta la línea estandarizada hacia el nodo nacional"
-        elif ! grep -qiE 'nacional/|sistema-atlas-colombia' "$orq_skill"; then
+        elif ! grep -qiE 'nacional/|public-orbit' "$orq_skill"; then
             falla "N5: la línea vertical no enlaza al nodo nacional"
         fi
     fi
