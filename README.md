@@ -1,7 +1,6 @@
 <div align="center">
   <img src="assets/Logo_sistema_atlas.svg" width="250" alt="Public Orbit">
-  <h1>Public Orbit</h1>
-  <p><em>Infraestructura abierta de Atlas de Navegación: rutas, fuentes y conexiones para recorrer la información pública de Colombia.</em></p>
+  <h1><em> Una infraestructura común para descubrir, conectar y navegar la información pública de Colombia.</em></h1>
   <table>
     <tr>
       <td align="center" width="180">
@@ -22,11 +21,11 @@
 
 ---
 
-Public Orbit es un proyecto abierto que convierte en estructura compartida un conocimiento que suele permanecer tácito: cómo navegar la información pública del país. Hacer pública la información también implica hacer públicas sus rutas y conexiones. Gran parte de ella ya es accesible en portales web, micrositios, sistemas de información y geovisores. Pero saber dónde buscar, qué priorizar, qué ignorar y qué fuente contrastar es un conocimiento práctico acumulado en la experiencia de quienes conocen cada sector.
+Public Orbit es un proyecto abierto que organiza y hace reutilizable el conocimiento necesario para recorrer los ecosistemas digitales de las instituciones públicas. Su unidad básica es la **skill**, una estructura que documenta las rutas, fuentes y recursos de información de cada entidad.
 
-Cada Atlas de Navegación convierte ese saber en una estructura abierta, documentada y reutilizable que opera directamente en herramientas y agentes de IA como Claude Code, Codex y OpenCode.
+Las skills relacionadas se agrupan en **Atlas de Navegación**. Cada Atlas articula las entidades de un ámbito y puede funcionar de manera independiente. En conjunto, los Atlas forman un sistema modular conectado por un estándar común y por un **Nodo Nacional**, que permite reconocer relaciones y coordinar recorridos entre sectores.
 
-En conjunto, los Atlas de Navegación conforman Public Orbit: una arquitectura común para descubrir, conectar y navegar la información pública del país.
+La información pública está distribuida entre portales, micrositios, sistemas de información, geovisores, publicaciones y bases de datos. El desafío también está en saber dónde buscar, qué fuente utilizar, cómo interpretarla y con qué otras fuentes relacionarla. Public Orbit convierte ese conocimiento práctico en una infraestructura abierta, documentada y utilizable por agentes de IA como Claude Code, Codex y OpenCode.
 
 Al hacer explícito y compartible este conocimiento de navegación, Public Orbit busca ampliar la autonomía de quienes consultan información pública, ofreciendo puntos de entrada, criterios y recorridos que permitan formular mejores preguntas, contrastar fuentes y comprender cómo se organiza digitalmente el conocimiento de cada sector.
 
