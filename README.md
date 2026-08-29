@@ -1,7 +1,8 @@
 <div align="center">
   <img src="assets/Logo_sistema_atlas.svg" width="250" alt="Public Orbit">
-  <h1><em> Una infraestructura común para descubrir, conectar y navegar la información pública de Colombia.</em></h1>
-  <table>
+  <h1>Public Orbit</h1>
+  <p><em> Una infraestructura común para descubrir, conectar y navegar la información pública de Colombia.</em></p>
+ <table
     <tr>
       <td align="center" width="180">
         <a href="atlas/minero-energetico/">
