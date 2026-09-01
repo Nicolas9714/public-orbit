@@ -1,8 +1,8 @@
 <div align="center">
   <img src="assets/Logo_sistema_atlas.svg" width="250" alt="Public Orbit">
   <h1>Public Orbit</h1>
-  <p><em> Una infraestructura común para descubrir, conectar y navegar la información pública de Colombia.</em></p>
- <table
+  <p><em>Una infraestructura común para descubrir, conectar y navegar la información pública de Colombia.</em></p>
+  <table>
     <tr>
       <td align="center" width="180">
         <a href="atlas/minero-energetico/">
@@ -26,7 +26,7 @@ Public Orbit es un proyecto abierto que busca democratizar el acceso y el uso de
 
 Las skills relacionadas se agrupan en **Atlas de Navegación**. Cada Atlas articula las entidades de un ámbito y puede funcionar de manera independiente. En conjunto, los Atlas forman un sistema modular conectado por un estándar común y por un **Nodo Nacional**, que permite reconocer relaciones y coordinar recorridos entre sectores.
 
-La información pública está distribuida entre multiples portales web, micrositios, sistemas de información, geovisores, publicaciones y bases de datos. No obstante, pese a ser pública puede permanecer invisible. La apertura no termina cuando los contenidos se publican; también es necesario hacer visibles sus rutas y conexiones. Hay un saber contenido en los datos y otro que reside en el camino hacia ellos. Este último suele permanecer como conocimiento tácito entre quienes llevan años trabajando en una entidad o en un sector. 
+La información pública está distribuida entre múltiples portales web, micrositios, sistemas de información, geovisores, publicaciones y bases de datos. No obstante, pese a ser pública puede permanecer invisible. La apertura no termina cuando los contenidos se publican; también es necesario hacer visibles sus rutas y conexiones. Hay un saber contenido en los datos y otro que reside en el camino hacia ellos. Este último suele permanecer como conocimiento tácito entre quienes llevan años trabajando en una entidad o en un sector. 
 
 Public Orbit convierte ese conocimiento en una infraestructura abierta, documentada y utilizable por agentes de IA como Claude Code, Codex y OpenCode.
 
