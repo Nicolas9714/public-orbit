@@ -40,6 +40,13 @@ Public Orbit articula estos atlas mediante un estándar compartido, un registro 
 
 Cada skill por entidad se compone de tres archivos complementarios: `SKILL.md` describe la entidad y orienta la navegación; `mapa-web.md` representa como un árbol curado la estructura de su sitio oficial; y `fuentes.md` reúne los sistemas, geovisores, portales, publicaciones y documentos clave. Las skills orquestadoras contienen solo un `SKILL.md`: no duplican esa información, sino que conectan las skills de entidad y dirigen hacia ellas según la consulta.
 
+```text
+navegar-entidad/
+├── SKILL.md       → Qué cubre la entidad y cómo navegarla
+├── mapa-web.md    → Árbol curado de su sitio oficial
+└── fuentes.md     → Sistemas, portales y documentos clave
+```
+
 El Nodo Nacional incorpora una capa de articulación entre atlas. Hace explícitas las conexiones entre sectores, reconoce dónde vive cada parte de un asunto y permite recorrer de forma conjunta información distribuida entre distintas entidades y competencias.
 
 Estas conexiones pertenecen a la arquitectura de Public Orbit antes de que una consulta las active. Una pregunta permite recorrerlas, pero no las crea ni delimita su alcance. Ante una necesidad concreta, el nodo reconoce los ámbitos involucrados, localiza la información, conecta los tramos y coordina su recorrido mediante las orquestadoras sectoriales. Cómo se construye cada skill está definido en la [especificación](estandar/especificacion.md).
