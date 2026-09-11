@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 20 160 160">
+  <defs>
+    <pattern id="tramado" patternUnits="userSpaceOnUse" x="98.05" y="0" width="7.8" height="200">
+      <rect width="3.9" height="200" fill="#35E0A0"/>
+    </pattern>
+  </defs>
+  <g fill="none" stroke="url(#tramado)" stroke-width="24" stroke-linecap="round">
+    <path d="M44.99 139.97a68 68 0 0 1 0-79.94"/>
+    <path d="M155.01 60.03a68 68 0 0 1 0 79.94"/>
+  </g>
+  <circle cx="100" cy="100" r="26" fill="#35E0A0"/>
+</svg>
