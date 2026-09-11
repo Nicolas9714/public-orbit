@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/public-orbit.svg" width="120" alt="Isotipo de Public Orbit">
+  <img src="assets/public-orbit.svg" width="150" alt="Isotipo de Public Orbit">
   <h1>Public Orbit</h1>
   <p><em>Una infraestructura común para descubrir, conectar y navegar la información pública de Colombia.</em></p>
   <table>
@@ -7,8 +7,7 @@
       <td align="center" colspan="2">
         <a href="atlas/nacional/">
           <img src="assets/Logo_sistema_atlas.svg" width="82" alt="Nodo Nacional de Public Orbit"><br>
-          <strong>Nodo Nacional</strong><br>
-          <small>Articula los atlas</small>
+          <strong>Nodo Nacional</strong>
         </a>
       </td>
     </tr>
