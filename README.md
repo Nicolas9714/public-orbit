@@ -30,19 +30,17 @@
 
 ---
 
-Public Orbit es un proyecto abierto que busca democratizar el acceso y el uso de la información pública de Colombia. Su unidad básica es la **skill**, una estructura que documenta y sistematiza las rutas, fuentes y recursos de información de cada entidad.
+Public Orbit es un proyecto abierto que busca democratizar el acceso y el uso de la información pública de Colombia. Su unidad básica es la **skill**, una estructura que documenta y sistematiza las rutas, fuentes y recursos de información de entidades públicas. Estas skills se agrupan en **Atlas de Navegación**, los cuales articulan las entidades de un mismo ámbito. Los atlas registrados pueden funcionar de forma independiente o en conjunto, formando un sistema modular conectado por un estándar común y por un **Nodo Nacional**, que permite reconocer relaciones y coordinar recorridos entre varios sectores.
 
-Las skills relacionadas se agrupan en **Atlas de Navegación**. Cada Atlas articula las entidades de un ámbito y puede funcionar de manera independiente. En conjunto, los Atlas forman un sistema modular conectado por un estándar común y por un **Nodo Nacional**, que permite reconocer relaciones y coordinar recorridos entre sectores.
+La información está distribuida entre múltiples portales web, micrositios, sistemas de información, geovisores, publicaciones y bases de datos. No obstante, pese a ser pública, puede permanecer invisible. La apertura no termina cuando los contenidos se ponen a disposición; también es necesario hacer visibles sus rutas y conexiones.
 
-La información pública está distribuida entre múltiples portales web, micrositios, sistemas de información, geovisores, publicaciones y bases de datos. No obstante, pese a ser pública puede permanecer invisible. La apertura no termina cuando los contenidos se publican; también es necesario hacer visibles sus rutas y conexiones. Hay un saber contenido en los datos y otro que reside en el camino hacia ellos. Este último suele permanecer como conocimiento tácito entre quienes llevan años trabajando en una entidad o en un sector. 
-
-Public Orbit convierte ese conocimiento en una infraestructura abierta, documentada y utilizable por agentes de IA como Claude Code, Codex y OpenCode.
+Hay un saber contenido en los datos y otro que reside en el camino hacia ellos. Este último suele permanecer como conocimiento tácito entre quienes llevan años trabajando en una entidad o en un sector. Public Orbit convierte ese conocimiento en una infraestructura abierta, documentada y utilizable por agentes de IA como Claude Code, Codex y OpenCode.
 
 Al hacer explícito y compartible este conocimiento de navegación, Public Orbit busca ampliar la autonomía de quienes consultan información pública, ofreciendo puntos de entrada, criterios y recorridos que permitan formular mejores preguntas, contrastar fuentes y comprender cómo se organiza digitalmente el conocimiento de cada sector.
 
 ## Cómo funciona
 
-Un Atlas de Navegación reúne e integra skills que documentan cómo encontrar, comprender y usar la información pública de un sector. Cada entidad cuenta con una skill que describe sus rutas y fuentes de información, mientras una skill orquestadora organiza los recorridos que involucran a varias entidades del mismo ámbito.
+Un Atlas de Navegación reúne e integra skills que documentan cómo navegar la información pública de un sector. Cada entidad cuenta con una skill que describe sus rutas y fuentes de información, mientras una skill orquestadora organiza los recorridos que involucran a varias entidades del mismo ámbito.
 
 Public Orbit articula estos atlas mediante un estándar compartido, un registro de los atlas existentes y las entidades que cubren, y un Nodo Nacional (la skill de orquestación [`atlas-orquestador-colombia`](atlas/nacional/skills/atlas-orquestador-colombia/SKILL.md)) que conecta sus ámbitos y coordina recorridos entre sectores.
 
