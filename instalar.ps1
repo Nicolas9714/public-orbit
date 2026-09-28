@@ -42,6 +42,18 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+# Una cancelación con mensaje ya explicado termina limpia, sin la traza de
+# PowerShell. Desde un archivo sale con código 1; como scriptblock (& $po)
+# solo retorna, porque un exit ahí cerraría la sesión del usuario.
+trap {
+    if ($_.Exception.Message -eq "Instalación cancelada.") {
+        Write-Host "Instalación cancelada." -ForegroundColor Red
+        if ($PSCommandPath) { exit 1 }
+        return
+    }
+    break
+}
+
 # Con powershell.exe -File, "a,b" llega como un solo texto y no como lista:
 # se separa aquí para que ambas formas de invocar se comporten igual.
 $Atlas   = @($Atlas   | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() } | Where-Object { $_ })
