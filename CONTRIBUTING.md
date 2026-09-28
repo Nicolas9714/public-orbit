@@ -23,6 +23,9 @@ Si construiste un atlas compatible con el estándar (ver [Cómo crear un atlas n
 2. Agrega su tabla de entidades en el mismo `registro.md`.
 3. Agrega su fila en la tabla «Atlas registrados» del `README.md` y su tarjeta en el banner. Si el atlas vive en este monorepo, el logo va en `atlas/<sector>/assets/`; si es externo, permanece en el `assets/` de su propio repositorio.
 4. Agrega a `examples/consultas-de-ejemplo.md` al menos una consulta que cruce hacia un atlas ya registrado, con su ruta esperada. Es la demostración de que el atlas se integró: una consulta se puede correr, una declaración no.
+5. Si el atlas vive en este monorepo, regístralo en los dos instaladores para que `-Atlas <alias>` lo reconozca: la tabla `$atlasRegistrados` y las etiquetas del reporte en `instalar.ps1`, y el bloque equivalente en `instalar.sh`. Comprueba con `bash tests/probar-instalar.sh`.
+
+Registrado el atlas, el sitio web necesita un paso aparte en su propio repositorio para ofrecer los ZIP: agregar el alias y su número de skills en `scripts/lib/atlas.mjs` y correr `npm run sincronizar`.
 
 ### 2. Proponer cambios al estándar
 

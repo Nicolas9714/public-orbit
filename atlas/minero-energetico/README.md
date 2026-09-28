@@ -55,4 +55,17 @@ Más ejemplos:
 
 ## Instalación
 
-Las skills de este atlas se instalan con el instalador de Public Orbit — un solo comando para uno, varios o todos los atlas. Ver [instalación en el README de Public Orbit](../../README.md#instalación).
+Desde la carpeta de tu proyecto, sin clonar el repositorio:
+
+```powershell
+# Windows (PowerShell)
+$po = [scriptblock]::Create((irm https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.ps1).TrimStart([char]0xFEFF))
+& $po -Atlas minero-energetico
+```
+
+```bash
+# macOS / Linux / Git Bash
+curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas minero-energetico
+```
+
+Para instalar solo algunas entidades, varios atlas a la vez o desde un clon, consulta la [instalación en el README de Public Orbit](../../README.md#instalación).
