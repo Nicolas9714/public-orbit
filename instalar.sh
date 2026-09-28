@@ -307,9 +307,37 @@ fi
 
 # --- Reporte final ---
 echo ""
-echo "Skills instaladas en $destino_efectivo :"
-for i in "${!instaladas_skill[@]}"; do
-    echo "  - ${instaladas_skill[$i]} (de ${instaladas_atlas[$i]})"
+echo "Skills instaladas en $destino_efectivo"
+
+# Agrupado por atlas, en el orden en que se instalaron.
+etiqueta_atlas() {
+    case "$1" in
+        ambiental)                 echo "Atlas ambiental" ;;
+        minero-energetico)         echo "Atlas minero-energético" ;;
+        nacional|public-orbit)     echo "Public Orbit (nodo nacional)" ;;
+        *)                         echo "$1" ;;
+    esac
+}
+declare -a grupos=()
+for i in "${!instaladas_atlas[@]}"; do
+    g="$(etiqueta_atlas "${instaladas_atlas[$i]}")"
+    ya=0
+    for x in "${grupos[@]}"; do [ "$x" = "$g" ] && ya=1 && break; done
+    [ "$ya" -eq 0 ] && grupos+=("$g")
 done
+for g in "${grupos[@]}"; do
+    declare -a del_grupo=()
+    for i in "${!instaladas_skill[@]}"; do
+        [ "$(etiqueta_atlas "${instaladas_atlas[$i]}")" = "$g" ] && del_grupo+=("${instaladas_skill[$i]}")
+    done
+    echo ""
+    echo "  $g (${#del_grupo[@]})"
+    for s in "${del_grupo[@]}"; do
+        echo "    - $s"
+    done
+    unset del_grupo
+done
+echo ""
+echo "${#instaladas_skill[@]} skill(s) instalada(s)."
 echo ""
 echo "Verifica la instalación con /skills en Claude Code."

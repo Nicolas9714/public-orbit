@@ -27,7 +27,8 @@
     .\instalar.ps1 -Entidad navegar-anla,navegar-upme
 
 .EXAMPLE
-    & ([scriptblock]::Create((irm https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.ps1))) -Atlas ambiental
+    $po = [scriptblock]::Create((irm https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.ps1).TrimStart([char]0xFEFF))
+    & $po -Atlas ambiental
 #>
 
 param(
@@ -40,6 +41,11 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+
+# Con powershell.exe -File, "a,b" llega como un solo texto y no como lista:
+# se separa aquí para que ambas formas de invocar se comporten igual.
+$Atlas   = @($Atlas   | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+$Entidad = @($Entidad | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() } | Where-Object { $_ })
 
 if (-not $Atlas -and -not $Entidad) {
     Write-Host "Error: se requiere -Atlas o -Entidad (al menos uno de los dos)." -ForegroundColor Red
@@ -251,10 +257,23 @@ try {
 
     # --- Reporte final ---
     Write-Host ""
-    Write-Host "Skills instaladas en $destinoEfectivo :"
-    foreach ($item in $instaladas) {
-        Write-Host "  - $($item.Skill) (de $($item.Atlas))"
+    # Agrupado por atlas, en el orden en que se instalaron.
+    $etiquetas = @{
+        "ambiental"         = "Atlas ambiental"
+        "minero-energetico" = "Atlas minero-energético"
+        "nacional"          = "Public Orbit (nodo nacional)"
+        "public-orbit"      = "Public Orbit (nodo nacional)"
     }
+    Write-Host "Skills instaladas en $destinoEfectivo"
+    $instaladas | Group-Object { if ($etiquetas.ContainsKey($_.Atlas)) { $etiquetas[$_.Atlas] } else { $_.Atlas } } | ForEach-Object {
+        Write-Host ""
+        Write-Host "  $($_.Name) ($($_.Count))"
+        foreach ($item in $_.Group) {
+            Write-Host "    - $($item.Skill)"
+        }
+    }
+    Write-Host ""
+    Write-Host "$($instaladas.Count) skill(s) instalada(s)."
     Write-Host ""
     Write-Host "Verifica la instalación con /skills en Claude Code."
 } finally {
