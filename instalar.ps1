@@ -7,6 +7,11 @@
     de este monorepo) hacia una carpeta destino, típicamente dentro del proyecto
     del usuario (ej. .claude\skills para Claude Code, .agents\skills para Codex).
 
+    Funciona desde un clon del monorepo (modo local) o ejecutado directo desde
+    GitHub sin clonar (modo remoto): si el script no encuentra la carpeta atlas
+    junto a sí mismo, descarga el repositorio como ZIP a una carpeta temporal
+    y usa esa copia como fuente, borrándola al terminar.
+
     Compatible con Windows PowerShell 5.1.
 
 .EXAMPLE
@@ -17,17 +22,29 @@
 
 .EXAMPLE
     .\instalar.ps1 -Atlas ambiental -Entidad navegar-anla -Global
+
+.EXAMPLE
+    .\instalar.ps1 -Entidad navegar-anla,navegar-upme
+
+.EXAMPLE
+    & ([scriptblock]::Create((irm https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.ps1))) -Atlas ambiental
 #>
 
 param(
-    [Parameter(Mandatory)] [string[]] $Atlas,
+    [string[]] $Atlas,
     [string]   $Destino = ".claude\skills",
     [string[]] $Entidad,
     [switch]   $Global,
-    [switch]   $Actualizar
+    [switch]   $Actualizar,
+    [string]   $Rama = "main"
 )
 
 $ErrorActionPreference = "Stop"
+
+if (-not $Atlas -and -not $Entidad) {
+    Write-Host "Error: se requiere -Atlas o -Entidad (al menos uno de los dos)." -ForegroundColor Red
+    throw "Instalación cancelada."
+}
 
 # Tabla de atlas registrados: alias -> nombre de la subcarpeta bajo atlas/.
 # Al registrar un atlas nuevo, agregar una línea aquí.
@@ -36,145 +53,212 @@ $atlasRegistrados = @{
     "minero-energetico"  = "minero-energetico"
 }
 
-# En el monorepo, las skills de cada atlas viven en atlas/<alias>/skills,
-# relativo a la raíz donde está este script.
-$raizAtlas = Join-Path $PSScriptRoot "atlas"
+# Alias del nodo nacional: no se instala completo vía -Atlas, pero sus skills
+# sueltas (la orquestadora nacional) sí se pueden pedir por -Entidad.
+$NACIONAL = "nacional"
 
-# --- Expandir "todos" y resolver alias pedidos ---
-$aliasPedidos = @()
-foreach ($a in $Atlas) {
-    if ($a -eq "todos") {
-        foreach ($clave in $atlasRegistrados.Keys) {
-            $aliasPedidos += $clave
+# --- Detectar modo local (checkout del monorepo) o remoto (sin clonar) ---
+# En modo local, el script vive junto a atlas/. En modo remoto (por ejemplo,
+# invocado con irm | iex o [scriptblock]::Create), $PSScriptRoot viene vacío
+# o no hay atlas/ al lado: se descarga el repo desde GitHub a una carpeta
+# temporal y esa es la fuente.
+$raizSistema = $null
+if ($PSScriptRoot -and (Test-Path (Join-Path $PSScriptRoot "atlas"))) {
+    $raizSistema = $PSScriptRoot
+}
+
+$carpetaDescarga = $null
+try {
+    if (-not $raizSistema) {
+        if ($Actualizar) {
+            Write-Host "Aviso: -Actualizar no aplica en modo remoto (no hay clon que actualizar); se ignora." -ForegroundColor Yellow
+            $Actualizar = $false
         }
-    } else {
-        $aliasPedidos += $a
+        Write-Host "Descargando Public Orbit desde GitHub..."
+        $carpetaDescarga = Join-Path ([IO.Path]::GetTempPath()) ("public-orbit-" + [Guid]::NewGuid().ToString("N"))
+        New-Item -ItemType Directory -Force -Path $carpetaDescarga | Out-Null
+        $zipUrl = "https://github.com/Nicolas9714/public-orbit/archive/refs/heads/$Rama.zip"
+        $zipPath = Join-Path $carpetaDescarga "public-orbit.zip"
+        try {
+            Invoke-WebRequest -Uri $zipUrl -OutFile $zipPath -UseBasicParsing
+        } catch {
+            Write-Host "Error: no se pudo descargar la rama/tag '$Rama' de public-orbit." -ForegroundColor Red
+            throw
+        }
+        Expand-Archive -Path $zipPath -DestinationPath $carpetaDescarga -Force
+        $carpetaExtraida = Get-ChildItem -Path $carpetaDescarga -Directory | Select-Object -First 1
+        if (-not $carpetaExtraida -or -not (Test-Path (Join-Path $carpetaExtraida.FullName "atlas"))) {
+            Write-Host "Error: la descarga no tiene la estructura esperada (falta atlas)." -ForegroundColor Red
+            throw "Instalación cancelada."
+        }
+        $raizSistema = $carpetaExtraida.FullName
     }
-}
-$aliasPedidos = @($aliasPedidos | Select-Object -Unique)
 
-# --- Validación: alias desconocidos ---
-$aliasValidos = $atlasRegistrados.Keys
-foreach ($a in $aliasPedidos) {
-    if (-not $atlasRegistrados.ContainsKey($a)) {
-        Write-Host "Error: el alias de atlas '$a' no existe." -ForegroundColor Red
-        Write-Host "Alias válidos: $($aliasValidos -join ', '), todos"
-        exit 1
-    }
-}
+    # En el monorepo, las skills de cada atlas viven en atlas/<alias>/skills,
+    # relativo a la raíz de la fuente (local o descargada).
+    $raizAtlas = Join-Path $raizSistema "atlas"
 
-# --- Validación: subcarpetas de atlas existen en el monorepo ---
-foreach ($a in $aliasPedidos) {
-    $carpeta = $atlasRegistrados[$a]
-    $rutaAtlas = Join-Path $raizAtlas $carpeta
-    if (-not (Test-Path $rutaAtlas)) {
-        Write-Host "Error: no se encontró la carpeta del atlas '$a' en $rutaAtlas" -ForegroundColor Red
-        Write-Host "Debería existir en este monorepo; verifica que el checkout esté completo."
-        exit 1
-    }
-}
+    # --- Expandir "todos" y resolver alias pedidos ---
+    $aliasPedidos = @()
+    if ($Atlas) {
+        foreach ($a in $Atlas) {
+            if ($a -eq "todos") {
+                foreach ($clave in $atlasRegistrados.Keys) {
+                    $aliasPedidos += $clave
+                }
+            } else {
+                $aliasPedidos += $a
+            }
+        }
+        $aliasPedidos = @($aliasPedidos | Select-Object -Unique)
 
-# --- Validación: -Entidad solo con un atlas ---
-if ($Entidad -and $aliasPedidos.Count -gt 1) {
-    Write-Host "Error: -Entidad solo se puede usar con un único atlas." -ForegroundColor Red
-    exit 1
-}
+        # --- Validación: alias desconocidos ---
+        $aliasValidos = $atlasRegistrados.Keys
+        foreach ($a in $aliasPedidos) {
+            if (-not $atlasRegistrados.ContainsKey($a)) {
+                Write-Host "Error: el alias de atlas '$a' no existe." -ForegroundColor Red
+                Write-Host "Alias válidos: $($aliasValidos -join ', '), todos"
+                throw "Instalación cancelada."
+            }
+        }
 
-# --- Validación: carpetas de -Entidad existen dentro del atlas ---
-if ($Entidad) {
-    $carpetaAtlas = $atlasRegistrados[$aliasPedidos[0]]
-    $rutaSkills = Join-Path (Join-Path $raizAtlas $carpetaAtlas) "skills"
-    $skillsDisponibles = Get-ChildItem -Path $rutaSkills -Directory | ForEach-Object { $_.Name }
-    foreach ($e in $Entidad) {
-        if ($skillsDisponibles -notcontains $e) {
-            Write-Host "Error: la skill '$e' no existe en $rutaSkills" -ForegroundColor Red
-            Write-Host "Skills disponibles: $($skillsDisponibles -join ', ')"
-            exit 1
+        # --- Validación: subcarpetas de atlas existen en la fuente ---
+        foreach ($a in $aliasPedidos) {
+            $carpeta = $atlasRegistrados[$a]
+            $rutaAtlas = Join-Path $raizAtlas $carpeta
+            if (-not (Test-Path $rutaAtlas)) {
+                Write-Host "Error: no se encontró la carpeta del atlas '$a' en $rutaAtlas" -ForegroundColor Red
+                Write-Host "Debería existir en el monorepo; verifica que el checkout o la descarga estén completos."
+                throw "Instalación cancelada."
+            }
         }
     }
-}
 
-# --- Resolver destino efectivo ---
-if ([IO.Path]::IsPathRooted($Destino)) {
-    $destinoEfectivo = [IO.Path]::GetFullPath($Destino)
-} elseif ($Global) {
-    $destinoEfectivo = Join-Path $env:USERPROFILE $Destino
-} else {
-    $destinoEfectivo = Join-Path (Get-Location) $Destino
-}
-
-# --- Actualizar repos fuente (y este repo) antes de copiar ---
-if ($Actualizar) {
-    Write-Host "Actualizando el monorepo (Public Orbit)..."
-    git -C $PSScriptRoot pull
-    if ($LASTEXITCODE -ne 0) {
-        Write-Host "Advertencia: git pull falló en $PSScriptRoot, se continúa con la versión local." -ForegroundColor Yellow
-    }
-}
-
-# --- Copia ---
-if (-not (Test-Path $destinoEfectivo)) {
-    New-Item -ItemType Directory -Force -Path $destinoEfectivo | Out-Null
-}
-
-function Copy-SkillExacta {
-    param(
-        [Parameter(Mandatory)] [string] $Origen,
-        [Parameter(Mandatory)] [string] $Nombre
-    )
-
-    if ($Nombre -notmatch '^[a-z0-9-]+$') {
-        throw "Nombre de skill no seguro: '$Nombre'."
-    }
-
-    $destinoSkill = Join-Path $destinoEfectivo $Nombre
-    if (Test-Path -LiteralPath $destinoSkill) {
-        Remove-Item -LiteralPath $destinoSkill -Recurse -Force
-    }
-    Copy-Item -LiteralPath $Origen -Destination $destinoSkill -Recurse -Force
-}
-
-$instaladas = @()
-
-foreach ($a in $aliasPedidos) {
-    $carpeta = $atlasRegistrados[$a]
-    $rutaSkills = Join-Path (Join-Path $raizAtlas $carpeta) "skills"
-
+    # --- Resolver -Entidad: cada nombre se busca en todos los atlas
+    #     (incluido el nodo nacional, para poder pedir
+    #     atlas-orquestador-colombia por nombre sin usar -Atlas). Los
+    #     nombres de skill son únicos en todo el repo. ---
+    $entidadInfo = @{}
     if ($Entidad) {
+        $aliasBusqueda = @($atlasRegistrados.Keys) + $NACIONAL
         foreach ($e in $Entidad) {
-            $origen = Join-Path $rutaSkills $e
-            Copy-SkillExacta -Origen $origen -Nombre $e
-            $instaladas += [PSCustomObject]@{ Skill = $e; Atlas = $a }
+            $encontrada = $null
+            foreach ($a in $aliasBusqueda) {
+                if ($a -eq $NACIONAL) { $carpeta = $NACIONAL } else { $carpeta = $atlasRegistrados[$a] }
+                $ruta = Join-Path (Join-Path $raizAtlas $carpeta) "skills\$e"
+                if (Test-Path $ruta) {
+                    $encontrada = $a
+                    $entidadInfo[$e] = @{ Atlas = $a; Ruta = $ruta }
+                    break
+                }
+            }
+            if (-not $encontrada) {
+                Write-Host "Error: la skill '$e' no existe en ningún atlas." -ForegroundColor Red
+                $disponibles = @()
+                foreach ($a in $aliasBusqueda) {
+                    if ($a -eq $NACIONAL) { $carpeta = $NACIONAL } else { $carpeta = $atlasRegistrados[$a] }
+                    $rutaSkills = Join-Path (Join-Path $raizAtlas $carpeta) "skills"
+                    if (Test-Path $rutaSkills) {
+                        $disponibles += (Get-ChildItem -Path $rutaSkills -Directory | ForEach-Object { $_.Name })
+                    }
+                }
+                Write-Host "Skills disponibles: $($disponibles -join ', ')"
+                Write-Host "Si buscas todo un sector, usa -Atlas en vez de -Entidad."
+                throw "Instalación cancelada."
+            }
         }
+    }
+
+    # --- Resolver destino efectivo ---
+    if ([IO.Path]::IsPathRooted($Destino)) {
+        $destinoEfectivo = [IO.Path]::GetFullPath($Destino)
+    } elseif ($Global) {
+        $destinoEfectivo = Join-Path $env:USERPROFILE $Destino
     } else {
+        $destinoEfectivo = Join-Path (Get-Location) $Destino
+    }
+
+    # --- Actualizar el monorepo antes de copiar (solo modo local) ---
+    if ($Actualizar) {
+        Write-Host "Actualizando el monorepo (Public Orbit)..."
+        git -C $raizSistema pull
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "Advertencia: git pull falló en $raizSistema, se continúa con la versión local." -ForegroundColor Yellow
+        }
+    }
+
+    # --- Copia ---
+    if (-not (Test-Path $destinoEfectivo)) {
+        New-Item -ItemType Directory -Force -Path $destinoEfectivo | Out-Null
+    }
+
+    function Copy-SkillExacta {
+        param(
+            [Parameter(Mandatory)] [string] $Origen,
+            [Parameter(Mandatory)] [string] $Nombre
+        )
+
+        if ($Nombre -notmatch '^[a-z0-9-]+$') {
+            throw "Nombre de skill no seguro: '$Nombre'."
+        }
+
+        $destinoSkill = Join-Path $destinoEfectivo $Nombre
+        if (Test-Path -LiteralPath $destinoSkill) {
+            Remove-Item -LiteralPath $destinoSkill -Recurse -Force
+        }
+        Copy-Item -LiteralPath $Origen -Destination $destinoSkill -Recurse -Force
+    }
+
+    $instaladas = @()
+    $yaInstalada = @{}
+
+    foreach ($a in $aliasPedidos) {
+        $carpeta = $atlasRegistrados[$a]
+        $rutaSkills = Join-Path (Join-Path $raizAtlas $carpeta) "skills"
+
         Get-ChildItem -Path $rutaSkills -Directory | ForEach-Object {
             Copy-SkillExacta -Origen $_.FullName -Nombre $_.Name
             $instaladas += [PSCustomObject]@{ Skill = $_.Name; Atlas = $a }
+            $yaInstalada[$_.Name] = $true
         }
     }
-}
 
-# --- Regla de composición: 2+ atlas => copiar también la orquestadora nacional ---
-if ($aliasPedidos.Count -gt 1) {
-    $rutaOrquestador = Join-Path $PSScriptRoot "atlas\nacional\skills\atlas-orquestador-colombia"
-    Copy-SkillExacta -Origen $rutaOrquestador -Nombre "atlas-orquestador-colombia"
-    $instaladas += [PSCustomObject]@{ Skill = "atlas-orquestador-colombia"; Atlas = "public-orbit" }
-}
+    foreach ($e in $Entidad) {
+        if ($yaInstalada.ContainsKey($e)) { continue }
+        Copy-SkillExacta -Origen $entidadInfo[$e].Ruta -Nombre $e
+        $instaladas += [PSCustomObject]@{ Skill = $e; Atlas = $entidadInfo[$e].Atlas }
+        $yaInstalada[$e] = $true
+    }
 
-# --- Higiene: aviso de carpeta vieja sin sufijo de sector ---
-$rutaVieja = Join-Path $destinoEfectivo "atlas-orquestador"
-if (Test-Path $rutaVieja) {
+    # --- Regla de composición: 2+ atlas completos (-Atlas) => copiar también
+    #     la orquestadora nacional. Skills sueltas de -Entidad de atlas
+    #     distintos NO activan esta regla. ---
+    if ($aliasPedidos.Count -gt 1 -and -not $yaInstalada.ContainsKey("atlas-orquestador-colombia")) {
+        $rutaOrquestador = Join-Path $raizAtlas "nacional\skills\atlas-orquestador-colombia"
+        Copy-SkillExacta -Origen $rutaOrquestador -Nombre "atlas-orquestador-colombia"
+        $instaladas += [PSCustomObject]@{ Skill = "atlas-orquestador-colombia"; Atlas = "public-orbit" }
+        $yaInstalada["atlas-orquestador-colombia"] = $true
+    }
+
+    # --- Higiene: aviso de carpeta vieja sin sufijo de sector ---
+    $rutaVieja = Join-Path $destinoEfectivo "atlas-orquestador"
+    if (Test-Path $rutaVieja) {
+        Write-Host ""
+        Write-Host "Advertencia: se encontró '$rutaVieja', de una versión anterior de la orquestadora." -ForegroundColor Yellow
+        Write-Host "Si ya no la necesitas, bórrala manualmente con:"
+        Write-Host "  Remove-Item -Recurse '$rutaVieja'"
+    }
+
+    # --- Reporte final ---
     Write-Host ""
-    Write-Host "Advertencia: se encontró '$rutaVieja', de una versión anterior de la orquestadora." -ForegroundColor Yellow
-    Write-Host "Si ya no la necesitas, bórrala manualmente con:"
-    Write-Host "  Remove-Item -Recurse '$rutaVieja'"
+    Write-Host "Skills instaladas en $destinoEfectivo :"
+    foreach ($item in $instaladas) {
+        Write-Host "  - $($item.Skill) (de $($item.Atlas))"
+    }
+    Write-Host ""
+    Write-Host "Verifica la instalación con /skills en Claude Code."
+} finally {
+    if ($carpetaDescarga -and (Test-Path $carpetaDescarga)) {
+        Remove-Item -LiteralPath $carpetaDescarga -Recurse -Force -ErrorAction SilentlyContinue
+    }
 }
-
-# --- Reporte final ---
-Write-Host ""
-Write-Host "Skills instaladas en $destinoEfectivo :"
-foreach ($item in $instaladas) {
-    Write-Host "  - $($item.Skill) (de $($item.Atlas))"
-}
-Write-Host ""
-Write-Host "Verifica la instalación con /skills en Claude Code."

@@ -20,3 +20,5 @@ jobs:
         run: bash verificar-conformidad.sh
       - name: Probar falsos negativos conocidos
         run: bash tests/probar-verificar-conformidad.sh
+      - name: Probar el instalador (modo local)
+        run: bash tests/probar-instalar.sh

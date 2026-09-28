@@ -6,10 +6,17 @@
 # de este monorepo) hacia una carpeta destino, típicamente dentro del proyecto
 # del usuario (ej. .claude/skills para Claude Code, .agents/skills para Codex).
 #
+# Funciona desde un clon del monorepo (modo local) o ejecutado directo desde
+# GitHub sin clonar (modo remoto): si el script no encuentra la carpeta atlas/
+# junto a sí mismo, descarga el repositorio como tarball y usa esa copia como
+# fuente, borrándola al terminar.
+#
 # Ejemplos:
 #   bash instalar.sh --atlas ambiental
 #   bash instalar.sh --atlas todos --actualizar
 #   bash instalar.sh --atlas ambiental --entidad navegar-anla --global
+#   bash instalar.sh --entidad navegar-anla,navegar-upme
+#   curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas ambiental
 #
 set -euo pipefail
 
@@ -20,21 +27,29 @@ declare -A atlas_registrados=(
     ["minero-energetico"]="minero-energetico"
 )
 
+# Alias del nodo nacional: no se instala completo vía -Atlas/--atlas, pero sus
+# skills sueltas (la orquestadora nacional) sí se pueden pedir por --entidad.
+NACIONAL="nacional"
+
 atlas_arg=""
 destino=".claude/skills"
 entidad_arg=""
 modo_global=0
 actualizar=0
+rama="main"
 
 mostrar_uso() {
-    echo "Uso: bash instalar.sh --atlas ambiental|minero-energetico|todos[,...] [opciones]"
+    echo "Uso: bash instalar.sh [--atlas LISTA] [--entidad LISTA] [opciones]"
+    echo ""
+    echo "Se requiere al menos --atlas o --entidad."
     echo ""
     echo "Opciones:"
-    echo "  --atlas LISTA      Atlas a instalar, separados por coma (obligatorio)"
+    echo "  --atlas LISTA      Atlas a instalar, separados por coma (ambiental|minero-energetico|todos)"
+    echo "  --entidad LISTA    Skills sueltas a instalar por nombre, separadas por coma"
     echo "  --destino RUTA     Carpeta destino (default: .claude/skills)"
-    echo "  --entidad LISTA    Solo estas skills, separadas por coma (un solo atlas)"
     echo "  --global           Instala en la carpeta del usuario en vez del proyecto"
-    echo "  --actualizar       git pull en los repos fuente antes de copiar"
+    echo "  --actualizar       git pull en el monorepo antes de copiar (solo modo local)"
+    echo "  --rama RAMA        Rama o tag a descargar en modo remoto (default: main)"
 }
 
 while [ $# -gt 0 ]; do
@@ -59,6 +74,10 @@ while [ $# -gt 0 ]; do
             actualizar=1
             shift
             ;;
+        --rama)
+            rama="$2"
+            shift 2
+            ;;
         *)
             echo "Error: opción desconocida '$1'" >&2
             mostrar_uso
@@ -67,81 +86,142 @@ while [ $# -gt 0 ]; do
     esac
 done
 
-if [ -z "$atlas_arg" ]; then
-    echo "Error: --atlas es obligatorio." >&2
+if [ -z "$atlas_arg" ] && [ -z "$entidad_arg" ]; then
+    echo "Error: se requiere --atlas o --entidad (al menos uno de los dos)." >&2
     mostrar_uso
     exit 1
 fi
 
-raiz_sistema="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-# En el monorepo, las skills de cada atlas viven en atlas/<alias>/skills.
-raiz_atlas="$raiz_sistema/atlas"
-
-# --- Expandir "todos" y resolver alias pedidos ---
-IFS=',' read -r -a atlas_pedidos_raw <<< "$atlas_arg"
-declare -a alias_pedidos=()
-for a in "${atlas_pedidos_raw[@]}"; do
-    if [ "$a" = "todos" ]; then
-        for clave in "${!atlas_registrados[@]}"; do
-            alias_pedidos+=("$clave")
-        done
-    else
-        alias_pedidos+=("$a")
+# --- Detectar modo local (checkout del monorepo) o remoto (sin clonar) ---
+# En modo local, el script vive junto a atlas/. En modo remoto (por ejemplo,
+# `curl ... | bash`), no hay BASH_SOURCE utilizable o no hay atlas/ al lado:
+# se descarga el repo desde GitHub a una carpeta temporal y esa es la fuente.
+raiz_sistema=""
+if [ -n "${BASH_SOURCE[0]:-}" ]; then
+    dir_script="$(cd "$(dirname "${BASH_SOURCE[0]}")" 2>/dev/null && pwd || true)"
+    if [ -n "$dir_script" ] && [ -d "$dir_script/atlas" ]; then
+        raiz_sistema="$dir_script"
     fi
-done
+fi
 
-# Eliminar duplicados
-declare -A vistos=()
-declare -a alias_unicos=()
-for a in "${alias_pedidos[@]}"; do
-    if [ -z "${vistos[$a]:-}" ]; then
-        alias_unicos+=("$a")
-        vistos[$a]=1
+tmp_descarga=""
+if [ -z "$raiz_sistema" ]; then
+    if [ "$actualizar" -eq 1 ]; then
+        echo "Aviso: --actualizar no aplica en modo remoto (no hay clon que actualizar); se ignora." >&2
+        actualizar=0
     fi
-done
-alias_pedidos=("${alias_unicos[@]}")
-
-# --- Validación: alias desconocidos ---
-for a in "${alias_pedidos[@]}"; do
-    if [ -z "${atlas_registrados[$a]:-}" ]; then
-        echo "Error: el alias de atlas '$a' no existe." >&2
-        echo "Alias válidos: ${!atlas_registrados[*]}, todos" >&2
+    echo "Descargando Public Orbit desde GitHub..."
+    tmp_descarga="$(mktemp -d)"
+    trap 'rm -rf "$tmp_descarga"' EXIT
+    if ! curl -fsSL "https://github.com/Nicolas9714/public-orbit/archive/refs/heads/$rama.tar.gz" | tar -xz -C "$tmp_descarga"; then
+        echo "Error: no se pudo descargar o extraer la rama/tag '$rama' de public-orbit." >&2
         exit 1
     fi
-done
-
-# --- Validación: subcarpetas de atlas existen en el monorepo ---
-for a in "${alias_pedidos[@]}"; do
-    carpeta="${atlas_registrados[$a]}"
-    ruta_atlas="$raiz_atlas/$carpeta"
-    if [ ! -d "$ruta_atlas" ]; then
-        echo "Error: no se encontró la carpeta del atlas '$a' en $ruta_atlas" >&2
-        echo "Debería existir en este monorepo; verifica que el checkout esté completo." >&2
-        exit 1
-    fi
-done
-
-# --- Validación: --entidad solo con un atlas ---
-declare -a entidades=()
-if [ -n "$entidad_arg" ]; then
-    IFS=',' read -r -a entidades <<< "$entidad_arg"
-    if [ "${#alias_pedidos[@]}" -gt 1 ]; then
-        echo "Error: --entidad solo se puede usar con un único atlas." >&2
+    raiz_sistema="$(find "$tmp_descarga" -mindepth 1 -maxdepth 1 -type d | head -n1)"
+    if [ -z "$raiz_sistema" ] || [ ! -d "$raiz_sistema/atlas" ]; then
+        echo "Error: la descarga no tiene la estructura esperada (falta atlas/)." >&2
         exit 1
     fi
 fi
 
-# --- Validación: carpetas de --entidad existen dentro del atlas ---
-if [ -n "$entidad_arg" ]; then
-    carpeta_atlas="${atlas_registrados[${alias_pedidos[0]}]}"
-    ruta_skills="$raiz_atlas/$carpeta_atlas/skills"
-    skills_disponibles="$(ls "$ruta_skills")"
-    for e in "${entidades[@]}"; do
-        if ! grep -qx "$e" <<< "$skills_disponibles"; then
-            echo "Error: la skill '$e' no existe en $ruta_skills" >&2
-            echo "Skills disponibles: $(echo "$skills_disponibles" | tr '\n' ' ')" >&2
+# En el monorepo, las skills de cada atlas viven en atlas/<alias>/skills.
+raiz_atlas="$raiz_sistema/atlas"
+
+# --- Expandir "todos" y resolver alias pedidos ---
+declare -a alias_pedidos=()
+if [ -n "$atlas_arg" ]; then
+    IFS=',' read -r -a atlas_pedidos_raw <<< "$atlas_arg"
+    for a in "${atlas_pedidos_raw[@]}"; do
+        if [ "$a" = "todos" ]; then
+            for clave in "${!atlas_registrados[@]}"; do
+                alias_pedidos+=("$clave")
+            done
+        else
+            alias_pedidos+=("$a")
+        fi
+    done
+
+    # Eliminar duplicados
+    declare -A vistos=()
+    declare -a alias_unicos=()
+    for a in "${alias_pedidos[@]}"; do
+        if [ -z "${vistos[$a]:-}" ]; then
+            alias_unicos+=("$a")
+            vistos[$a]=1
+        fi
+    done
+    alias_pedidos=("${alias_unicos[@]}")
+
+    # --- Validación: alias desconocidos ---
+    for a in "${alias_pedidos[@]}"; do
+        if [ -z "${atlas_registrados[$a]:-}" ]; then
+            echo "Error: el alias de atlas '$a' no existe." >&2
+            echo "Alias válidos: ${!atlas_registrados[*]}, todos" >&2
             exit 1
         fi
+    done
+
+    # --- Validación: subcarpetas de atlas existen en la fuente ---
+    for a in "${alias_pedidos[@]}"; do
+        carpeta="${atlas_registrados[$a]}"
+        ruta_atlas="$raiz_atlas/$carpeta"
+        if [ ! -d "$ruta_atlas" ]; then
+            echo "Error: no se encontró la carpeta del atlas '$a' en $ruta_atlas" >&2
+            echo "Debería existir en el monorepo; verifica que el checkout o la descarga estén completos." >&2
+            exit 1
+        fi
+    done
+fi
+
+# --- Resolver --entidad: cada nombre se busca en todos los atlas (incluido
+#     el nodo nacional, para poder pedir atlas-orquestador-colombia por
+#     nombre sin usar --atlas). Los nombres de skill son únicos en todo el
+#     repo, así que el primer directorio que coincide es el correcto. ---
+declare -a entidades=()
+declare -a entidad_atlas=()
+declare -a entidad_ruta=()
+if [ -n "$entidad_arg" ]; then
+    IFS=',' read -r -a entidades <<< "$entidad_arg"
+
+    # Universo de búsqueda: atlas registrados + nodo nacional.
+    declare -a alias_busqueda=("${!atlas_registrados[@]}" "$NACIONAL")
+
+    for e in "${entidades[@]}"; do
+        encontrada=""
+        for a in "${alias_busqueda[@]}"; do
+            if [ "$a" = "$NACIONAL" ]; then
+                carpeta="$NACIONAL"
+            else
+                carpeta="${atlas_registrados[$a]}"
+            fi
+            ruta="$raiz_atlas/$carpeta/skills/$e"
+            if [ -d "$ruta" ]; then
+                encontrada="$a"
+                entidad_ruta+=("$ruta")
+                break
+            fi
+        done
+        if [ -z "$encontrada" ]; then
+            echo "Error: la skill '$e' no existe en ningún atlas." >&2
+            disponibles=""
+            for a in "${alias_busqueda[@]}"; do
+                if [ "$a" = "$NACIONAL" ]; then
+                    carpeta="$NACIONAL"
+                else
+                    carpeta="${atlas_registrados[$a]}"
+                fi
+                ruta_skills="$raiz_atlas/$carpeta/skills"
+                [ -d "$ruta_skills" ] || continue
+                for d in "$ruta_skills"/*/; do
+                    [ -d "$d" ] || continue
+                    disponibles="$disponibles $(basename "$d")"
+                done
+            done
+            echo "Skills disponibles:$disponibles" >&2
+            echo "Si buscas todo un sector, usa --atlas en vez de --entidad." >&2
+            exit 1
+        fi
+        entidad_atlas+=("$encontrada")
     done
 fi
 
@@ -154,7 +234,7 @@ else
     destino_efectivo="$(pwd)/$destino"
 fi
 
-# --- Actualizar repos fuente (y este repo) antes de copiar ---
+# --- Actualizar el monorepo antes de copiar (solo modo local) ---
 if [ "$actualizar" -eq 1 ]; then
     echo "Actualizando el monorepo (Public Orbit)..."
     if ! git -C "$raiz_sistema" pull; then
@@ -178,33 +258,42 @@ copiar_skill_exacta() {
 
 declare -a instaladas_skill=()
 declare -a instaladas_atlas=()
+declare -A ya_instalada=()
 
 for a in "${alias_pedidos[@]}"; do
     carpeta="${atlas_registrados[$a]}"
     ruta_skills="$raiz_atlas/$carpeta/skills"
 
-    if [ -n "$entidad_arg" ]; then
-        for e in "${entidades[@]}"; do
-            copiar_skill_exacta "$ruta_skills/$e" "$e"
-            instaladas_skill+=("$e")
-            instaladas_atlas+=("$a")
-        done
-    else
-        for dir in "$ruta_skills"/*/; do
-            nombre="$(basename "$dir")"
-            copiar_skill_exacta "$dir" "$nombre"
-            instaladas_skill+=("$nombre")
-            instaladas_atlas+=("$a")
-        done
-    fi
+    for dir in "$ruta_skills"/*/; do
+        [ -d "$dir" ] || continue
+        nombre="$(basename "$dir")"
+        copiar_skill_exacta "$dir" "$nombre"
+        instaladas_skill+=("$nombre")
+        instaladas_atlas+=("$a")
+        ya_instalada["$nombre"]=1
+    done
 done
 
-# --- Regla de composición: 2+ atlas => copiar también la orquestadora nacional ---
-if [ "${#alias_pedidos[@]}" -gt 1 ]; then
-    ruta_orquestador="$raiz_sistema/atlas/nacional/skills/atlas-orquestador-colombia"
+for i in "${!entidades[@]}"; do
+    e="${entidades[$i]}"
+    if [ -n "${ya_instalada[$e]:-}" ]; then
+        continue
+    fi
+    copiar_skill_exacta "${entidad_ruta[$i]}" "$e"
+    instaladas_skill+=("$e")
+    instaladas_atlas+=("${entidad_atlas[$i]}")
+    ya_instalada["$e"]=1
+done
+
+# --- Regla de composición: 2+ atlas completos (-Atlas/--atlas) => copiar
+#     también la orquestadora nacional. Skills sueltas de --entidad de atlas
+#     distintos NO activan esta regla. ---
+if [ "${#alias_pedidos[@]}" -gt 1 ] && [ -z "${ya_instalada[atlas-orquestador-colombia]:-}" ]; then
+    ruta_orquestador="$raiz_atlas/nacional/skills/atlas-orquestador-colombia"
     copiar_skill_exacta "$ruta_orquestador" "atlas-orquestador-colombia"
     instaladas_skill+=("atlas-orquestador-colombia")
     instaladas_atlas+=("public-orbit")
+    ya_instalada["atlas-orquestador-colombia"]=1
 fi
 
 # --- Higiene: aviso de carpeta vieja sin sufijo de sector ---

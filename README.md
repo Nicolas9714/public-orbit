@@ -85,7 +85,7 @@ El sitio también presenta las [morfologías web](https://sistema-atlas-colombia
 ```text
 public-orbit/
 ├── registro.md       → Atlas existentes y entidades de cada uno
-├── instalar.ps1 / instalar.sh       → Instaladores de skills (interfaces equivalentes)
+├── instalar.ps1 / instalar.sh       → Instaladores de skills (interfaces equivalentes; corren también sin clonar)
 ├── estandar/
 │   ├── especificacion.md            → El estándar de los atlas (versionado)
 │   └── templates/                   → Plantillas para construir nuevas skills
@@ -101,49 +101,78 @@ public-orbit/
 
 ## Instalación
 
-Instala uno, varios o todos los atlas con un solo comando. Cada atlas funciona completo por sí solo; al instalar dos o más, se agrega automáticamente `atlas-orquestador-colombia`, la skill que articula los atlas instalados, identifica conexiones entre sus ámbitos y coordina recorridos y consultas interatlas.
+Cada atlas funciona completo por sí solo. Al instalar dos o más, se agrega automáticamente `atlas-orquestador-colombia`, la skill que articula los atlas instalados, identifica conexiones entre sus ámbitos y coordina recorridos y consultas interatlas.
 
-### Instalación con script
+Hay dos rutas. En el [sitio web](https://sistema-atlas-colombia.nicolasmcfc.workers.dev) cada skill y cada atlas se descargan con un clic, como ZIP. Desde GitHub, un solo comando instala un atlas, varias skills o una sola, sin clonar el repositorio.
 
-Clona el monorepo junto a tu proyecto:
+### Instalación con un comando
+
+Abre una terminal en la carpeta de tu proyecto, la misma donde trabajas con Claude Code, Codex u OpenCode. El instalador crea `.claude/skills` si no existe. Si no tienes un proyecto o quieres las skills en todas tus sesiones, agrega `-Global` / `--global`.
+
+Windows (PowerShell):
+
+```powershell
+$po = [scriptblock]::Create((irm https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.ps1).TrimStart([char]0xFEFF))
+& $po -Atlas ambiental
+```
+
+macOS / Linux / Git Bash:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas ambiental
+```
+
+La primera línea de PowerShell descarga el instalador y lo deja listo en `$po`; desde ahí, cada instalación es un `& $po` con las opciones que necesites. `TrimStart` retira una marca invisible al inicio del archivo que PowerShell no sabe interpretar en este modo.
+
+Qué instalar:
+
+| Quiero instalar | PowerShell | Bash |
+| --- | --- | --- |
+| Un atlas | `& $po -Atlas ambiental` | `--atlas ambiental` |
+| Varios atlas | `& $po -Atlas ambiental,minero-energetico` | `--atlas ambiental,minero-energetico` |
+| Todos los atlas | `& $po -Atlas todos` | `--atlas todos` |
+| Una skill | `& $po -Entidad navegar-anla` | `--entidad navegar-anla` |
+| Varias skills, de uno o más atlas | `& $po -Entidad navegar-anla,navegar-upme` | `--entidad navegar-anla,navegar-upme` |
+
+Opciones adicionales:
+
+| Qué hace | PowerShell | Bash |
+| --- | --- | --- |
+| Instala para Codex en vez de Claude Code | `-Destino .agents\skills` | `--destino .agents/skills` |
+| Instala en tu carpeta de usuario (global) | `-Global` | `--global` |
+| Instala desde otra rama o tag (por defecto `main`) | `-Rama nombre` | `--rama nombre` |
+
+`-Entidad` busca cada nombre en todos los atlas. La orquestadora nacional entra sola únicamente cuando se piden dos o más atlas completos; con skills sueltas no se agrega, pero puedes pedirla por su nombre, `atlas-orquestador-colombia`.
+
+Si ya usas Node, `npx skills add Nicolas9714/public-orbit --skill navegar-anla -a claude-code` también instala skills sueltas, aunque no conoce los atlas ni agrega la orquestadora.
+
+### Instalación manual
+
+Clonar el repositorio tiene sentido si vas a aportar al proyecto o quieres actualizar las skills con `git pull`. Clónalo junto a tu proyecto:
 
 ```bash
 git clone https://github.com/Nicolas9714/public-orbit.git
 ```
 
-Un solo comando ejecutado desde la raíz de tu proyecto instala los atlas que pidas, y, si son dos o más, agrega automáticamente la orquestadora nacional:
-
 > El repo clonado y la copia en tu proyecto cumplen roles distintos: el clon es la fuente, que actualizas con `git pull` (o con `-Actualizar` / `--actualizar` al instalar); la copia en tu carpeta de skills es la instalación, que tu proyecto controla y que solo cambia cuando decides reinstalar.
 >
 > Al reinstalar, cada skill solicitada se reemplaza de forma exacta para retirar archivos obsoletos. Conserva tus personalizaciones fuera de las carpetas instaladas o respáldalas antes de ejecutar nuevamente el instalador.
 
+Desde un clon, el instalador trabaja con los archivos locales, acepta las mismas opciones y suma `-Actualizar` / `--actualizar`, que hace `git pull` antes de copiar:
+
 ```powershell
 # Windows (PowerShell)
-..\public-orbit\instalar.ps1 -Atlas todos
+..\public-orbit\instalar.ps1 -Atlas todos -Actualizar
 ```
 
 ```bash
 # macOS / Linux / Git Bash
-bash ../public-orbit/instalar.sh --atlas todos
+bash ../public-orbit/instalar.sh --atlas todos --actualizar
 ```
 
-**Opciones** (PowerShell / bash):
+En Windows, si PowerShell responde que la ejecución de scripts está deshabilitada, habilítala para tu usuario con `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`, o usa la instalación con un comando, que no depende de esa política.
 
-| Qué hace | PowerShell | Bash |
-| --- | --- | --- |
-| Elige atlas específicos | `-Atlas ambiental,minero-energetico` | `--atlas ambiental,minero-energetico` |
-| Instala una sola skill por entidad | `-Entidad navegar-anla` | `--entidad navegar-anla` |
-| Instala para Codex en vez de Claude Code | `-Destino .agents\skills` | `--destino .agents/skills` |
-| Instala en tu carpeta de usuario (global) | `-Global` | `--global` |
-| Hace `git pull` del monorepo antes de copiar | `-Actualizar` | `--actualizar` |
-
-`-Entidad` / `--entidad` solo se puede usar con un único atlas en `-Atlas`.
-
-Los pasos siguientes muestran la instalación manual equivalente.
-
-### Instalación manual
-
-Copia las skills de cada atlas desde su subcarpeta del monorepo a la carpeta de skills de tu herramienta. Para el atlas ambiental en Claude Code:
+También puedes copiar las carpetas a mano. Para el atlas ambiental en Claude Code:
 
 macOS / Linux / Git Bash:
 
