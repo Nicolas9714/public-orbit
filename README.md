@@ -144,8 +144,6 @@ Opciones adicionales:
 
 `-Entidad` busca cada nombre en todos los atlas. La orquestadora nacional entra sola únicamente cuando se piden dos o más atlas completos; con skills sueltas no se agrega, pero puedes pedirla por su nombre, `atlas-orquestador-colombia`.
 
-Si ya usas Node, `npx skills add Nicolas9714/public-orbit --skill navegar-anla -a claude-code` también instala skills sueltas, aunque no conoce los atlas ni agrega la orquestadora.
-
 ### Instalación manual
 
 Clonar el repositorio tiene sentido si vas a aportar al proyecto o quieres actualizar las skills con `git pull`. Clónalo junto a tu proyecto:
