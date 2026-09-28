@@ -50,4 +50,4 @@
 
 1. El atlas cumple la parte normativa de [`estandar/especificacion.md`](estandar/especificacion.md) y declara la versión que cumple.
 2. Pull request a este archivo: fila en la tabla de atlas registrados y su tabla de entidades. En el mismo cambio, al menos una consulta de `examples/consultas-de-ejemplo.md` que cruce hacia un atlas ya registrado.
-3. El mismo pull request agrega la tarjeta del atlas al banner del `README.md` (logo en `atlas/<sector>/assets/` si el atlas es subcarpeta del monorepo, o en el `assets/` de su propio repo si es externo; más el nombre del atlas enlazado) y su fila en la tabla de atlas del README.
+3. El mismo pull request agrega la tarjeta del atlas al banner del `README.md` (el nombre del atlas enlazado a su carpeta o repositorio, sin logo) y su fila en la tabla de atlas del README.

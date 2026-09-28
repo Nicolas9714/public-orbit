@@ -14,13 +14,11 @@
     <tr>
       <td align="center" width="210">
         <a href="atlas/minero-energetico/">
-          <img src="atlas/minero-energetico/assets/logo-atlas-minero-energetico.svg" width="82" alt="Atlas de Navegación Minero Energético de Colombia"><br>
           <strong>Atlas de Navegación<br>Minero Energético<br>de Colombia</strong>
         </a>
       </td>
       <td align="center" width="210">
         <a href="atlas/ambiental/">
-          <img src="atlas/ambiental/assets/logo-atlas-ambiental.svg" width="82" alt="Atlas de Navegación Ambiental de Colombia"><br>
           <strong>Atlas de Navegación<br>Ambiental<br>de Colombia</strong>
         </a>
       </td>

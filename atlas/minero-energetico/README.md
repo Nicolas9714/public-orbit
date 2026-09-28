@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="assets/logo-atlas-minero-energetico.svg" width="250" alt="Atlas de Navegación Minero Energético de Colombia">
   <h1>Atlas de Navegación Minero Energético de Colombia</h1>
   <p><em>Colección abierta de skills para encontrar, usar y apropiar la información pública del sector minero energético colombiano.</em></p>
 </div>
