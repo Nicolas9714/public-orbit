@@ -20,16 +20,47 @@
 #
 set -euo pipefail
 
-# Tabla de atlas registrados: alias -> nombre de la subcarpeta bajo atlas/.
-# Al registrar un atlas nuevo, agregar una línea aquí.
-declare -A atlas_registrados=(
-    ["ambiental"]="ambiental"
-    ["minero-energetico"]="minero-energetico"
-)
+# Atlas registrados: bash 3.2 (macOS) no tiene arrays asociativos, así que
+# esto se resuelve con una lista de alias más funciones case/esac.
+# Al registrar un atlas nuevo, agregar aquí:
+#   1. el alias en ATLAS_ALIAS_LISTA (también define el orden de instalación
+#      con --atlas todos).
+#   2. una rama en carpeta_de_atlas() con la subcarpeta bajo atlas/.
+#   3. una rama en etiqueta_atlas() con el título para el reporte final.
+ATLAS_ALIAS_LISTA="ambiental minero-energetico"
+
+carpeta_de_atlas() {
+    case "$1" in
+        ambiental)          echo "ambiental" ;;
+        minero-energetico)  echo "minero-energetico" ;;
+        *)                  echo "" ;;
+    esac
+}
+
+etiqueta_atlas() {
+    case "$1" in
+        ambiental)                 echo "Atlas ambiental" ;;
+        minero-energetico)         echo "Atlas minero-energético" ;;
+        nacional|public-orbit)     echo "Public Orbit (nodo nacional)" ;;
+        *)                         echo "$1" ;;
+    esac
+}
 
 # Alias del nodo nacional: no se instala completo vía -Atlas/--atlas, pero sus
 # skills sueltas (la orquestadora nacional) sí se pueden pedir por --entidad.
 NACIONAL="nacional"
+
+# Comprueba si "$1" está entre los argumentos siguientes. Reemplaza los usos
+# de arrays asociativos como "set de membresía" (bash 4+), que este script
+# no puede usar por el soporte a bash 3.2 (macOS).
+contiene() {
+    local buscado="$1" x
+    shift
+    for x in "$@"; do
+        [ "$x" = "$buscado" ] && return 0
+    done
+    return 1
+}
 
 atlas_arg=""
 destino=".claude/skills"
@@ -133,7 +164,7 @@ if [ -n "$atlas_arg" ]; then
     IFS=',' read -r -a atlas_pedidos_raw <<< "$atlas_arg"
     for a in "${atlas_pedidos_raw[@]}"; do
         if [ "$a" = "todos" ]; then
-            for clave in "${!atlas_registrados[@]}"; do
+            for clave in $ATLAS_ALIAS_LISTA; do
                 alias_pedidos+=("$clave")
             done
         else
@@ -142,28 +173,28 @@ if [ -n "$atlas_arg" ]; then
     done
 
     # Eliminar duplicados
-    declare -A vistos=()
     declare -a alias_unicos=()
     for a in "${alias_pedidos[@]}"; do
-        if [ -z "${vistos[$a]:-}" ]; then
-            alias_unicos+=("$a")
-            vistos[$a]=1
+        ya=0
+        if [ "${#alias_unicos[@]}" -gt 0 ] && contiene "$a" "${alias_unicos[@]}"; then
+            ya=1
         fi
+        [ "$ya" -eq 1 ] || alias_unicos+=("$a")
     done
     alias_pedidos=("${alias_unicos[@]}")
 
     # --- Validación: alias desconocidos ---
     for a in "${alias_pedidos[@]}"; do
-        if [ -z "${atlas_registrados[$a]:-}" ]; then
+        if [ -z "$(carpeta_de_atlas "$a")" ]; then
             echo "Error: el alias de atlas '$a' no existe." >&2
-            echo "Alias válidos: ${!atlas_registrados[*]}, todos" >&2
+            echo "Alias válidos: $ATLAS_ALIAS_LISTA, todos" >&2
             exit 1
         fi
     done
 
     # --- Validación: subcarpetas de atlas existen en la fuente ---
     for a in "${alias_pedidos[@]}"; do
-        carpeta="${atlas_registrados[$a]}"
+        carpeta="$(carpeta_de_atlas "$a")"
         ruta_atlas="$raiz_atlas/$carpeta"
         if [ ! -d "$ruta_atlas" ]; then
             echo "Error: no se encontró la carpeta del atlas '$a' en $ruta_atlas" >&2
@@ -184,15 +215,15 @@ if [ -n "$entidad_arg" ]; then
     IFS=',' read -r -a entidades <<< "$entidad_arg"
 
     # Universo de búsqueda: atlas registrados + nodo nacional.
-    declare -a alias_busqueda=("${!atlas_registrados[@]}" "$NACIONAL")
+    alias_busqueda="$ATLAS_ALIAS_LISTA $NACIONAL"
 
     for e in "${entidades[@]}"; do
         encontrada=""
-        for a in "${alias_busqueda[@]}"; do
+        for a in $alias_busqueda; do
             if [ "$a" = "$NACIONAL" ]; then
                 carpeta="$NACIONAL"
             else
-                carpeta="${atlas_registrados[$a]}"
+                carpeta="$(carpeta_de_atlas "$a")"
             fi
             ruta="$raiz_atlas/$carpeta/skills/$e"
             if [ -d "$ruta" ]; then
@@ -204,11 +235,11 @@ if [ -n "$entidad_arg" ]; then
         if [ -z "$encontrada" ]; then
             echo "Error: la skill '$e' no existe en ningún atlas." >&2
             disponibles=""
-            for a in "${alias_busqueda[@]}"; do
+            for a in $alias_busqueda; do
                 if [ "$a" = "$NACIONAL" ]; then
                     carpeta="$NACIONAL"
                 else
-                    carpeta="${atlas_registrados[$a]}"
+                    carpeta="$(carpeta_de_atlas "$a")"
                 fi
                 ruta_skills="$raiz_atlas/$carpeta/skills"
                 [ -d "$ruta_skills" ] || continue
@@ -258,42 +289,52 @@ copiar_skill_exacta() {
 
 declare -a instaladas_skill=()
 declare -a instaladas_atlas=()
-declare -A ya_instalada=()
 
-for a in "${alias_pedidos[@]}"; do
-    carpeta="${atlas_registrados[$a]}"
-    ruta_skills="$raiz_atlas/$carpeta/skills"
+if [ "${#alias_pedidos[@]}" -gt 0 ]; then
+    for a in "${alias_pedidos[@]}"; do
+        carpeta="$(carpeta_de_atlas "$a")"
+        ruta_skills="$raiz_atlas/$carpeta/skills"
 
-    for dir in "$ruta_skills"/*/; do
-        [ -d "$dir" ] || continue
-        nombre="$(basename "$dir")"
-        copiar_skill_exacta "$dir" "$nombre"
-        instaladas_skill+=("$nombre")
-        instaladas_atlas+=("$a")
-        ya_instalada["$nombre"]=1
+        for dir in "$ruta_skills"/*/; do
+            [ -d "$dir" ] || continue
+            nombre="$(basename "$dir")"
+            copiar_skill_exacta "$dir" "$nombre"
+            instaladas_skill+=("$nombre")
+            instaladas_atlas+=("$a")
+        done
     done
-done
+fi
 
-for i in "${!entidades[@]}"; do
-    e="${entidades[$i]}"
-    if [ -n "${ya_instalada[$e]:-}" ]; then
-        continue
-    fi
-    copiar_skill_exacta "${entidad_ruta[$i]}" "$e"
-    instaladas_skill+=("$e")
-    instaladas_atlas+=("${entidad_atlas[$i]}")
-    ya_instalada["$e"]=1
-done
+if [ "${#entidades[@]}" -gt 0 ]; then
+    for i in "${!entidades[@]}"; do
+        e="${entidades[$i]}"
+        ya=0
+        if [ "${#instaladas_skill[@]}" -gt 0 ] && contiene "$e" "${instaladas_skill[@]}"; then
+            ya=1
+        fi
+        if [ "$ya" -eq 1 ]; then
+            continue
+        fi
+        copiar_skill_exacta "${entidad_ruta[$i]}" "$e"
+        instaladas_skill+=("$e")
+        instaladas_atlas+=("${entidad_atlas[$i]}")
+    done
+fi
 
 # --- Regla de composición: 2+ atlas completos (-Atlas/--atlas) => copiar
 #     también la orquestadora nacional. Skills sueltas de --entidad de atlas
 #     distintos NO activan esta regla. ---
-if [ "${#alias_pedidos[@]}" -gt 1 ] && [ -z "${ya_instalada[atlas-orquestador-colombia]:-}" ]; then
-    ruta_orquestador="$raiz_atlas/nacional/skills/atlas-orquestador-colombia"
-    copiar_skill_exacta "$ruta_orquestador" "atlas-orquestador-colombia"
-    instaladas_skill+=("atlas-orquestador-colombia")
-    instaladas_atlas+=("public-orbit")
-    ya_instalada["atlas-orquestador-colombia"]=1
+if [ "${#alias_pedidos[@]}" -gt 1 ]; then
+    ya_orquestador=0
+    if [ "${#instaladas_skill[@]}" -gt 0 ] && contiene "atlas-orquestador-colombia" "${instaladas_skill[@]}"; then
+        ya_orquestador=1
+    fi
+    if [ "$ya_orquestador" -eq 0 ]; then
+        ruta_orquestador="$raiz_atlas/nacional/skills/atlas-orquestador-colombia"
+        copiar_skill_exacta "$ruta_orquestador" "atlas-orquestador-colombia"
+        instaladas_skill+=("atlas-orquestador-colombia")
+        instaladas_atlas+=("public-orbit")
+    fi
 fi
 
 # --- Higiene: aviso de carpeta vieja sin sufijo de sector ---
@@ -310,33 +351,33 @@ echo ""
 echo "Skills instaladas en $destino_efectivo"
 
 # Agrupado por atlas, en el orden en que se instalaron.
-etiqueta_atlas() {
-    case "$1" in
-        ambiental)                 echo "Atlas ambiental" ;;
-        minero-energetico)         echo "Atlas minero-energético" ;;
-        nacional|public-orbit)     echo "Public Orbit (nodo nacional)" ;;
-        *)                         echo "$1" ;;
-    esac
-}
 declare -a grupos=()
-for i in "${!instaladas_atlas[@]}"; do
-    g="$(etiqueta_atlas "${instaladas_atlas[$i]}")"
-    ya=0
-    for x in "${grupos[@]}"; do [ "$x" = "$g" ] && ya=1 && break; done
-    [ "$ya" -eq 0 ] && grupos+=("$g")
-done
-for g in "${grupos[@]}"; do
-    declare -a del_grupo=()
-    for i in "${!instaladas_skill[@]}"; do
-        [ "$(etiqueta_atlas "${instaladas_atlas[$i]}")" = "$g" ] && del_grupo+=("${instaladas_skill[$i]}")
+if [ "${#instaladas_atlas[@]}" -gt 0 ]; then
+    for i in "${!instaladas_atlas[@]}"; do
+        g="$(etiqueta_atlas "${instaladas_atlas[$i]}")"
+        ya=0
+        if [ "${#grupos[@]}" -gt 0 ] && contiene "$g" "${grupos[@]}"; then
+            ya=1
+        fi
+        [ "$ya" -eq 1 ] || grupos+=("$g")
     done
-    echo ""
-    echo "  $g (${#del_grupo[@]})"
-    for s in "${del_grupo[@]}"; do
-        echo "    - $s"
+fi
+if [ "${#grupos[@]}" -gt 0 ]; then
+    for g in "${grupos[@]}"; do
+        declare -a del_grupo=()
+        if [ "${#instaladas_skill[@]}" -gt 0 ]; then
+            for i in "${!instaladas_skill[@]}"; do
+                [ "$(etiqueta_atlas "${instaladas_atlas[$i]}")" = "$g" ] && del_grupo+=("${instaladas_skill[$i]}")
+            done
+        fi
+        echo ""
+        echo "  $g (${#del_grupo[@]})"
+        for s in "${del_grupo[@]}"; do
+            echo "    - $s"
+        done
+        unset del_grupo
     done
-    unset del_grupo
-done
+fi
 echo ""
 echo "${#instaladas_skill[@]} skill(s) instalada(s)."
 echo ""
