@@ -4,7 +4,9 @@
 #
 # Copia las skills de uno o varios atlas sectoriales (subcarpetas atlas/<alias>
 # de este monorepo) hacia una carpeta destino, típicamente dentro del proyecto
-# del usuario (ej. .claude/skills para Claude Code, .agents/skills para Codex).
+# del usuario. Sin --destino, reutiliza la primera carpeta existente en este
+# orden: .agents/skills, .claude/skills, .opencode/skills. Si no hay ninguna,
+# crea .agents/skills.
 #
 # Funciona desde un clon del monorepo (modo local) o ejecutado directo desde
 # GitHub sin clonar (modo remoto): si el script no encuentra la carpeta atlas/
@@ -16,6 +18,7 @@
 #   bash instalar.sh --atlas todos --actualizar
 #   bash instalar.sh --atlas ambiental --entidad navegar-anla --global
 #   bash instalar.sh --entidad navegar-anla,navegar-upme
+#   bash instalar.sh --atlas ambiental --destino .claude/skills
 #   curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas ambiental
 #
 set -euo pipefail
@@ -63,7 +66,8 @@ contiene() {
 }
 
 atlas_arg=""
-destino=".claude/skills"
+destino=""
+destino_explicito=0
 entidad_arg=""
 modo_global=0
 actualizar=0
@@ -77,7 +81,7 @@ mostrar_uso() {
     echo "Opciones:"
     echo "  --atlas LISTA      Atlas a instalar, separados por coma (ambiental|minero-energetico|todos)"
     echo "  --entidad LISTA    Skills sueltas a instalar por nombre, separadas por coma"
-    echo "  --destino RUTA     Carpeta destino (default: .claude/skills)"
+    echo "  --destino RUTA     Carpeta destino explícita"
     echo "  --global           Instala en la carpeta del usuario en vez del proyecto"
     echo "  --actualizar       git pull en el monorepo antes de copiar (solo modo local)"
     echo "  --rama RAMA        Rama o tag a descargar en modo remoto (default: main)"
@@ -91,6 +95,7 @@ while [ $# -gt 0 ]; do
             ;;
         --destino)
             destino="$2"
+            destino_explicito=1
             shift 2
             ;;
         --entidad)
@@ -257,12 +262,32 @@ if [ -n "$entidad_arg" ]; then
 fi
 
 # --- Resolver destino efectivo ---
-if [[ "$destino" = /* ]]; then
-    destino_efectivo="$destino"
-elif [ "$modo_global" -eq 1 ]; then
-    destino_efectivo="$HOME/$destino"
+# Solo se detectan carpetas skills existentes; una carpeta raíz de herramienta
+# no basta para cambiar el destino predeterminado.
+if [ "$destino_explicito" -eq 1 ]; then
+    if [[ "$destino" = /* ]]; then
+        destino_efectivo="$destino"
+    elif [ "$modo_global" -eq 1 ]; then
+        destino_efectivo="$HOME/$destino"
+    else
+        destino_efectivo="$(pwd)/$destino"
+    fi
 else
-    destino_efectivo="$(pwd)/$destino"
+    if [ "$modo_global" -eq 1 ]; then
+        raiz_destino="$HOME"
+    else
+        raiz_destino="$(pwd)"
+    fi
+    destino_efectivo=""
+    for ruta in .agents/skills .claude/skills .opencode/skills; do
+        if [ -d "$raiz_destino/$ruta" ]; then
+            destino_efectivo="$raiz_destino/$ruta"
+            break
+        fi
+    done
+    if [ -z "$destino_efectivo" ]; then
+        destino_efectivo="$raiz_destino/.agents/skills"
+    fi
 fi
 
 # --- Actualizar el monorepo antes de copiar (solo modo local) ---
@@ -381,4 +406,4 @@ fi
 echo ""
 echo "${#instaladas_skill[@]} skill(s) instalada(s)."
 echo ""
-echo "Verifica la instalación con /skills en Claude Code."
+echo "Verifica la instalación desde tu agente."

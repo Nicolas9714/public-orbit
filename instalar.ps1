@@ -5,7 +5,9 @@
 .DESCRIPTION
     Copia las skills de uno o varios atlas sectoriales (subcarpetas atlas/<alias>
     de este monorepo) hacia una carpeta destino, típicamente dentro del proyecto
-    del usuario (ej. .claude\skills para Claude Code, .agents\skills para Codex).
+    del usuario. Sin -Destino, reutiliza la primera carpeta existente en este
+    orden: .agents\skills, .claude\skills, .opencode\skills. Si no hay ninguna,
+    crea .agents\skills.
 
     Funciona desde un clon del monorepo (modo local) o ejecutado directo desde
     GitHub sin clonar (modo remoto): si el script no encuentra la carpeta atlas
@@ -27,13 +29,16 @@
     .\instalar.ps1 -Entidad navegar-anla,navegar-upme
 
 .EXAMPLE
+    .\instalar.ps1 -Atlas ambiental -Destino .claude\skills
+
+.EXAMPLE
     $po = [scriptblock]::Create((irm https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.ps1).TrimStart([char]0xFEFF))
     & $po -Atlas ambiental
 #>
 
 param(
     [string[]] $Atlas,
-    [string]   $Destino = ".claude\skills",
+    [string]   $Destino,
     [string[]] $Entidad,
     [switch]   $Global,
     [switch]   $Actualizar,
@@ -188,12 +193,34 @@ try {
     }
 
     # --- Resolver destino efectivo ---
-    if ([IO.Path]::IsPathRooted($Destino)) {
-        $destinoEfectivo = [IO.Path]::GetFullPath($Destino)
-    } elseif ($Global) {
-        $destinoEfectivo = Join-Path $env:USERPROFILE $Destino
+    # Solo se detectan carpetas skills existentes; una carpeta raíz de herramienta
+    # no basta para cambiar el destino predeterminado.
+    if ($PSBoundParameters.ContainsKey("Destino")) {
+        if ([IO.Path]::IsPathRooted($Destino)) {
+            $destinoEfectivo = [IO.Path]::GetFullPath($Destino)
+        } elseif ($Global) {
+            $destinoEfectivo = Join-Path $env:USERPROFILE $Destino
+        } else {
+            $destinoEfectivo = Join-Path (Get-Location) $Destino
+        }
     } else {
-        $destinoEfectivo = Join-Path (Get-Location) $Destino
+        if ($Global) {
+            $raizDestino = if ($HOME) { $HOME } else { $env:USERPROFILE }
+        } else {
+            $raizDestino = Get-Location
+        }
+        $destinoEfectivo = $null
+        $rutasCompatibles = @(".agents\skills", ".claude\skills", ".opencode\skills")
+        foreach ($rutaRelativa in $rutasCompatibles) {
+            $ruta = Join-Path $raizDestino $rutaRelativa
+            if (Test-Path -LiteralPath $ruta -PathType Container) {
+                $destinoEfectivo = $ruta
+                break
+            }
+        }
+        if (-not $destinoEfectivo) {
+            $destinoEfectivo = Join-Path $raizDestino ".agents\skills"
+        }
     }
 
     # --- Actualizar el monorepo antes de copiar (solo modo local) ---
@@ -287,7 +314,7 @@ try {
     Write-Host ""
     Write-Host "$($instaladas.Count) skill(s) instalada(s)."
     Write-Host ""
-    Write-Host "Verifica la instalación con /skills en Claude Code."
+    Write-Host "Verifica la instalación desde tu agente."
 } finally {
     if ($carpetaDescarga -and (Test-Path $carpetaDescarga)) {
         Remove-Item -LiteralPath $carpetaDescarga -Recurse -Force -ErrorAction SilentlyContinue

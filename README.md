@@ -103,7 +103,9 @@ Hay dos rutas. En el [sitio web](https://sistema-atlas-colombia.nicolasmcfc.work
 
 ### Instalación con un comando
 
-Abre una terminal en la carpeta de tu proyecto, la misma donde trabajas con Claude Code, Codex u OpenCode. El instalador crea `.claude/skills` si no existe. Si no tienes un proyecto o quieres las skills en todas tus sesiones, agrega `-Global` / `--global`.
+Abre una terminal en la carpeta de tu proyecto. Sin destino explícito, el instalador busca una carpeta existente en este orden: `.agents/skills`, `.claude/skills` y `.opencode/skills`. Si no encuentra ninguna, crea `.agents/skills`, destino neutral predeterminado. Para instalar globalmente, agrega `-Global` / `--global`: aplica el mismo criterio bajo tu carpeta de usuario.
+
+En Windows, ejecuta la primera línea una vez para preparar `$po`; después úsalo en las instalaciones siguientes.
 
 Windows (PowerShell):
 
@@ -112,13 +114,21 @@ $po = [scriptblock]::Create((irm https://raw.githubusercontent.com/Nicolas9714/p
 & $po -Atlas ambiental
 ```
 
+```powershell
+& $po -Atlas minero-energetico
+```
+
 macOS / Linux / Git Bash:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas ambiental
 ```
 
-La primera línea de PowerShell descarga el instalador y lo deja listo en `$po`; desde ahí, cada instalación es un `& $po` con las opciones que necesites. `TrimStart` retira una marca invisible al inicio del archivo que PowerShell no sabe interpretar en este modo.
+```bash
+curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas minero-energetico
+```
+
+`TrimStart` retira una marca invisible al inicio del archivo que PowerShell no sabe interpretar en este modo.
 
 Qué instalar:
 
@@ -126,7 +136,7 @@ Qué instalar:
 | --- | --- | --- |
 | Un atlas | `& $po -Atlas ambiental` | `--atlas ambiental` |
 | Varios atlas | `& $po -Atlas ambiental,minero-energetico` | `--atlas ambiental,minero-energetico` |
-| Todos los atlas | `& $po -Atlas todos` | `--atlas todos` |
+| Todos los atlas, opción explícita | `& $po -Atlas todos` | `--atlas todos` |
 | Una skill | `& $po -Entidad navegar-anla` | `--entidad navegar-anla` |
 | Varias skills, de uno o más atlas | `& $po -Entidad navegar-anla,navegar-upme` | `--entidad navegar-anla,navegar-upme` |
 
@@ -134,7 +144,7 @@ Opciones adicionales:
 
 | Qué hace | PowerShell | Bash |
 | --- | --- | --- |
-| Instala para Codex en vez de Claude Code | `-Destino .agents\skills` | `--destino .agents/skills` |
+| Elige destino explícito | `& $po -Atlas ambiental -Destino .claude\skills` | `curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh \| bash -s -- --atlas ambiental --destino .claude/skills` |
 | Instala en tu carpeta de usuario (global) | `-Global` | `--global` |
 | Instala desde otra rama o tag (por defecto `main`) | `-Rama nombre` | `--rama nombre` |
 
@@ -166,12 +176,12 @@ bash ../public-orbit/instalar.sh --atlas todos --actualizar
 
 En Windows, si PowerShell responde que la ejecución de scripts está deshabilitada, habilítala para tu usuario con `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`, o usa la instalación con un comando, que no depende de esa política.
 
-También puedes copiar las carpetas a mano. Para el atlas ambiental en Claude Code:
+También puedes copiar las carpetas a mano. Para el atlas ambiental en una carpeta neutral:
 
 macOS / Linux / Git Bash:
 
 ```bash
-cp -r ../public-orbit/atlas/ambiental/skills/* .claude/skills/
+cp -r ../public-orbit/atlas/ambiental/skills/* .agents/skills/
 ```
 
 Windows (PowerShell):
@@ -179,18 +189,18 @@ Windows (PowerShell):
 ```powershell
 Copy-Item -Recurse -Force `
   "..\public-orbit\atlas\ambiental\skills\*" `
-  ".claude\skills\"
+  ".agents\skills\"
 ```
 
-Cambia `ambiental` por `minero-energetico` para el otro atlas, y `.claude\skills` por `.agents\skills` (Codex) u `.opencode\skills` (OpenCode) según tu herramienta. Si ya tienes skills en `.claude/skills/`, OpenCode también las lee, sin necesidad de duplicar.
+Cambia `ambiental` por `minero-energetico` para el otro atlas, y `.agents\skills` por `.claude\skills` u `.opencode\skills` si prefieres la carpeta de tu herramienta.
 
 Si instalas dos o más atlas, agrega también la orquestadora nacional desde `atlas/nacional/`:
 
 ```bash
-cp -r ../public-orbit/atlas/nacional/skills/atlas-orquestador-colombia .claude/skills/
+cp -r ../public-orbit/atlas/nacional/skills/atlas-orquestador-colombia .agents/skills/
 ```
 
-Para instalación global, usa la carpeta del usuario en vez del proyecto (`~/.claude/skills/`, `~/.agents/skills/`, `~/.opencode/skills/`; en Windows `~` corresponde a `$env:USERPROFILE`).
+Para instalación global, usa la carpeta del usuario en vez del proyecto (`~/.agents/skills/`, `~/.claude/skills/`, `~/.opencode/skills/`; en Windows `~` corresponde a `$env:USERPROFILE`).
 
 > **Claude.ai / ChatGPT (no recomendada):** solo como referencia — Claude.ai: *Personalizar* → *Skills* → *Añadir* → *Cargar una habilidad*; ChatGPT: *Complementos* → *Habilidades* → *Subir desde tu ordenador* (si no reconoce la skill en el chat normal, cambia a modo *Work*).
 
