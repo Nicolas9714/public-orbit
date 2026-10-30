@@ -210,7 +210,7 @@ Las consultas son una de las formas de activar las conexiones interatlas. Cuando
 
 > - «¿Qué títulos y solicitudes mineras existen en el suroeste de Antioquia, qué potencial geológico tiene la zona y qué restricciones ambientales la limitan?»
 > - «¿Qué proyectos de hidrocarburos con licencia activa operan en el Magdalena Medio, qué obligaciones ambientales tienen y qué muestra el monitoreo de sus cuencas?»
-> - «¿Cuánta capacidad solar y eólica entró en operación frente a la meta 6GW, qué proyectos siguen en licenciamiento y cuánto generan los que ya operan?»
+> - «¿Cuánta capacidad solar y eólica entró en operación, qué proyectos siguen en licenciamiento y cuánto generan los que ya operan?»
 
 Las rutas esperadas de estas consultas viven en [`examples/consultas-de-ejemplo.md`](examples/consultas-de-ejemplo.md).
 

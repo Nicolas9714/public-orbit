@@ -11,7 +11,7 @@ XM es una filial de ISA que actúa como Operador del Sistema de Transmisión Nac
 
 - Datos operativos y de mercado: generación, demanda, hidrología (embalses, reservas, aportes), precios de bolsa y escasez, redespacho diario y horario
 - API pública SINERGOX: series históricas sin autenticación de hidrología, demanda, oferta, transacciones y emisiones CO2; librería oficial `pydataxm` para Python
-- SIMEM: portal de datos abiertos del mercado eléctrico mayorista, operado conjuntamente con UPME; incluye cargo por confiabilidad, mercado spot, contratos, operación y garantías
+- SIMEM: portal de datos abiertos del mercado eléctrico mayorista; incluye cargo por confiabilidad, mercado spot, contratos, operación y garantías
 - Informes periódicos: boletín energético, análisis mensual de mercado, situación energética actual, informe anual del SIN (Sistema Interconectado Nacional) e IPOEMP (Informe de Planeamiento Operativo Eléctrico de Mediano Plazo) semestral
 - Planeación operativa del sistema: largo, mediano y corto plazo; estudios de flexibilidad, restricciones y parámetros técnicos
 - Subastas de energía firme, cargo por confiabilidad y administración financiera del mercado eléctrico

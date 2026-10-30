@@ -46,6 +46,6 @@ Ruta esperada: CREG (Gestor Normativo: fórmula tarifaria y componentes) → Sup
 
 ---
 
-**«¿Cuánta capacidad solar y eólica entró en operación frente a la meta 6GW, qué proyectos siguen en licenciamiento y cuánto generan los que ya operan?»**
+**«¿Cuánta capacidad solar y eólica entró en operación, qué proyectos siguen en licenciamiento y cuánto generan los que ya operan?»**
 
-Ruta esperada: UPME (Plan 6GW+: monitoreo oficial, enlazado desde la home de MinEnergía) → XM (SIMEM: generación horaria por fuente) → UPME (plan de expansión y potencial energético). El tramo de licenciamiento vive en el Atlas de Navegación Ambiental de Colombia; el enrutamiento entre atlas, en [Public Orbit](../../../examples/consultas-de-ejemplo.md).
+Ruta esperada: UPME (Seguimiento FNCER: monitoreo oficial) → XM (SIMEM: generación horaria por fuente) → UPME (plan de expansión y potencial energético). El tramo de licenciamiento vive en el Atlas de Navegación Ambiental de Colombia; el enrutamiento entre atlas, en [Public Orbit](../../../examples/consultas-de-ejemplo.md).

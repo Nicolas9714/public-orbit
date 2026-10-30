@@ -14,7 +14,7 @@
 | SIMEC — Eficiencia Energética | `upme.gov.co/simec/eficiencia-energetica` | Movilidad sostenible, industria, residencial/terciario, etiquetado | 2026-05-30 |
 | SIMCO — Minería | `upme.gov.co/simec/mineria` | Sistema de Información Minero Colombiano; distritos mineros y plan de ordenamiento | 2026-05-30 |
 | Territorio Vivo | `upme.gov.co/simec/territorio-vivo` | Herramienta de análisis territorial minero-energético | 2026-05-30 |
-| Plan 6GW+ | `upme.gov.co/simec/plan-6gw/` | Dashboard del Plan de Expansión de FNCER; monitoreo de proyectos, indicadores y geovisores; también enlazado desde la home de MinEnergía | 2026-05-30 |
+| Seguimiento FNCER | `upme.gov.co/simec/seguimiento-fncer/` | Seguimiento a proyectos de FNCER: capacidad instalada en operación y en pruebas por segmento, centro de monitoreo, información de proyectos, indicadores y geovisores | 2026-10-30 |
 | SIEM — Electromovilidad | `upme.gov.co/simec/siem/` | Sistema de Interoperabilidad de Electromovilidad: reporte obligatorio de los operadores de puntos de carga (CPO) de acceso público según la Resolución 40559 de 2025 de MinEnergía; adopta el protocolo OCPI 2.2.1; guía técnica de integración y normativa de electromovilidad | 2026-07-10 |
 | Aplicativos UPME | `upme.gov.co/simec/aplicativos` | Listado de aplicativos y herramientas web de la UPME | 2026-05-30 |
 
@@ -43,9 +43,11 @@
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
-| Argo GPL | `argogpl.upme.gov.co/` | Sistema de seguimiento y gestión del plan de abastecimiento de gas licuado de petróleo (GLP) | 2026-05-30 |
-| CIAC | `ciac.upme.gov.co/` | Aplicativo de la UPME accesible desde la sección de aplicativos del SIMEC | 2026-05-30 |
-| Calculadora de Emisiones | `app.upme.gov.co/Calculadora_Emisiones1/new/calculadora.html` | Calculadora de emisiones de gases de efecto invernadero | 2026-05-30 |
+| APPCIAC | `ciac.upme.gov.co/` | Aplicativo de priorización de proyectos de sustitución de combustibles de uso ineficiente y altamente contaminantes | 2026-10-30 |
+| Calculadora de emisiones CO2 – FECOC | `app.upme.gov.co/Calculadora_Emisiones1/new/calculadora.html` | Calculadora de emisiones de CO2 con los factores de emisión de los combustibles colombianos (FECOC) | 2026-10-30 |
+| Modelo conceptual WTE | `upme.gov.co/simec/aplicativos/modelo-conceptual-para-el-calculo-de-la-viabilidad-de-proyectos-wte/` | Plataforma de precálculo de la viabilidad técnica, ambiental, financiera y económica de proyectos de aprovechamiento energético de residuos (WTE, Waste to Energy) a partir de biomasa pecuaria, biomasa agrícola y residuos sólidos urbanos orgánicos; incluye fichas tecnológicas, manual de usuario y visor geográfico | 2026-10-30 |
+| Gestor del Mercado de Gas Natural | `www.bmcbec.com.co/` | Portal del gestor del mercado de gas natural de Colombia, enlazado desde los aplicativos del SIMEC; se documenta en la skill `navegar-bec` | 2026-10-30 |
+| Tremarctos | `http://www.tremarctoscolombia.org/` | Herramienta de evaluación preliminar de impactos ambientales y sociales de proyectos de infraestructura, enlazada desde los aplicativos del SIMEC. Al 2026-10-30 el dominio redirige a la página de un estudio web y la herramienta no está disponible | 2026-10-30 |
 
 ---
 
@@ -90,7 +92,9 @@
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
-| Ventanilla Única (CREG 075/2021) | `upme.gov.co/ventanilla-unica-servicios/ventanilla-unica-creg-075-de-2021` | Radicación de estudios de conexión bajo Resolución CREG 075 de 2021 | 2026-05-30 |
+| Ventanilla Única CREG | `upme.gov.co/ventanilla-unica-de-tramites-y-servicios/ventanilla-unica-creg/` | Punto de entrada a las ventanillas de conexión bajo las Resoluciones CREG 075 y 174 de 2021 | 2026-10-30 |
+| Ventanilla CREG 075 | `upme.gov.co/ventanilla-unica-de-tramites-y-servicios/ventanilla-unica-creg/ventanilla-creg-075-de-2021/` | Solicitudes de asignación de capacidad de transporte y de conexión al SIN bajo la Resolución CREG 075 de 2021 | 2026-10-30 |
+| Ventanilla CREG 174 | `upme.gov.co/ventanilla-unica-de-tramites-y-servicios/ventanilla-unica-creg/ventanilla-creg-174/` | Solicitudes de conexión simplificada al SDL (Sistema de Distribución Local) para generación menor a 5 MW bajo la Resolución CREG 174 de 2021; procedimiento, reporte de proyectos, disponibilidad de la red y normativa | 2026-10-30 |
 | Fondos de Apoyo Financiero | `upme.gov.co/ventanilla-unica-servicios/fondos-apoyo-financiero` | Evaluación de proyectos para FAZNI, FAER, PRONE y FENOGE | 2026-05-30 |
 | Incentivos Tributarios | `upme.gov.co/ventanilla-unica-de-tramites-y-servicios/incentivos-tributarios/` | Certificación para incentivos tributarios de proyectos FNCER y eficiencia energética | 2026-05-30 |
 
@@ -108,15 +112,14 @@
 | `simec/planeacion-energetica/pang` | Plan de Abastecimiento de Gas Natural; misma observación de URL con typo |
 | `simec/mineria` | Portal SIMCO; incluye estadísticas de producción, exportaciones y títulos mineros |
 | `simec/territorio-vivo` | Herramienta interactiva que cruza variables minero-energéticas con datos territoriales y socioeconómicos |
-| `simec/plan-6gw/centro-de-monitoreo` | Abre `app.upme.gov.co/CentroMonitoreo/6GW+`; seguimiento en tiempo real por proyecto, tecnología y estado |
-| `simec/plan-6gw/informacion-de-proyectos` | Enlaza a `upme.gov.co/upme-descargas/6gw/`; fichas y datos de proyectos registrados |
-| `simec/plan-6gw/informacion-geografica` | Tres geovisores en `sig.upme.gov.co`: 6GW+, Geoportal Sectorial GPS y Potencial Solar con IA |
+| `simec/seguimiento-fncer/` | Página única con secciones, no subrutas. «Ir al Centro de Monitoreo» abre `app.upme.gov.co/CentroMonitoreo/6GW+` (seguimiento por proyecto, tecnología y estado); «Información de proyectos» enlaza a `upme.gov.co/upme-descargas/6gw/`; los geovisores (Seguimiento FNCER, Geoportal Sectorial GPS, Potencial Solar con IA y Techos Solares con IA, anunciado) viven en `sig.upme.gov.co` |
 | `simec/siem/` | Página única: qué es el SIEM, guía de integración OCPI 2.2.1 (junio de 2026), preguntas frecuentes, glosario, video de socialización y normativa de electromovilidad (Ley 1964 de 2019; Resoluciones 40223 de 2021, 40123 de 2024 y 40559 de 2025) |
 | `simec/geovisores` | Alojados en `sig.upme.gov.co` (Experience Builder); 4 categorías: Distritos Mineros, Potencial Energético, Energía Eléctrica y Territorial |
 | `indicadores-y-graficos` | Dashboards Power BI con series históricas de indicadores energéticos y mineros |
 | `nosotros/biblioteca-juridica/circulares-upme/circulares-upme-energia-electrica` | Circulares externas del subsector eléctrico; publicación frecuente (varias por mes) |
 | `home/convocatorias/convocatorias-de-transmision` | Convocatorias UPME activas para nuevas líneas y subestaciones del STN; documentos técnicos descargables |
 | `ventanilla-unica-servicios/fondos-apoyo-financiero` | Radicación y seguimiento de proyectos que solicitan recursos de FAZNI, FAER, PRONE o FENOGE |
-| SIMEM | El portal SIMEM (`simem.co`) es operado conjuntamente por UPME y XM; se documenta en `navegar-xm/fuentes.md` |
+| `ventanilla-unica-creg/ventanilla-creg-174/` | Página con pestañas: contexto, procedimiento con y sin estudio de conexión simplificado, reporte de proyectos, disponibilidad de la red y normativa. La radicación pasa por el Sistema Único de Usuarios (SUU); los requisitos están en `ventanilla-creg-174/requisitos-creg174/` y la guía de usuario en `docs.upme.gov.co`. Al 2026-10-30 el botón «Iniciar solicitud» figuraba como próximamente |
+| SIMEM | El portal SIMEM (`simem.co`) lo administra XM; se documenta en `navegar-xm/fuentes.md` |
 | `cio-upme/` | Los documentos del CIO UPME están alojados en `docs.upme.gov.co/CIO-UPME/Lineamientos/`; incluyen los planes BECO (balance energético), ICEE y hojas de ruta estadísticas |
 | `cio-sectorial/` | La UPME ejerce como CIO del sector minero-energético colombiano; esta página define las políticas y metodologías de gobernanza de datos que aplican a todas las entidades del sector |

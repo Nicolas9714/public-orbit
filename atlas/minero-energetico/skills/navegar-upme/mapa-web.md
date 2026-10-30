@@ -54,7 +54,7 @@ upme.gov.co/
 │   │   ├── distritos-mineros/
 │   │   └── plan-nacional-de-ordenamiento-minero/
 │   │
-│   ├── plan-6gw/
+│   ├── seguimiento-fncer/
 │   │   ├── centro-de-monitoreo
 │   │   ├── informacion-de-proyectos
 │   │   ├── indicadores-energeticos
@@ -64,7 +64,7 @@ upme.gov.co/
 │   │   │   ├── historico-capacidad-instalada
 │   │   │   └── curva-generacion-horaria
 │   │   ├── informacion-geografica
-│   │   │   ├── geovisor-6gw-plus
+│   │   │   ├── geovisor-seguimiento-fncer
 │   │   │   ├── geoportal-sectorial-gps
 │   │   │   └── geovisor-potencial-solar
 │   │   └── acciones-estrategicas-complementarias
@@ -133,7 +133,10 @@ upme.gov.co/
 │
 ├── ventanilla-unica-de-tramites-y-servicios/
 │   ├── incentivos-tributarios/
-│   ├── ventanilla-unica-creg-075-de-2021/
+│   ├── ventanilla-unica-creg/
+│   │   ├── ventanilla-creg-075-de-2021/
+│   │   └── ventanilla-creg-174/
+│   │       └── requisitos-creg174/
 │   └── fondos-apoyo-financiero/
 │
 ├── nosotros/nuestra-entidad/cio-upme/

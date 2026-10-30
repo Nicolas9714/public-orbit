@@ -16,6 +16,6 @@ Ruta esperada: **Atlas de Navegación Ambiental de Colombia** — ANLA (geovisor
 
 ---
 
-**«¿Cuánta capacidad solar y eólica entró en operación frente a la meta 6GW, qué proyectos siguen en licenciamiento y cuánto generan los que ya operan?»**
+**«¿Cuánta capacidad solar y eólica entró en operación, qué proyectos siguen en licenciamiento y cuánto generan los que ya operan?»**
 
-Ruta esperada: **Atlas de Navegación Minero Energético de Colombia** — UPME (Plan 6GW+: monitoreo oficial) → **Atlas de Navegación Ambiental de Colombia** — ANLA (Geovisor Público y Eureka: estado del licenciamiento) → **Atlas de Navegación Minero Energético de Colombia** — XM (SIMEM: generación horaria por fuente) → UPME (plan de expansión y potencial energético).
+Ruta esperada: **Atlas de Navegación Minero Energético de Colombia** — UPME (Seguimiento FNCER: monitoreo oficial) → **Atlas de Navegación Ambiental de Colombia** — ANLA (Geovisor Público y Eureka: estado del licenciamiento) → **Atlas de Navegación Minero Energético de Colombia** — XM (SIMEM: generación horaria por fuente) → UPME (plan de expansión y potencial energético).

@@ -54,12 +54,12 @@ Puntos de entrada para consultas que cruzan varias entidades. El orden es orient
 
 | Consulta | Skills sugeridas | Sistemas clave |
 |----------|-----------------|----------------|
-| Expansión eléctrica | UPME → XM → CREG | PET, PERS, Plan 6GW+ · IPOEMP · transmisión |
+| Expansión eléctrica | UPME → XM → CREG | PET, PERS, Seguimiento FNCER · IPOEMP · transmisión |
 | Tarifas eléctricas | CREG → Superservicios → XM | Alejandría · SUI · bolsa/confiabilidad |
 | Hidrocarburos | ANH → Ecopetrol → MinEnergía | Mapa de Tierras · informes · SGR |
 | Minería formal | ANM → SGC → UPME | AnnA Minería · MIIG · SIMCO |
 | ZNI | IPSE → FENOGE → UPME → CREG | SIGIPSE, CNM · PTEP · PERS · reg. ZNI |
-| Transición energética | MinEnergía → UPME → FENOGE → XM | TEJ · Plan 6GW+ · EN-Comunidad · generación |
+| Transición energética | MinEnergía → UPME → FENOGE → XM | TEJ · Seguimiento FNCER · EN-Comunidad · generación |
 | Gas natural | BEC → CREG → ANH | SEGAS, iGas-D · Alejandría · upstream |
 
 ## Reglas para combinar resultados sin mezclar competencias

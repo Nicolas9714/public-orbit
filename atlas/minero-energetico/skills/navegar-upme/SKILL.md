@@ -10,13 +10,14 @@ La UPME es una Unidad Administrativa Especial adscrita al Ministerio de Minas y 
 ## ¿Qué información publica?
 
 - Sistema de Información Minero Energético Colombiano (SIMEC): estadísticas de energía eléctrica, hidrocarburos, minería (SIMCO, Sistema de Información Minero Colombiano), eficiencia energética, oferta y demanda, y planeación energética (PEN (Plan Energético Nacional), PERS (Plan de Energización Rural Sostenible), PET (Plan de Expansión de Transmisión), PROURE (Programa de Uso Racional y Eficiente de Energía), proyecciones)
-- Plan 6GW+: monitoreo de proyectos FNCER (Fuentes No Convencionales de Energía Renovable), indicadores energéticos y geovisores del plan de expansión de renovables
+- Seguimiento FNCER (Fuentes No Convencionales de Energía Renovable): capacidad instalada de proyectos en operación y en pruebas, centro de monitoreo, indicadores energéticos y geovisores de renovables
 - SIEM (Sistema de Interoperabilidad de Electromovilidad): registro y reporte de los operadores de puntos de carga de acceso público bajo el protocolo OCPI 2.2.1, con guía técnica de integración y normativa de electromovilidad
 - Geovisores sectoriales en cuatro categorías: Distritos Mineros, Potencial Energético (solar, OBCO, FNCER), Energía Eléctrica (capacidad, generación, transmisión) y Territorial
 - Convocatorias de expansión: STN (Sistema de Transmisión Nacional), gas y subastas de largo plazo para renovables
+- Ventanilla Única CREG: solicitudes de conexión al SIN (Sistema Interconectado Nacional) bajo la Resolución CREG 075 de 2021 y conexión simplificada al SDL (Sistema de Distribución Local) para generación menor a 5 MW bajo la Resolución CREG 174 de 2021
 - Tableros Power BI con series históricas de indicadores minero-energéticos
 - Gobernanza de datos sectorial: políticas, metodología y lineamientos para todas las entidades del sector
-- Biblioteca digital con repositorio de estudios y publicaciones; Argo GPL para seguimiento al abastecimiento de GLP (Gas Licuado de Petróleo)
+- Biblioteca digital con repositorio de estudios, publicaciones y documentos técnicos
 
 ## Sitio oficial
 
@@ -31,6 +32,6 @@ La UPME es una Unidad Administrativa Especial adscrita al Ministerio de Minas y 
 ## Notas de navegación
 
 - El SIMEC es el portal central de la UPME; casi toda la información sectorial está organizada bajo `simec/`. Conviene navegar desde ahí antes de buscar en el sitio general.
-- Los geovisores, la Biblioteca Digital y el sistema Argo GPL operan en subdominios propios; los enlaces directos están en `fuentes.md`.
-- El SIMEM (`simem.co`) es un portal de datos conjunto entre UPME y XM; se documenta en la skill `navegar-xm`.
+- Los geovisores y la Biblioteca Digital operan en subdominios propios; los enlaces directos están en `fuentes.md`.
+- El SIMEM (`simem.co`), portal de datos del mercado eléctrico mayorista, lo administra XM y se documenta en la skill `navegar-xm`.
 - La UPME ejerce como CIO del sector minero-energético colombiano: los lineamientos de gobernanza de datos que publica aplican a todas las entidades del sector, no solo a la UPME.

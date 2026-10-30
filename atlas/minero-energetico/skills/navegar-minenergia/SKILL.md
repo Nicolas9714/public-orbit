@@ -29,5 +29,5 @@ El Ministerio de Minas y Energía es la entidad rectora del sector minero-energ�
 ## Notas de navegación
 
 - Varios micrositios temáticos operan en dominio propio; los enlaces directos están en `fuentes.md`.
-- El Plan 6GW+ es un sitio operado por la UPME (`upme.gov.co/simec/plan-6gw/`), enlazado desde la home del ministerio. Su documentación completa vive en la skill `navegar-upme`.
+- El seguimiento a proyectos FNCER lo publica la UPME en `upme.gov.co/simec/seguimiento-fncer/`. Su documentación completa vive en la skill `navegar-upme`.
 - El repositorio normativo es el punto de entrada recomendado para normativa sectorial; permite buscar por tipo de acto y año.
