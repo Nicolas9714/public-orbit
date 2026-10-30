@@ -105,7 +105,9 @@ Hay dos rutas. En el [sitio web](https://sistema-atlas-colombia.nicolasmcfc.work
 
 Abre una terminal en la carpeta de tu proyecto. Sin destino explícito, el instalador busca una carpeta existente en este orden: `.agents/skills`, `.claude/skills` y `.opencode/skills`. Si no encuentra ninguna, crea `.agents/skills`, destino neutral predeterminado. Para instalar globalmente, agrega `-Global` / `--global`: aplica el mismo criterio bajo tu carpeta de usuario.
 
-En Windows, ejecuta la primera línea una vez para preparar `$po`; después úsalo en las instalaciones siguientes.
+En Windows, la primera línea prepara el instalador en la variable `$po` y la segunda instala el atlas. Si ya preparaste `$po` en esa misma terminal, basta la segunda línea.
+
+#### Atlas de Navegación Ambiental de Colombia
 
 Windows (PowerShell):
 
@@ -114,23 +116,28 @@ $po = [scriptblock]::Create((irm https://raw.githubusercontent.com/Nicolas9714/p
 & $po -Atlas ambiental
 ```
 
-```powershell
-& $po -Atlas minero-energetico
-```
-
 macOS / Linux / Git Bash:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas ambiental
 ```
 
+#### Atlas de Navegación Minero Energético de Colombia
+
+Windows (PowerShell):
+
+```powershell
+$po = [scriptblock]::Create((irm https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.ps1).TrimStart([char]0xFEFF))
+& $po -Atlas minero-energetico
+```
+
+macOS / Linux / Git Bash:
+
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas minero-energetico
 ```
 
-`TrimStart` retira una marca invisible al inicio del archivo que PowerShell no sabe interpretar en este modo.
-
-Qué instalar:
+#### Qué instalar
 
 | Quiero instalar | PowerShell | Bash |
 | --- | --- | --- |
@@ -140,7 +147,7 @@ Qué instalar:
 | Una skill | `& $po -Entidad navegar-anla` | `--entidad navegar-anla` |
 | Varias skills, de uno o más atlas | `& $po -Entidad navegar-anla,navegar-upme` | `--entidad navegar-anla,navegar-upme` |
 
-Opciones adicionales:
+#### Opciones adicionales
 
 | Qué hace | PowerShell | Bash |
 | --- | --- | --- |
