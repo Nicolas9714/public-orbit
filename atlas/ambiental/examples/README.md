@@ -1,63 +1,14 @@
-# Casos de uso
+# Ejemplos — Atlas de Navegación Ambiental de Colombia
 
-Un caso de uso es un **flujo de análisis reproducible** sobre datos del sector: una consulta real que se resolvió navegando las fuentes oficiales y procesando sus datos. Cada caso vive en su propia subcarpeta `<slug>/` con un `README.md` y los archivos que produce.
+Esta carpeta reúne dos tipos de material. Los dos parten de una pregunta y documentan la ruta entre entidades que la responde.
 
-La navegación no es un tipo de caso aparte: cada análisis documenta en su README **cómo se llegó a los datos** — la ruta de navegación entre entidades es parte del caso, no un artefacto separado.
+- **Consultas de ejemplo**, en [`consultas-de-ejemplo.md`](consultas-de-ejemplo.md): preguntas que puedes hacerle al agente con el atlas instalado, junto con la ruta que debería seguir. Las consultas que cruzan hacia otros atlas viven en las [consultas de Public Orbit](../../../examples/consultas-de-ejemplo.md).
+- **Casos de análisis**: consultas que además descargan y procesan datos oficiales. Cada caso tiene su carpeta, con un README que explica la ruta, los datos, la metodología y el resultado.
 
-Además de los casos, [`consultas-de-ejemplo.md`](consultas-de-ejemplo.md) reúne consultas de demostración: prompts que puedes hacerle al agente con las skills instaladas, con la ruta que debería responderte.
+## Casos
 
-## Cuándo agregar un caso
+| Caso | Pregunta | Entidades |
+|---|---|---|
+| [`deforestacion-series-smbyc/`](deforestacion-series-smbyc/) | ¿Cómo ha evolucionado la deforestación anual desde 2013 y qué departamentos concentran la pérdida de bosque? | IDEAM |
 
-- Herramienta o metodología desarrollada sobre datos del sector → caso nuevo
-- Consulta que se resolvió con datos descargados y procesados de fuentes oficiales → caso nuevo
-- Ruta de navegación útil pero sin componente de datos → agregar como consulta a `consultas-de-ejemplo.md`
-
-## Plantilla
-
-Subcarpeta `<slug>/` con este `README.md` dentro, junto a los archivos que produce el caso.
-
-```markdown
----
-tipo: analisis
-entidades: [navegar-ideam, ...]
-tema: deforestación / calidad del agua / etc.
-fecha: AAAA-MM-DD
----
-
-# [Título descriptivo]
-
-## Consulta
-"¿Pregunta o tarea concreta que motivó el análisis?"
-
-## Cómo se llegó a los datos
-Ruta de navegación que condujo a la fuente: entidad → sistema → sección.
-
-## Datos
-Fuente oficial exacta, formato y cómo obtenerlos (URL o paso de descarga).
-Los datos crudos NO se incluyen en el repositorio; se documenta su origen para que el caso sea reproducible.
-
-## Metodología
-Pasos reproducibles y decisiones de procesamiento.
-
-## Herramientas
-Stack usado (Python, pandas, QGIS, etc.) y los archivos construidos, con su ubicación dentro de esta carpeta.
-
-## Resultado
-Qué se obtuvo (incluidas figuras o reportes) y con qué limitaciones.
-```
-
-## Campos de frontmatter
-
-| Campo | Uso |
-|-------|-----|
-| `tipo` | `analisis` |
-| `entidades` | Skills involucradas |
-| `tema` | Tema principal del caso |
-| `fecha` | Cuándo se corrió o verificó el caso |
-
-## Convención de nombre
-
-Subcarpeta `tema-subtema/` en minúsculas con guiones. Ejemplos:
-
-- `calidad-agua-monitoreo/`
-- `deforestacion-series-smbyc/`
+Para aportar un caso nuevo, usa la [plantilla de caso](../../../estandar/templates/caso-template.md).

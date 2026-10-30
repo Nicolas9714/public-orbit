@@ -46,6 +46,31 @@ La skill `atlas-orquestador-colombia` define el enrutamiento entre atlas:
 
 `examples/consultas-de-ejemplo.md` reúne consultas que cruzan atlas: cada una es un prompt más su ruta esperada, anotada por atlas y entidad, sin URLs (las URLs viven en las skills de los atlas).
 
+## Cómo se comprueba la conformidad
+
+[`verificar-conformidad.sh`](verificar-conformidad.sh) es la implementación de referencia del estándar: revisa la parte normativa (N1–N5 y autocontención) sin tocar la recomendada.
+
+```bash
+bash verificar-conformidad.sh            # todos los atlas
+bash verificar-conformidad.sh ambiental  # uno solo
+```
+
+Sale con código 0 cuando no hay fallas y 1 cuando algún atlas incumple. Cada atlas se examina como si fuera la raíz de su propio repositorio, sin asumir nada del resto del árbol, de modo que el mismo chequeo vale para un atlas suelto y para uno alojado en `atlas/<sector>/`.
+
+Hay tres modos de evaluación:
+
+| Estado del atlas | Qué se le exige | Resultado |
+|---|---|---|
+| Sectorial poblado | N1–N5 y autocontención | conforme / no conforme |
+| Nodo nacional | Solo su orquestadora (N1 y N2 no aplican) | conforme / no conforme |
+| En construcción | Carpetas marcador bien nombradas y vacías | omitido |
+
+Un atlas cuenta como «en construcción» cuando figura en la lista `EN_CONSTRUCCION` del script. La lista es explícita a propósito, para que un atlas que se despueble por error falle en vez de pasar por pendiente. Al crear un atlas nuevo hay que añadirlo ahí y a la nota de [`registro.md`](registro.md), y retirarlo de ambas cuando quede poblado.
+
+[`tests/probar-verificar-conformidad.sh`](tests/probar-verificar-conformidad.sh) acompaña al verificador con pruebas adversariales: sabotean el repositorio sobre una copia temporal (nombres divergentes, enlaces entre atlas, skills vaciadas, entidades a medio poblar) y exigen que el verificador lo detecte. Sin ellas, un verificador que aprobara todo también saldría en verde.
+
+[`.github/workflows/conformidad.yml`](.github/workflows/conformidad.yml) corre ambos en cada push y cada pull request a `main`.
+
 ## Proceso de revisión
 
 - Los cambios al registro, la orquestadora y los ejemplos pueden proponerse directamente por Pull Request.

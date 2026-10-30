@@ -27,7 +27,6 @@ La UPME es una Unidad Administrativa Especial adscrita al Ministerio de Minas y 
 
 1. Consulta `mapa-web.md` para ubicar el subsistema SIMEC, geovisor o sección relevante.
 2. Consulta `fuentes.md` para acceder directamente al SIMEC, geovisores, convocatorias, CIO sectorial o Biblioteca Digital.
-3. En el repositorio del Atlas, la carpeta `examples/` reúne casos de análisis reproducibles y consultas de ejemplo con su ruta esperada.
 
 ## Notas de navegación
 
