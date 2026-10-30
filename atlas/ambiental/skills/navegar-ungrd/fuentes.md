@@ -2,7 +2,7 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -13,14 +13,14 @@
 | Certificados RUD | `https://snigrd.gestiondelriesgo.gov.co/#/rud/generate-certificate` | Emisión y consulta de certificados del Registro Único de Damnificados | 2026-07-03 |
 | Registro de Proveedores | `https://snigrd.gestiondelriesgo.gov.co/#/auth/register` | Inscripción en el directorio de proveedores de la UNGRD | 2026-07-03 |
 | Registro Único de Damnificados (legado, IP directa) | `http://201.130.16.28:8080/HOME/HOME` | Sistema legado de registro de damnificados, accesible por IP directa sin dominio | 2026-07-03 |
-| Repositorio institucional (DSpace) | `https://repositorio.gestiondelriesgo.gov.co/` | Repositorio de documentos técnicos, estudios y publicaciones; navegable por comunidades (Álbum Fotográfico, Publicaciones UNGRD, Conocimiento del Riesgo, Publicaciones por regiones GRD, Oficina Asesora de Comunicaciones, Normatividad), con búsqueda (`/discover`) y listado de comunidades (`/community-list`) | 2026-07-03 |
-| Hemeroteca UNGRD | `https://repositorio.gestiondelriesgo.gov.co/page/map` | Archivo de prensa; nombre de ruta no coincide con el contenido real (`/page/map` no es un mapa) | 2026-07-03 |
 | Socios UNGRD | `https://repositorio.gestiondelriesgo.gov.co/page/partners` | Página de socios/aliados institucionales | 2026-07-03 |
 | SNIGRD (sitio legado) | `https://www.gestiondelriesgo.gov.co/snigrd/` | Portal legado con menú Comités (CNCR, CNRR, CNMD), Herramientas, SNGRD, Normatividad e Información geográfica; enlaza a Yo Reporto, visores ArcGIS legados y el RUD por subdominio | 2026-07-03 |
 | Yo Reporto | `https://www.gestiondelriesgo.gov.co/yoreporto/Mapa.aspx` | Herramienta de reporte comunitario de eventos y riesgos sobre mapa, enlazada desde el sitio SNIGRD legado | 2026-07-23 |
 | SIGPAD (visor legado de emergencias) | `https://www.gestiondelriesgo.gov.co/sigpad/emergencias/temporada/MapD.aspx` | Sistema legado de visualización de emergencias por temporada; predecesor del Portal BI actual | 2026-07-03 |
 | Colombia Resiliente | `https://portal.gestiondelriesgo.gov.co/colombiaresiliente` | Sistema de información territorial base en GRD: métrica de gestión (MGB), documentos, visor y glosario por los 3 procesos (conocimiento, reducción, manejo) y 4 componentes | 2026-07-03 |
 | SIPNGRD — Reporte en línea (Marco Estratégico) | `https://pngrd.gestiondelriesgo.gov.co/` | Sistema de reporte de capacidades mínimas territoriales y sectoriales del Marco Estratégico; requiere autenticación con usuario y contraseña | 2026-07-03 |
+| MCR2030 — Evaluación de etapa | `https://mcr2030.undrr.org/resilience-roadmap/stage-assessment` | Herramienta de autoevaluación de UNDRR (dominio internacional) | 2026-07-03 |
+| MCR2030 — Inscripción de territorios | `https://mcr2030dashboard.undrr.org/` | Dashboard de inscripción de UNDRR (dominio internacional) | 2026-07-03 |
 
 ---
 
@@ -69,17 +69,6 @@
 
 ---
 
-## Normativa
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| Normativa SNGRD | `https://portal.gestiondelriesgo.gov.co/Paginas/Normativa-SNGRD.aspx` | Normograma consolidado del Sistema Nacional de Gestión del Riesgo de Desastres | 2026-07-03 |
-| Resoluciones | `https://portal.gestiondelriesgo.gov.co/Paginas/Resoluciones.aspx` | Resoluciones internas de la UNGRD | 2026-07-03 |
-| Circulares | `https://portal.gestiondelriesgo.gov.co/Paginas/Circulares.aspx` | Circulares emitidas por la entidad | 2026-07-03 |
-| Proyectos normativos | `https://portal.gestiondelriesgo.gov.co/Paginas/Proyectos-normativos.aspx` | Normativa en proceso de expedición, abierta a comentarios | 2026-07-03 |
-
----
-
 ## Documentos de referencia
 
 | Nombre | Tipo | URL | Verificado |
@@ -93,10 +82,23 @@
 | SATREPS Colombia | Proyecto de cooperación científica | `https://portal.gestiondelriesgo.gov.co/satreps` | 2026-07-03 |
 | MCR2030 Colombia | Iniciativa internacional (UNDRR) | `https://portal.gestiondelriesgo.gov.co/mcr2030` | 2026-07-03 |
 | Museo del Saber GRD (MAGMA) | Micrositio museográfico | `https://portal.gestiondelriesgo.gov.co/magma` | 2026-07-03 |
+| Repositorio institucional (DSpace) | Repositorio de documentos técnicos, estudios y publicaciones; navegable por comunidades (Álbum Fotográfico, Publicaciones UNGRD, Conocimiento del Riesgo, Publicaciones por regiones GRD, Oficina Asesora de Comunicaciones, Normatividad), con búsqueda (`/discover`) y listado de comunidades (`/community-list`) | `https://repositorio.gestiondelriesgo.gov.co/` | 2026-07-03 |
+| Hemeroteca UNGRD | Archivo de prensa; nombre de ruta no coincide con el contenido real (`/page/map` no es un mapa) | `https://repositorio.gestiondelriesgo.gov.co/page/map` | 2026-07-03 |
 
 ---
 
-## Monitoreo de amenazas (SATREPS)
+## Normativa
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Normativa SNGRD | `https://portal.gestiondelriesgo.gov.co/Paginas/Normativa-SNGRD.aspx` | Normograma consolidado del Sistema Nacional de Gestión del Riesgo de Desastres | 2026-07-03 |
+| Resoluciones | `https://portal.gestiondelriesgo.gov.co/Paginas/Resoluciones.aspx` | Resoluciones internas de la UNGRD | 2026-07-03 |
+| Circulares | `https://portal.gestiondelriesgo.gov.co/Paginas/Circulares.aspx` | Circulares emitidas por la entidad | 2026-07-03 |
+| Proyectos normativos | `https://portal.gestiondelriesgo.gov.co/Paginas/Proyectos-normativos.aspx` | Normativa en proceso de expedición, abierta a comentarios | 2026-07-03 |
+
+---
+
+## Redes de monitoreo
 
 Fuentes externas de monitoreo sísmico, volcánico y de tsunami enlazadas desde el micrositio SATREPS (cooperación Colombia-Japón), organizadas en acordeones "Sismos", "Volcanes" y "Tsunamis" con sub-secciones "Información General" e "Información Especializada".
 
@@ -110,15 +112,6 @@ Fuentes externas de monitoreo sísmico, volcánico y de tsunami enlazadas desde 
 | Centro Colombiano de Datos Oceanográficos | Enlazado desde `satreps/tsunamis` | DIMAR | 2026-07-03 |
 
 Nota: la lista completa de enlaces (más de 15) vive en `satreps/sismos`, `satreps/volcanes` y `satreps/tsunamis`; aquí solo se priorizan los de mayor valor operativo. Ver notas-internas para el listado completo capturado.
-
----
-
-## MCR2030 — herramientas de inscripción
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| Evaluación de etapa | `https://mcr2030.undrr.org/resilience-roadmap/stage-assessment` | Herramienta de autoevaluación de UNDRR (dominio internacional) | 2026-07-03 |
-| Inscripción de territorios | `https://mcr2030dashboard.undrr.org/` | Dashboard de inscripción de UNDRR (dominio internacional) | 2026-07-03 |
 
 ---
 

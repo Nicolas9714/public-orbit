@@ -2,7 +2,7 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -17,6 +17,11 @@
 | Seguimiento FNCER | `upme.gov.co/simec/seguimiento-fncer/` | Seguimiento a proyectos de FNCER: capacidad instalada en operación y en pruebas por segmento, centro de monitoreo, información de proyectos, indicadores y geovisores | 2026-10-30 |
 | SIEM — Electromovilidad | `upme.gov.co/simec/siem/` | Sistema de Interoperabilidad de Electromovilidad: reporte obligatorio de los operadores de puntos de carga (CPO) de acceso público según la Resolución 40559 de 2025 de MinEnergía; adopta el protocolo OCPI 2.2.1; guía técnica de integración y normativa de electromovilidad | 2026-07-10 |
 | Aplicativos UPME | `upme.gov.co/simec/aplicativos` | Listado de aplicativos y herramientas web de la UPME | 2026-05-30 |
+| APPCIAC | `ciac.upme.gov.co/` | Aplicativo de priorización de proyectos de sustitución de combustibles de uso ineficiente y altamente contaminantes | 2026-10-30 |
+| Calculadora de emisiones CO2 – FECOC | `app.upme.gov.co/Calculadora_Emisiones1/new/calculadora.html` | Calculadora de emisiones de CO2 con los factores de emisión de los combustibles colombianos (FECOC) | 2026-10-30 |
+| Modelo conceptual WTE | `upme.gov.co/simec/aplicativos/modelo-conceptual-para-el-calculo-de-la-viabilidad-de-proyectos-wte/` | Plataforma de precálculo de la viabilidad técnica, ambiental, financiera y económica de proyectos de aprovechamiento energético de residuos (WTE, Waste to Energy) a partir de biomasa pecuaria, biomasa agrícola y residuos sólidos urbanos orgánicos; incluye fichas tecnológicas, manual de usuario y visor geográfico | 2026-10-30 |
+| Gestor del Mercado de Gas Natural | `www.bmcbec.com.co/` | Portal del gestor del mercado de gas natural de Colombia, enlazado desde los aplicativos del SIMEC; se documenta en la skill `navegar-bec` | 2026-10-30 |
+| Tremarctos | `http://www.tremarctoscolombia.org/` | Herramienta de evaluación preliminar de impactos ambientales y sociales de proyectos de infraestructura, enlazada desde los aplicativos del SIMEC. Al 2026-10-30 el dominio redirige a la página de un estudio web y la herramienta no está disponible | 2026-10-30 |
 
 ---
 
@@ -39,18 +44,6 @@
 
 ---
 
-## Aplicativos
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| APPCIAC | `ciac.upme.gov.co/` | Aplicativo de priorización de proyectos de sustitución de combustibles de uso ineficiente y altamente contaminantes | 2026-10-30 |
-| Calculadora de emisiones CO2 – FECOC | `app.upme.gov.co/Calculadora_Emisiones1/new/calculadora.html` | Calculadora de emisiones de CO2 con los factores de emisión de los combustibles colombianos (FECOC) | 2026-10-30 |
-| Modelo conceptual WTE | `upme.gov.co/simec/aplicativos/modelo-conceptual-para-el-calculo-de-la-viabilidad-de-proyectos-wte/` | Plataforma de precálculo de la viabilidad técnica, ambiental, financiera y económica de proyectos de aprovechamiento energético de residuos (WTE, Waste to Energy) a partir de biomasa pecuaria, biomasa agrícola y residuos sólidos urbanos orgánicos; incluye fichas tecnológicas, manual de usuario y visor geográfico | 2026-10-30 |
-| Gestor del Mercado de Gas Natural | `www.bmcbec.com.co/` | Portal del gestor del mercado de gas natural de Colombia, enlazado desde los aplicativos del SIMEC; se documenta en la skill `navegar-bec` | 2026-10-30 |
-| Tremarctos | `http://www.tremarctoscolombia.org/` | Herramienta de evaluación preliminar de impactos ambientales y sociales de proyectos de infraestructura, enlazada desde los aplicativos del SIMEC. Al 2026-10-30 el dominio redirige a la página de un estudio web y la herramienta no está disponible | 2026-10-30 |
-
----
-
 ## Publicaciones periódicas
 
 | Nombre | URL | Frecuencia | Verificado |
@@ -66,6 +59,18 @@
 | Resoluciones UPME | Resoluciones | `upme.gov.co/nosotros/biblioteca-juridica/resoluciones-upme` | 2026-05-30 |
 | Circulares UPME | Circulares externas | `upme.gov.co/nosotros/biblioteca-juridica/circulares-upme` | 2026-05-30 |
 | Proyectos normativos | Consulta pública | `upme.gov.co/nosotros/biblioteca-juridica/proyectos-normativos` | 2026-05-30 |
+
+---
+
+## Servicios y trámites
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Ventanilla Única CREG | `upme.gov.co/ventanilla-unica-de-tramites-y-servicios/ventanilla-unica-creg/` | Punto de entrada a las ventanillas de conexión bajo las Resoluciones CREG 075 y 174 de 2021 | 2026-10-30 |
+| Ventanilla CREG 075 | `upme.gov.co/ventanilla-unica-de-tramites-y-servicios/ventanilla-unica-creg/ventanilla-creg-075-de-2021/` | Solicitudes de asignación de capacidad de transporte y de conexión al SIN bajo la Resolución CREG 075 de 2021 | 2026-10-30 |
+| Ventanilla CREG 174 | `upme.gov.co/ventanilla-unica-de-tramites-y-servicios/ventanilla-unica-creg/ventanilla-creg-174/` | Solicitudes de conexión simplificada al SDL (Sistema de Distribución Local) para generación menor a 5 MW bajo la Resolución CREG 174 de 2021; procedimiento, reporte de proyectos, disponibilidad de la red y normativa | 2026-10-30 |
+| Fondos de Apoyo Financiero | `upme.gov.co/ventanilla-unica-servicios/fondos-apoyo-financiero` | Evaluación de proyectos para FAZNI, FAER, PRONE y FENOGE | 2026-05-30 |
+| Incentivos Tributarios | `upme.gov.co/ventanilla-unica-de-tramites-y-servicios/incentivos-tributarios/` | Certificación para incentivos tributarios de proyectos FNCER y eficiencia energética | 2026-05-30 |
 
 ---
 
@@ -85,18 +90,6 @@
 |---|---|---|---|
 | CIO UPME — Lineamientos internos | `upme.gov.co/nosotros/nuestra-entidad/cio-upme/` | Lineamientos estadísticos y de arquitectura de datos de la UPME: registros administrativos, operaciones estadísticas, mesas estadísticas, planes BECO e ICEE, lineamientos GIS | 2026-05-30 |
 | CIO Sectorial | `upme.gov.co/upme/chief-information-officer-cio-sectorial/` | Rol sectorial de la UPME como CIO del sector minero-energético; incluye políticas, metodología, marco normativo y lineamientos de gobernanza de datos para el sector | 2026-05-30 |
-
----
-
-## Servicios y trámites
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| Ventanilla Única CREG | `upme.gov.co/ventanilla-unica-de-tramites-y-servicios/ventanilla-unica-creg/` | Punto de entrada a las ventanillas de conexión bajo las Resoluciones CREG 075 y 174 de 2021 | 2026-10-30 |
-| Ventanilla CREG 075 | `upme.gov.co/ventanilla-unica-de-tramites-y-servicios/ventanilla-unica-creg/ventanilla-creg-075-de-2021/` | Solicitudes de asignación de capacidad de transporte y de conexión al SIN bajo la Resolución CREG 075 de 2021 | 2026-10-30 |
-| Ventanilla CREG 174 | `upme.gov.co/ventanilla-unica-de-tramites-y-servicios/ventanilla-unica-creg/ventanilla-creg-174/` | Solicitudes de conexión simplificada al SDL (Sistema de Distribución Local) para generación menor a 5 MW bajo la Resolución CREG 174 de 2021; procedimiento, reporte de proyectos, disponibilidad de la red y normativa | 2026-10-30 |
-| Fondos de Apoyo Financiero | `upme.gov.co/ventanilla-unica-servicios/fondos-apoyo-financiero` | Evaluación de proyectos para FAZNI, FAER, PRONE y FENOGE | 2026-05-30 |
-| Incentivos Tributarios | `upme.gov.co/ventanilla-unica-de-tramites-y-servicios/incentivos-tributarios/` | Certificación para incentivos tributarios de proyectos FNCER y eficiencia energética | 2026-05-30 |
 
 ---
 

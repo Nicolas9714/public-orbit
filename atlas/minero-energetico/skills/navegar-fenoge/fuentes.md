@@ -2,7 +2,27 @@
 
 ---
 
-## Convocatorias y acceso a recursos
+## Documentos de referencia
+
+| Nombre | Tipo | URL | Verificado |
+|---|---|---|---|
+| Fuentes No Convencionales de Energía — FNCER | Marco conceptual sobre FNCER: solar, eólica, biomasa, pequeñas hidroeléctricas | `fenoge.gov.co/fuentes-no-convencionales-de-energia-fncer/` | 2026-05-30 |
+| Hidrógeno | Contenido divulgativo sobre hidrógeno verde y sus aplicaciones en el sector energético colombiano | `fenoge.gov.co/gestion-del-conocimiento/que-es-el-hidrogeno-y-cuales-son-sus-aplicaciones/` | 2026-05-30 |
+| Infografías | Material visual sobre tecnologías FNCER, eficiencia energética y programas del FENOGE | `fenoge.gov.co/infografias/` | 2026-05-30 |
+
+---
+
+## Normativa
+
+| Nombre | Tipo | URL | Verificado |
+|---|---|---|---|
+| Leyes | Marco legal | `fenoge.gov.co/leyes/` | 2026-05-30 |
+| Resoluciones | Actos administrativos | `fenoge.gov.co/resoluciones/` | 2026-05-30 |
+| Plan de Transición Energética Popular | Documento de política | `fenoge.gov.co/ptep-fenoge/` | 2026-05-30 |
+
+---
+
+## Convocatorias
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -21,26 +41,6 @@
 |---|---|---|---|
 | Proyectos en ejecución | `fenoge.gov.co/proyectos/` | Listado actualizado de proyectos en ejecución con ficha por proyecto | 2026-05-30 |
 | Proyectos ejecutados | `fenoge.gov.co/proyectos/proyectos-ejecutados/` | Portafolio histórico de proyectos finalizados | 2026-05-30 |
-
----
-
-## Gestión del conocimiento
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| Fuentes No Convencionales de Energía — FNCER | `fenoge.gov.co/fuentes-no-convencionales-de-energia-fncer/` | Marco conceptual sobre FNCER: solar, eólica, biomasa, pequeñas hidroeléctricas | 2026-05-30 |
-| Hidrógeno | `fenoge.gov.co/gestion-del-conocimiento/que-es-el-hidrogeno-y-cuales-son-sus-aplicaciones/` | Contenido divulgativo sobre hidrógeno verde y sus aplicaciones en el sector energético colombiano | 2026-05-30 |
-| Infografías | `fenoge.gov.co/infografias/` | Material visual sobre tecnologías FNCER, eficiencia energética y programas del FENOGE | 2026-05-30 |
-
----
-
-## Normativa
-
-| Nombre | Tipo | URL | Verificado |
-|---|---|---|---|
-| Leyes | Marco legal | `fenoge.gov.co/leyes/` | 2026-05-30 |
-| Resoluciones | Actos administrativos | `fenoge.gov.co/resoluciones/` | 2026-05-30 |
-| Plan de Transición Energética Popular | Documento de política | `fenoge.gov.co/ptep-fenoge/` | 2026-05-30 |
 
 ---
 

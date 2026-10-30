@@ -2,7 +2,7 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -19,6 +19,26 @@
 
 ---
 
+## Normativa
+
+| Nombre | Tipo | URL | Verificado |
+|---|---|---|---|
+| Resoluciones y circulares | Normativa propia SSPD | `superservicios.gov.co/Normativa/Resoluciones-y-circulares-Superservicios` | 2026-05-30 |
+| Compilación jurídica del sector | Marco legal servicios públicos | `superservicios.gov.co/Normativa/Compilacion-juridica-del-sector` | 2026-05-30 |
+
+---
+
+## Servicios y trámites
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Trámites y servicios para prestadores | `superservicios.gov.co/Empresas-vigiladas/Tramites-y-servicios-para-prestadores` | Trámites administrativos ante la SSPD: habilitación, certificados, conceptos | 2026-05-30 |
+| NIF — Normas de Información Financiera | `superservicios.gov.co/Empresas-vigiladas/NIF-Normas-de-Informacion-Financiera` | Marco contable bajo NIF XBRL para prestadores; reporte financiero en el SUI | 2026-05-30 |
+| AEGR — Auditoría Externa de Gestión y Resultados | `superservicios.gov.co/Empresas-vigiladas/AEGR-Auditoria-Externa-de-Gestion-y-Resultados` | Proceso de auditoría externa a empresas vigiladas; metodología y resultados | 2026-05-30 |
+| Contribuciones y pagos | `superservicios.gov.co/Empresas-vigiladas/Contribuciones-y-pagos` | Liquidación y pago de contribuciones de vigilancia y control | 2026-05-30 |
+
+---
+
 ## Portales por sector vigilado
 
 | Nombre | URL | Descripción | Verificado |
@@ -30,26 +50,6 @@
 | Acueducto y alcantarillado | `superservicios.gov.co/Empresas-vigiladas/Acueducto-alcantarillado-y-aseo/Acueducto-y-alcantarillado` | Empresas de acueducto y alcantarillado vigiladas | 2026-05-30 |
 | Aseo / Aprovechamiento | `superservicios.gov.co/Empresas-vigiladas/Acueducto-alcantarillado-y-aseo/Aseo/Aprovechamiento` | Empresas prestadoras del servicio de aseo; sección de aprovechamiento para recuperadores | 2026-05-30 |
 | Empresas intervenidas | `superservicios.gov.co/Empresas-vigiladas/Empresas-intervenidas` | Listado de empresas bajo medida de intervención; actos administrativos de intervención | 2026-05-30 |
-
----
-
-## Normativa
-
-| Nombre | Tipo | URL | Verificado |
-|---|---|---|---|
-| Resoluciones y circulares | Normativa propia SSPD | `superservicios.gov.co/Normativa/Resoluciones-y-circulares-Superservicios` | 2026-05-30 |
-| Compilación jurídica del sector | Marco legal servicios públicos | `superservicios.gov.co/Normativa/Compilacion-juridica-del-sector` | 2026-05-30 |
-
----
-
-## Servicios para prestadores
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| Trámites y servicios para prestadores | `superservicios.gov.co/Empresas-vigiladas/Tramites-y-servicios-para-prestadores` | Trámites administrativos ante la SSPD: habilitación, certificados, conceptos | 2026-05-30 |
-| NIF — Normas de Información Financiera | `superservicios.gov.co/Empresas-vigiladas/NIF-Normas-de-Informacion-Financiera` | Marco contable bajo NIF XBRL para prestadores; reporte financiero en el SUI | 2026-05-30 |
-| AEGR — Auditoría Externa de Gestión y Resultados | `superservicios.gov.co/Empresas-vigiladas/AEGR-Auditoria-Externa-de-Gestion-y-Resultados` | Proceso de auditoría externa a empresas vigiladas; metodología y resultados | 2026-05-30 |
-| Contribuciones y pagos | `superservicios.gov.co/Empresas-vigiladas/Contribuciones-y-pagos` | Liquidación y pago de contribuciones de vigilancia y control | 2026-05-30 |
 
 ---
 

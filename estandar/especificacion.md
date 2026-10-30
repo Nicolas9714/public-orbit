@@ -2,7 +2,7 @@
 
 **Versión:** 0.1 · **Estado:** en incubación.
 **Versionado:** semántico (`mayor.menor.parche`). Mientras la versión mayor sea 0, la especificación está en incubación y cualquier cambio puede exigir ajustes a los atlas registrados.
-**Última actualización:** 2026-07-23 — se agregó la conformidad de layout (un atlas puede vivir como subcarpeta o como repositorio propio) y la regla de autocontención; N5 pasó a ser agnóstico del layout. El número se mantiene en v0.1 por estar el estándar en incubación y sin implementadores externos.
+**Última actualización:** 2026-10-30 — la parte recomendada fija un vocabulario común para las secciones de `fuentes.md`. El 2026-07-23 se agregó la conformidad de layout (un atlas puede vivir como subcarpeta o como repositorio propio) y la regla de autocontención; N5 pasó a ser agnóstico del layout. El número se mantiene en v0.1 por estar el estándar en incubación y sin implementadores externos.
 
 Un Atlas de Navegación sistematiza las rutas hacia la información pública de un sector: qué entidad consultar, qué sistema priorizar, qué fuente contrastar. Esta especificación define la forma común que ese saber toma y qué debe cumplir un atlas para ser compatible con Public Orbit y registrarse en él.
 
@@ -22,7 +22,7 @@ Cada entidad cubierta se documenta en tres archivos Markdown con roles definidos
 | --- | --- |
 | `SKILL.md` | Descripción de la entidad y orientación general de navegación |
 | `mapa-web.md` | Árbol curado del sitio oficial, reducido a su contenido misional y estratégico |
-| `fuentes.md` | Inventario de sistemas, geovisores, portales, publicaciones y documentos clave |
+| `fuentes.md` | Inventario de sistemas y plataformas, geovisores, portales de datos, publicaciones y documentos clave |
 
 ### N2 — Convención de nombres
 
@@ -59,7 +59,7 @@ Esta especificación tiene una implementación de referencia que la verifica: [`
 Buenas prácticas de los atlas fundadores (el Atlas de Navegación Minero Energético de Colombia y el Atlas de Navegación Ambiental de Colombia). Mejoran la calidad; su ausencia no rompe la compatibilidad.
 
 - **Mapa web curado, no exhaustivo:** el árbol de `mapa-web.md` se reduce al contenido misional y estratégico del sitio; profundidad guiada por el valor de navegación, no por la estructura completa del sitio.
-- **Tablas de fuentes con inventario tipificado:** sistemas, geovisores, portales de datos, publicaciones y documentos clave, cada uno con su URL verificada y una nota de qué resuelve.
+- **Tablas de fuentes con un vocabulario común de secciones:** sistemas de información y plataformas, geovisores y mapas, portales de datos, publicaciones periódicas, documentos de referencia, normativa, y servicios y trámites, en ese orden y solo las que apliquen. Cada fuente lleva su URL verificada y una nota de qué resuelve. Los nombres exactos, las secciones opcionales y la regla para secciones propias están en [`templates/fuentes-template.md`](templates/fuentes-template.md).
 - **Carpeta `examples/`:** una vitrina de consultas (`consultas-de-ejemplo.md`: prompt + ruta esperada, sin URLs) y casos de análisis reproducibles que recorren las capas completas del atlas.
 - **Verificación en vivo:** las URLs y afirmaciones sobre sistemas se contrastan contra el sitio real antes de publicarse.
 - **Reglas de competencia en la orquestadora:** cómo combinar resultados sin atribuir datos de una entidad a otra.

@@ -2,13 +2,12 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
 | SIGIPSE — Sistema de Información de Gestión IPSE | `ipse.gov.co/sigipse/` | Portal de información geoespacial y estadística de las ZNI; incluye visor de caracterización, electrificación FNCER y resultados de encuesta | 2026-05-30 |
 | CNM — Centro Nacional de Monitoreo | `ipse.gov.co/cnm/` | Boletines periódicos sobre el estado de la prestación del servicio de energía en las ZNI; informes anuales desde 2014 | 2026-05-30 |
-| Sede Electrónica — radicación virtual de proyectos | `controldoc.ipse.gov.co/sedeelectronica` | Portal para radicar solicitudes de proyectos energéticos ante el IPSE; gestión de trámites en línea | 2026-05-30 |
 | IPSE APP — Sistema de Gestión y Caracterización ZNI | `web.ipse.gov.co/` | Aplicativo web y móvil para gestión y caracterización de usuarios en Zonas No Interconectadas | 2026-05-30 |
 
 ---
@@ -49,6 +48,14 @@
 | Guía práctica de estructuración de proyectos | Guía técnica | `ipse.gov.co/guia-practica-de-estructuracion-de-proyectos/` | 2026-05-30 |
 | Listado de proyectos IPSE | Inventario | `ipse.gov.co/listado-proyectos/` | 2026-05-30 |
 | Proyectos FAZNI | Inventario | `ipse.gov.co/proyectos-fanzi/` | 2026-05-30 |
+
+---
+
+## Servicios y trámites
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Sede Electrónica — radicación virtual de proyectos | `controldoc.ipse.gov.co/sedeelectronica` | Portal para radicar solicitudes de proyectos energéticos ante el IPSE; gestión de trámites en línea | 2026-05-30 |
 
 ---
 

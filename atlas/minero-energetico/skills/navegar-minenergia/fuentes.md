@@ -2,17 +2,6 @@
 
 ---
 
-## Sistemas de información
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| Repositorio Normativo | `minenergia.gov.co/es/repositorio-normativo/normativa` | Normativa vigente del sector; búsqueda por tipo y año | 2026-05-29 |
-| Agenda Normativa Regulatoria | `minenergia.gov.co/es/repositorio-normativo/agenda-normativa-regulatoria` | Proyectos de norma en elaboración o consulta pública | 2026-05-29 |
-| Buscador documentos sector eléctrico | `minenergia.gov.co/es/misional/energia-electrica-2/buscador-documentos-energia-electrica` | Buscador interno de documentos del sector eléctrico | 2026-05-29 |
-| Ventanilla Minera | `minenergia.gov.co/es/misional/mineria/ventanilla-minera` | Portal de trámites mineros; enlaza con ANM | 2026-05-29 |
-
----
-
 ## Geovisores y mapas
 
 | Nombre | URL | Capas principales | Verificado |
@@ -54,6 +43,24 @@
 | Hoja de Ruta TEJ — Resumen Ejecutivo 2025 | PDF oficial | `micrositios/transicion-energetica-justa/documentos/hoja-de-ruta-tej-resumen-ejecutivo-2025` | 2026-05-29 |
 | Hoja de Ruta TEJ — Presentación 2025 | PDF oficial | `micrositios/transicion-energetica-justa/documentos/presentacion-hoja-de-ruta-tej-2025` | 2026-05-29 |
 | Escenarios Nacionales TEJ 2024 | PDF oficial | `micrositios/transicion-energetica-justa/documentos/escenarios-nacionales-tej-2024` | 2026-05-29 |
+| Buscador documentos sector eléctrico | Buscador interno de documentos del sector eléctrico | `minenergia.gov.co/es/misional/energia-electrica-2/buscador-documentos-energia-electrica` | 2026-05-29 |
+
+---
+
+## Normativa
+
+| Nombre | Tipo | URL | Verificado |
+|---|---|---|---|
+| Repositorio Normativo | Normativa vigente del sector; búsqueda por tipo y año | `minenergia.gov.co/es/repositorio-normativo/normativa` | 2026-05-29 |
+| Agenda Normativa Regulatoria | Proyectos de norma en elaboración o consulta pública | `minenergia.gov.co/es/repositorio-normativo/agenda-normativa-regulatoria` | 2026-05-29 |
+
+---
+
+## Servicios y trámites
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Ventanilla Minera | `minenergia.gov.co/es/misional/mineria/ventanilla-minera` | Portal de trámites mineros; enlaza con ANM | 2026-05-29 |
 
 ---
 

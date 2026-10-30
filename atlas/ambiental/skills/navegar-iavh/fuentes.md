@@ -2,7 +2,7 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -15,18 +15,7 @@
 
 ---
 
-## Bases de datos y colecciones biológicas
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| Colecciones Biológicas IAvH | `https://colecciones.humboldt.org.co` | Portal de las 11 colecciones biológicas del IAvH: aves (IAvH-A), mamíferos (IAvH-M), anfibios, reptiles, peces, entomología, herbario Federico Medem, semillas, colección de sonidos Mauricio Álvarez Rebolledo, entre otras | 2026-06-15 |
-| Especímenes Tipo | `https://colecciones.humboldt.org.co/especimenes-tipo/` | Catálogo de especímenes tipo como referencias taxonómicas | 2026-06-15 |
-| Registro Nacional de Colecciones (RNC) | `https://rnc.humboldt.org.co/` | Registro Único Nacional de Colecciones biológicas de Colombia; IAvH actúa como administrador; portal accesible con contenido de colecciones biológicas al 2026-07-04 | 2026-07-04 |
-| Datos Biocultural | `https://biocultural.humboldt.org.co/dataverse/iavh_i2d` | Catálogo de datos y metadatos socioecológicos bajo estándar DDI; 73 datasets, 241 archivos, filtrables por tema, región y tipo de datos | 2026-06-15 |
-
----
-
-## Geovisores y portales geoespaciales
+## Geovisores y mapas
 
 | Nombre | URL | Capas principales | Verificado |
 |---|---|---|---|
@@ -46,15 +35,33 @@
 
 ---
 
-## Publicaciones
+## Publicaciones periódicas
+
+| Nombre | URL | Frecuencia | Verificado |
+|---|---|---|---|
+| Biota Colombiana | `https://revistas.humboldt.org.co/index.php/biota` | Continua (revista científica indexada, ISSN 0124-5376 / e-ISSN 2539-200X; acceso abierto; botánica, zoología, ecología, biogeografía y taxonomía neotropical) | 2026-06-15 |
+| Biodiversidad en la Práctica | `https://revistas.humboldt.org.co/index.php/BEP` | Anual (publicación técnico-científica, e-ISSN 2619-3124; gestión integrada de biodiversidad y servicios ecosistémicos) | 2026-06-15 |
+
+---
+
+## Documentos de referencia
+
+| Nombre | Tipo | URL | Verificado |
+|---|---|---|---|
+| Repositorio Institucional | Repositorio de producciones científicas del IAvH: publicaciones, productos de conocimiento, documentos institucionales, banco de imágenes ambientales | `https://repository.humboldt.org.co` | 2026-06-15 |
+| Portal de Publicaciones Editoriales | Catálogo de publicaciones del IAvH filtrable por ecosistema, región y año; acceso al repositorio | `https://humboldt.org.co/publicaciones-editoriales/publicaciones` | 2026-06-15 |
+| Catálogo Biblioteca Francisco Matís Mahecha | Sistema automatizado Koha con libros, revistas, audiovisuales y mapas sobre biodiversidad; sedes en Bogotá y Villa de Leyva | `https://catalogo.humboldt.org.co/cgi-bin/koha/opac-main.pl` | 2026-06-15 |
+
+---
+
+## Colecciones biológicas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
-| Repositorio Institucional | `https://repository.humboldt.org.co` | Repositorio de producciones científicas del IAvH: publicaciones, productos de conocimiento, documentos institucionales, banco de imágenes ambientales | 2026-06-15 |
-| Biota Colombiana | `https://revistas.humboldt.org.co/index.php/biota` | Revista científica indexada (ISSN 0124-5376 / e-ISSN 2539-200X); acceso abierto Diamond OA; temáticas de botánica, zoología, ecología, biogeografía y taxonomía neotropical | 2026-06-15 |
-| Biodiversidad en la Práctica | `https://revistas.humboldt.org.co/index.php/BEP` | Publicación técnico-científica (e-ISSN 2619-3124); trabajos sobre gestión integrada de biodiversidad y servicios ecosistémicos | 2026-06-15 |
-| Portal de Publicaciones Editoriales | `https://humboldt.org.co/publicaciones-editoriales/publicaciones` | Catálogo de publicaciones del IAvH filtrable por ecosistema, región y año; acceso al repositorio | 2026-06-15 |
-| Catálogo Biblioteca Francisco Matís Mahecha | `https://catalogo.humboldt.org.co/cgi-bin/koha/opac-main.pl` | Sistema automatizado Koha con libros, revistas, audiovisuales y mapas sobre biodiversidad; sedes en Bogotá y Villa de Leyva | 2026-06-15 |
+| Colecciones Biológicas IAvH | `https://colecciones.humboldt.org.co` | Portal de las 11 colecciones biológicas del IAvH: aves (IAvH-A), mamíferos (IAvH-M), anfibios, reptiles, peces, entomología, herbario Federico Medem, semillas, colección de sonidos Mauricio Álvarez Rebolledo, entre otras | 2026-06-15 |
+| Especímenes Tipo | `https://colecciones.humboldt.org.co/especimenes-tipo/` | Catálogo de especímenes tipo como referencias taxonómicas | 2026-06-15 |
+| Registro Nacional de Colecciones (RNC) | `https://rnc.humboldt.org.co/` | Registro Único Nacional de Colecciones biológicas de Colombia; IAvH actúa como administrador; portal accesible con contenido de colecciones biológicas al 2026-07-04 | 2026-07-04 |
+| Datos Biocultural | `https://biocultural.humboldt.org.co/dataverse/iavh_i2d` | Catálogo de datos y metadatos socioecológicos bajo estándar DDI; 73 datasets, 241 archivos, filtrables por tema, región y tipo de datos | 2026-06-15 |
 
 ---
 

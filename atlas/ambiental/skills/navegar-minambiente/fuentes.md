@@ -2,7 +2,7 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -61,15 +61,24 @@
 
 ---
 
-## Micrositios destacados
+## Documentos de referencia
 
-| Micrositio | URL | Secciones relevantes | Verificado |
+| Nombre | Tipo | URL | Verificado |
 |---|---|---|---|
-| COP16 — Biodiversidad | `https://www.minambiente.gov.co/cop16/` | Inicio, Documentos, Libro digital, Relatorías, Plan de Acción, NBSAP, encuentros regionales, Plan de Acción de Biodiversidad Colombia 2030, registro histórico previo a COP16 | 2026-06-02 |
-| Páramo Almorzadero | `https://almorzadero.minambiente.gov.co` | Proceso de delimitación, sala de prensa, acciones habilitantes, fases de participación, atención al ciudadano, antecedentes, localización geográfica, convocatorias, material pedagógico, conservación del páramo | 2026-06-02 |
-| Páramo Santurbán | `https://santurban.minambiente.gov.co` | Generalidades, fase informativa, fase de consulta, fase de concertación, sala de prensa, fase actual, convocatorias, material pedagógico, localización, normatividad y jurisprudencia, antecedentes, audios pedagógicos | 2026-06-02 |
-| Páramo Pisba | `https://pisba.minambiente.gov.co` | Proceso de delimitación, fase informativa, fase consulta, fase concertación, seguimiento y verificación, acercamiento, sala de prensa, convocatorias, material pedagógico, línea de tiempo, normatividad, cronogramas, antecedentes | 2026-06-02 |
-| Páramo Cruz Verde-Sumapaz | `https://sumapaz.minambiente.gov.co` | Generalidades, fase informativa, fase de consulta, fase de concertación, sala de prensa, concertación del Páramo Cruz Verde, avances participativos, formulario de participación, localización geográfica, material pedagógico, antecedentes | 2026-06-02 |
+| NDC 2025 — Contribución Nacionalmente Determinada | Política climática | `https://www.minambiente.gov.co/cambio-climatico-y-gestion-del-riesgo/ndc-2025/` | 2026-06-01 |
+| Estrategia E2050 — Carbono Neutralidad | Estrategia | `https://www.minambiente.gov.co/cambio-climatico-y-gestion-del-riesgo/estrategia-2050/` | 2026-06-01 |
+| ECDBC — Estrategia Colombiana de Desarrollo Bajo en Carbono | Estrategia | `https://www.minambiente.gov.co/cambio-climatico-y-gestion-del-riesgo/estrategia-colombiana-de-desarrollo-bajo-en-carbono-ecdbc/` | 2026-06-01 |
+| Plan Nacional de Adaptación al Cambio Climático (PNACC) | Plan | `https://www.minambiente.gov.co/cambio-climatico-y-gestion-del-riesgo/plan-nacional-de-adaptacion-al-cambio-climatico/` | 2026-06-01 |
+| PIGCCT — Planes Integrales de Gestión del Cambio Climático Territorial | Plan territorial | `https://www.minambiente.gov.co/cambio-climatico-y-gestion-del-riesgo/planes-integrales-de-gestion-del-cambio-climatico-territorial/` | 2026-06-01 |
+| Inventario Nacional de GEI (INGEI) | Informe técnico | `https://www.minambiente.gov.co/cambio-climatico-y-gestion-del-riesgo/inventario-nacional-de-emisiones-y-absorciones-de-gases-de-efecto-invernadero-ingei/` | 2026-06-01 |
+| Política Nacional para la Gestión Integral de la Biodiversidad (PNGIBSE) | Política | `https://www.minambiente.gov.co/direccion-de-bosques-biodiversidad-y-servicios-ecosistemicos/politica-nacional-para-la-gestion-integral-de-la-biodiversidad-y-sus-servicios-ecosistemicos/` | 2026-06-01 |
+| Plan Nacional de Negocios Verdes | Plan | `https://www.minambiente.gov.co/negocios-verdes/plan-nacional-de-negocios-verdes/` | 2026-06-01 |
+| Programa Nacional de PSA (Pagos por Servicios Ambientales) | Programa | `https://www.minambiente.gov.co/negocios-verdes/programa-nacional-de-pagos-por-servicios-ambientales/` | 2026-06-01 |
+| Estrategia Nacional de Economía Circular (ENEC) | Estrategia | `https://economiacircular.minambiente.gov.co/` | 2026-06-01 |
+| Política Nacional del Agua | Política | `https://www.minambiente.gov.co/politica-nacional-del-agua/` | 2026-06-01 |
+| Acuerdo de Escazú — Micrositio | Micrositio temático | `https://especiales.minambiente.gov.co/acuerdo-de-escazu/` | 2026-06-01 |
+| Sentencia Río Atrato (T-622-16) — Seguimiento | Micrositio temático | `https://atrato.minambiente.gov.co/` | 2026-06-01 |
+| Sentencia de Ordenamiento Ambiental Minero | Sección temática | `https://www.minambiente.gov.co/ordenamiento-ambiental-minero/` | 2026-06-01 |
 
 ---
 
@@ -90,24 +99,15 @@
 
 ---
 
-## Documentos de referencia
+## Micrositios
 
-| Nombre | Tipo | URL | Verificado |
+| Micrositio | URL | Secciones relevantes | Verificado |
 |---|---|---|---|
-| NDC 2025 — Contribución Nacionalmente Determinada | Política climática | `https://www.minambiente.gov.co/cambio-climatico-y-gestion-del-riesgo/ndc-2025/` | 2026-06-01 |
-| Estrategia E2050 — Carbono Neutralidad | Estrategia | `https://www.minambiente.gov.co/cambio-climatico-y-gestion-del-riesgo/estrategia-2050/` | 2026-06-01 |
-| ECDBC — Estrategia Colombiana de Desarrollo Bajo en Carbono | Estrategia | `https://www.minambiente.gov.co/cambio-climatico-y-gestion-del-riesgo/estrategia-colombiana-de-desarrollo-bajo-en-carbono-ecdbc/` | 2026-06-01 |
-| Plan Nacional de Adaptación al Cambio Climático (PNACC) | Plan | `https://www.minambiente.gov.co/cambio-climatico-y-gestion-del-riesgo/plan-nacional-de-adaptacion-al-cambio-climatico/` | 2026-06-01 |
-| PIGCCT — Planes Integrales de Gestión del Cambio Climático Territorial | Plan territorial | `https://www.minambiente.gov.co/cambio-climatico-y-gestion-del-riesgo/planes-integrales-de-gestion-del-cambio-climatico-territorial/` | 2026-06-01 |
-| Inventario Nacional de GEI (INGEI) | Informe técnico | `https://www.minambiente.gov.co/cambio-climatico-y-gestion-del-riesgo/inventario-nacional-de-emisiones-y-absorciones-de-gases-de-efecto-invernadero-ingei/` | 2026-06-01 |
-| Política Nacional para la Gestión Integral de la Biodiversidad (PNGIBSE) | Política | `https://www.minambiente.gov.co/direccion-de-bosques-biodiversidad-y-servicios-ecosistemicos/politica-nacional-para-la-gestion-integral-de-la-biodiversidad-y-sus-servicios-ecosistemicos/` | 2026-06-01 |
-| Plan Nacional de Negocios Verdes | Plan | `https://www.minambiente.gov.co/negocios-verdes/plan-nacional-de-negocios-verdes/` | 2026-06-01 |
-| Programa Nacional de PSA (Pagos por Servicios Ambientales) | Programa | `https://www.minambiente.gov.co/negocios-verdes/programa-nacional-de-pagos-por-servicios-ambientales/` | 2026-06-01 |
-| Estrategia Nacional de Economía Circular (ENEC) | Estrategia | `https://economiacircular.minambiente.gov.co/` | 2026-06-01 |
-| Política Nacional del Agua | Política | `https://www.minambiente.gov.co/politica-nacional-del-agua/` | 2026-06-01 |
-| Acuerdo de Escazú — Micrositio | Micrositio temático | `https://especiales.minambiente.gov.co/acuerdo-de-escazu/` | 2026-06-01 |
-| Sentencia Río Atrato (T-622-16) — Seguimiento | Micrositio temático | `https://atrato.minambiente.gov.co/` | 2026-06-01 |
-| Sentencia de Ordenamiento Ambiental Minero | Sección temática | `https://www.minambiente.gov.co/ordenamiento-ambiental-minero/` | 2026-06-01 |
+| COP16 — Biodiversidad | `https://www.minambiente.gov.co/cop16/` | Inicio, Documentos, Libro digital, Relatorías, Plan de Acción, NBSAP, encuentros regionales, Plan de Acción de Biodiversidad Colombia 2030, registro histórico previo a COP16 | 2026-06-02 |
+| Páramo Almorzadero | `https://almorzadero.minambiente.gov.co` | Proceso de delimitación, sala de prensa, acciones habilitantes, fases de participación, atención al ciudadano, antecedentes, localización geográfica, convocatorias, material pedagógico, conservación del páramo | 2026-06-02 |
+| Páramo Santurbán | `https://santurban.minambiente.gov.co` | Generalidades, fase informativa, fase de consulta, fase de concertación, sala de prensa, fase actual, convocatorias, material pedagógico, localización, normatividad y jurisprudencia, antecedentes, audios pedagógicos | 2026-06-02 |
+| Páramo Pisba | `https://pisba.minambiente.gov.co` | Proceso de delimitación, fase informativa, fase consulta, fase concertación, seguimiento y verificación, acercamiento, sala de prensa, convocatorias, material pedagógico, línea de tiempo, normatividad, cronogramas, antecedentes | 2026-06-02 |
+| Páramo Cruz Verde-Sumapaz | `https://sumapaz.minambiente.gov.co` | Generalidades, fase informativa, fase de consulta, fase de concertación, sala de prensa, concertación del Páramo Cruz Verde, avances participativos, formulario de participación, localización geográfica, material pedagógico, antecedentes | 2026-06-02 |
 
 ---
 

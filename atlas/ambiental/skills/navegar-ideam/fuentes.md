@@ -2,7 +2,7 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -18,10 +18,13 @@
 | FEWS Colombia — Pronóstico Hidrológico | `https://fews.ideam.gov.co` | Sistema de pronóstico y alertas hidrológicas basado en el modelo FEWS; visor nacional disponible en `/visorfews/nacional` | 2026-06-01 |
 | Puntos de Calor — Monitoreo de Incendios | `https://puntosdecalor.ideam.gov.co/` | Portal de seguimiento satelital de anomalías térmicas asociadas a incendios y quemas en Colombia | 2026-06-01 |
 | Modelos WRF — Pronóstico Meteorológico | `https://bart.ideam.gov.co/wrfideam/` | Salidas del modelo meteorológico WRF operado por el IDEAM para pronóstico numérico del tiempo y clima | 2026-06-01 |
+| Aplicativos IDEAM — listado | `https://ideam.gov.co/aplicativos-ideam` | Página central con acceso a todos los aplicativos institucionales | 2026-06-01 |
+| Centro de Documentación | `https://documentacion.ideam.gov.co/` | Repositorio de documentos técnicos e institucionales del IDEAM | 2026-06-01 |
+| WRF IDEAM — Modelos meteorológicos | `https://bart.ideam.gov.co/wrfideam/` | Salidas operativas del modelo numérico WRF para Colombia | 2026-06-01 |
 
 ---
 
-## Módulos y capas destacadas
+## Capas y módulos destacados
 
 | Fuente | URL | Módulos / capas relevantes | Verificado |
 |---|---|---|---|
@@ -90,16 +93,6 @@
 | Atlas del Viento de Colombia | Atlas PDF | `https://ideam.gov.co/sites/default/files/temas/tiempo-y-clima/documentos/atlas/ATLAS-VIENTO-DE-COLOMBIA.pdf` | 2026-06-01 |
 | Mapa de Ecosistemas Continentales, Costeros y Marinos (2024) | Shapefile | `https://ideam.gov.co/sites/default/files/2025-9-oct/Mapa_Ecosistemas_Continentales_Costeros_Marinos_100K_2024.zip` | 2026-06-01 |
 | Protocolo de Zonificación de Riesgos por Incendios | Protocolo | `https://ideam.gov.co/nuestra-entidad/ecosistemas-e-informacion-ambiental/incendios-de-la-cobertura-vegetal/protocolo-de-zonificacion-de-riesgos` | 2026-06-01 |
-
----
-
-## Aplicativos
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| Aplicativos IDEAM — listado | `https://ideam.gov.co/aplicativos-ideam` | Página central con acceso a todos los aplicativos institucionales | 2026-06-01 |
-| Centro de Documentación | `https://documentacion.ideam.gov.co/` | Repositorio de documentos técnicos e institucionales del IDEAM | 2026-06-01 |
-| WRF IDEAM — Modelos meteorológicos | `https://bart.ideam.gov.co/wrfideam/` | Salidas operativas del modelo numérico WRF para Colombia | 2026-06-01 |
 
 ---
 

@@ -2,7 +2,7 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -11,7 +11,6 @@
 | SIMMA — Movimientos en Masa | `simma.sgc.gov.co/` | Sistema de Información de Movimientos en Masa; inventario nacional de eventos | 2026-05-30 |
 | GeoRED — Red Geodésica | `geored2.sgc.gov.co/` | Red geodésica colombiana; datos GPS y de deformación cortical | 2026-05-30 |
 | Hidrotermales | `hidrotermales.sgc.gov.co/invtermales/` | Inventario nacional de manifestaciones hidrotermales | 2026-05-30 |
-| Datos Abiertos SGC | `datos.sgc.gov.co/` | Portal de datos abiertos del SGC; datasets geocientíficos descargables | 2026-05-30 |
 
 ---
 
@@ -25,6 +24,14 @@
 | Mapa Geológico de Colombia | `www2.sgc.gov.co/MGC/Paginas/Inicio.aspx` | MGC oficial; descarga de mapas geológicos nacionales y regionales | 2026-05-30 |
 | Volcanes — Vigilancia | `sgc.gov.co/volcanes` | Monitoreo en tiempo real de volcanes activos de Colombia; reportes de actividad | 2026-05-30 |
 | Consulta información geofísica | `https://www2.sgc.gov.co/Direcciones-Tecnicas/RecursosMinerales/Paginas/consulta-informacion-geofisica.aspx` | Información aerogeofísica de magnetometría y gamma espectrometría | 2026-08-11 |
+
+---
+
+## Portales de datos
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Datos Abiertos SGC | `datos.sgc.gov.co/` | Portal de datos abiertos del SGC; datasets geocientíficos descargables | 2026-05-30 |
 
 ---
 

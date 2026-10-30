@@ -2,6 +2,49 @@
 
 ---
 
+## Sistemas de información y plataformas
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Portal comercial — productos y precios | `ecopetrol.com.co/wps/portal/Home/multisitios/comercial/` | Portal de información comercial: portafolio, precios vigentes e históricos, información GLP, gas natural, energía y crudo | 2026-06-01 |
+| SIPROE — Sistema de Proveedores | `siproe.ecopetrol.com.co/proveedor` | URL directa del sistema SAP Ariba de confirmación de cantidades para proveedores | 2026-06-01 |
+| SIPROE — Portal de Proveedores | `proveedores.ecopetrol.com.co/es-ES/` | Sistema de información de proveedores; registro, habilitación y gestión de contratos | 2026-06-01 |
+| Autogestión Financiera Proveedores | `autogestionfinanciera.ecopetrol.com.co/es-ES/` | Portal de autogestión financiera para proveedores de Ecopetrol | 2026-06-01 |
+| Cliente en línea (portal comercial) | `ecopetrol.com.co/wps/portal/Home/multisitios/comercial/es/clienteenlinea/clienteenlinea/Herramientas%20en%20l%C3%ADnea%20para%20nuestros%20clientes` | Herramientas en línea para clientes comerciales de Ecopetrol | 2026-06-01 |
+
+---
+
+## Capas y módulos destacados
+
+| Fuente | URL | Módulos / secciones relevantes | Verificado |
+|---|---|---|---|
+| Kit para el Inversionista | `ecopetrol.com.co/wps/portal/Home/es/Inversionistas/kit-inversionista/kit-inversionista` | Resultados trimestrales, Estrategia 2040 y Plan de Negocios 2022-2024, presentaciones a inversionistas, Informes SEC, reportes de gestión y sostenibilidad, Dashboard SosTECnibilidad, estructura corporativa, presentación corporativa, analistas de renta variable | 2026-06-02 |
+| Autogestión Financiera Proveedores | `autogestionfinanciera.ecopetrol.com.co/es-ES/` | Inicio, iniciar sesión, noticias para proveedores, widget financiero TradingView con ECOPETROL, EC, UKOIL y USOIL; el contenido transaccional requiere autenticación | 2026-06-02 |
+| Boletín de Transporte por Oleoducto | `storymaps.arcgis.com/stories/ccf75d4a350845f1b8f795764ce1199e` | Auditorías de transporte, tarifas vigentes, condiciones monetarias, manual del transportador, mapa digital de oleoductos, acceso a balances y nominaciones, acceso a terceros, datos de contacto | 2026-06-02 |
+| Mapa digital de oleoductos — Ecopetrol | `storymaps.arcgis.com/stories/ccf75d4a350845f1b8f795764ce1199e` | Ductos visibles: Casabe-Galán, Castilla-San Fernando, Chichimene-San Fernando, El Centro-Galán, El Morro-Aranaguey, Gibraltar-Caño Limón, Moriche-Jazmín, Provincia-Payoa, Río Ceibas-Tello, Teca-Vasconia, Tello-Dina, Tibú-Miramonte, Yarirí-Comuneros | 2026-06-02 |
+
+---
+
+## Geovisores y mapas
+
+| Nombre | URL | Capas principales | Verificado |
+|---|---|---|---|
+| Boletín de Transporte por Oleoducto | `storymaps.arcgis.com/stories/ccf75d4a350845f1b8f795764ce1199e` | StoryMap ArcGIS con información pública de oleoductos operados por la BTO de Ecopetrol: auditorías, tarifas, manual, mapa digital, balances, nominaciones y acceso de terceros | 2026-06-02 |
+
+---
+
+## Portales de datos
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Portal del Accionista | `wa-aeu-ecp-prd-portalaccionistas.azurewebsites.net/#/` | Portal externo para accionistas; gestión de comunicaciones, acreditación y trámites relacionados con acciones | 2026-06-01 |
+| Inventario de datos abiertos | `ecopetrol.com.co/wps/portal/Home/es/NuestraEmpresa/Serviciosdeinformaci%C3%B3nalciudadano/Inventariodedatosabiertos` | Catálogo de datasets públicos de Ecopetrol; enlaza a PDF inventario, Excel índice de información y portal datos.gov.co | 2026-06-01 |
+| Precios históricos (combustibles, crudo, GLP) | `ecopetrol.com.co/wps/portal/Home/multisitios/comercial/es/precios/precios-historicos/glp-combustibles-liquidos` | Series históricas de precios de gasolina, diésel, jet, GLP, gas natural y crudo desde 2010; descarga en Excel | 2026-06-01 |
+| Estados financieros (consolidados y no consolidados) | `ecopetrol.com.co/wps/portal/Home/es/Inversionistas/InformacionFinanciera/Estadosfinancieros` | Estados financieros trimestrales desde 2004; balance general, PyG, notas; descarga en PDF | 2026-06-01 |
+| Informes SEC (20-F y 6-K) | `ecopetrol.com.co/wps/portal/Home/es/Inversionistas/InformacionFinanciera/InformesSEC` | Reportes anuales (20-F) y corrientes (6-K) ante la SEC de EE. UU.; enlaza directo a EDGAR | 2026-06-01 |
+
+---
+
 ## Publicaciones periódicas
 
 | Nombre | URL | Frecuencia | Verificado |
@@ -35,57 +78,12 @@
 
 ---
 
-## Portales de datos
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| Portal del Accionista | `wa-aeu-ecp-prd-portalaccionistas.azurewebsites.net/#/` | Portal externo para accionistas; gestión de comunicaciones, acreditación y trámites relacionados con acciones | 2026-06-01 |
-| Inventario de datos abiertos | `ecopetrol.com.co/wps/portal/Home/es/NuestraEmpresa/Serviciosdeinformaci%C3%B3nalciudadano/Inventariodedatosabiertos` | Catálogo de datasets públicos de Ecopetrol; enlaza a PDF inventario, Excel índice de información y portal datos.gov.co | 2026-06-01 |
-| Precios históricos (combustibles, crudo, GLP) | `ecopetrol.com.co/wps/portal/Home/multisitios/comercial/es/precios/precios-historicos/glp-combustibles-liquidos` | Series históricas de precios de gasolina, diésel, jet, GLP, gas natural y crudo desde 2010; descarga en Excel | 2026-06-01 |
-| Estados financieros (consolidados y no consolidados) | `ecopetrol.com.co/wps/portal/Home/es/Inversionistas/InformacionFinanciera/Estadosfinancieros` | Estados financieros trimestrales desde 2004; balance general, PyG, notas; descarga en PDF | 2026-06-01 |
-| Informes SEC (20-F y 6-K) | `ecopetrol.com.co/wps/portal/Home/es/Inversionistas/InformacionFinanciera/InformesSEC` | Reportes anuales (20-F) y corrientes (6-K) ante la SEC de EE. UU.; enlaza directo a EDGAR | 2026-06-01 |
-
----
-
-## Aplicativos
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| SIPROE — Portal de Proveedores | `proveedores.ecopetrol.com.co/es-ES/` | Sistema de información de proveedores; registro, habilitación y gestión de contratos | 2026-06-01 |
-| Autogestión Financiera Proveedores | `autogestionfinanciera.ecopetrol.com.co/es-ES/` | Portal de autogestión financiera para proveedores de Ecopetrol | 2026-06-01 |
-| Cliente en línea (portal comercial) | `ecopetrol.com.co/wps/portal/Home/multisitios/comercial/es/clienteenlinea/clienteenlinea/Herramientas%20en%20l%C3%ADnea%20para%20nuestros%20clientes` | Herramientas en línea para clientes comerciales de Ecopetrol | 2026-06-01 |
-
----
-
-## Módulos destacados
-
-| Fuente | URL | Módulos / secciones relevantes | Verificado |
-|---|---|---|---|
-| Kit para el Inversionista | `ecopetrol.com.co/wps/portal/Home/es/Inversionistas/kit-inversionista/kit-inversionista` | Resultados trimestrales, Estrategia 2040 y Plan de Negocios 2022-2024, presentaciones a inversionistas, Informes SEC, reportes de gestión y sostenibilidad, Dashboard SosTECnibilidad, estructura corporativa, presentación corporativa, analistas de renta variable | 2026-06-02 |
-| Autogestión Financiera Proveedores | `autogestionfinanciera.ecopetrol.com.co/es-ES/` | Inicio, iniciar sesión, noticias para proveedores, widget financiero TradingView con ECOPETROL, EC, UKOIL y USOIL; el contenido transaccional requiere autenticación | 2026-06-02 |
-| Boletín de Transporte por Oleoducto | `storymaps.arcgis.com/stories/ccf75d4a350845f1b8f795764ce1199e` | Auditorías de transporte, tarifas vigentes, condiciones monetarias, manual del transportador, mapa digital de oleoductos, acceso a balances y nominaciones, acceso a terceros, datos de contacto | 2026-06-02 |
-| Mapa digital de oleoductos — Ecopetrol | `storymaps.arcgis.com/stories/ccf75d4a350845f1b8f795764ce1199e` | Ductos visibles: Casabe-Galán, Castilla-San Fernando, Chichimene-San Fernando, El Centro-Galán, El Morro-Aranaguey, Gibraltar-Caño Limón, Moriche-Jazmín, Provincia-Payoa, Río Ceibas-Tello, Teca-Vasconia, Tello-Dina, Tibú-Miramonte, Yarirí-Comuneros | 2026-06-02 |
-
----
-
-## Geovisores y mapas
-
-| Nombre | URL | Capas principales | Verificado |
-|---|---|---|---|
-| Boletín de Transporte por Oleoducto | `storymaps.arcgis.com/stories/ccf75d4a350845f1b8f795764ce1199e` | StoryMap ArcGIS con información pública de oleoductos operados por la BTO de Ecopetrol: auditorías, tarifas, manual, mapa digital, balances, nominaciones y acceso de terceros | 2026-06-02 |
-
----
-
-## Sistemas de información
+## Micrositios
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
 | Estrategia 2040 | `ecopetrol.com.co/wps/portal/Home/estrategia2040/` | Micrositio de la estrategia corporativa al 2040; cuatro pilares: Transición Energética, Sostenibilidad, Conocimiento de Vanguardia y Retornos Competitivos; líneas de negocio: hidrocarburos, bajas emisiones, transmisión/telecomunicaciones | 2026-06-01 |
 | SosTECnibilidad | `ecopetrol.com.co/wps/portal/Home/sostecnibilidad` | Portal integrado de sostenibilidad ambiental, social y de gobernanza (ASG) | 2026-06-01 |
-| Portal comercial — productos y precios | `ecopetrol.com.co/wps/portal/Home/multisitios/comercial/` | Portal de información comercial: portafolio, precios vigentes e históricos, información GLP, gas natural, energía y crudo | 2026-06-01 |
-| CT&F — Revista Ciencia, Tecnología y Futuro | `ctyf.journal.ecopetrol.com.co/index.php/ctyf` | Revista científica del ICP-Ecopetrol; indexada en Scopus, SciELO, ISI; acceso abierto; vigente desde 1995 | 2026-06-01 |
-| nuevoportal.ecopetrol.com.co | `nuevoportal.ecopetrol.com.co/wps/portal/` | Portal corporativo activo; las URLs bajo `/wps/portal/` sin prefijo `/Home/es/` funcionan directamente aquí; la redirección es bidireccional con `www.ecopetrol.com.co` | 2026-06-01 |
-| SIPROE — Sistema de Proveedores | `siproe.ecopetrol.com.co/proveedor` | URL directa del sistema SAP Ariba de confirmación de cantidades para proveedores | 2026-06-01 |
 
 ---
 
@@ -112,3 +110,4 @@
 | `autogestionfinanciera.ecopetrol.com.co` | Portal público mínimo; el acceso transaccional está detrás de `Iniciar sesión`; la home incluye noticia de inscripción por QR y widget financiero TradingView |
 | `storymaps.arcgis.com/stories/boletin-transporte-oleoducto/` | Nodo externo del mapa para el StoryMap `storymaps.arcgis.com/stories/ccf75d4a350845f1b8f795764ce1199e`; mantener `storymaps.arcgis.com/stories/` visible y reemplazar el ID aleatorio por `boletin-transporte-oleoducto`. En el sitio de Ecopetrol aparece en `Grupos de interés > Ser cliente > Boletín de Transporte por Oleoducto (BTO)` |
 | `grupos-de-interes/ser-cliente/boletin-transporte-oleoducto-bto` | Ruta interna donde Ecopetrol enlaza el boletín dentro del menú/sitemap; el destino real abre el StoryMap externo en `storymaps.arcgis.com/stories/ccf75d4a350845f1b8f795764ce1199e` |
+| `nuevoportal.ecopetrol.com.co` | Portal corporativo activo; las URLs bajo `/wps/portal/` sin prefijo `/Home/es/` funcionan directamente aquí; la redirección es bidireccional con `www.ecopetrol.com.co` |

@@ -2,7 +2,7 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -30,22 +30,12 @@
 
 ---
 
-## Estadísticas
+## Documentos de referencia
 
-| Nombre | URL | Frecuencia | Verificado |
+| Nombre | Tipo | URL | Verificado |
 |---|---|---|---|
-| Estadísticas de visitantes (2010–2025) | https://www.parquesnacionales.gov.co/ecoturismo/#estadisticas_visitantes | Series anuales descargables en Excel/PDF. Ancla en la página de Ecoturismo. | 2026-06-15 |
-| Encuestas de satisfacción de visitantes | https://www.parquesnacionales.gov.co/ecoturismo/#encuestas | Reportes anuales y semestrales 2022–2025. | 2026-06-15 |
-| Estadísticas RUNAP — áreas protegidas | https://runap.parquesnacionales.gov.co/ | Cifras oficiales de extensión, número de áreas y cobertura nacional. Fuente citada con corte a junio 2025. | 2026-06-15 |
-
----
-
-## Publicaciones
-
-| Nombre | URL | Frecuencia | Verificado |
-|---|---|---|---|
-| Planes de manejo por área protegida | https://www.parquesnacionales.gov.co/entidad/planes-de-manejo-areas-del-spnn/ | PDFs por área, organizados en 6 territoriales. 57 áreas documentadas, publicaciones 2004–2022. | 2026-06-15 |
-| Publicaciones de ecoturismo | https://www.parquesnacionales.gov.co/ecoturismo/#publicaciones | Materiales educativos y de divulgación del programa de ecoturismo. | 2026-06-15 |
+| Planes de manejo por área protegida | PDFs por área, organizados en 6 territoriales. 57 áreas documentadas, publicaciones 2004–2022. | https://www.parquesnacionales.gov.co/entidad/planes-de-manejo-areas-del-spnn/ | 2026-06-15 |
+| Publicaciones de ecoturismo | Materiales educativos y de divulgación del programa de ecoturismo. | https://www.parquesnacionales.gov.co/ecoturismo/#publicaciones | 2026-06-15 |
 
 ---
 
@@ -56,6 +46,16 @@
 | Normograma PNN | Normograma consolidado | https://www.parquesnacionales.gov.co/normativas/ | 2026-06-15 |
 | Resoluciones (2021–2025) | Resoluciones | https://www.parquesnacionales.gov.co/normativas/ | 2026-06-15 |
 | Decretos (1974–2024) | Decretos | https://www.parquesnacionales.gov.co/normativas/ | 2026-06-15 |
+
+---
+
+## Estadísticas
+
+| Nombre | URL | Frecuencia | Verificado |
+|---|---|---|---|
+| Estadísticas de visitantes (2010–2025) | https://www.parquesnacionales.gov.co/ecoturismo/#estadisticas_visitantes | Series anuales descargables en Excel/PDF. Ancla en la página de Ecoturismo. | 2026-06-15 |
+| Encuestas de satisfacción de visitantes | https://www.parquesnacionales.gov.co/ecoturismo/#encuestas | Reportes anuales y semestrales 2022–2025. | 2026-06-15 |
+| Estadísticas RUNAP — áreas protegidas | https://runap.parquesnacionales.gov.co/ | Cifras oficiales de extensión, número de áreas y cobertura nacional. Fuente citada con corte a junio 2025. | 2026-06-15 |
 
 ---
 

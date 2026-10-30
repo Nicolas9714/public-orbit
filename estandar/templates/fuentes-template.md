@@ -2,7 +2,7 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -52,14 +52,26 @@
 
 <!-- INSTRUCCIONES DE USO (eliminar antes de publicar)
 
-Las secciones anteriores son las más comunes. Añadir o eliminar secciones según la naturaleza
-de la entidad. Ejemplos de secciones adicionales frecuentes:
+Las secciones anteriores son las más comunes. Usar solo las que apliquen a la entidad. Núcleo,
+con este nombre exacto y en este orden:
 
-- ## Normativa          → para entidades reguladoras (CREG, ANH, ANM)
-- ## Aplicativos        → para entidades con herramientas web propias (UPME)
-- ## Convocatorias      → para fondos o entidades con ciclos de financiación (FENOGE)
-- ## Servicios para prestadores → para entidades de vigilancia (Superservicios)
-- ## Marco regulatorio por sector → para reguladores multisector (CREG)
+1. ## Sistemas de información y plataformas
+2. ## Geovisores y mapas
+3. ## Portales de datos
+4. ## Publicaciones periódicas
+5. ## Documentos de referencia
+6. ## Normativa                → columnas: Nombre | Tipo | URL | Verificado
+7. ## Servicios y trámites     → columnas: Nombre | URL | Descripción | Verificado
+
+Secciones opcionales con nombre acordado, después del núcleo: Convocatorias, Estadísticas,
+Colecciones biológicas, Micrositios, Redes de monitoreo.
+
+Una sección de detalle (capas o módulos de un recurso ya listado) se llama
+## Capas y módulos destacados y va justo después de la sección que detalla.
+
+Una sección propia de la entidad solo cuando su contenido no cabe en ninguna de las anteriores;
+su título nombra un tipo de recurso, no un proyecto ni una marca, y va después del núcleo.
+## Notas por sección siempre al final.
 
 No incluir:
 - ## Fuentes complementarias (eliminado del estándar)

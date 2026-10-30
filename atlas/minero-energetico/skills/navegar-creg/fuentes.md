@@ -2,13 +2,21 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
 | Gestor Normativo Alejandría | `gestornormativo.creg.gov.co/gestor/index.html` | Buscador de normativa regulatoria consolidada; resoluciones originales, compiladas, proyectos y circulares | 2026-05-30 |
 | SCIR | `scir.creg.gov.co/login` | Sistema de Cargue de Información para Regulación; requiere login de empresa regulada | 2026-05-30 |
 | SICT | `apps.creg.gov.co` | Sistema Integrado de Cargos de Transporte de Gas Natural; acceso sin login | 2026-05-30 |
+
+---
+
+## Documentos de referencia
+
+| Nombre | Tipo | URL | Verificado |
+|---|---|---|---|
+| Histórico de Presentaciones | Archivo de presentaciones en eventos y sesiones de la CREG | `creg.gov.co/15392` | 2026-05-30 |
 
 ---
 
@@ -21,6 +29,14 @@
 | Circulares CREG | Circulares externas | `creg.gov.co/loader.php?lServicio=Documentos&lFuncion=infoCategoriaConsumo&tipo=CI` | 2026-05-30 |
 | Autos CREG | Actuaciones administrativas | `creg.gov.co/loader.php?lServicio=Documentos&lFuncion=infoCategoriaConsumo&tipo=AU` | 2026-05-30 |
 | Código de Medida (Res. 038/2014) | Reglamento técnico | `creg.gov.co/13334` | 2026-05-30 |
+
+---
+
+## Servicios y trámites
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Trámites y Servicios | `creg.gov.co/8591` | Trámites y otros procedimientos administrativos ante la CREG | 2026-05-30 |
 
 ---
 
@@ -41,22 +57,6 @@
 |---|---|---|---|
 | Autogeneración a pequeña escala | `creg.gov.co/15064` | Regulación de autogeneración a pequeña escala y generación distribuida | 2026-05-30 |
 | Gestor del Mercado de Gas Natural | `creg.gov.co/15075` | Información sobre el operador del mercado mayorista de gas | 2026-05-30 |
-
----
-
-## Publicaciones
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| Histórico de Presentaciones | `creg.gov.co/15392` | Archivo de presentaciones en eventos y sesiones de la CREG | 2026-05-30 |
-
----
-
-## Servicios y trámites
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| Trámites y Servicios | `creg.gov.co/8591` | Trámites y otros procedimientos administrativos ante la CREG | 2026-05-30 |
 
 ---
 

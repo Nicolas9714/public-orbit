@@ -2,7 +2,7 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -13,6 +13,11 @@
 | AGIL — Sistema de Análisis Geográfico de Información en el Licenciamiento | `https://sig.anla.gov.co/seleccion.aspx` | Plataforma GIS de ANLA para gestión de información georeferenciada; requiere autenticación institucional; no tiene acceso público | 2026-06-01 |
 | RUIA — Registro Único de Infractores Ambientales | `https://vital.minambiente.gov.co/SILPA_UT_PRE/RUIA/ConsultarSancion.aspx?Ubic=ext` | Consulta pública de sanciones ambientales impuestas por la ANLA; accesible sin autenticación | 2026-06-01 |
 | SILA — Sistema de Licencias, Permisos y Trámites Ambientales | `https://www.anla.gov.co/nosotros` | Sistema interno de administración del ciclo completo de licencias y permisos ambientales (referenciado desde la home) | 2026-06-01 |
+| VALIDA | `https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica` | Aplicativo de validación de bases de datos geográficas para anexos cartográficos de ICA | 2026-06-01 |
+| SimplifICA | `https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica` | Aplicativo de simplificación de información cartográfica para Informes de Cumplimiento Ambiental | 2026-06-01 |
+| Eureka!! | `https://www.anla.gov.co/wanla/eureka` | Base de conocimiento jurídico-técnico: normativa, jurisprudencia, documentos estratégicos, conceptos jurídicos, manuales, especies en riesgo; búsqueda rápida de documentos ANLA y SINA | 2026-06-01 |
+| Tablero Power BI — Actuaciones Sancionatorias | `https://www.anla.gov.co/oficina-asesora-juridica/actuaciones-sancionatorias-ambientales` | Tablero de control de casos sancionatorios ambientales; embebido en la página de la Oficina Jurídica | 2026-06-01 |
+| Analítica de Datos ANLA | `https://www.anla.gov.co/gestion-del-conocimiento-y-la-innovacion/gci-analitica-de-datos` | Tableros de control por área (evaluación, permisos SIPTA, participación SMPCA, seguimiento SLA, administrativa, planeación y jurídica) y temáticos: calidad del aire de proyectos licenciados (Cerrejón, Alto San Jorge), ruido del aeropuerto El Dorado, calidad del agua y monitoreo participativo de ríos, FNCER, compensaciones de biodiversidad y procesos sancionatorios. No existe un tablero general de emisiones de fuentes fijas | 2026-07-10 |
 
 ---
 
@@ -27,16 +32,7 @@
 
 ---
 
-## Portales de datos
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| Datos Abiertos ANLA — ArcGIS Hub | `https://datosabiertos-anla.hub.arcgis.com/` | Catálogo de datasets abiertos con información geoespacial y ambiental de la ANLA; incluye mapas/servicios de proyectos en evaluación, proyectos en seguimiento, compensaciones, permisos, monitoreos, documentos, manuales, aplicaciones y recursos descargables RES2182, SimplifICA y VALIDA | 2026-06-02 |
-| Datos Abiertos ANLA — datos.gov.co | `https://datos.gov.co/browse?Informaci%C3%B3n-de-la-Entidad_Nombre-de-la-Entidad=Autoridad+Nacional+de+Licencias+Ambientales` | Datasets de la ANLA publicados en el portal nacional de datos abiertos del Estado colombiano | 2026-06-01 |
-
----
-
-## Capas y datasets geográficos destacados
+## Capas y módulos destacados
 
 | Fuente | URL | Capas / recursos | Verificado |
 |---|---|---|---|
@@ -50,6 +46,15 @@
 | ArcGIS Hub — Trámites y permisos | `https://datosabiertos-anla.hub.arcgis.com/search?tags=permisos` | 14 Feature Services; recursos visibles: gestores SRS, gestores GDP, puntos de recolección y centros de acopio SRS/GDP, cantidades GDP baterías, uso racional de bolsas plásticas, detergentes y jabones industriales, Sello Ambiental Colombiano, cantidades SRS pilas y bombillas | 2026-06-02 |
 | ArcGIS Hub — Monitoreos | `https://datosabiertos-anla.hub.arcgis.com/search?categories=monitoreo` | 3 aplicaciones/mapas: Oferta vs Demanda, Estadísticas y Tendencias, Monitoreo Caudales | 2026-06-02 |
 | ArcGIS Hub — Recursos descargables | `https://datosabiertos-anla.hub.arcgis.com/` | Archivos de actualización del Modelo de Almacenamiento Geográfico RES2182 de 2016; SimplifICA; VALIDA | 2026-06-02 |
+
+---
+
+## Portales de datos
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Datos Abiertos ANLA — ArcGIS Hub | `https://datosabiertos-anla.hub.arcgis.com/` | Catálogo de datasets abiertos con información geoespacial y ambiental de la ANLA; incluye mapas/servicios de proyectos en evaluación, proyectos en seguimiento, compensaciones, permisos, monitoreos, documentos, manuales, aplicaciones y recursos descargables RES2182, SimplifICA y VALIDA | 2026-06-02 |
+| Datos Abiertos ANLA — datos.gov.co | `https://datos.gov.co/browse?Informaci%C3%B3n-de-la-Entidad_Nombre-de-la-Entidad=Autoridad+Nacional+de+Licencias+Ambientales` | Datasets de la ANLA publicados en el portal nacional de datos abiertos del Estado colombiano | 2026-06-01 |
 
 ---
 
@@ -72,18 +77,6 @@
 | APiC Corpouraba — GDB y SHP | Datos geoespaciales descargables | `https://anla.gov.co/01_anla/documentos/sipta/inversion_1porciento/` | 2026-06-01 |
 | Metodología de cálculo de multas ambientales | PDF técnico | `https://www.anla.gov.co/oficina-asesora-juridica/actuaciones-sancionatorias-ambientales` | 2026-06-01 |
 | Ley 1333 de 2009 (modificada por Ley 2387 de 2024) | Marco legal | `https://www.anla.gov.co/oficina-asesora-juridica/actuaciones-sancionatorias-ambientales` | 2026-06-01 |
-
----
-
-## Aplicativos
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| VALIDA | `https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica` | Aplicativo de validación de bases de datos geográficas para anexos cartográficos de ICA | 2026-06-01 |
-| SimplifICA | `https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica` | Aplicativo de simplificación de información cartográfica para Informes de Cumplimiento Ambiental | 2026-06-01 |
-| Eureka!! | `https://www.anla.gov.co/wanla/eureka` | Base de conocimiento jurídico-técnico: normativa, jurisprudencia, documentos estratégicos, conceptos jurídicos, manuales, especies en riesgo; búsqueda rápida de documentos ANLA y SINA | 2026-06-01 |
-| Tablero Power BI — Actuaciones Sancionatorias | `https://www.anla.gov.co/oficina-asesora-juridica/actuaciones-sancionatorias-ambientales` | Tablero de control de casos sancionatorios ambientales; embebido en la página de la Oficina Jurídica | 2026-06-01 |
-| Analítica de Datos ANLA | `https://www.anla.gov.co/gestion-del-conocimiento-y-la-innovacion/gci-analitica-de-datos` | Tableros de control por área (evaluación, permisos SIPTA, participación SMPCA, seguimiento SLA, administrativa, planeación y jurídica) y temáticos: calidad del aire de proyectos licenciados (Cerrejón, Alto San Jorge), ruido del aeropuerto El Dorado, calidad del agua y monitoreo participativo de ríos, FNCER, compensaciones de biodiversidad y procesos sancionatorios. No existe un tablero general de emisiones de fuentes fijas | 2026-07-10 |
 
 ---
 

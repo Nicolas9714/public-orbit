@@ -2,7 +2,7 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -22,7 +22,7 @@
 
 ---
 
-## Portales de datos abiertos
+## Portales de datos
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|

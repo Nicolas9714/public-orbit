@@ -2,7 +2,7 @@
 
 ---
 
-## Sistemas de información
+## Sistemas de información y plataformas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -17,17 +17,6 @@
 | SIAM-Explorer — Microdatos | `https://siamexplorer.invemar.org.co/microdatos/especifica` | Búsqueda de microdatos por criterio específico, temático, geoespacial o DOI | 2026-06-15 |
 | SIAM-Explorer — Estaciones | `https://siamexplorer.invemar.org.co/estaciones` | Catálogo de estaciones de monitoreo con buscador | 2026-06-15 |
 | ARGOS | `https://argos.invemar.org.co` | Sistema de Soporte Multitemático para el Monitoreo Ambiental; requiere login para acceso a datos | 2026-06-15 |
-
----
-
-## Operaciones estadísticas
-
-| Nombre | URL | Descripción | Verificado |
-|---|---|---|---|
-| EPPA — Estadísticas de Presión Pesquera Artesanal | `https://oe-eppa-invemar.opendata.arcgis.com` | Datos sobre presión pesquera artesanal en zonas marinas y costeras | 2026-06-15 |
-| ICAM — Índice de Calidad de Aguas Marinas y Costeras | `https://icam-invemar.opendata.arcgis.com` | Indicador de calidad ambiental marina; incluye series históricas de monitoreo | 2026-06-15 |
-| ICTAC — Indicador de Condición y Tendencia de Áreas Coralinas | `https://ictac-invemar.opendata.arcgis.com` | Estado y tendencias de ecosistemas de arrecifes coralinos colombianos | 2026-06-15 |
-| IECC — Índice de Erosión Costera de Colombia | `https://iecc-invemar.opendata.arcgis.com` | Datos y tendencias de erosión costera en el litoral colombiano | 2026-06-15 |
 
 ---
 
@@ -49,7 +38,7 @@
 
 ---
 
-## Portales de datos abiertos
+## Portales de datos
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
@@ -57,23 +46,41 @@
 
 ---
 
-## Colecciones y museo
+## Publicaciones periódicas
+
+| Nombre | URL | Frecuencia | Verificado |
+|---|---|---|---|
+| Boletín de Investigaciones Marinas y Costeras | `https://boletin.invemar.org.co/index.php/boletin` | Semestral (revista científica arbitrada); URL real confirma ruta sin `/ojs/`; incluye volúmenes, indexaciones y métricas editoriales | 2026-06-15 |
+| Informe de Gestión Institucional Anual | `https://www.invemar.org.co/inf-actividades` | Anual | 2026-06-15 |
+
+---
+
+## Documentos de referencia
+
+| Nombre | Tipo | URL | Verificado |
+|---|---|---|---|
+| Publicaciones INVEMAR | Catálogo de publicaciones; incluye series de monitoreo de Ciénaga Grande de Santa Marta y Magdalena | `https://www.invemar.org.co/publicaciones` | 2026-06-15 |
+| Plan Nacional de Acidificación | Plan nacional | `https://www.invemar.org.co/web/guest/plan-acidificaci%C3%B3n` | 2026-08-10 |
+
+---
+
+## Estadísticas
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| EPPA — Estadísticas de Presión Pesquera Artesanal | `https://oe-eppa-invemar.opendata.arcgis.com` | Datos sobre presión pesquera artesanal en zonas marinas y costeras | 2026-06-15 |
+| ICAM — Índice de Calidad de Aguas Marinas y Costeras | `https://icam-invemar.opendata.arcgis.com` | Indicador de calidad ambiental marina; incluye series históricas de monitoreo | 2026-06-15 |
+| ICTAC — Indicador de Condición y Tendencia de Áreas Coralinas | `https://ictac-invemar.opendata.arcgis.com` | Estado y tendencias de ecosistemas de arrecifes coralinos colombianos | 2026-06-15 |
+| IECC — Índice de Erosión Costera de Colombia | `https://iecc-invemar.opendata.arcgis.com` | Datos y tendencias de erosión costera en el litoral colombiano | 2026-06-15 |
+
+---
+
+## Colecciones biológicas
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
 | Museo de Historia Natural Marina de Colombia (MAKURIWA) | `https://museomakuriwa.invemar.org.co` | Museo con colecciones biológicas marinas; ofrece servicios de préstamo, consulta y depósito de material biológico | 2026-06-15 |
 | Centro de Documentación (CDO) — Iván Enrique Caycedo Lara | `https://centrodocumentacion.invemar.org.co` | Sistema Koha de biblioteca; catálogo bibliográfico con búsqueda simple y avanzada, búsqueda de autoridad, nube de etiquetas, tesauro marino ambiental y costero, boletín de novedades bibliográficas; tres sedes (Central, Cispata, Pacífico); SSL expirado — requiere --ignore-https-errors | 2026-06-15 |
-
----
-
-## Publicaciones
-
-| Nombre | URL | Frecuencia | Verificado |
-|---|---|---|---|
-| Boletín de Investigaciones Marinas y Costeras | `https://boletin.invemar.org.co/index.php/boletin` | Semestral (revista científica arbitrada); URL real confirma ruta sin `/ojs/`; incluye volúmenes, indexaciones y métricas editoriales | 2026-06-15 |
-| Publicaciones INVEMAR | `https://www.invemar.org.co/publicaciones` | Variable; incluye series de monitoreo de Ciénaga Grande de Santa Marta y Magdalena | 2026-06-15 |
-| Informe de Gestión Institucional Anual | `https://www.invemar.org.co/inf-actividades` | Anual | 2026-06-15 |
-| Plan Nacional de Acidificación | `https://www.invemar.org.co/web/guest/plan-acidificaci%C3%B3n` | Documento de referencia | 2026-08-10 |
 
 ---
 
