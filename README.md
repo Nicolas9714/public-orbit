@@ -183,7 +183,7 @@ bash ../public-orbit/instalar.sh --atlas todos --actualizar
 
 En Windows, si PowerShell responde que la ejecución de scripts está deshabilitada, habilítala para tu usuario con `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`, o usa la instalación con un comando, que no depende de esa política.
 
-También puedes copiar las carpetas a mano. Para el atlas ambiental en una carpeta neutral:
+También puedes copiar las carpetas manualmente. Para el atlas ambiental en una carpeta neutral:
 
 macOS / Linux / Git Bash:
 

@@ -2,7 +2,7 @@
 #
 # Pruebas del instalador (instalar.sh) en modo local: casos de -Atlas/-Entidad,
 # la regla de composición de la orquestadora nacional y los errores esperados.
-# No prueba el modo remoto (descarga real desde GitHub); eso se hace a mano,
+# No prueba el modo remoto (descarga real desde GitHub); eso se prueba manualmente,
 # ver README.md#instalación.
 #
 set -euo pipefail
