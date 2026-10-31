@@ -5,19 +5,24 @@ description: "Guía de navegación para la UPME: planeación energética y miner
 
 # Unidad de Planeación Minero-Energética (UPME)
 
-La UPME es una Unidad Administrativa Especial adscrita al Ministerio de Minas y Energía. Su función principal es planear en forma integral, indicativa y coordinada el desarrollo y aprovechamiento de los recursos energéticos y mineros de Colombia, y ejerce como CIO (Chief Information Officer) del sector minero-energético colombiano.
+La UPME es una Unidad Administrativa Especial adscrita al Ministerio de Minas y Energía. Su función principal es planear en forma integral, indicativa y coordinada el desarrollo y aprovechamiento de los recursos energéticos y mineros de Colombia, y lidera la gobernanza de la información del sector minero-energético.
 
 ## ¿Qué información publica?
 
-- Sistema de Información Minero Energético Colombiano (SIMEC): estadísticas de energía eléctrica, hidrocarburos, minería (SIMCO, Sistema de Información Minero Colombiano), eficiencia energética, oferta y demanda, y planeación energética (PEN (Plan Energético Nacional), PERS (Plan de Energización Rural Sostenible), PET (Plan de Expansión de Transmisión), PROURE (Programa de Uso Racional y Eficiente de Energía), proyecciones)
-- Seguimiento FNCER (Fuentes No Convencionales de Energía Renovable): capacidad instalada de proyectos en operación y en pruebas, centro de monitoreo, indicadores energéticos y geovisores de renovables
-- SIEM (Sistema de Interoperabilidad de Electromovilidad): registro y reporte de los operadores de puntos de carga de acceso público bajo el protocolo OCPI 2.2.1, con guía técnica de integración y normativa de electromovilidad
-- Geovisores sectoriales en cuatro categorías: Distritos Mineros, Potencial Energético (solar, OBCO, FNCER), Energía Eléctrica (capacidad, generación, transmisión) y Territorial
-- Convocatorias de expansión: STN (Sistema de Transmisión Nacional), gas y subastas de largo plazo para renovables
-- Ventanilla Única CREG: solicitudes de conexión al SIN (Sistema Interconectado Nacional) bajo la Resolución CREG 075 de 2021 y conexión simplificada al SDL (Sistema de Distribución Local) para generación menor a 5 MW bajo la Resolución CREG 174 de 2021
-- Tableros Power BI con series históricas de indicadores minero-energéticos
-- Gobernanza de datos sectorial: políticas, metodología y lineamientos para todas las entidades del sector
-- Biblioteca digital con repositorio de estudios, publicaciones y documentos técnicos
+- Estadísticas e indicadores del sector: energía eléctrica, hidrocarburos, minería y eficiencia energética, reunidos en el SIMEC (Sistema de Información Minero Energético Colombiano)
+- Balance energético, potenciales energéticos, reservas y catálogo tecnológico
+- Planeación energética: Plan Energético Nacional, planes de expansión de generación, transmisión y cobertura, abastecimiento de gas natural y combustibles líquidos, energización rural, uso racional de energía, sustitución de leña y bioenergía
+- Planeación minera: Plan Nacional de Desarrollo Minero y distritos mineros
+- Proyecciones de demanda y de precios de los energéticos
+- Energías renovables: capacidad instalada y avance de los proyectos de FNCER (Fuentes No Convencionales de Energía Renovable)
+- Electromovilidad: registro y reporte de los puntos de carga de acceso público en el SIEM (Sistema de Interoperabilidad de Electromovilidad)
+- Información geográfica: distritos mineros, potencial energético, infraestructura eléctrica y análisis territorial minero-energético
+- Convocatorias de expansión del STN (Sistema de Transmisión Nacional), de infraestructura de gas y subastas de largo plazo para renovables
+- Trámites: conexión de proyectos a la red eléctrica, evaluación de proyectos que solicitan recursos de los fondos de apoyo financiero del sector y certificación de incentivos tributarios para renovables y eficiencia energética
+- Herramientas de cálculo: emisiones de CO2 de los combustibles, priorización de la sustitución de combustibles contaminantes y viabilidad de proyectos de aprovechamiento energético de residuos
+- Normativa propia: resoluciones, circulares y proyectos normativos en consulta pública
+- Estudios y publicaciones técnicas del sector
+- Gobernanza de datos sectorial: políticas, metodología y lineamientos estadísticos para las entidades del sector
 
 ## Sitio oficial
 

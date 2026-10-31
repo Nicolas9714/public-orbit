@@ -5,17 +5,21 @@ description: "Guía de navegación para Ecopetrol: informes financieros y de sos
 
 # Ecopetrol S.A. (Ecopetrol)
 
-Ecopetrol S.A. es la principal empresa de petróleo y gas de Colombia y una de las mayores de América Latina. Es una sociedad de economía mixta cotizada en las bolsas de Bogotá, Nueva York y Toronto; el Estado colombiano es su accionista mayoritario con más del 88 % del capital. Opera toda la cadena de valor de los hidrocarburos: exploración, producción (más del 60 % de la producción nacional), transporte por oleoductos y poliductos, refinación, petroquímica y comercialización. Encabeza el Grupo Ecopetrol, que incluye filiales como ISA (energía eléctrica e infraestructura), Cenit (transporte), Reficar, Hocol, Equión, Esenttia y operaciones en EE. UU., Brasil y otros países.
+Ecopetrol S.A. es la principal empresa de petróleo y gas de Colombia. Es una sociedad de economía mixta con el Estado como accionista mayoritario y opera toda la cadena de los hidrocarburos: exploración, producción, transporte, refinación, petroquímica y comercialización. Encabeza el Grupo Ecopetrol, al que pertenecen filiales como ISA, Cenit, Reficar y Hocol.
 
 ## ¿Qué información publica?
 
-- Informes integrados de gestión y sostenibilidad: reportes anuales (desde 2003) con desempeño financiero y ASG; disponibles en PDF en español e inglés y con dashboards complementarios
-- Resultados trimestrales: presentaciones, actualizaciones operativas y financieras, dashboard TESG, datos en Excel y audio de conference call; histórico desde 2015
-- Estados financieros consolidados y no consolidados: trimestrales en PDF desde 2004
-- Informes regulatorios internacionales: Form 20-F y 6-K ante la SEC de EE. UU.; reportes TCFD, SASB, CDP y convergencia ISSB
-- Precios históricos de combustibles, crudo y GLP (Gas Licuado de Petróleo): series anuales en Excel desde 2010; también precios vigentes actualizados periódicamente
-- Información del Grupo Ecopetrol: estructura societaria, filiales, estrategia 2040 y metas de producción y descarbonización
-- Publicación científica CT&F — Ciencia, Tecnología y Futuro: revista semestral de acceso abierto del Instituto Colombiano del Petróleo; indexada en Scopus, SciELO e ISI
+- Resultados operativos y financieros: producción, refinación, transporte y cifras financieras de cada trimestre, y estados financieros
+- Reservas probadas de crudo y gas, reportadas cada año ante la SEC (Comisión de Bolsa y Valores de EE. UU.)
+- Mercado de valores: dividendos, composición accionaria, información relevante, asambleas de accionistas, bonos y calificaciones de riesgo
+- Sostenibilidad: informe integrado de gestión, divulgación climática y gestión ambiental, social y de gobierno corporativo
+- Precios de combustibles, crudo y GLP (Gas Licuado de Petróleo), vigentes e históricos
+- Información comercial: portafolio de productos y crudos, ofertas de GLP y gas natural, y convocatorias de compra de energía eléctrica
+- Transporte por oleoductos: tarifas, nominaciones, manual del transportador y mapa de ductos
+- Grupo Ecopetrol y estrategia: estructura societaria, filiales, Estrategia 2040 y metas de descarbonización
+- Proveedores: registro, habilitación y gestión de contratos
+- Datos abiertos: inventario de conjuntos de datos publicados en el portal nacional de datos abiertos
+- Investigación: revista CT&F — Ciencia, Tecnología y Futuro, del Instituto Colombiano del Petróleo
 
 ## Sitio oficial
 

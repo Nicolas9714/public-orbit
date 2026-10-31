@@ -5,14 +5,24 @@ description: Guía para navegar el sitio oficial de <Nombre Entidad> y encontrar
 
 # <Nombre completo de la entidad> (<Sigla>)
 
-<!-- Una o dos frases sobre el rol de la entidad en el sector. -->
+<!-- Una o dos frases sobre el rol de la entidad en el sector: qué es, su
+     naturaleza jurídica y qué hace. Solo datos estables: sin cifras que
+     cambian con el tiempo (participación accionaria, porcentaje de la
+     producción nacional, número de usuarios, presupuesto). Esas cifras son
+     datos que la entidad publica y se consultan en sus fuentes, con fecha. -->
 
 ## ¿Qué información publica?
 
 <!-- Lista breve de los tipos de documentos, datos o sistemas que ofrece. La
      entidad no siempre produce lo que publica: también expone normas y datos
      de terceros, y esta sección cubre ambos casos.
-     Dos reglas de redacción:
+     Tres reglas de redacción:
+     - Cada viñeta dice qué temas cubre la entidad, no cómo vienen los datos.
+       El formato (PDF, Excel), el idioma, la cobertura temporal («desde
+       2010»), la frecuencia y la indexación van en la descripción de la fila
+       correspondiente de `fuentes.md`. Agrupa por tema, no por tipo de
+       documento: «Resultados financieros: estados financieros, resultados
+       trimestrales y reportes regulatorios», no una viñeta por cada uno.
      - Sin dominios ni rutas de URL en las viñetas: nombra el sistema (VITAL,
        SINERGOX, RUNAP) y deja los enlaces para `fuentes.md`.
      - Toda sigla institucional o técnica se explica en su primera mención,
