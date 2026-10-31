@@ -30,7 +30,9 @@
 
 Public Orbit es un proyecto abierto que busca hacer visibles las rutas y conexiones de la información pública de Colombia. A través de una infraestructura modular de skills, documenta y articula fuentes, recursos y sistemas de información distribuidos entre instituciones y sectores.
 
-La información pública suele está distribuida entre múltiples portales web, micrositios, sistemas de información, geovisores, publicaciones y bases de datos. En particular, hay un saber contenido en los datos y otro que reside en el camino para llegar hacia ellos. Este último suele permanecer como conocimiento tácito entre quienes llevan años trabajando en una entidad o en un sector. Public Orbit convierte ese conocimiento en una infraestructura abierta, documentada y utilizable por agentes de IA como Claude Code, Codex y OpenCode.
+La información pública se encuentra dispersa entre múltiples portales web, micrositios, sistemas de información, geovisores, publicaciones y bases de datos. Navegar este ecosistema requiere conocer no solo las fuentes disponibles, sino también las rutas para encontrarlas y las relaciones que existen entre ellas.
+
+Hay un saber contenido en los datos y otro que reside en el camino para llegar a ellos. Este último suele permanecer como conocimiento tácito entre quienes llevan años trabajando en una entidad o en un sector. Public Orbit busca transformar ese conocimiento en una infraestructura abierta, documentada y utilizable por agentes de IA como Claude Code, Codex y OpenCode.
 
 Al hacer explícito y compartible este conocimiento de navegación, Public Orbit busca ampliar la autonomía de quienes consultan información pública, ofreciendo puntos de entrada, criterios y recorridos que permitan formular mejores preguntas, contrastar fuentes y comprender cómo se organiza digitalmente la información y el conocimiento de cada sector.
 
