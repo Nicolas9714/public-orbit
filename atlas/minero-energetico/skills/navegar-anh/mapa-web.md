@@ -24,7 +24,7 @@ anh.gov.co/es/
 │   │
 │   ├── contratos-y-reglamentación/
 │   │   ├── exploración/
-│   │   │   └── cifras-y-estadísticas
+│   │   │   └── cifras-y-estadísticas-3
 │   │   ├── producción/
 │   │   │   ├── áreas-en-evaluación-y-explotación
 │   │   │   └── informes-técnicos
@@ -42,7 +42,7 @@ anh.gov.co/es/
 │   │   ├── ronda-colombia-eólica-costa-afuera/
 │   │   │   └── ronda-eolica-PyR
 │   │   ├── cepi-contratos-especiales-de-proyectos-de-investigación/
-│   │   └── procesos/
+│   │   └── procesosde-seleccion/
 │   │       ├── mini-ronda-2007
 │   │       ├── mini-ronda-2008
 │   │       ├── ronda-colombia-2008
@@ -106,4 +106,4 @@ anh.gov.co/es/
 
 ## Última verificación
 
-Verificado: 2026-05-30
+Verificado: 2026-10-31

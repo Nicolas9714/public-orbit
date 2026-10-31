@@ -6,8 +6,8 @@
 www.bmcbec.com.co/
 │
 ├── bigas/
-│   ├── cuadros-power-bi/
-│   └── cubos/
+├── cuadros-power-bi/inicio
+├── cubos
 │
 ├── contenido-virtual/
 │   ├── rutgas
@@ -23,7 +23,7 @@ www.bmcbec.com.co/
 │   │   ├── informacion-suministro
 │   │   ├── informacion-de-transporte
 │   │   ├── proceso-de-comercializacion/
-│   │   ├── indicadores-creg-mp
+│   │   ├── indicadores-creg-del-mercado-primario-mp
 │   │   ├── indicadores-creg-mp-y-ms-publico
 │   │   ├── oferta-de-ptdvf-y-cidvf
 │   │   ├── oferta-remanente
@@ -36,45 +36,45 @@ www.bmcbec.com.co/
 │   │   └── proceso-de-concurrencia-mercado-secundario
 │   ├── otras-transacciones-del-mercado-mayorista/
 │   ├── subastas/
-│   │   ├── subasta-uselo-o-vendalo-corto-plazo/
+│   │   ├── subasta-uselo-o-vendalo-de-corto-plazo/
 │   │   │   ├── cantidad-de-energia-negociada-uvcp
-│   │   │   ├── cantidad-energia-negociada-uvcp-agregado-nacional
+│   │   │   ├── cantidad-de-energia-negociada-uvcp-agregado-nacional
 │   │   │   ├── capacidad-de-transporte-negociada-uvcp
-│   │   │   ├── capacidad-transporte-negociada-uvcp-agregado-nacional
+│   │   │   ├── capacidad-de-transporte-negociada-uvcp-agregado-nacional
 │   │   │   └── cargos-regulados-subasta-uvcp-transporte
-│   │   ├── subasta-contratos-firmes-bimestrales/
-│   │   │   └── publicacion-oferta-subasta-bimestral
-│   │   ├── subasta-suministro-con-interrupciones/
-│   │   └── subasta-uselo-o-vendalo-largo-plazo-capacidad-transporte/
+│   │   ├── subasta-de-contratos-firmes-bimestrales/
+│   │   ├── publicacion-oferta-subasta-bimestral
+│   │   ├── subasta-de-suministro-con-interrupciones/
+│   │   └── subasta-uselo-o-vendalo-de-largo-plazo-para-capacidad-de-transporte/
 │   └── comercializacion-de-transporte/
-│       ├── comercializacion-capacidad-disponible-primaria/
-│       │   ├── divulgacion-capacidad-disponible-primaria
-│       │   ├── publicacion-solicitudes-remitentes
+│       ├── comercializacion-de-capacidad-disponible-primaria-red-existente-y-proyectos-ipat/
+│       │   ├── divulgacion-de-capacidad-disponible-primaria
+│       │   ├── publicacion-solicitudes-de-los-remitentes-y-modificaciones-red-existente-y-proyectos-ipat
 │       │   ├── declaracion-de-comercializadores
-│       │   └── minutas-contratos-subasta
-│       ├── servicios-transporte-que-exceden-capacidad-contratada/
-│       ├── determinacion-capacidad-ampliacion-ante-congestion/
-│       │   ├── capacidad-ampliacion-largo-plazo
-│       │   └── publicacion-capacidades-transporte-ampliacion
-│       ├── asignacion-capacidad-firme-proyectos-pag/
-│       │   ├── divulgacion-capacidad-disponible-primaria-pag
-│       │   └── divulgacion-capacidad-asignada
-│       ├── cargos-de-transporte
+│       │   └── minutas-de-contratos-subasta-resoluci-n-creg-001-de-2021
+│       ├── publicacion-capacidad-temporal-ctemp/
+│       ├── determinacion-de-la-capacidad-de-transporte-de-ampliacion-ante-congestion-contractual/
+│       │   ├── capacidad-de-transporte-de-ampliaci-n-ante-congesti-n-contractual-de-largo-plazo
+│       │   └── publicacion-de-capacidades-de-transporte-de-ampliacion
+│       ├── asignacion-de-capacidad-firme-asociada-a-proyectos-del-pag/
+│       │   ├── divulgacion-de-la-capacidad-disponible-primaria
+│       │   └── divulgacion-de-la-capacidad-asignada
+│       ├── cargos-de-transporte-resolucion-creg-175-de-2021
 │       └── proceso-de-comercializacion-de-transporte
 │
 ├── informacion-operativa/
 │   ├── produccion/
 │   │   ├── energia-inyectada
 │   │   ├── energia-a-suministrar
-│   │   ├── cantidad-declarada-gas-importado-no-inyectada-snt
-│   │   └── gasoductos-de-conexion
+│   │   ├── cantidad-declarada-por-comercializadores-de-gas-importado-y-no-inyectada-al-snt
+│   │   └── gasoductos
 │   ├── transporte/
 │   │   ├── energia-tomada-por-contratos-de-parqueo
 │   │   ├── energia-autorizada-segun-nominaciones
 │   │   └── energia-tomada-transportadores-por-tramo
 │   └── distribucion-comercializacion/
 │       ├── energia-tomada-por-comercializadores
-│       └── cantidad-energia-tomada-diariamente-snt
+│       └── cantidad-de-energia-tomada-diariamente-del-snt
 │
 ├── informes/
 │   ├── informes-de-mercado/
@@ -88,7 +88,7 @@ www.bmcbec.com.co/
 │   ├── informes-mensuales/
 │   ├── informes-trimestrales/
 │   ├── informes-anuales/
-│   ├── auditoria-externa-e-indicadores/
+│   ├── informe-auditor-a-externa-e-indicadores/
 │   └── informes-ejecutivos/
 │
 ├── publicaciones/
@@ -99,12 +99,13 @@ www.bmcbec.com.co/
 ├── normatividad/
 │   ├── resoluciones/
 │   ├── contratos-marco/
-│   ├── boletines/
 │   └── documentos-de-registro-ante-el-gestor/
+│
+├── boletines/
 │
 └── segas.bmcbec.com.co/
 ```
 
 ## Última verificación
 
-Verificado: 2026-06-03
+Verificado: 2026-10-31
