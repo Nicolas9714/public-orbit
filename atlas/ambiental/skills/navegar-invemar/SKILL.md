@@ -38,4 +38,4 @@ El Instituto de Investigaciones Marinas y Costeras José Benito Vives de Andréi
 - `https://centrodocumentacion.invemar.org.co` presentó error SSL el 2026-06-15; acceder al Centro de Documentación (CDO) desde la sección de servicios del sitio principal.
 - `https://boletin.invemar.org.co/ojs/index.php/boletin` devuelve 404 (2026-06-15); buscar la revista en Redalyc o SciELO como alternativa.
 - El SAMP (Subsistema de Áreas Marinas Protegidas) está accesible en `https://siam.invemar.org.co/samp` al 2026-07-04; la ruta anterior `https://cinto.invemar.org.co/samp` devuelve 404.
-- El sitio usa Liferay; el crawler genera URLs con prefijo `/web/guest/`. Las URLs sin ese prefijo son las canónicas para navegar manualmente.
+- El sitio usa Liferay: las páginas responden igual con y sin el prefijo `/web/guest/`, y el menú enlaza con prefijo. Ante un 404, probar la otra forma.

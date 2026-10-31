@@ -6,11 +6,11 @@
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
-| SEGAS | https://segas.bmcbec.com.co/ | Sistema Electrónico de Gas — plataforma transaccional principal del mercado; requiere login de participante registrado | 2026-06-03 |
-| BI Gas | https://www.bmcbec.com.co/bigas | Business intelligence con 6 módulos: precios, demanda, contratos, programación, volumen e información operativa; requiere login | 2026-06-03 |
-| Tableros Power BI | https://www.bmcbec.com.co/cuadros-power-bi/inicio | Tableros interactivos del mercado de gas; requiere login | 2026-06-03 |
-| Cubos de datos | https://www.bmcbec.com.co/cubos | Cubos analíticos descargables del mercado; requiere login | 2026-06-03 |
-| RUT Gas | https://www.bmcbec.com.co/contenido-virtual/rutgas | Herramienta interactiva de estado operativo del sistema de transporte de gas; acceso público desde Contenido Virtual | 2026-06-03 |
+| SEGAS | `segas.bmcbec.com.co` | Sistema Electrónico de Gas — plataforma transaccional principal del mercado; requiere login de participante registrado | 2026-06-03 |
+| BI Gas | `www.bmcbec.com.co/bigas` | Business intelligence con 6 módulos: precios, demanda, contratos, programación, volumen e información operativa; requiere login | 2026-06-03 |
+| Tableros Power BI | `www.bmcbec.com.co/cuadros-power-bi/inicio` | Tableros interactivos del mercado de gas; requiere login | 2026-06-03 |
+| Cubos de datos | `www.bmcbec.com.co/cubos` | Cubos analíticos descargables del mercado; requiere login | 2026-06-03 |
+| RUT Gas | `www.bmcbec.com.co/contenido-virtual/rutgas` | Herramienta interactiva de estado operativo del sistema de transporte de gas; acceso público desde Contenido Virtual | 2026-06-03 |
 
 ---
 
@@ -18,10 +18,10 @@
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
-| Contenido Virtual | https://www.bmcbec.com.co/contenido-virtual | Tutoriales y guías de uso para RUT Gas, tableros BI y cubos; acceso público sin login | 2026-06-03 |
-| Participantes inscritos | https://www.bmcbec.com.co/registro-ante-el-gestor/participantes | Lista pública de participantes del mercado por categoría: productores-comercializadores, transportadores, comercializadores, generadores térmicos, usuarios no regulados, importadores de gas | 2026-06-03 |
-| iGas Express (iGas-D) | https://www.bmcbec.com.co/informes/igas | Índice diario de precios del mercado secundario calculado sobre contratos firmes menores a 30 días; descarga histórica 2019–2026 en Excel; acceso público | 2026-06-03 |
-| Histórico iGas-D (Excel directo) | https://www.bmcbec.com.co/sites/default/files/2026-02/Hist%C3%B3rico_0.xlsx | Archivo Excel con histórico completo del índice iGas-D; acceso público sin login | 2026-06-03 |
+| Contenido Virtual | `www.bmcbec.com.co/contenido-virtual` | Tutoriales y guías de uso para RUT Gas, tableros BI y cubos; acceso público sin login | 2026-06-03 |
+| Participantes inscritos | `www.bmcbec.com.co/registro-ante-el-gestor/participantes` | Lista pública de participantes del mercado por categoría: productores-comercializadores, transportadores, comercializadores, generadores térmicos, usuarios no regulados, importadores de gas | 2026-06-03 |
+| iGas Express (iGas-D) | `www.bmcbec.com.co/informes/igas` | Índice diario de precios del mercado secundario calculado sobre contratos firmes menores a 30 días; descarga histórica 2019–2026 en Excel; acceso público | 2026-06-03 |
+| Histórico iGas-D (Excel directo) | `www.bmcbec.com.co/sites/default/files/2026-02/Hist%C3%B3rico_0.xlsx` | Archivo Excel con histórico completo del índice iGas-D; acceso público sin login | 2026-06-03 |
 | Mercado primario — información de suministro | `www.bmcbec.com.co/informaci%C3%B3n-transaccional/mercado-primario/informaci%C3%B3n-suministro` | Cantidades y precios de negociación de suministro de gas natural en el mercado primario, con totales nacionales y detalle por modalidad contractual y punto de entrega; reporte Power BI embebido | 2026-10-31 |
 | Mercado primario — información de transporte | `www.bmcbec.com.co/informaci%C3%B3n-transaccional/mercado-primario/informaci%C3%B3n-de-transporte` | Contratación por fecha de negociación (KPCD) en los principales tramos del SNT por modalidad contractual, con Capacidad Máxima de Mediano Plazo y Capacidad Disponible Primaria por tramo; reporte Power BI embebido | 2026-10-31 |
 | Oferta remanente | `www.bmcbec.com.co/informaci%C3%B3n-transaccional/mercado-primario/oferta-remanente` | Cálculo diario de la PTDV, CIDV, PTDVF y CIDVF remanentes por fuente de suministro, descontando contratos firmes desde la última declaración; gráficas | 2026-10-31 |
@@ -46,13 +46,13 @@
 
 | Nombre | URL | Frecuencia | Verificado |
 |---|---|---|---|
-| Informe diario del mercado | https://www.bmcbec.com.co/informes/informes-diarios | Diaria | 2026-06-03 |
-| Informe semanal del mercado | https://www.bmcbec.com.co/informes/informes-semanales | Semanal | 2026-06-03 |
-| Informe mensual del mercado | https://www.bmcbec.com.co/informes/informes-mensuales | Mensual | 2026-06-03 |
-| Informe trimestral del mercado | https://www.bmcbec.com.co/informes/informes-trimestrales | Trimestral | 2026-06-03 |
-| Informe anual del mercado | https://www.bmcbec.com.co/informes/informes-anuales | Anual | 2026-06-03 |
-| Auditoría externa e indicadores | https://www.bmcbec.com.co/informes/informe-auditor-a-externa-e-indicadores | Anual | 2026-06-03 |
-| Informes ejecutivos | https://www.bmcbec.com.co/informes/informes-ejecutivos | Variable | 2026-06-03 |
+| Informe diario del mercado | `www.bmcbec.com.co/informes/informes-diarios` | Diaria | 2026-06-03 |
+| Informe semanal del mercado | `www.bmcbec.com.co/informes/informes-semanales` | Semanal | 2026-06-03 |
+| Informe mensual del mercado | `www.bmcbec.com.co/informes/informes-mensuales` | Mensual | 2026-06-03 |
+| Informe trimestral del mercado | `www.bmcbec.com.co/informes/informes-trimestrales` | Trimestral | 2026-06-03 |
+| Informe anual del mercado | `www.bmcbec.com.co/informes/informes-anuales` | Anual | 2026-06-03 |
+| Auditoría externa e indicadores | `www.bmcbec.com.co/informes/informe-auditor-a-externa-e-indicadores` | Anual | 2026-06-03 |
+| Informes ejecutivos | `www.bmcbec.com.co/informes/informes-ejecutivos` | Variable | 2026-06-03 |
 
 ---
 
@@ -60,11 +60,11 @@
 
 | Nombre | Tipo | URL | Verificado |
 |---|---|---|---|
-| Comité del Mercado de Gas Natural — presentaciones trimestrales (PDF) | Informe | https://www.bmcbec.com.co/publicaciones/comite-de-mercado-de-gas-natural | 2026-06-03 |
-| Informes de mercado (declaraciones, resultados, radiografía, outlook) | Informe | https://www.bmcbec.com.co/informes/informes-de-mercado | 2026-06-03 |
-| Proceso de comercialización de suministro (historial 2016–2026) | Informe | https://www.bmcbec.com.co/informaci%C3%B3n-transaccional/mercado-primario/proceso-de-comercializaci%C3%B3n | 2026-07-23 |
-| Indicadores CREG MP y MS — Resolución CREG 102 015 de 2025 | Informe/Resolución | https://www.bmcbec.com.co/informacion-transaccional/mercado-primario/indicadores-creg-mp-y-ms-publico | 2026-06-03 |
-| Publicación información Proyectos IPAT — Resolución CREG 102 012 de 2024 | Resolución | https://www.bmcbec.com.co/node/5997 | 2026-07-23 |
+| Comité del Mercado de Gas Natural — presentaciones trimestrales (PDF) | Informe | `www.bmcbec.com.co/publicaciones/comite-de-mercado-de-gas-natural` | 2026-06-03 |
+| Informes de mercado (declaraciones, resultados, radiografía, outlook) | Informe | `www.bmcbec.com.co/informes/informes-de-mercado` | 2026-06-03 |
+| Proceso de comercialización de suministro (historial 2016–2026) | Informe | `www.bmcbec.com.co/informaci%C3%B3n-transaccional/mercado-primario/proceso-de-comercializaci%C3%B3n` | 2026-07-23 |
+| Indicadores CREG MP y MS — Resolución CREG 102 015 de 2025 | Informe/Resolución | `www.bmcbec.com.co/informacion-transaccional/mercado-primario/indicadores-creg-mp-y-ms-publico` | 2026-06-03 |
+| Publicación información Proyectos IPAT — Resolución CREG 102 012 de 2024 | Resolución | `www.bmcbec.com.co/node/5997` | 2026-07-23 |
 | Criterios de idoneidad | Formatos | `www.bmcbec.com.co/publicaciones/criterios-de-idoneidad` | 2026-10-31 |
 | Interrupción de los servicios | Aviso | `www.bmcbec.com.co/publicaciones/interrupcion-de-los-servicios` | 2026-10-31 |
 
@@ -74,10 +74,10 @@
 
 | Nombre | Tipo | URL | Verificado |
 |---|---|---|---|
-| Resoluciones BEC | Resoluciones | https://www.bmcbec.com.co/normatividad/resoluciones | 2026-06-03 |
-| Contratos Marco | Proformas | https://www.bmcbec.com.co/normatividad/contratos-marco | 2026-06-03 |
-| Boletines normativos | Boletines | https://www.bmcbec.com.co/boletines | 2026-07-23 |
-| Documentos de registro ante el Gestor | Formularios | https://www.bmcbec.com.co/normatividad/documentos-de-registro-ante-el-gestor | 2026-06-03 |
+| Resoluciones BEC | Resoluciones | `www.bmcbec.com.co/normatividad/resoluciones` | 2026-06-03 |
+| Contratos Marco | Proformas | `www.bmcbec.com.co/normatividad/contratos-marco` | 2026-06-03 |
+| Boletines normativos | Boletines | `www.bmcbec.com.co/boletines` | 2026-07-23 |
+| Documentos de registro ante el Gestor | Formularios | `www.bmcbec.com.co/normatividad/documentos-de-registro-ante-el-gestor` | 2026-06-03 |
 
 ---
 
