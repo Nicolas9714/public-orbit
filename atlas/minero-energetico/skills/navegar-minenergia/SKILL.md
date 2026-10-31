@@ -1,20 +1,27 @@
 ---
 name: navegar-minenergia
-description: "Guía de navegación para MinEnergía: normativa sectorial, política energética y minera, geovisores e información de transición energética de Colombia."
+description: "Guía de navegación para MinEnergía: normativa y reglamentos técnicos del sector, política energética y minera, eficiencia energética, transición energética justa, hidrógeno, subsidios y fondos especiales, regalías, asuntos nucleares, gestión ambiental y social, e infraestructura de datos espaciales."
 ---
 
 # Ministerio de Minas y Energía (MinEnergía)
 
-El Ministerio de Minas y Energía es la entidad rectora del sector minero-energético colombiano. Formula y coordina la política del Estado en exploración, explotación, transporte, transformación y distribución de recursos naturales no renovables, así como la gestión integral de energía incluyendo la transición energética justa.
+El Ministerio de Minas y Energía es la entidad rectora del sector minero-energético colombiano. Formula y coordina la política del Estado en exploración, explotación, transporte, transformación y distribución de recursos naturales no renovables, y en la gestión integral de la energía, incluida la transición energética justa.
 
 ## ¿Qué información publica?
 
-- Normativa sectorial: decretos, resoluciones, DUR (Decreto Único Reglamentario), reglamentos técnicos (RETIE, RETIQ, RETILAP, RETSIT) y proyectos normativos en consulta pública
-- Política energética y minera: planes de expansión eléctrica, política FNCER (Fuentes No Convencionales de Energía Renovable), eficiencia energética (PROURE, Programa de Uso Racional y Eficiente de Energía), hidrógeno, transición energética justa (TEJ)
-- Datos e indicadores: Intégrame con tableros de tarifas, cobertura eléctrica, hidrocarburos, subsidios, regalías y minería
-- Infraestructura de datos espaciales (IDE-ME): geovisor sectorial con capas de ANH, ANM, SGC, CREG, IPSE, UPME y FENOGE; catálogo de metadatos (GeoNetwork) y geoservicios (GeoServer)
-- Micrositios temáticos propios: Ecosistema H2 Colombia, Transición Energética Justa, REDTEJ (Red Nacional de Conocimiento para la Transición Energética Justa), Comunidades Energéticas, Energía Eólica Costa Afuera, Territorios Energéticos
-- Seguimiento al Sistema General de Regalías y a programas de cierre de brechas energéticas
+- Normativa sectorial: decretos, resoluciones, Decreto Único Reglamentario del sector energético y proyectos normativos en consulta pública, con la agenda regulatoria del ministerio
+- Reglamentos técnicos: instalaciones eléctricas, iluminación y alumbrado público, etiquetado energético e instalaciones térmicas, y de hidrocarburos (gas natural, GLP, exploración y explotación)
+- Política energética y minera: planes de expansión eléctrica, fuentes no convencionales de energía renovable, hidrógeno, energía eólica costa afuera y transición energética justa
+- Eficiencia energética: programa de uso racional y eficiente de energía, metas obligatorias, ciudades energéticas, medidores inteligentes y movilidad eléctrica
+- Subsidios y fondos especiales del sector: subsidios de energía eléctrica y gas, y fondos para zonas no interconectadas, electrificación rural, normalización de redes y energías renovables
+- Declaratoria de utilidad pública e interés social de planes, proyectos y obras de energía
+- Minería: ventanilla minera para trámites
+- Asuntos nucleares: reglamentación de materiales nucleares y radiactivos, acuerdos internacionales y gestión de desechos radiactivos
+- Gestión ambiental y social: cambio climático sectorial, relacionamiento territorial y conflictividad social, gestión del riesgo de desastres, enfoque de género y derechos humanos
+- Datos e indicadores: tarifas, cobertura eléctrica, hidrocarburos, subsidios, regalías y minería, en el portal de datos del sector
+- Infraestructura de datos espaciales del sector: geovisor sectorial, catálogo de metadatos y geoservicios
+- Sistema General de Regalías: papel del ministerio, mecanismos de incentivo y convocatorias
+- Comunidades y territorios energéticos, y red de conocimiento sobre la transición energética
 
 ## Sitio oficial
 
@@ -27,6 +34,9 @@ El Ministerio de Minas y Energía es la entidad rectora del sector minero-energ�
 
 ## Notas de navegación
 
+- Las rutas del sitio con tildes deben codificarse en porcentaje: la ruta sin codificar devuelve 404 en eficiencia energética (`eficiencia-energ%C3%A9tica`), reglamentos técnicos de hidrocarburos y cambio climático.
 - Varios micrositios temáticos operan en dominio propio; los enlaces directos están en `fuentes.md`.
-- El seguimiento a proyectos FNCER lo publica la UPME en `upme.gov.co/simec/seguimiento-fncer/`. Su documentación completa vive en la skill `navegar-upme`.
-- El repositorio normativo es el punto de entrada recomendado para normativa sectorial; permite buscar por tipo de acto y año.
+- El visor de conflictividades sociales está bloqueado por WAF para clientes sin navegador (headless); el aplicativo del Plan Integral de Gestión del Cambio Climático (`pigccme.minenergia.gov.co`) dejó de resolver.
+- La unidad de resultados requiere login.
+- El seguimiento a proyectos de fuentes no convencionales de energía renovable lo publica la UPME en `upme.gov.co/simec/seguimiento-fncer/`; su documentación vive en la skill `navegar-upme`.
+- El repositorio normativo es el punto de entrada recomendado para normativa sectorial.

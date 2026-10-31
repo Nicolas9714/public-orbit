@@ -1,19 +1,27 @@
 ---
 name: navegar-creg
-description: "Guía de navegación para la CREG: normativa regulatoria de energía eléctrica, gas natural, GLP y combustibles líquidos."
+description: "Guía de navegación para la CREG: regulación de energía eléctrica, gas natural, GLP y combustibles líquidos, resoluciones y proyectos en consulta, conceptos jurídicos, cargos de transporte de gas y trámites."
 ---
 
 # Comisión de Regulación de Energía y Gas (CREG)
 
-La CREG es una comisión de expertos adscrita al Ministerio de Minas y Energía. Regula las actividades de los sectores de energía eléctrica, gas natural, GLP y combustibles líquidos con el fin de asegurar una oferta energética eficiente, propiciar la competencia y establecer las tarifas de los servicios públicos.
+La Comisión de Regulación de Energía y Gas (CREG) es una unidad administrativa especial adscrita al Ministerio de Minas y Energía, con funciones de regulación a cargo de una comisión de expertos. Regula las actividades de los servicios de energía eléctrica, gas natural, GLP (Gas Licuado de Petróleo) y combustibles líquidos para asegurar una oferta energética eficiente, propiciar la competencia y establecer las tarifas de los servicios públicos.
 
 ## ¿Qué información publica?
 
-- Resoluciones de regulación tarifaria y de mercado para cuatro sectores: energía eléctrica, gas natural, GLP (Gas Licuado de Petróleo) y combustibles líquidos
-- Proyectos de resolución en consulta pública y circulares informativas
-- Marco regulatorio compilado por sector en el Gestor Normativo Alejandría: resoluciones originales, versiones vigentes consolidadas e índices temáticos
-- Estadísticas sectoriales y directorio de empresas reguladas por subsector
-- Regulación específica sobre autogeneración a pequeña escala, medición avanzada (AMI), zonas no interconectadas y cargos de transporte de gas
+- Marco regulatorio por servicio: energía eléctrica, gas natural, GLP y combustibles líquidos, con sus estructuras tarifarias y su funcionamiento
+- Resoluciones de carácter general y particular, vigentes y derogadas, incluida la contribución especial de regulación
+- Proyectos de resolución en consulta pública y circulares
+- Autos: actuaciones administrativas de la Comisión
+- Conceptos jurídicos de la CREG sobre la aplicación de la regulación, por servicio y por actividad
+- Novedades regulatorias por tipo de acto y por servicio
+- Compilaciones de la regulación vigente por servicio, del código de redes de energía eléctrica, del cargo por confiabilidad en el mercado mayorista y de los derechos y deberes de los usuarios
+- Compilación jurídica: Constitución, leyes, decretos, jurisprudencia y actos de otras entidades que rigen los servicios regulados
+- Reglamentos técnicos: código de medida
+- Regulación específica de autogeneración a pequeña escala y generación distribuida, medición avanzada y zonas no interconectadas
+- Cargos máximos de transporte de gas natural y gestor del mercado de gas natural
+- Estadísticas sectoriales y directorio de empresas reguladas por servicio
+- Trámites y servicios ante la CREG
 
 ## Sitio oficial
 
@@ -26,6 +34,6 @@ La CREG es una comisión de expertos adscrita al Ministerio de Minas y Energía.
 
 ## Notas de navegación
 
-- El Gestor Normativo Alejandría (`gestornormativo.creg.gov.co`) es el sistema canónico para buscar normativa; las compilaciones únicas muestran las versiones vigentes consolidadas por sector, más útiles que el texto original para consulta de marcos regulatorios actuales.
-- El SCIR es la plataforma de cargue para empresas reguladas y requiere credenciales; el SICT (cargos de transporte de gas natural) es de acceso público.
-- La normativa del sitio principal está organizada bajo un esquema de IDs numéricos; los enlaces directos a secciones clave están en `fuentes.md`.
+- El Gestor Normativo Alejandría (`gestornormativo.creg.gov.co`) es un subdominio separado del sitio principal y el sistema canónico para buscar normativa; sus compilaciones únicas, con las versiones vigentes, sirven mejor para consultar marcos regulatorios actuales que el texto original.
+- El SCIR requiere credenciales de empresa regulada; el SICT es de acceso público.
+- El sitio principal organiza sus páginas con identificadores numéricos (`/15004`) que redirigen a la URL completa; los enlaces directos a secciones clave están en `fuentes.md`.

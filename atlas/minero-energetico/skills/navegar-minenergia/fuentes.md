@@ -36,13 +36,20 @@
 |---|---|---|---|
 | DUR Sector Energético | Marco normativo | `repositorio-normativo/decretos-modificatorios-dur` | 2026-05-29 |
 | RETIE / RETIQ / RETILAP / RETSIT | Reglamentos técnicos eléctricos | `misional/energia-electrica-2/reglamentos-tecnicos` | 2026-05-29 |
-| Reglamentos técnicos hidrocarburos | Reglamentos técnicos | `misional/hidrocarburos/reglamentos-tecnicos` | 2026-05-29 |
+| Reglamentos técnicos hidrocarburos | Reglamentos técnicos de gas natural, GLP y exploración y explotación de hidrocarburos, convencionales, no convencionales y costa afuera | `misional/hidrocarburos/reglamentos-t%C3%A9cnicos/` | 2026-10-31 |
 | Fondos especiales (FAZNI, FAER, PRONE) | Política de fondos | `misional/energia-electrica-2/fondos-especiales` | 2026-05-29 |
 | Política FNCER | Marco de política | `misional/fuentes-no-convencionales-de-energía-renovable-fncer` | 2026-05-29 |
 | Cambio climático sectorial | Política ambiental | `misional/ambiental-social/cambio-climatico` | 2026-05-29 |
 | Hoja de Ruta TEJ — Resumen Ejecutivo 2025 | PDF oficial | `micrositios/transicion-energetica-justa/documentos/hoja-de-ruta-tej-resumen-ejecutivo-2025` | 2026-05-29 |
 | Hoja de Ruta TEJ — Presentación 2025 | PDF oficial | `micrositios/transicion-energetica-justa/documentos/presentacion-hoja-de-ruta-tej-2025` | 2026-05-29 |
 | Escenarios Nacionales TEJ 2024 | PDF oficial | `micrositios/transicion-energetica-justa/documentos/escenarios-nacionales-tej-2024` | 2026-05-29 |
+| Subsidios de energía eléctrica | Descuentos en la factura para estratos 1, 2 y 3 y zonas no interconectadas, financiados por FSSRI y FOES | `misional/energia-electrica-2/subsidios` | 2026-10-31 |
+| Eficiencia energética | PROURE, metas obligatorias, buenas prácticas, Ciudades Energéticas, etiqueta de eficiencia, medidores inteligentes, movilidad eléctrica y cultura energética | `misional/eficiencia-energ%C3%A9tica/` | 2026-10-31 |
+| Asuntos nucleares | Reglamentación sobre materiales nucleares y radiactivos, autorizaciones y licencias de importación, desechos y transporte; listados de empresas de dosimetría e instalaciones | `misional/asuntos-nucleares` | 2026-10-31 |
+| Estrategia de Relacionamiento Territorial | Modelo de prevención de conflictos sociales y ambientales; Mesa Técnica de Articulación Intersectorial, protocolos, territorios priorizados y planes de trabajo | `misional/ambiental-social/estrategia-relacionamiento-territorial` | 2026-10-31 |
+| Enfoque de género | Lineamientos de equidad de género del sector, comité y protocolo contra el acoso, estudio sectorial y guías | `misional/ambiental-social/enfoque-genero` | 2026-10-31 |
+| Derechos humanos | Política sectorial de derechos humanos, compromiso político, guías de debida diligencia y grupos de trabajo | `misional/ambiental-social/derechos-humanos` | 2026-10-31 |
+| Sistema General de Regalías | Papel del ministerio, Incentivo a la Producción, Obras por Regalías, convocatorias, normativa y contacto del Grupo de Regalías | `misional/sistema-general-de-regalias` | 2026-10-31 |
 | Buscador documentos sector eléctrico | Buscador interno de documentos del sector eléctrico | `minenergia.gov.co/es/misional/energia-electrica-2/buscador-documentos-energia-electrica` | 2026-05-29 |
 
 ---
@@ -60,6 +67,7 @@
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
+| Declaratoria de utilidad pública e interés social (DUPIS) | `minenergia.gov.co/es/misional/energia-electrica-2/declaratoria-de-utilidad-p%C3%BAblica-e-inter%C3%A9s-social-dupis/` | Descripción del trámite para declarar de utilidad pública planes, proyectos u obras de energía, acueductos o riego; resoluciones, decretos y leyes relacionados | 2026-10-31 |
 | Ventanilla Minera | `minenergia.gov.co/es/misional/mineria/ventanilla-minera` | Portal de trámites mineros; enlaza con ANM | 2026-05-29 |
 
 ---

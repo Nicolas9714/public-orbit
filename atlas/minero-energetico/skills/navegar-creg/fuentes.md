@@ -29,6 +29,10 @@
 | Circulares CREG | Circulares externas | `creg.gov.co/loader.php?lServicio=Documentos&lFuncion=infoCategoriaConsumo&tipo=CI` | 2026-05-30 |
 | Autos CREG | Actuaciones administrativas | `creg.gov.co/loader.php?lServicio=Documentos&lFuncion=infoCategoriaConsumo&tipo=AU` | 2026-05-30 |
 | Código de Medida (Res. 038/2014) | Reglamento técnico | `creg.gov.co/13334` | 2026-05-30 |
+| Compilaciones únicas | Versiones vigentes por servicio, código de redes, cargo por confiabilidad y derechos y deberes de los usuarios | `gestornormativo.creg.gov.co/gestor/entorno/compilaciones_unicas.html` | 2026-10-31 |
+| Conceptos jurídicos | Conceptos de la CREG, por servicio y por actividad | `gestornormativo.creg.gov.co/gestor/entorno/conceptos_juridicos.html` | 2026-10-31 |
+| Novedades regulatorias | Novedades por tipo de acto (autos, circulares, proyectos, resoluciones) y por servicio | `gestornormativo.creg.gov.co/gestor/entorno/novedades_regulatorias.html` | 2026-10-31 |
+| Compilación jurídica | Constitución, leyes, decretos, jurisprudencia y actos de otras entidades | `gestornormativo.creg.gov.co/gestor/entorno/compilacion_normativa_jurisprudencia.html` | 2026-10-31 |
 
 ---
 

@@ -22,6 +22,15 @@
 
 ---
 
+## Servicios y trámites
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Procesos de contratación | `fenoge.gov.co/quieres-participar-en-nuestros-procesos-de-contratacion/` | Listado de avisos de licitaciones públicas internacionales e invitaciones abiertas y cerradas del fondo; incluye procesos cancelados o suspendidos | 2026-10-31 |
+| Estudios de mercado | `fenoge.gov.co/quieres-participar-en-nuestros-estudios-de-mercado/` | Listado de Solicitudes de Información a Proveedores (SIP) publicadas por el fondo | 2026-10-31 |
+
+---
+
 ## Convocatorias
 
 | Nombre | URL | Descripción | Verificado |
@@ -30,8 +39,8 @@
 | Criterios de elegibilidad | `fenoge.gov.co/criterios-de-elegibilidad/` | Requisitos técnicos y jurídicos para presentar proyectos al FENOGE | 2026-05-30 |
 | EN-Comunidad (convocatoria) | `fenoge.gov.co/services/convocatoria-en-comunidad/` | Convocatoria para proyectos FNCER y eficiencia energética en comunidades; 55 proyectos en 43 municipios | 2026-05-30 |
 | +H2 Colombia (resultados) | `https://fenoge.gov.co/convocatoria/h2-colombia/` | Convocatoria finalizada para proyectos de hidrógeno en Colombia; conserva términos, documentos y resultados | 2026-08-11 |
-| Retos y Necesidades Energéticas | `fenoge.gov.co/services/retos-y-necesidades-energeticas-en-colombia/` | Diagnóstico de retos energéticos por región; orienta las líneas de financiación | 2026-05-30 |
-| Banco de proveedores | `fenoge.gov.co/convocatoria/banco-proveedores/` | Convocatoria para inscripción en banco de proveedores del FENOGE | 2026-05-30 |
+| Retos y Necesidades Energéticas | `fenoge.gov.co/services/retos-y-necesidades-energeticas-en-colombia/` | Convocatoria finalizada (agosto de 2022) para que alcaldías y gobernaciones reporten necesidades de energía renovable y eficiencia energética en edificaciones públicas; no incluye diagnóstico regional | 2026-10-31 |
+| Banco de proveedores | `fenoge.gov.co/convocatoria/banco-proveedores/` | Banco de proveedores con formulario de inscripción; el registro no es obligatorio para participar en la contratación del fondo | 2026-10-31 |
 
 ---
 
