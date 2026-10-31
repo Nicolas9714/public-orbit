@@ -8,8 +8,9 @@ www2.sgc.gov.co/
 ├── Direcciones-Tecnicas/
 │   ├── GeocienciasBasicas/
 │   ├── RecursosMinerales/
+│   │   └── consulta-informacion-geofisica
 │   ├── Geoamenazas/
-│   │   └── amenaza-sismica
+│   │   └── amenazasismica.sgc.gov.co (Modelo Nacional de Amenaza Sísmica)
 │   ├── Hidrocarburos/
 │   ├── AsuntosNucleares/
 │   ├── Laboratorios/
@@ -19,10 +20,6 @@ www2.sgc.gov.co/
 │
 ├── sgc/mapas/
 │   └── geoportal
-│
-├── ProgramasDeInvestigacion/
-│   └── DireccionTecnicaRecursosMinerales/
-│       └── consulta-informacion-geofisica
 │
 ├── MGC/
 │   ├── mapa-geologico-de-colombia (1:1.000.000)
@@ -41,11 +38,11 @@ www2.sgc.gov.co/
 │   ├── boletines-sismicidad
 │   └── boletines-movimiento-fuerte
 │
-├── patrimonio/
-│   └── patrimonio-geologico
+├── patrimonio/Paginas/
+│   └── patrimonio-geologico.aspx
 │
-├── museo-geologico/
-│   └── museo-geologico-nacional-jrg
+├── museo-geologico/Paginas/
+│   └── museo-geologico-nacional-jrg.aspx
 │
 ├── biblioteca/
 │
@@ -104,4 +101,4 @@ www2.sgc.gov.co/
 
 ## Última verificación
 
-Verificado: 2026-05-30
+Verificado: 2026-10-31

@@ -24,7 +24,7 @@ minenergia.gov.co/es/
 │   │   ├── subsidios/
 │   │   │   ├── fssri-fondo-solidaridad-subsidios
 │   │   │   └── foes-estabilizacion-precios-combustibles
-│   │   └── declaratoria-de-utilidad-publica-e-interes-social-dupis
+│   │   └── declaratoria-de-utilidad-pública-e-interés-social-dupis
 │   │
 │   ├── hidrocarburos/
 │   │   ├── funcionamiento-del-sector/
@@ -36,13 +36,13 @@ minenergia.gov.co/es/
 │   │   │   ├── upstream
 │   │   │   ├── midstream
 │   │   │   └── downstream
-│   │   └── reglamentos-tecnicos
+│   │   └── reglamentos-técnicos
 │   │
 │   ├── mineria/
 │   │   ├── ventanilla-minera
 │   │   └── centro-aprendizaje-minero
 │   │
-│   ├── fuentes-no-convencionales-fncer/
+│   ├── fuentes-no-convencionales-de-energía-renovable-fncer/
 │   │   ├── hidrogeno
 │   │   ├── geotermia
 │   │   ├── energia-solar
@@ -58,7 +58,7 @@ minenergia.gov.co/es/
 │   │   ├── respuesta-de-la-demanda
 │   │   └── vehiculos-electricos
 │   │
-│   ├── eficiencia-energetica/
+│   ├── eficiencia-energética/
 │   │   ├── proure-uso-racional-eficiente
 │   │   ├── metas-obligatorias
 │   │   ├── buenas-practicas
@@ -85,7 +85,7 @@ minenergia.gov.co/es/
 │   │
 │   ├── ambiental-social/
 │   │   ├── oficina-de-asuntos-ambientales-y-sostenibles
-│   │   ├── cambio-climatico/
+│   │   ├── cambio-climático/
 │   │   │   ├── plan-gestion-climatica-minero-energetico
 │   │   │   ├── compromisos-ndc
 │   │   │   ├── vulnerabilidad-y-adaptacion
@@ -95,10 +95,10 @@ minenergia.gov.co/es/
 │   │   │   ├── planes-de-trabajo-territorial
 │   │   │   ├── estrategia-territorial-hidrocarburos
 │   │   │   └── visor-conflictos
-│   │   ├── gestion-ambiental/
+│   │   ├── gestión-ambiental/
 │   │   │   ├── ordenamiento-ambiental-territorial
 │   │   │   └── agendas-intersectoriales
-│   │   ├── gestion-del-riesgo-de-desastres/
+│   │   ├── gestión-del-riesgo-de-desastres-grd/
 │   │   │   ├── politica-gestion-riesgo
 │   │   │   ├── escenarios-de-riesgo
 │   │   │   └── plan-riesgo-desastres-minero-energetico/
@@ -106,7 +106,7 @@ minenergia.gov.co/es/
 │   │   ├── comunicacion-popular
 │   │   ├── enfoque-genero
 │   │   ├── derechos-humanos
-│   │   └── gestion-del-conocimiento
+│   │   └── gestión-del-conocimiento
 │   │
 │   ├── sistema-general-de-regalias
 │   │
@@ -137,7 +137,7 @@ minenergia.gov.co/es/
 │   │   ├── audiencia-publica-congreso
 │   │   ├── avances-tej
 │   │   └── unete-tej
-│   └── energia-eolica-costa-afuera/
+│   └── energía-eólica-costa-afuera/
 │       └── normatividad
 │
 ├── comunidades-energeticas/
@@ -190,4 +190,4 @@ minenergia.gov.co/es/
 
 ## Última verificación
 
-Verificado: 2026-05-30
+Verificado: 2026-10-31
