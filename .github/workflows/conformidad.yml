@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Descargar el repositorio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Verificar conformidad N1-N5 + autocontención
         run: bash verificar-conformidad.sh
       - name: Probar falsos negativos conocidos
