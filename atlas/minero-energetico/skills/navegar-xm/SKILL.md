@@ -20,7 +20,7 @@ XM, filial del Grupo ISA, es una empresa de servicios públicos que opera el Sis
 - Cargo por confiabilidad: energía firme, obligaciones de energía, subastas de energía firme y de reconfiguración, y mercado secundario
 - Contratación del mercado: contratos bilaterales y de largo plazo del mercado regulado y no regulado, precios y cobertura de la demanda
 - Registros y administración financiera: agentes, fronteras comerciales y medidas, garantías, gestión de riesgo y limitación de suministro
-- Planeación operativa: análisis energéticos de largo, mediano y corto plazo, estudios de flexibilidad, restricciones y mantenimientos, e IPOEMP (Informe de Planeamiento Operativo Eléctrico de Mediano Plazo)
+- Planeación operativa: análisis energéticos de largo, mediano y corto plazo, estudios de flexibilidad y de restricciones, e IPOEMP (Informe de Planeamiento Operativo Eléctrico de Mediano Plazo)
 - Informes de la operación y el mercado: boletín energético, análisis mensual del mercado, situación energética actual, informe anual de operación del SIN y administración del mercado, y mapa de ruta de la transición energética
 - Normativa de mercado y operación: resoluciones aplicables al mercado, la medida y las condiciones del sistema
 
@@ -38,4 +38,6 @@ XM, filial del Grupo ISA, es una empresa de servicios públicos que opera el Sis
 - La API pública (`servapibi.xm.com.co`) no requiere autenticación y es el acceso recomendado para extraer series históricas de manera programática. La librería `pydataxm` facilita su uso desde Python.
 - El portal SINERGOX es para agentes registrados del mercado y requiere autenticación; no confundir con la API pública.
 - El SIMEM (`simem.co`) es el portal de datos abiertos del mercado; tiene su propia API documentada en la sección de catálogo de datos.
-- Las bases de datos descargables de planeación (MPODE, IPOEL, AEMP) están en `planeación/`, separadas de los resultados de estudios que están en `operación/planeación/`.
+- Las URLs de planeación están duplicadas: los resultados de estudios están bajo `operación/planeación/` y las bases de datos descargables de largo y mediano plazo bajo `planeación/`.
+- Las rutas del sitio con tildes (`planeación`, `operación`) responden 404 si se piden con caracteres crudos desde herramientas como `curl`; usar la ruta codificada (`planeaci%C3%B3n`) o navegar desde los menús. Algunas páginas de resoluciones (por ejemplo `resoluciones/mercado/res-creg-176-de-2021`) devolvieron 403 en la verificación.
+- `sinergox.xm.com.co` está detrás de un WAF (firewall de aplicaciones web) que bloquea navegación sin interfaz gráfica; abrirlo con navegador en modo con ventana (`--headed`).

@@ -1,22 +1,26 @@
 ---
 name: navegar-iavh
-description: "Guía para navegar el sitio del Instituto Alexander von Humboldt y encontrar información pública de alto valor sobre biodiversidad continental colombiana: sistema I2D, colecciones biológicas, BioModelos, BioTablero, Reporte BIO, GeoNetwork y SiB Colombia."
+description: "Guía de navegación para el Instituto Humboldt: datos de biodiversidad continental, modelos de distribución de especies, indicadores, colecciones biológicas y publicaciones científicas."
 ---
 
 # Instituto de Investigación de Recursos Biológicos Alexander von Humboldt (IAvH)
 
-El IAvH es un instituto de investigación científica adscrito al Ministerio de Ambiente y Desarrollo Sostenible. Su mandato es investigar, conservar y divulgar la diversidad biológica y sus recursos en la zona continental colombiana. Coordina el Sistema de Información sobre Biodiversidad de Colombia (SiB Colombia) y administra el Registro Nacional de Colecciones biológicas (RNC).
+El Instituto de Investigación de Recursos Biológicos Alexander von Humboldt es un instituto de investigación científica adscrito al Ministerio de Ambiente y Desarrollo Sostenible. Investiga, conserva y divulga la diversidad biológica y sus recursos en la zona continental colombiana, coordina el Sistema de Información sobre Biodiversidad de Colombia (SiB Colombia) y administra el Registro Nacional de Colecciones biológicas (RNC).
 
 ## ¿Qué información publica?
 
-- Sistema I2D (Infraestructura Institucional de Datos): visor geográfico de registros biológicos, base de datos CEIBA, catálogo geoespacial GeoNetwork y datos socioecológicos (Biocultural)
+- Datos de biodiversidad del instituto: registros biológicos, datos biológicos y datos geoespaciales reunidos en la I2D (Infraestructura Institucional de Datos) y la plataforma CEIBA
+- Datos socioecológicos: catálogo de datos y metadatos por tema y región (Biocultural)
 - BioModelos: modelos de distribución de especies validados por expertos para mamíferos, aves, reptiles, anfibios, peces, invertebrados y plantas
-- BioTablero: indicadores de estado de la biodiversidad para seguimiento y toma de decisiones
-- Reporte BIO: informe anual de estado y tendencias de la biodiversidad continental colombiana (2014–2024)
-- Colecciones biológicas físicas: 11 colecciones (aves, mamíferos, anfibios, reptiles, peces, entomología, herbario, semillas, sonidos, entre otras)
-- Registro Nacional de Colecciones (RNC): inventario oficial de colecciones biológicas del país
-- Publicaciones científicas: revistas Biota Colombiana y Biodiversidad en la Práctica; repositorio institucional; publicaciones editoriales
-- SiB Colombia: red nacional de datos abiertos de biodiversidad — portal de datos, catálogo de especies, estadísticas e IPT de GBIF (Global Biodiversity Information Facility, la infraestructura mundial de información en biodiversidad)
+- BioTablero: indicadores de biodiversidad con consultas por departamento, jurisdicción ambiental y subzona hidrográfica y portafolios
+- Reporte BIO: estado y tendencias de la biodiversidad continental de Colombia, con mapas interactivos y tablas
+- Colecciones biológicas físicas: aves, mamíferos, anfibios, reptiles, peces, entomología, herbario, semillas y sonidos, entre otras, y catálogo de especímenes tipo
+- Registro Nacional de Colecciones: inventario oficial de las colecciones biológicas del país
+- SiB Colombia: datos abiertos de biodiversidad, catálogo de especies, estadísticas (Biodiversidad en Cifras) y publicación de datos hacia GBIF (Global Biodiversity Information Facility, la infraestructura mundial de información en biodiversidad)
+- Publicaciones científicas: revistas Biota Colombiana y Biodiversidad en la Práctica, publicaciones editoriales y repositorio institucional
+- Banco de imágenes ambientales: acervo de imágenes del repositorio institucional
+- Biblioteca Francisco Matís Mahecha: libros, revistas, audiovisuales y mapas sobre biodiversidad
+- Proyectos del instituto: portal de proyectos, incluido el de cambio climático
 
 ## Sitio oficial
 
@@ -30,7 +34,7 @@ El IAvH es un instituto de investigación científica adscrito al Ministerio de 
 ## Notas de navegación
 
 - El sitio principal (`https://humboldt.org.co`) actúa como portal de acceso; la mayoría de herramientas de datos operan en subdominios propios (`https://datos.humboldt.org.co`, `https://biomodelos.humboldt.org.co`, `https://biotablero.humboldt.org.co`, etc.).
-- El sistema I2D en `https://datos.humboldt.org.co` es la columna vertebral; desde allí se accede a CEIBA, el Visor I2D y GeoNetwork.
-- `https://rnc.humboldt.org.co` está accesible por HTTP y HTTPS al 2026-07-04, con el contenido del Registro Nacional de Colecciones.
+- El sistema I2D está en `https://datos.humboldt.org.co`, pero CEIBA y el Visor I2D se alojan en el subdominio `https://i2d.humboldt.org.co` y GeoNetwork en `https://geonetwork.humboldt.org.co`.
+- El portal del Registro Nacional de Colecciones (`https://rnc.humboldt.org.co`) responde por HTTP y HTTPS al 2026-07-04; al 2026-06-15 servía un micrositio conmemorativo.
 - `https://ecosistema.humboldt.org.co` es intranet institucional; no tiene contenido público.
-- El SiB Colombia (`https://biodiversidad.co`) es coordinado por el IAvH pero es una red nacional con múltiples nodos institucionales.
+- El SiB Colombia (`https://biodiversidad.co`) tiene dominio propio, distinto de `humboldt.org.co`.

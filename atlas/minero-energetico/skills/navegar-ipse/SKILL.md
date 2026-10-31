@@ -5,16 +5,18 @@ description: "Guía de navegación para el IPSE: cobertura eléctrica en zonas n
 
 # Instituto de Planificación y Promoción de Soluciones Energéticas para las Zonas No Interconectadas (IPSE)
 
-El IPSE es una entidad adscrita al Ministerio de Minas y Energía. Se encarga de identificar, promover, diseñar y ejecutar soluciones energéticas para las Zonas No Interconectadas (ZNI) de Colombia — territorios que no están conectados al Sistema Interconectado Nacional (SIN).
+El Instituto de Planificación y Promoción de Soluciones Energéticas para las Zonas No Interconectadas es una entidad adscrita al Ministerio de Minas y Energía. Identifica, promueve, diseña y ejecuta soluciones energéticas para las zonas no interconectadas (ZNI) de Colombia, territorios sin conexión al Sistema Interconectado Nacional.
 
 ## ¿Qué información publica?
 
-- SIGIPSE: portal de geovisores ArcGIS de las Zonas No Interconectadas (ZNI); incluye visor de caracterización ZNI, visor de electrificación FNCER (Fuentes No Convencionales de Energía Renovable) y colección StoryMap
-- CNM (Centro Nacional de Monitoreo): boletines anuales sobre el estado de la prestación del servicio de energía en las ZNI, desde 2014
-- Proyectos IPSE y FAZNI (Fondo de Apoyo Financiero para la Energización de las Zonas No Interconectadas): listados con estado y documentos por proyecto de energización rural
-- Normograma organizado por etapa del ciclo de vida de proyectos ZNI: estructuración, viabilización, implementación, seguimiento y entrega de activos
-- Datos abiertos en el portal nacional de datos abiertos: estado de la prestación del servicio eléctrico en ZNI por localidad
-- Guía práctica de estructuración de proyectos energéticos para ZNI
+- Caracterización de las ZNI: usuarios y cobertura por departamento y municipio, y resultados de las encuestas de caracterización, en el SIGIPSE (Sistema de Información de Gestión IPSE)
+- Electrificación con FNCER (Fuentes No Convencionales de Energía Renovable): proyectos de energización con renovables en las ZNI
+- Estado de la prestación del servicio de energía: informes del CNM (Centro Nacional de Monitoreo) y datos abiertos por localidad
+- Proyectos de energización rural: inventario de proyectos del IPSE y del FAZNI (Fondo de Apoyo Financiero para la Energización de las Zonas No Interconectadas)
+- Proyectos de inversión del instituto
+- Solicitud de proyectos energéticos: radicación ante el IPSE por la sede electrónica y guía práctica de estructuración de proyectos
+- Normativa: institucional, de cada fase de los proyectos (estructuración, viabilización, implementación, seguimiento y entrega de activos eléctricos), de los prestadores del servicio en las ZNI y de las comunidades energéticas
+- Investigación e innovación energética: documentos de investigación, biblioteca energética y artículos de innovación
 
 ## Sitio oficial
 
@@ -27,6 +29,4 @@ El IPSE es una entidad adscrita al Ministerio de Minas y Energía. Se encarga de
 
 ## Notas de navegación
 
-- SIGIPSE (`sigipse.ipse.gov.co`) es el sistema de geovisores y datos de las ZNI; los enlaces directos a cada visor están en `fuentes.md`.
-- El CNM publica boletines anuales — no es un sistema transaccional sino un repositorio de informes de estado del servicio.
-- El normograma está organizado por etapa del ciclo del proyecto energético ZNI, lo que facilita la consulta según la fase en que se encuentre el proyecto.
+- Los visores de SIGIPSE están en el subdominio `sigipse.ipse.gov.co` (ArcGIS Online); los enlaces directos a cada visor están en `fuentes.md`.

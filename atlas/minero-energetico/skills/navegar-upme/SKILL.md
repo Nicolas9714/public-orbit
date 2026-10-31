@@ -37,5 +37,4 @@ La UPME es una Unidad Administrativa Especial adscrita al Ministerio de Minas y 
 
 - El SIMEC es el portal central de la UPME; casi toda la información sectorial está organizada bajo `simec/`. Conviene navegar desde ahí antes de buscar en el sitio general.
 - Los geovisores y la Biblioteca Digital operan en subdominios propios; los enlaces directos están en `fuentes.md`.
-- El SIMEM (`simem.co`), portal de datos del mercado eléctrico mayorista, lo administra XM y se documenta en la skill `navegar-xm`.
-- La UPME ejerce como CIO del sector minero-energético colombiano: los lineamientos de gobernanza de datos que publica aplican a todas las entidades del sector, no solo a la UPME.
+- El SIMEM (Sistema de Información del Mercado Eléctrico Mayorista, `simem.co`) lo administra XM y se documenta en la skill `navegar-xm`.

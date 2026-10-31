@@ -17,7 +17,7 @@
 |---|---|---|---|
 | Visor geográfico público SIGMExt | `annamineria.anm.gov.co/Html5Viewer/index.html?viewer=SIGMExt&locale=es-CO&appAcronym=sigm` | Geocortex Viewer for HTML5; acceso público sin login; capas: títulos mineros, solicitudes, áreas excluibles | 2026-06-16 |
 | Visor geográfico AnnA Minería (SIGM) | Integrado en `annamineria.anm.gov.co/sigm/` | Cuadrícula Minera, estado de celdas (libre / titulada / en proceso), áreas de reserva especial, zonas excluidas; requiere registro | 2026-05-30 |
-| Cuadrícula Minera descargable | `anm.gov.co/anna-mineria` | Descarga en GeoJSON y GDB (Geodatabase); niveles: Zona UTM, Sector, Sección, Bloque, Conjunto, Grupo, Celda | 2026-05-30 |
+| Cuadrícula Minera descargable | `anm.gov.co/anna-mineria` | Descarga de la Celda Minera en gpkg, GDB (Geodatabase) y JSON según la página (enlace directo a CELDA_GDB_Anna.zip); niveles: Zona UTM, Sector, Sección, Bloque, Conjunto, Grupo, Celda | 2026-05-30 |
 | Gestor de metadatos ANM | `anm.gov.co/informacion-geografica` | Modelo de Datos Geográficos ANM v2; metadatos de capas geoespaciales institucionales | 2026-05-30 |
 
 ---
@@ -51,6 +51,20 @@
 | Resolución 504 de 2018 | Reglamento de Cuadrícula Minera | `anm.gov.co/504-del-18-de-septiembre-2018` | 2026-05-30 |
 | Modelo de Datos Geográficos ANM v2 | Estándar geoespacial | Descarga GDB desde `informacion-geografica` | 2026-05-30 |
 | Inventario de trámites mineros | Catálogo de trámites | `inventario-de-tramites-mineros` | 2026-05-30 |
+| Cierres administrativos de contratos de concesión | Listado mensual de actos de cierre (PDF por acto, con número de cierre y expediente; 2025 y 2026) | `anm.gov.co/atencion-y-servicio-la-ciudadania/cierres-administrativos-contratos-de-concesion` | 2026-10-31 |
+| Vicepresidencia de Seguimiento, Control y Seguridad Minera | Ficha institucional: fiscalización de obligaciones de los títulos, seguridad y salvamento minero, regalías | `anm.gov.co/vicepresidencia-de-seguimiento-control-y-seguridad-minera` | 2026-10-31 |
+
+---
+
+## Servicios y trámites
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Presentación de solicitudes en AnnA Minería | `anm.gov.co/atencion-y-servicio-la-ciudadania/oferta-institucional/anna-mineria/presentacion-de-solicitudes` | Punto de partida para presentar solicitudes mineras: adquirir PIN, plano PCC e instructivos de selección de áreas de reserva especial | 2026-10-31 |
+| Radicar solicitud de contrato de concesión | `anm.gov.co/radicar-solicitud-de-contrato-de-concesion` | Ruta para radicar la solicitud de contrato de concesión | 2026-10-31 |
+| Radicar solicitud de autorización temporal | `anm.gov.co/radicar-solicitud-de-autorizacion-temporal` | Ruta para radicar la solicitud de autorización temporal | 2026-10-31 |
+| Radicar solicitud de área de reserva especial | `anm.gov.co/radicar-solicitud-de-area-de-reserva-especial` | Ruta para radicar la solicitud de área de reserva especial | 2026-10-31 |
+| Ingreso al programa de asistencia técnica VETA | `anm.gov.co/solicitud-de-ingreso-al-programa-asistencia-tecnica-veta` | Ruta para solicitar el ingreso al programa de asistencia técnica VETA (formalización minera) | 2026-10-31 |
 
 ---
 

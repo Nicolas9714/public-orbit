@@ -61,6 +61,20 @@
 |---|---|---|---|
 | Publicaciones INVEMAR | Catálogo de publicaciones; incluye series de monitoreo de Ciénaga Grande de Santa Marta y Magdalena | `https://www.invemar.org.co/publicaciones` | 2026-06-15 |
 | Plan Nacional de Acidificación | Plan nacional | `https://www.invemar.org.co/web/guest/plan-acidificaci%C3%B3n` | 2026-08-10 |
+| Programa Biodiversidad y Ecosistemas Marinos (BEM) | Área de investigación | `https://www.invemar.org.co/web/guest/biodiversidad-y-ecosistemas-marinos` | 2026-10-31 |
+| Programa Calidad Ambiental Marina | Área de investigación | `https://www.invemar.org.co/web/guest/calidad-ambiental-marina` | 2026-10-31 |
+| Programa Geociencias Marinas | Área de investigación | `https://www.invemar.org.co/web/guest/geociencias-marinas` | 2026-10-31 |
+| Programa Valoración y Aprovechamiento de los Recursos Marinos y Costeros | Área de investigación | `https://www.invemar.org.co/web/guest/programa-de-valoraci%C3%B3n-y-aprovechamiento-de-los-recursos-marinos-y-costeros` | 2026-10-31 |
+
+---
+
+## Servicios y trámites
+
+| Nombre | URL | Descripción | Verificado |
+|---|---|---|---|
+| Servicios Científicos | `https://www.invemar.org.co/web/guest/servicios-cient%C3%ADficos` | Coordinación de Servicios Científicos; describe el estudio de línea base (caracterización física, química y biótica de ecosistemas marinos y costeros, insumo para estudios de impacto ambiental) y enumera diagnósticos ambientales, estudios de monitoreo o seguimiento y análisis de laboratorio sin detallarlos; no trae procedimiento de solicitud, el contacto es por formulario de atención, chat o correo | 2026-10-31 |
+| Solicitudes de Acceso y Uso de Datos Ambientales | `https://www.invemar.org.co/web/guest/acuerdo-de-acceso-uso-a-datos` | Trámite para pedir copias de datos del SIAM no disponibles en descarga libre (datos primarios y agregados, metadatos, documentos, mapas, fotos, indicadores); formulario en línea con descripción del uso y aceptación de licencia; demora promedio de tres semanas; incluye seguimiento de solicitud | 2026-10-31 |
+| Custodia y Administración de Objetos Digitales | `https://www.invemar.org.co/web/guest/custodia-y-administraci%C3%B3n-de-objetos-digitales` | Trámite para depositar en custodia del SIAM resultados de investigación (objetos digitales con DOI), con condiciones de acceso y uso como embargo o licencia Creative Commons; formulario en línea de entrega | 2026-10-31 |
 
 ---
 

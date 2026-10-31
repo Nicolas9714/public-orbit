@@ -34,7 +34,6 @@ La ANLA es la autoridad nacional encargada de otorgar, negar y hacer seguimiento
 
 ## Notas de navegación
 
-- Para consultar el estado de un expediente o trámite ambiental, usar VITAL (`https://vital-publico.minambiente.gov.co/buscador`); GACETA (`https://gaceta.anla.gov.co:8443/Consultar-gaceta`) permite buscar resoluciones, permisos y autocertificados por tipo de documento y región operativa; la búsqueda en GACETA no reconoce tildes.
+- Para consultar el estado de un expediente o trámite ambiental, usar VITAL (`https://vital-publico.minambiente.gov.co/buscador`) y GACETA (`https://gaceta.anla.gov.co:8443/Consultar-gaceta`); la búsqueda en GACETA no reconoce tildes.
 - Los subdominios del geovisor (`https://geovisor.anla.gov.co:8446`), GeoExplora (`https://geoexploraanla.anla.gov.co:8443`) y GACETA operan en puertos no estándar; Chrome puede mostrar advertencia de certificado SSL al abrirlos (aceptar la excepción). Pueden ser bloqueados por firewalls corporativos; acceder desde red doméstica si ocurre bloqueo.
-- Eureka (`https://www.anla.gov.co/wanla/eureka`) es una base de conocimiento jurídico-técnico con 8 categorías de documentos que cubre regulación ANLA y del SINA; útil para consultas de normativa, jurisprudencia y conceptos jurídicos ambientales.
-- Los proyectos mineros, energéticos y de infraestructura de mayor relevancia nacional tienen micrositios propios accesibles desde `proyectos-de-interes-en-evaluacion` (organizado por sector) y `proyectos-de-interes-en-seguimiento` (organizado por región operativa de la SSLA).
+- Eureka está en `https://www.anla.gov.co/wanla/eureka`; la URL `/eureka/` directa devuelve 404.

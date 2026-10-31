@@ -5,18 +5,22 @@ description: "Guía de navegación para la ANH: contratos E&P, estadísticas de 
 
 # Agencia Nacional de Hidrocarburos (ANH)
 
-La ANH es una Agencia Nacional Estatal de Naturaleza Especial adscrita al Ministerio de Minas y Energía. Administra los recursos de hidrocarburos del Estado colombiano, gestiona los contratos de exploración y producción (E&P), y promueve la actividad petrolera y de gas en el país.
+La Agencia Nacional de Hidrocarburos es una Agencia Estatal de Naturaleza Especial adscrita al Ministerio de Minas y Energía. Administra los recursos de hidrocarburos del Estado colombiano, gestiona los contratos de exploración y producción y promueve la actividad petrolera y de gas en el país.
 
 ## ¿Qué información publica?
 
-- Mapa de Tierras: geovisor de bloques y contratos vigentes con operador, estado y tipo de contrato
-- Estadísticas de producción mensual de crudo y gas por contrato y campo; estadísticas de pozos perforados
-- Módulo de Gestión de Reservas: reservas probadas, probables y posibles por contrato
-- GOP (Gestión de Operaciones en Pozo): reportes de perforación, completamiento y workover
-- Información geológica y geofísica: atlas geoquímico, estudios integrados, plan de cubrimiento sísmico, datos de gravimetría y magnetometría
-- Contratos E&P y reglamento de asignación de áreas; rondas históricas y procesos permanentes (PPAA)
-- Regalías: estadísticas e informes antes y después del SGR (Sistema General de Regalías)
-- Publicaciones técnicas propias: Serie ANH 30
+- Mapa de tierras: bloques y contratos vigentes con operador, estado y tipo de contrato, áreas libres y restringidas
+- Contratación: contratos de exploración y producción, reglamento de asignación de áreas, relación de áreas asignadas, áreas en evaluación y explotación e incumplimiento de contratos
+- Oportunidades disponibles: Proceso Permanente de Asignación de Áreas, rondas de asignación anteriores, ronda de eólica costa afuera y contratos especiales de proyectos de investigación
+- Producción y pozos: producción de crudo y gas por contrato y campo, y actividad exploratoria y de desarrollo en pozos perforados
+- Reservas: probadas, probables y posibles por contrato
+- Operaciones en pozo: reportes de perforación, completamiento y reacondicionamiento reunidos en el sistema GOP (Gestión de Operaciones en Pozo)
+- Información geológica y geofísica: atlas geoquímico, estudios integrados, plan de cubrimiento sísmico, gravimetría y magnetometría
+- Entrega de información técnica: manuales, anexos y resoluciones para que los contratistas entreguen su información técnica al Banco de Información Petrolera del SGC
+- Regalías y derechos económicos: estadísticas e informes de regalías de producción, antes y después del Sistema General de Regalías, y liquidación de derechos económicos
+- Gestión social y territorial: comunidades y cobertura territorial del sector y programa de beneficio de las comunidades
+- Normatividad del sector: Decreto Único Reglamentario, normas y proyectos de norma
+- Publicaciones e informes: Serie ANH 30, estudios e investigaciones propias e informes de gestión
 
 ## Sitio oficial
 
@@ -29,6 +33,8 @@ La ANH es una Agencia Nacional Estatal de Naturaleza Especial adscrita al Minist
 
 ## Notas de navegación
 
-- El Mapa de Tierras es el geovisor principal de bloques y contratos; permite filtrar por operador, estado y tipo de contrato.
-- Las estadísticas de producción se publican mensualmente con rezago aproximado de un mes.
-- La Serie ANH 30 reúne publicaciones técnicas propias de alto valor para análisis geológico y de mercado de hidrocarburos.
+- Las URLs del sitio llevan tildes (`hidrocarburos/contratos-y-reglamentación/`); al consultarlas desde código o con `curl` hay que codificarlas en porcentaje (`reglamentaci%C3%B3n`), porque con la tilde cruda responden 404. Los enlaces del sitio ya vienen codificados.
+- Todo el sitio cuelga de `anh.gov.co/es/` (español) y `anh.gov.co/en/` (inglés).
+- El Mapa de Tierras abre en un subdominio aparte, `geovisor.anh.gov.co/tierras/`, que carga de forma pública, sin registro.
+- Los títulos del menú de Contratos y Reglamentación no coinciden con el contenido de dos páginas: `contratación-ep-y-teas` muestra el estado de contratos y convenios, y `relación-de-áreas-asignadas` lista los contratos firmados.
+- `estrategia-territorial` aparece en el menú, pero la página solo anuncia que la sección está en renovación.

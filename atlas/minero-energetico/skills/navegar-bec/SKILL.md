@@ -5,18 +5,22 @@ description: "Guía de navegación para BEC: información transaccional y operat
 
 # Bolsa Mercantil de Colombia — BEC (Gestor del Mercado de Gas Natural)
 
-BEC es el gestor del mercado de gas natural en Colombia, operado por la Bolsa Mercantil de Colombia. Su función es recopilar y centralizar la información transaccional y operativa del sector bajo principios de neutralidad, transparencia, objetividad e independencia. Administra la plataforma SEGAS (Sistema Electrónico de Gas), publica informes periódicos del mercado y opera los mecanismos de negociación del mercado primario, secundario y subastas conforme a la regulación de la CREG.
+La Bolsa Mercantil de Colombia, mediante BEC, es el gestor del mercado de gas natural en Colombia, designado conforme a la regulación de la CREG. Centraliza la información transaccional y operativa del mercado en la plataforma SEGAS (Sistema Electrónico de Gas) y opera sus mecanismos de negociación.
 
 ## ¿Qué información publica?
 
-- Información transaccional del mercado primario y secundario: precios, contratos, suministro, transporte y procesos de comercialización y concurrencia
-- Datos operativos de producción, transporte y distribución-comercialización del sistema nacional de transporte (SNT)
-- Resultados de subastas (de corto y largo plazo, Contratos Firmes Bimestrales, Suministro con Interrupciones)
-- Informes periódicos del mercado: diarios, semanales, mensuales, trimestrales, anuales e informes ejecutivos
-- Índice iGas-D: precio diario del mercado secundario (acceso público, histórico desde 2019)
-- Indicadores CREG del mercado primario y secundario (Resolución CREG 102 015 de 2025)
-- Normativa aplicable: resoluciones, contratos marco y boletines del gestor
-- Lista de participantes inscritos por categoría
+- Mercado primario: suministro, transporte, procesos de comercialización y de concurrencia, oferta remanente, oferta comprometida en firme y energía garantizada
+- Mercado secundario: suministro, transporte y procesos de concurrencia, y precios a usuarios no regulados
+- Subastas: resultados, cantidades negociadas y ofertas de gas y de capacidad de transporte
+- Comercialización de transporte: capacidad disponible, solicitudes de los remitentes, ampliaciones por congestión, asignación de capacidad firme a proyectos y cargos de transporte
+- Información operativa: producción, transporte y distribución-comercialización de gas en el sistema nacional de transporte
+- Precios: índice iGas-D, que mide el precio diario del mercado secundario
+- Indicadores regulatorios del mercado primario y secundario, y auditoría externa e indicadores del gestor
+- Informes del mercado: declaraciones de producción, resultados de la comercialización, radiografía y perspectivas del mercado, e informes ejecutivos
+- Comité de Mercado de Gas Natural e interrupciones del servicio
+- Normativa: resoluciones, contratos marco y boletines del gestor
+- Registro ante el gestor: participantes inscritos por categoría, formulario y documentos de registro
+- Herramientas de inteligencia de negocio sobre el mercado: tableros, cubos de datos y estado operativo del sistema de transporte
 
 ## Sitio oficial
 
@@ -30,7 +34,7 @@ BEC es el gestor del mercado de gas natural en Colombia, operado por la Bolsa Me
 ## Notas de navegación
 
 - **SEGAS** (`segas.bmcbec.com.co`) es la plataforma transaccional principal; requiere credenciales de participante registrado. El contenido transaccional público está en la sección Información Transaccional del sitio principal.
-- **BI Gas** (tableros Power BI y cubos) requiere login. La sección **Contenido Virtual** (`/contenido-virtual`) ofrece tutoriales y la herramienta **RUT Gas** de estado operativo sin necesidad de cuenta.
-- El índice **iGas-D** (iGas Express) es de acceso público: precio diario del mercado secundario con histórico descargable en Excel desde 2019.
-- Las secciones de **Información Transaccional** e **Información Operativa** muestran sus datos mediante reportes Power BI embebidos (`app.powerbi.com`). Para acceder a datos crudos estructurados se requiere BI Gas (login) o las descargas de la sección Informes.
-- El sitio usa Drupal CMS; algunas URLs aparecen con y sin tilde (`informacion-transaccional` / `informaci%C3%B3n-transaccional`) y son equivalentes. Varias sub-páginas usan URLs `node/XXXX` — los nombres semánticos están en el árbol y las URLs reales en `notas-internas.md`.
+- **BI Gas** (tableros Power BI y cubos) requiere login. La sección **Contenido Virtual** (`/contenido-virtual`) incluye RUT Gas y los tutoriales, sin necesidad de cuenta.
+- Las secciones de **Información Transaccional** e **Información Operativa** muestran sus datos mediante reportes Power BI embebidos (`app.powerbi.com`) que cargan con JavaScript: sin renderizar, la página solo muestra el texto introductorio y «Cargando tablero...». Para acceder a datos crudos estructurados se requiere BI Gas (login) o las descargas de la sección Informes.
+- El sitio usa Drupal CMS; muchas URLs aparecen con y sin tilde (`informacion-transaccional` / `informaci%C3%B3n-transaccional`) y son equivalentes; varias redirigen (301) a la forma sin tilde o cambian a `http://`. Algunas sub-páginas usan URLs `node/XXXX`: el árbol de `mapa-web.md` da los nombres semánticos y `fuentes.md` las URLs.
+- Las rutas del árbol de `mapa-web.md` para subastas e información operativa son aproximadas: las reales llevan tildes y nombres distintos (por ejemplo `informacion-transaccional/subastas/subasta-de-contratos-firmes-bimestrales`); usa las URLs de `fuentes.md`.

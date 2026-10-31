@@ -42,6 +42,17 @@
 | Mapa de Ruta para la Transición Energética 2030 | Informe estratégico | `nuestra-empresa/informes/informes-corporativos/mapa-de-ruta-para-la-transicion-energetica-2030` | 2026-05-30 |
 | Estándar de información del redespacho 2023 | Documento técnico | PDF en `sites/default/files/inline-files/XM-CND-Estandar de informacion del redespacho_2023.pdf` | 2026-05-30 |
 | Estándar de información del despacho 2025 | Documento técnico | PDF en `sites/default/files/documents/XM-CND-2025-060-Estandar-de-informacion-del-despacho-2025.pdf` | 2026-05-30 |
+| Estudios de interconexión Colombia-Ecuador | Informe sobre generación de seguridad y límites de transferencia de potencia con Ecuador; archivos en FTPS de XM (`/INFORMACION_XM/Publico/PlaneacionOperacion/MedianoPlazo/Estudios Ecuador/`) | `planeación/planeación-mediano-plazo/estudios-interconexion-colombia-ecuador` | 2026-10-31 |
+
+---
+
+## Normativa
+
+| Nombre | Tipo | URL | Verificado |
+|---|---|---|---|
+| Res. CREG 209 de 2020 — Condición del sistema | Resolución con senda de referencia del Embalse Agregado del SIN, reportes de índices de condición del sistema y seguimiento de variables energéticas | `resoluciones/operacion-y-mercado/resolucion-creg-209-de-2020-condicion-del-sistema` | 2026-10-31 |
+| Res. CREG 200 de 2019 — Condición del sistema | Resolución sobre condición del sistema y conexiones compartidas | `resoluciones/operacion-y-mercado/resolucion-creg-200-de-2019-condicion-del-sistema` | 2026-10-31 |
+| Res. CREG 038 de 2014 — Código de medida | Documentos de implementación de la resolución | `resoluciones/mercado/resolucion-creg-038-de-2014-documentos-codigo-de-medida` | 2026-10-31 |
 
 ---
 
