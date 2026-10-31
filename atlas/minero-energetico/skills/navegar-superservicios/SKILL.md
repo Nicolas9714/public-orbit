@@ -1,6 +1,6 @@
 ---
 name: navegar-superservicios
-description: "Guía de navegación para Superservicios: información reportada por los prestadores de servicios públicos, cobertura por municipio, observatorio de tarifas, mercados y calidad del servicio, y normativa del sector."
+description: "Guía de navegación para Superservicios: información reportada por los prestadores de servicios públicos, empresas vigiladas e intervenidas, cobertura por municipio, observatorio de tarifas y mercados, contribuciones, normativa y datos abiertos."
 ---
 
 # Superintendencia de Servicios Públicos Domiciliarios (Superservicios)
@@ -11,13 +11,17 @@ La Superintendencia de Servicios Públicos Domiciliarios es una entidad de cará
 
 - Información de los prestadores: datos financieros, tarifarios, comerciales, técnicos y de calidad del servicio, reportados por las empresas al SUI (Sistema Único de Información)
 - Cobertura: servicios públicos e infraestructura de acueducto, energía y gas por municipio, y empresas prestadoras georreferenciadas
+- Empresas vigiladas por servicio: energía eléctrica, gas natural, GLP (Gas Licuado de Petróleo), acueducto y alcantarillado, aseo y pequeños prestadores
+- Supervisión de los prestadores: empresas intervenidas, gestión de riesgos en la prestación, información financiera bajo las NIF (Normas de Información Financiera) y auditoría externa de gestión y resultados
+- Trámites para prestadores, y contribuciones y pagos de vigilancia y control
 - Usuarios: peticiones, quejas y reclamos, y encuestas de satisfacción con la atención y la calidad del servicio
 - Tarifas y sostenibilidad financiera: costos, tarifas y suficiencia financiera de las empresas prestadoras
 - Estructura de los mercados: estudios de los mercados de energía, gas, acueducto, alcantarillado y aseo, como la formación de precios del gas natural, el gas propano y la transmisión eléctrica
 - Transición energética, hídrica y resiliencia climática: efectos de la variabilidad climática en la infraestructura de los servicios públicos
 - Prospectiva sectorial: modelos analíticos y alertas tempranas de riesgo en la prestación
 - Control social: Escuela de Servicios Públicos, Biblioteca Virtual con estudios técnicos y guías para vocales de control
-- Normativa: marco jurídico de la entidad y del sector, con las Leyes 142 y 143 de 1994, la Ley 689 de 2001 y los decretos reglamentarios
+- Normativa: resoluciones y circulares de la Superintendencia, y compilación jurídica del sector, con las Leyes 142 y 143 de 1994, la Ley 689 de 2001 y los decretos reglamentarios
+- Datos abiertos de la Superintendencia
 
 ## Sitio oficial
 
@@ -32,6 +36,6 @@ La Superintendencia de Servicios Públicos Domiciliarios es una entidad de cará
 
 - El SUI (`sui.superservicios.gov.co`) reúne todos los servicios públicos domiciliarios; al consultar, filtrar por sector para limitar los resultados a energía o gas.
 - `superservicios.gov.co` está detrás de un WAF (firewall de aplicaciones web) Incapsula que responde HTTP 200 con una página de bloqueo («Request unsuccessful») a clientes automatizados; la verificación se hace en un navegador de usuario.
-- El sitio se migró en octubre de 2026: las rutas antiguas `/Empresas-vigiladas/...` y las subpáginas de Normativa dan 404, también con el prefijo `/index.php/`. Las rutas vigentes llevan ese prefijo (`/index.php/Normativa`, `/index.php/participa/observatorio`).
+- El sitio se reorganizó en octubre de 2026 y algunas rutas responden 404 de forma intermitente; reintentar antes de darlas por caídas. Algunas rutas vigentes llevan el prefijo `/index.php/` (`/index.php/Normativa`, `/index.php/participa/observatorio`). El mapa del sitio está en `superservicios.gov.co/sitemap`.
 - Superservicios regula servicios más allá del energético (agua, aseo); muchas secciones aplican a los seis servicios regulados.
 - El geoportal (`geoportal.superservicios.gov.co`) está alojado en ArcGIS Online.
