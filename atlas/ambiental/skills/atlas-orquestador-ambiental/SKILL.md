@@ -62,8 +62,6 @@ Puntos de entrada para consultas que cruzan varias entidades. El orden es orient
 | Erosión costera y riesgo en zonas marino-costeras | UNGRD → INVEMAR → MinAmbiente | Geovisor de erosión costera UNGRD · SIAM · SIAC |
 | Obras de reducción del riesgo y licenciamiento | UNGRD → ANLA → MinAmbiente | Portal BI UNGRD (obras de infraestructura) · VITAL, GACETA · normativa |
 
-Las [consultas de ejemplo](https://github.com/Nicolas9714/public-orbit/blob/main/atlas/ambiental/examples/consultas-de-ejemplo.md) muestran recorridos completos con su ruta esperada.
-
 ## Reglas para combinar resultados sin mezclar competencias
 
 - No atribuir datos de una entidad a otra. Cada skill es autoridad en su propio dominio.
