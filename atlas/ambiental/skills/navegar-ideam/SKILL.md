@@ -5,17 +5,23 @@ description: "Guía de navegación para el IDEAM: datos hidrometeorológicos, mo
 
 # Instituto de Hidrología, Meteorología y Estudios Ambientales (IDEAM)
 
-El IDEAM es un establecimiento público adscrito al Ministerio de Ambiente y Desarrollo Sostenible. Su función principal es generar el conocimiento, la información y los datos del estado de los recursos naturales del país —agua, aire, suelo, ecosistemas y clima— que sirven de base para la gestión ambiental, el ordenamiento territorial y la toma de decisiones públicas y privadas. Opera la red nacional de estaciones hidrometeorológicas y es la autoridad técnica en hidrología, meteorología y estudios ambientales de Colombia.
+El IDEAM es un establecimiento público adscrito al Ministerio de Ambiente y Desarrollo Sostenible. Genera y publica el conocimiento y los datos sobre el estado del agua, el aire, los bosques, los ecosistemas y el clima del país, y es la autoridad técnica en hidrología, meteorología y estudios ambientales.
 
 ## ¿Qué información publica?
 
-- Datos hidrometeorológicos: series de tiempo de caudales, niveles, precipitación y temperatura de la red nacional de estaciones, descargables desde el DHIME (Consulta y Descarga de Datos Hidrometeorológicos)
-- Pronósticos y alertas: boletines meteorológicos diarios, alertas hidrológicas (FEWS), imágenes de satélite GOES y radar en tiempo casi real
-- Información forestal y de deforestación: monitoreo anual de bosques y carbono (SMByC), Inventario Forestal Nacional (IFN), SNIF (Sistema Nacional de Información Forestal) y Registro Nacional de Zonas Deforestadas (RNZD)
-- Registros ambientales: RUA (uso de recursos naturales por sectores), RETC (emisiones y transferencia de contaminantes), inventarios de PCB (bifenilos policlorados) y generadores de residuos peligrosos (RESPEL)
-- Calidad del aire: monitoreo continuo por estaciones en SISAIRE (Subsistema de Información sobre Calidad del Aire), informes anuales y datos de PM2.5, PM10, ruido y emisiones por fuentes fijas y móviles
-- Estudios de cambio climático: inventario nacional de GEI, proyecciones climáticas, vulnerabilidad y adaptación, NDC y contabilidad de carbono
-- Atlas y documentos de referencia: Atlas Climatológico, Atlas de Radiación Solar y Atlas del Viento de Colombia; normales climatológicas históricas
+- Datos hidrometeorológicos: caudales, niveles, precipitación y temperatura de la red nacional de estaciones, consultables en DHIME (Datos Hidrometeorológicos)
+- Recurso hídrico: oferta, demanda, calidad y riesgo hidrológico en SIRH (Sistema de Información del Recurso Hídrico); perspectivas hidrológicas y seguimiento de La Mojana
+- Pronósticos y alertas: boletines meteorológicos e hidrológicos, pronóstico y alertas hidrológicas, modelos numéricos de pronóstico, imágenes de satélite y radar
+- Bosques y deforestación: monitoreo de bosques y carbono en el SMByC (Sistema de Monitoreo de Bosques y Carbono), detección temprana, Inventario Forestal Nacional, SNIF (Sistema Nacional de Información Forestal) y Registro Nacional de Zonas Deforestadas
+- Incendios de la cobertura vegetal: puntos de calor, protocolo de zonificación de riesgos y reportes de incendios
+- Coberturas y ecosistemas: coberturas de la tierra en SIMCOT (Sistema de Monitoreo de las Coberturas de la Tierra) y mapa de ecosistemas continentales, costeros y marinos
+- Glaciares: estado y retroceso de los glaciares colombianos, con seguimiento por nevado
+- Registros ambientales: RUA (Registro Único Ambiental) sobre uso de recursos naturales, RETC (Registro de Emisiones y Transferencia de Contaminantes), bifenilos policlorados y residuos peligrosos
+- Calidad del aire: monitoreo por estación en SISAIRE (Sistema de Información de Calidad del Aire), informes del estado de la calidad del aire, material particulado, ruido y emisiones de fuentes fijas y móviles
+- Cambio climático: inventario de gases de efecto invernadero, proyecciones climáticas, vulnerabilidad y adaptación, contribuciones determinadas a nivel nacional y contabilidad de carbono
+- Atlas y referencias climáticas: Atlas Climatológico, Atlas de Radiación Solar, UV y Ozono, Atlas del Viento y normales climatológicas
+- Laboratorios ambientales: acreditación y autorización de laboratorios
+- Información geográfica: geovisores, catálogo de metadatos, geoservicios y datos abiertos geográficos del Geoportal Ambiental Institucional
 
 ## Sitio oficial
 

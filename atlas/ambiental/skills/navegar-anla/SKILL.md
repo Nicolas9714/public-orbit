@@ -5,18 +5,23 @@ description: "Guía de navegación para la ANLA: expedientes y trámites de lice
 
 # Agencia Nacional de Licencias Ambientales (ANLA)
 
-La ANLA es la entidad del Estado colombiano responsable de garantizar que los proyectos, obras o actividades sujetos a licenciamiento, permiso o trámite ambiental cumplan con la normativa para proteger y renovar los recursos naturales. Otorga, niega y hace seguimiento a licencias ambientales en sectores como hidrocarburos, minería, energía e infraestructura, y ejerce la función sancionatoria ambiental a nivel nacional.
+La ANLA es la autoridad nacional encargada de otorgar, negar y hacer seguimiento a las licencias, permisos y trámites ambientales de los proyectos, obras y actividades de su competencia, y de ejercer la función sancionatoria ambiental. Es una Unidad Administrativa Especial adscrita al Ministerio de Ambiente y Desarrollo Sostenible.
 
 ## ¿Qué información publica?
 
-- Expedientes de licenciamiento ambiental, resoluciones, permisos y autocertificados consultables en VITAL y GACETA
-- Registro de sanciones y procesos sancionatorios ambientales: RUIA (Registro Único de Infractores Ambientales) y tablero Power BI, con consulta pública sin autenticación
-- Cartografía y datos geoespaciales de proyectos licenciados: geovisor público, AGIL (solo institucional), geovisor de minería ilegal, datos abiertos ArcGIS Hub
-- Catálogo de proyectos en evaluación (por sector) y en seguimiento (por región operativa de la SSLA, Subdirección de Seguimiento de Licencias Ambientales)
-- Normativa, jurisprudencia, manuales, guías, conceptos jurídicos y especies en riesgo consolidados en Eureka (8 categorías)
-- Cinco tipos de certificaciones ambientales procesadas vía VITAL: emisiones de vehículos, exclusión de IVA, deducción de renta, soluciones ambientales y alternativas sostenibles
-- Dashboards de analítica de datos (Power BI) sobre permisos, calidad del aire y ruido de proyectos licenciados, calidad del agua, biodiversidad, participación ciudadana y seguimiento de proyectos estratégicos
-- Informes de gestión anuales (2016-2025) con reporte GRI de sostenibilidad desde 2020, y datos abiertos en el portal nacional de datos abiertos
+- Licenciamiento ambiental: expedientes, resoluciones, permisos y autocertificados, consultables en VITAL (Ventanilla Integral de Trámites Ambientales en Línea) y GACETA
+- Proyectos de interés: proyectos en evaluación, por sector, y en seguimiento, por región operativa
+- Sanciones: procesos sancionatorios ambientales, registro de infractores (RUIA, Registro Único de Infractores Ambientales), metodología de cálculo de multas y marco legal sancionatorio
+- Cartografía de proyectos licenciados: proyectos en evaluación y en seguimiento, hidrología, hidrogeología, reportes regionales de alertas y capas de referencia, además del monitoreo de minería ilegal
+- Compensaciones e inversión del 1%: compensaciones por pérdida de biodiversidad e inversiones forzosas asociadas a proyectos licenciados
+- Certificaciones ambientales: emisiones de vehículos, exclusión de IVA, deducción de renta, soluciones ambientales y alternativas sostenibles
+- Permisos y trámites: vistos buenos, permisos y autorizaciones, y estudios de impacto ambiental radicados
+- Residuos posconsumo y Sello Ambiental Colombiano: gestores, puntos de recolección y centros de acopio, uso racional de bolsas plásticas y detergentes industriales
+- Instrumentos de gestión: valoración económica ambiental, agendas interinstitucionales y aplicativos de validación de información cartográfica
+- Participación ciudadana: mecanismos de participación en la gestión ambiental y monitoreo participativo
+- Normativa, jurisprudencia, conceptos jurídicos, manuales, guías, metodologías y especies en riesgo, reunidos en Eureka
+- Analítica de datos: permisos, calidad del aire y ruido, calidad y oferta del agua, biodiversidad y seguimiento de proyectos estratégicos
+- Informes de gestión y reportes de sostenibilidad, y datos abiertos de la entidad
 
 ## Sitio oficial
 
