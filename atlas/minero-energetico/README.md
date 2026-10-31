@@ -52,7 +52,7 @@ Más ejemplos:
 > - «¿Qué sistema de la UPME tiene los datos de proyectos de generación?»
 > - «¿Dónde consulto la producción de gas natural por campo en la ANH?»
 
-En [`examples/`](examples/) hay consultas con la ruta que debería seguir el agente y casos de análisis que procesan datos oficiales.
+En [`examples/consultas-de-ejemplo.md`](examples/consultas-de-ejemplo.md) hay consultas con la ruta que debería seguir el agente.
 
 ## Instalación
 

@@ -62,7 +62,7 @@ Puntos de entrada para consultas que cruzan varias entidades. El orden es orient
 | Transición energética | MinEnergía → UPME → FENOGE → XM | TEJ · Seguimiento FNCER · EN-Comunidad · generación |
 | Gas natural | BEC → CREG → ANH | SEGAS, iGas-D · Alejandría · upstream |
 
-Las [consultas de ejemplo](https://github.com/Nicolas9714/public-orbit/blob/main/atlas/minero-energetico/examples/consultas-de-ejemplo.md) muestran recorridos completos con su ruta esperada, y los [casos de análisis](https://github.com/Nicolas9714/public-orbit/tree/main/atlas/minero-energetico/examples) siguen esas rutas hasta procesar datos oficiales.
+Las [consultas de ejemplo](https://github.com/Nicolas9714/public-orbit/blob/main/atlas/minero-energetico/examples/consultas-de-ejemplo.md) muestran recorridos completos con su ruta esperada.
 
 ## Reglas para combinar resultados sin mezclar competencias
 

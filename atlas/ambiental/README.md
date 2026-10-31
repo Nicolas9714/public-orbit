@@ -47,7 +47,7 @@ Más ejemplos:
 > - «¿Dónde consulto el estado del tiempo y pronósticos del IDEAM?»
 > - «¿Qué especies amenazadas reporta el IAvH en su Sistema de Información sobre Biodiversidad?»
 
-En [`examples/`](examples/) hay consultas con la ruta que debería seguir el agente y casos de análisis que procesan datos oficiales.
+En [`examples/consultas-de-ejemplo.md`](examples/consultas-de-ejemplo.md) hay consultas con la ruta que debería seguir el agente.
 
 ## Instalación
 

@@ -60,7 +60,7 @@ Buenas prácticas de los atlas fundadores (el Atlas de Navegación Minero Energ�
 
 - **Mapa web curado, no exhaustivo:** el árbol de `mapa-web.md` se reduce al contenido misional y estratégico del sitio; profundidad guiada por el valor de navegación, no por la estructura completa del sitio.
 - **Tablas de fuentes con un vocabulario común de secciones:** sistemas de información y plataformas, geovisores y mapas, portales de datos, publicaciones periódicas, documentos de referencia, normativa, y servicios y trámites, en ese orden y solo las que apliquen. Cada fuente lleva su URL verificada y una nota de qué resuelve. Los nombres exactos, las secciones opcionales y la regla para secciones propias están en [`templates/fuentes-template.md`](templates/fuentes-template.md).
-- **Carpeta `examples/`:** una vitrina de consultas (`consultas-de-ejemplo.md`: prompt + ruta esperada, sin URLs) y casos de análisis reproducibles que recorren las capas completas del atlas.
+- **Carpeta `examples/`:** una vitrina de consultas (`consultas-de-ejemplo.md`: prompt + ruta esperada, sin URLs).
 - **Verificación en vivo:** las URLs y afirmaciones sobre sistemas se contrastan contra el sitio real antes de publicarse.
 - **Reglas de competencia en la orquestadora:** cómo combinar resultados sin atribuir datos de una entidad a otra.
 - **Identidad visual:** logo propio en SVG monocromo dentro de la familia visual de Public Orbit.

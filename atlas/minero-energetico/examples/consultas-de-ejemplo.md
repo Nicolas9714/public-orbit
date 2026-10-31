@@ -12,7 +12,7 @@ Ruta esperada: IPSE (Centro Nacional de Monitoreo: telemetría del servicio; SIG
 
 **«Necesito la línea base estadística para un informe de política energética: balance energético, producción y consumo por fuente y precios del mercado.»**
 
-Ruta esperada: UPME (BECO y tableros de indicadores) → MinEnergía (IntegraME) → XM (SIMEM: series de generación, demanda y precios) → SGC (datos abiertos del subsuelo). El caso `balance-energetico-consumo-final/` muestra el procesamiento reproducible del BECO.
+Ruta esperada: UPME (BECO y tableros de indicadores) → MinEnergía (IntegraME) → XM (SIMEM: series de generación, demanda y precios) → SGC (datos abiertos del subsuelo).
 
 ---
 
