@@ -51,6 +51,8 @@
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
+| Trámites y servicios para prestadores | `superservicios.gov.co/Empresas-vigiladas/Tramites-y-servicios-para-prestadores` | Trámites de los prestadores ante la Superintendencia | 2026-10-31 |
+| AEGR — Auditoría Externa de Gestión y Resultados | `superservicios.gov.co/Empresas-vigiladas/AEGR-Auditoria-Externa-de-Gestion-y-Resultados` | Auditoría externa de gestión y resultados de las empresas vigiladas | 2026-10-31 |
 | Contribuciones y pagos | `superservicios.gov.co/Empresas-vigiladas/Contribuciones-y-pagos` | Liquidación y pago de las contribuciones de vigilancia y control | 2026-10-31 |
 
 ---
@@ -61,4 +63,4 @@
 |---|---|
 | `sui.superservicios.gov.co` | SUI es el sistema de reporte obligatorio para todos los prestadores; contiene datos financieros, tarifarios y de calidad de servicio; acceso público para consultas; cargue requiere autenticación de prestador |
 | `geoportal.superservicios.gov.co` | Alojado en ArcGIS Online; mapas de cobertura, indicadores de calidad y empresas prestadoras georreferenciadas por municipio |
-| Migración del sitio (2026-10) | El sitio se reorganizó en octubre de 2026 y algunas rutas respondieron 404 de forma intermitente en la verificación manual del 2026-10-31; las mismas rutas funcionaron al reintentar. Tarifas de energía por comercializador, la UMMEG (Unidad de Monitoreo de Mercados de Energía y Gas) y Aseo/Aprovechamiento ya no aparecen en el mapa del sitio. AEGR y Trámites para prestadores sí aparecen, sin URL confirmada |
+| Migración del sitio (2026-10) | El sitio se reorganizó en octubre de 2026 y algunas rutas respondieron 404 de forma intermitente en la verificación manual del 2026-10-31; las mismas rutas funcionaron al reintentar. Tarifas de energía por comercializador, la UMMEG (Unidad de Monitoreo de Mercados de Energía y Gas) y Aseo/Aprovechamiento ya no aparecen en el mapa del sitio. |
