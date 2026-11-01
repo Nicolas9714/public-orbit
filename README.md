@@ -72,9 +72,9 @@ El detalle de entidades vive en [`registro.md`](registro.md).
 
 ## Sitio web
 
-Public Orbit puede explorarse en su [sitio web provisional](https://sistema-atlas-colombia.nicolasmcfc.workers.dev), que reúne los atlas, las entidades, las skills y la documentación del proyecto.
+Public Orbit puede explorarse en su [sitio web](https://publicorbit.org), que reúne los atlas, las entidades, las skills y la documentación del proyecto.
 
-El sitio también presenta las [morfologías web](https://sistema-atlas-colombia.nicolasmcfc.workers.dev/morfologias), representaciones visuales construidas a partir del `mapa-web.md` de cada entidad.
+El sitio también presenta las [morfologías web](https://publicorbit.org/morfologias), representaciones visuales construidas a partir del `mapa-web.md` de cada entidad.
 
 ## Qué contiene este repositorio
 
@@ -99,7 +99,7 @@ public-orbit/
 
 Cada atlas funciona completo por sí solo. Al instalar dos o más, se agrega automáticamente `atlas-orquestador-colombia`, la skill que articula los atlas instalados, identifica conexiones entre sus ámbitos y coordina recorridos y consultas interatlas.
 
-Hay dos rutas. En el [sitio web](https://sistema-atlas-colombia.nicolasmcfc.workers.dev) cada skill y cada atlas se descargan con un clic, como ZIP. Desde GitHub, un solo comando instala un atlas, varias skills o una sola, sin clonar el repositorio.
+Hay dos rutas. En el [sitio web](https://publicorbit.org) cada skill y cada atlas se descargan con un clic, como ZIP. Desde GitHub, un solo comando instala un atlas, varias skills o una sola, sin clonar el repositorio.
 
 ### Instalación con un comando
 
