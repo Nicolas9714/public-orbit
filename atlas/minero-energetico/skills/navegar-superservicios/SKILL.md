@@ -37,7 +37,7 @@ La Superintendencia de Servicios Públicos Domiciliarios es una entidad de cará
 ## Notas de navegación
 
 - El SUI (`sui.superservicios.gov.co`) reúne todos los servicios públicos domiciliarios; al consultar, filtrar por sector para limitar los resultados a energía o gas.
-- `superservicios.gov.co` está detrás de un WAF (firewall de aplicaciones web) Incapsula que responde HTTP 200 con una página de bloqueo («Request unsuccessful») a clientes automatizados; la verificación se hace en un navegador de usuario.
+- `superservicios.gov.co` está detrás de un WAF (firewall de aplicaciones web) Incapsula que responde HTTP 200 con una página de bloqueo («Request unsuccessful») a clientes sin navegador (curl, lectores de páginas); en un navegador con ventana carga con normalidad (verificado el 2026-10-31).
 - El sitio se reorganizó en octubre de 2026 y algunas rutas responden 404 de forma intermitente; reintentar antes de darlas por caídas. Algunas rutas vigentes llevan el prefijo `/index.php/` (`/index.php/Normativa`, `/index.php/participa/observatorio`). El mapa del sitio está en `superservicios.gov.co/sitemap`.
 - Superservicios regula servicios más allá del energético (agua, aseo); muchas secciones aplican a los seis servicios regulados.
 - El geoportal (`geoportal.superservicios.gov.co`) está alojado en ArcGIS Online.
