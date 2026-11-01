@@ -6,6 +6,8 @@
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
+| SUI — Herramientas de reporte y análisis | `sui.superservicios.gov.co/Herramientas-de-reporte-y-analisis` | Sección del SUI con las herramientas de reporte y análisis de la información cargada por los prestadores (título del menú; contenido sin revisar) | 2026-10-31 |
+| SUI — Datos abiertos | `sui.superservicios.gov.co/Datos-abiertos` | Sección de datos abiertos del SUI (título del menú; contenido sin revisar) | 2026-10-31 |
 | SUI — Sistema Único de Información | `sui.superservicios.gov.co/` | Portal central de reporte de información para prestadores de servicios públicos domiciliarios; cargue de información financiera, comercial, técnica y de calidad | 2026-10-31 |
 
 ---

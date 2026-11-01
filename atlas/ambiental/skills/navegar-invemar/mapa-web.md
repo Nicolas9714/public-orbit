@@ -5,7 +5,7 @@
 ```
 invemar.org.co/
 │
-├── investigación/
+├── investigación/ (agrupador del menú sin URL propia)
 │   ├── investigación-e-información-para-la-gestión-marina-y-costera/
 │   │   ├── análisis-de-información-para-planificación-tip
 │   │   ├── cambio-global-y-política-marina-cgp
@@ -45,7 +45,7 @@ invemar.org.co/
 │   │   │   └── monitoreo-ambiental-marino-costero-magdalena
 │   │   └── boletín-de-investigaciones-marinas-y-costeras
 │   │
-│   ├── redes-y-proyectos/
+│   ├── redes-y-proyectos/ (agrupador del menú sin URL propia)
 │   │   ├── redcam/
 │   │   ├── red-costera/
 │   │   │   └── novedades-red-costera/
@@ -53,20 +53,20 @@ invemar.org.co/
 │   │   │   └── novedades-grupo-gama/
 │   │   └── nuestros-proyectos/
 │   │
-│   └── unidades-de-apoyo/
+│   └── unidades-de-apoyo/ (agrupador del menú sin URL propia)
 │       ├── laboratorio-de-bioprospección-marina
 │       ├── laboratorio-calidad-ambiental-marina
 │       └── laboratorio-de-instrumentación-marina
 │
-├── datos-e-información/
+├── datos-e-información/ (agrupador del menú sin URL propia)
 │   │
-│   ├── operaciones-estadísticas/
-│   │   ├── eppa/
-│   │   ├── icam/
-│   │   ├── ictac/
-│   │   └── iecc/
+│   ├── operaciones-estadísticas/ (agrupador del menú sin URL propia)
+│   │   ├── eppa/ (en oe-eppa-invemar.opendata.arcgis.com)
+│   │   ├── icam/ (en icam-invemar.opendata.arcgis.com)
+│   │   ├── ictac/ (en ictac-invemar.opendata.arcgis.com)
+│   │   └── iecc/ (en iecc-invemar.opendata.arcgis.com)
 │   │
-│   └── siam/
+│   └── siam/ (en siam.invemar.org.co)
 │       ├── descripción-general-siam
 │       ├── solicitudes-de-acceso-y-uso-de-datos
 │       └── custodia-y-administración-de-objetos-digitales
@@ -178,9 +178,9 @@ invemar.org.co/
 │
 ├── museomakuriwa.invemar.org.co/
 │   ├── colecciones/
-│   │   ├── clases-de-colecciones/
-│   │   │   ├── grupos-biológicos/
-│   │   │   └── colecciones-tipo/
+│   │   ├── clases-de-colecciones
+│   │   │   ├── grupos-biológicos
+│   │   │   └── colecciones-tipo
 │   │   └── datos/
 │   │       ├── sistema-información-biodiversidad-marina-sibm
 │   │       ├── sistema-información-ambiental-marina-siam
@@ -195,11 +195,11 @@ invemar.org.co/
 │   └── ciencia-ciudadana
 │
 ├── centrodocumentacion.invemar.org.co/
-│   ├── catálogo-bibliográfico/
-│   ├── búsqueda-avanzada/
-│   ├── búsqueda-de-autoridad/
-│   ├── nube-de-etiquetas/
-│   ├── sugerencias-de-compra/
+│   ├── catálogo-bibliográfico
+│   ├── búsqueda-avanzada
+│   ├── búsqueda-de-autoridad
+│   ├── nube-de-etiquetas
+│   ├── sugerencias-de-compra
 │   ├── tesauro-marino-ambiental-y-costero
 │   ├── boletín-de-novedades-bibliográficas
 │   ├── mapas-y-geoservicios
@@ -217,4 +217,4 @@ invemar.org.co/
 
 ## Última verificación
 
-Verificado: 2026-06-15
+Verificado: 2026-10-31
