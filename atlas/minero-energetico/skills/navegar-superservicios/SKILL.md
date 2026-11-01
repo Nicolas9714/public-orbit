@@ -11,11 +11,12 @@ La Superintendencia de Servicios Públicos Domiciliarios es una entidad de cará
 
 - Información de los prestadores: datos financieros, tarifarios, comerciales, técnicos y de calidad del servicio, reportados por las empresas al SUI (Sistema Único de Información)
 - Cobertura: servicios públicos e infraestructura de acueducto, energía y gas por municipio, y empresas prestadoras georreferenciadas
-- Empresas vigiladas por servicio: energía eléctrica, gas natural, GLP (Gas Licuado de Petróleo), acueducto y alcantarillado, aseo y pequeños prestadores
+- Empresas vigiladas por servicio: energía eléctrica, gas natural, GLP (Gas Licuado de Petróleo), acueducto y alcantarillado, aseo (incluida la actividad de aprovechamiento) y pequeños prestadores
 - Supervisión de los prestadores: empresas intervenidas, gestión de riesgos en la prestación, información financiera bajo las NIF (Normas de Información Financiera) y auditoría externa de gestión y resultados
 - Trámites para prestadores, y contribuciones y pagos de vigilancia y control
 - Usuarios: peticiones, quejas y reclamos, y encuestas de satisfacción con la atención y la calidad del servicio
 - Tarifas de energía eléctrica por comercializador
+- Monitoreo de mercados: conductas y formación de precios en los mercados de energía eléctrica y gas natural, a cargo de la UMMEG (Unidad de Monitoreo de Mercados de Energía y Gas)
 - Tarifas y sostenibilidad financiera: costos, tarifas y suficiencia financiera de las empresas prestadoras
 - Estructura de los mercados: estudios de los mercados de energía, gas, acueducto, alcantarillado y aseo, como la formación de precios del gas natural, el gas propano y la transmisión eléctrica
 - Transición energética, hídrica y resiliencia climática: efectos de la variabilidad climática en la infraestructura de los servicios públicos
