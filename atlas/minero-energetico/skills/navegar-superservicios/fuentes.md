@@ -24,6 +24,7 @@
 |---|---|---|---|
 | Empresas vigiladas — índice | `superservicios.gov.co/Empresas-vigiladas` | Portada de la sección de empresas vigiladas por servicio | 2026-10-31 |
 | Empresas vigiladas — energía eléctrica | `superservicios.gov.co/Empresas-vigiladas/Energia-y-gas-combustible/Energia` | Prestadores de energía eléctrica vigilados | 2026-10-31 |
+| Tarifas de energía eléctrica | `superservicios.gov.co/Empresas-vigiladas/Energia-y-gas-combustible/Energia/Tarifas` | Información tarifaria de energía eléctrica por comercializador | 2026-10-31 |
 | Empresas vigiladas — gas natural | `superservicios.gov.co/Empresas-vigiladas/Energia-y-gas-combustible/Gas-natural` | Prestadores de transporte, distribución y comercialización de gas natural vigilados | 2026-10-31 |
 | Empresas vigiladas — GLP | `superservicios.gov.co/Empresas-vigiladas/Energia-y-gas-combustible/Gas-licuado-de-petroleo` | Prestadores de distribución y comercialización de gas licuado de petróleo vigilados | 2026-10-31 |
 | Empresas vigiladas — acueducto y alcantarillado | `superservicios.gov.co/Empresas-vigiladas/Acueducto-alcantarillado-y-aseo/Acueducto-y-alcantarillado` | Prestadores de acueducto y alcantarillado vigilados | 2026-10-31 |
@@ -63,4 +64,4 @@
 |---|---|
 | `sui.superservicios.gov.co` | SUI es el sistema de reporte obligatorio para todos los prestadores; contiene datos financieros, tarifarios y de calidad de servicio; acceso público para consultas; cargue requiere autenticación de prestador |
 | `geoportal.superservicios.gov.co` | Alojado en ArcGIS Online; mapas de cobertura, indicadores de calidad y empresas prestadoras georreferenciadas por municipio |
-| Migración del sitio (2026-10) | El sitio se reorganizó en octubre de 2026 y algunas rutas respondieron 404 de forma intermitente en la verificación manual del 2026-10-31; las mismas rutas funcionaron al reintentar. Tarifas de energía por comercializador, la UMMEG (Unidad de Monitoreo de Mercados de Energía y Gas) y Aseo/Aprovechamiento ya no aparecen en el mapa del sitio. |
+| Migración del sitio (2026-10) | El sitio se reorganizó en octubre de 2026 y algunas rutas respondieron 404 de forma intermitente en la verificación manual del 2026-10-31; las mismas rutas funcionaron al reintentar. La UMMEG (Unidad de Monitoreo de Mercados de Energía y Gas) y Aseo/Aprovechamiento ya no aparecen en el mapa del sitio. |
