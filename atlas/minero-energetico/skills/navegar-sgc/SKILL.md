@@ -33,7 +33,4 @@ El Servicio Geológico Colombiano (SGC) es una entidad adscrita al Ministerio de
 
 ## Notas de navegación
 
-- El sitio principal del SGC está en `www2.sgc.gov.co`; `sgc.gov.co` es la página de entrada. Los sistemas especializados (MIIG, SIMMA, GeoRED, datos abiertos) tienen subdominios propios listados en `fuentes.md`.
-- El MIIG (`miig.sgc.gov.co`) es de acceso público, sin login.
-- `sgc.gov.co/volcanes`, `sgc.gov.co/sismos` y `sgc.gov.co/catalogo` son aplicaciones de página única que cargan con JavaScript: una descarga simple devuelve solo el armazón y algunos clientes reciben 403.
-- `sismosentido.sgc.gov.co/selector_sismo.html` es una página puente que redirige con un formulario automático; usa la raíz `sismosentido.sgc.gov.co/`.
+- El sitio principal del SGC está en `www2.sgc.gov.co`; `sgc.gov.co` es la página de entrada. Los sistemas especializados (MIIG, SIMMA, GeoRED, datos abiertos) tienen subdominios propios, listados en `fuentes.md`.

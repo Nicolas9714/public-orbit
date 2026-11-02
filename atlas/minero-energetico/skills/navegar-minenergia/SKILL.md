@@ -34,9 +34,6 @@ El Ministerio de Minas y Energía es la entidad rectora del sector minero-energ�
 
 ## Notas de navegación
 
-- Las rutas del sitio con tildes deben codificarse en porcentaje: la ruta sin codificar devuelve 404 en eficiencia energética (`eficiencia-energ%C3%A9tica`), reglamentos técnicos de hidrocarburos y cambio climático.
-- Varios micrositios temáticos operan en dominio propio; los enlaces directos están en `fuentes.md`.
-- El visor de conflictividades sociales está bloqueado por WAF para clientes sin navegador (headless); el aplicativo del Plan Integral de Gestión del Cambio Climático (`pigccme.minenergia.gov.co`) dejó de resolver.
-- La unidad de resultados requiere login.
+- Si una ruta con tilde responde 404, codificarla en porcentaje (`eficiencia-energ%C3%A9tica`). Aplica a eficiencia energética, reglamentos técnicos de hidrocarburos y cambio climático.
+- Los micrositios temáticos operan en dominio propio. Sus enlaces directos están en la sección Micrositios de `fuentes.md`.
 - El seguimiento a proyectos de fuentes no convencionales de energía renovable lo publica la UPME en `upme.gov.co/simec/seguimiento-fncer/`; su documentación vive en la skill `navegar-upme`.
-- El repositorio normativo es el punto de entrada recomendado para normativa sectorial.

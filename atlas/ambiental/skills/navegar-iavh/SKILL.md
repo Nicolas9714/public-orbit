@@ -15,7 +15,6 @@ El Instituto de Investigación de Recursos Biológicos Alexander von Humboldt es
 - BioTablero: indicadores de biodiversidad con consultas por departamento, jurisdicción ambiental y subzona hidrográfica y portafolios
 - Reporte BIO: estado y tendencias de la biodiversidad continental de Colombia, con mapas interactivos y tablas
 - Colecciones biológicas físicas: aves, mamíferos, anfibios, reptiles, peces, entomología, herbario, semillas y sonidos, entre otras, y catálogo de especímenes tipo
-- Registro Nacional de Colecciones: inventario oficial de las colecciones biológicas del país
 - SiB Colombia: datos abiertos de biodiversidad, catálogo de especies, estadísticas (Biodiversidad en Cifras) y publicación de datos hacia GBIF (Global Biodiversity Information Facility, la infraestructura mundial de información en biodiversidad)
 - Publicaciones científicas: revistas Biota Colombiana y Biodiversidad en la Práctica, publicaciones editoriales y repositorio institucional
 - Banco de imágenes ambientales: acervo de imágenes del repositorio institucional
@@ -33,8 +32,4 @@ El Instituto de Investigación de Recursos Biológicos Alexander von Humboldt es
 
 ## Notas de navegación
 
-- El sitio principal (`https://humboldt.org.co`) actúa como portal de acceso; la mayoría de herramientas de datos operan en subdominios propios (`https://datos.humboldt.org.co`, `https://biomodelos.humboldt.org.co`, `https://biotablero.humboldt.org.co`, etc.).
-- El sistema I2D está en `https://datos.humboldt.org.co`, pero CEIBA y el Visor I2D se alojan en el subdominio `https://i2d.humboldt.org.co` y GeoNetwork en `https://geonetwork.humboldt.org.co`.
-- El portal del Registro Nacional de Colecciones (`https://rnc.humboldt.org.co`) responde por HTTP y HTTPS al 2026-07-04; al 2026-06-15 servía un micrositio conmemorativo.
-- `https://ecosistema.humboldt.org.co` es intranet institucional; no tiene contenido público.
-- El SiB Colombia (`https://biodiversidad.co`) tiene dominio propio, distinto de `humboldt.org.co`.
+- Las herramientas de datos del IAvH no cuelgan de `https://humboldt.org.co`: operan en subdominios propios (I2D, BioModelos, BioTablero, entre otros). Si un recurso no aparece en el sitio principal, buscarlo por su subdominio en `fuentes.md`.

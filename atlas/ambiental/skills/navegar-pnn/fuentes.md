@@ -6,7 +6,7 @@
 
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
-| RUNAP — Registro Único Nacional de Áreas Protegidas | https://runap.parquesnacionales.gov.co/ | Registro oficial de todas las áreas protegidas de Colombia: nacionales, regionales y locales. Incluye cifras consolidadas, visor geográfico con shapefile descargable, y reportes. Total: 1.882 áreas, 50,2 millones de hectáreas (geográficas). | 2026-06-15 |
+| RUNAP — Registro Único Nacional de Áreas Protegidas | https://runap.parquesnacionales.gov.co/ | Registro oficial de todas las áreas protegidas de Colombia: nacionales, regionales y locales. Incluye cifras consolidadas, visor geográfico con shapefile descargable, y reportes. | 2026-06-15 |
 | SINAP — Sistema Nacional de Áreas Protegidas | https://www.parquesnacionales.gov.co/sistema-nacional-de-areas-protegidas/ | Página institucional vigente con definición, categorías, representatividad, plan de acción y subsistemas regionales del SINAP. | 2026-07-23 |
 | Certificador SINAP | https://cert.parquesnacionales.gov.co/auth | Herramienta de certificación de áreas protegidas para el SINAP. Requiere autenticación; manuales disponibles públicamente. | 2026-06-15 |
 
@@ -17,7 +17,7 @@
 | Nombre | URL | Capas principales | Verificado |
 |---|---|---|---|
 | Geovisor Áreas Protegidas (ArcGIS) | https://mapas.parquesnacionales.gov.co/ | Mapa interactivo de las 61 áreas del SPNN. Redirige a ArcGIS Online; requiere JavaScript. | 2026-06-15 |
-| GeoNetwork — Catálogo de Metadatos Espaciales | https://geonetwork.parquesnacionales.gov.co/ | Catálogo de datos espaciales y metadatos de áreas protegidas. 198 recursos: 182 conjuntos de datos, 10 servicios OGC:WFS, 1 servicio HTML. Accesible con navegador; HTTP 403 solo a crawlers automáticos. | 2026-06-15 |
+| GeoNetwork — Catálogo de Metadatos Espaciales | https://geonetwork.parquesnacionales.gov.co/geonetwork/srv/spa/catalog.search#/home | Catálogo de datos espaciales y metadatos de áreas protegidas: conjuntos de datos y servicios web geográficos (OGC:WFS y enlaces HTML) sobre límites, coberturas y zonificación de planes de manejo. Si responde 403 a un cliente automático, abrirlo con navegador. | 2026-11-02 |
 
 ---
 
@@ -27,6 +27,8 @@
 |---|---|---|---|
 | Herencia Colombia | https://www.parquesnacionales.gov.co/herencia-colombia/ | Programa de financiamiento para la permanencia del SINAP: 42 millones de hectáreas, 5 mosaicos regionales, alianzas con Moore Foundation, WWF, CI, WCS y Bezos Earth Fund. | 2026-06-15 |
 | SIRAP Orinoquía | https://www.parquesnacionales.gov.co/home/sirap-orinoquia/ | Subsistema Regional de Áreas Protegidas de la Orinoquía, con documentos y mapas del subsistema. | 2026-06-15 |
+| Programa DLS — Unión Europea | https://ue.parquesnacionales.gov.co/ | Portal del programa de Desarrollo Local Sostenible con la Unión Europea. | 2026-11-02 |
+| Cooperación internacional | https://www.parquesnacionales.gov.co/cooperacion/ | Oferta y demanda de cooperación, ejes de trabajo, asuntos internacionales y convenios. | 2026-11-02 |
 
 ---
 
@@ -55,7 +57,7 @@
 |---|---|---|---|
 | Estadísticas de visitantes (2010–2025) | https://www.parquesnacionales.gov.co/ecoturismo/#estadisticas_visitantes | Series anuales descargables en Excel/PDF. Ancla en la página de Ecoturismo. | 2026-06-15 |
 | Encuestas de satisfacción de visitantes | https://www.parquesnacionales.gov.co/ecoturismo/#encuestas | Reportes anuales y semestrales 2022–2025. | 2026-06-15 |
-| Estadísticas RUNAP — áreas protegidas | https://runap.parquesnacionales.gov.co/ | Cifras oficiales de extensión, número de áreas y cobertura nacional. Fuente citada con corte a junio 2025. | 2026-06-15 |
+| Estadísticas RUNAP — áreas protegidas | https://runap.parquesnacionales.gov.co/ | Cifras oficiales de extensión, número de áreas y cobertura nacional. | 2026-06-15 |
 
 ---
 
@@ -63,13 +65,7 @@
 
 | Sección | Nota |
 |---|---|
-| `https://runap.parquesnacionales.gov.co` | SPA JavaScript. Estructura verificada con browser: raíz (inicio + estadísticas), `/cifras` (tabla por ámbito/categoría: 1.882 áreas, 50,2 M ha geográficas; gráfico por departamento; shapefile descargable), menú `Reportes` abre submenú con `Reportes actuales` → `https://runapadmin.parquesnacionales.gov.co/reportes` y `Reportes históricos` → Google Sites externo. Actualización shapefile: 12/06/2026. |
-| SINAP | El antiguo dominio `https://sinap.parquesnacionales.gov.co` está inactivo. La fuente institucional vigente es `https://parquesnacionales.gov.co/sistema-nacional-de-areas-protegidas/`; RUNAP conserva el registro y las cifras oficiales. |
-| `https://mapas.parquesnacionales.gov.co` | Redirige permanentemente (301) a `https://pnnc.maps.arcgis.com/apps/webappviewer/index.html?id=2fb3250f7f494b209a300c3fb027211e`. Visor ArcGIS Web AppBuilder con 2 capas: Registro Único de Áreas Protegidas - RUNAP (activa por defecto) y Límites Parques Nacionales. Herramientas: filtro por área protegida, medición, selección, impresión, descarga de capas, recursos adicionales, galería de mapas base. |
-| `https://geonetwork.parquesnacionales.gov.co` | Accesible con browser (HTTP 403 solo a crawlers). URL real: `https://geonetwork.parquesnacionales.gov.co/geonetwork/srv/spa/catalog.search#/home`. 198 recursos totales: 182 conjuntos de datos, 11 servicios (10 OGC:WFS, 1 W3C:HTML). Temas INSPIRE: Límites (21), Cobertura tierra/imágenes (4), Medio ambiente (2). Motor: GeoNetwork 3.10.5. |
-| `cooperacion/` | Sección funcional con 8 anclas de contenido: resolución, datos de contacto, qué es la cooperación, oferta y demanda, ejes de trabajo, asuntos internacionales, webinar, galería. Tipos de cooperación: técnica, cultural, triangular, sur-sur, donaciones en especie. No es sección institucional estándar; contiene información sobre convenios activos y ejes de trabajo. |
-| `herencia-colombia/` | Programa de financiamiento para la permanencia (PFP). Página raíz + 3 subsecciones con URL propia: `/proyectos/` (3 proyectos: KfW HeCo, Paisajes Sostenibles, GCF HeCo), `/documentos-de-interes/` (documentos estratégicos, informes anuales 2023-2025, boletines mensuales, infografías). 5 mosaicos de conservación: Orinoquía, Caribe, Andes Centrales, Corazón Amazonía, Pacífico Marino Costero. |
+| `https://runap.parquesnacionales.gov.co` | SPA JavaScript. Estructura verificada con browser: raíz (inicio + estadísticas), `/cifras` (tabla por ámbito/categoría; gráfico por departamento; shapefile descargable), menú `Reportes` abre submenú con `Reportes actuales` → `https://runapadmin.parquesnacionales.gov.co/reportes` y `Reportes históricos` → Google Sites externo. |
+| SINAP | Si un enlace apunta a `https://sinap.parquesnacionales.gov.co`, ese dominio no resuelve por DNS; usar la fuente institucional del SINAP (ver su fila) y, para el registro y las cifras oficiales, RUNAP. |
+| `herencia-colombia/` | Las rutas anidadas `/herencia-colombia/proyectos/` y `/herencia-colombia/documentos-de-interes/` redirigen a `/proyectos/` (KfW HeCo, Paisajes Sostenibles, GCF HeCo) y `/documentos-de-interes/` (documentos estratégicos, informes anuales, boletines mensuales, infografías) en la raíz del sitio. |
 | `ecoturismo/#estadisticas_visitantes` | Las estadísticas de visitantes son anclas en la página de Ecoturismo, no URLs independientes. El archivo histórico antes de 2022 puede estar en `https://old.parquesnacionales.gov.co/portal/es/ecoturismo/`. |
-| `https://cert.parquesnacionales.gov.co` | Herramienta administrativa para certificaciones SINAP. Acceso público solo a noticias y manuales de usuario (enlazados a Google Sites). |
-| `https://ue.parquesnacionales.gov.co` | Portal de cooperación con la Unión Europea. Devuelve HTTP 403. Sin acceso verificado. |
-| `entidad/planes-de-manejo-areas-del-spnn/` | 57 áreas con planes de manejo en PDF, organizadas en 6 territoriales: Pacífico (10), Caribe (15), Andes Occidentales (9), Andes Nororientales (7), Orinoquía (7), Amazonia (9). |

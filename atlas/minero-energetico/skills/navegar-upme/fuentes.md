@@ -21,7 +21,6 @@
 | Calculadora de emisiones CO2 – FECOC | `app.upme.gov.co/Calculadora_Emisiones1/new/calculadora.html` | Calculadora de emisiones de CO2 con los factores de emisión de los combustibles colombianos (FECOC) | 2026-10-30 |
 | Modelo conceptual WTE | `upme.gov.co/simec/aplicativos/modelo-conceptual-para-el-calculo-de-la-viabilidad-de-proyectos-wte/` | Plataforma de precálculo de la viabilidad técnica, ambiental, financiera y económica de proyectos de aprovechamiento energético de residuos (WTE, Waste to Energy) a partir de biomasa pecuaria, biomasa agrícola y residuos sólidos urbanos orgánicos; incluye fichas tecnológicas, manual de usuario y visor geográfico | 2026-10-30 |
 | Gestor del Mercado de Gas Natural | `www.bmcbec.com.co/` | Portal del gestor del mercado de gas natural de Colombia, enlazado desde los aplicativos del SIMEC; se documenta en la skill `navegar-bec` | 2026-10-30 |
-| Tremarctos | `http://www.tremarctoscolombia.org/` | Herramienta de evaluación preliminar de impactos ambientales y sociales de proyectos de infraestructura, enlazada desde los aplicativos del SIMEC. Al 2026-10-30 el dominio redirige a la página de un estudio web y la herramienta no está disponible | 2026-10-30 |
 
 ---
 
@@ -97,22 +96,10 @@
 
 | Sección | Nota |
 |---|---|
-| `simec/` | Portal central de la UPME; algunas páginas tienen URL duplicada: `/simec/xxx` y `/sistema-de-informacion-minero-energetico-colombiano/xxx` — usar `/simec/` como canónica |
-| `simec/energia-electrica/mision-transmision` | Página-hub de la función de planeación de transmisión; desde aquí se navega a planes de expansión y convocatorias |
-| `simec/planeacion-energetica/plan-energetico-nacional` | Plan Energético Nacional vigente (PEN 2020–2050); descarga de documentos oficiales |
-| `simec/planeacion-energetica/plan-energetico-rural-sostenible-pers` | PERS: planes de energización rural sostenible por departamento |
+| `simec/` | Algunas páginas tienen URL duplicada: `/simec/xxx` y `/sistema-de-informacion-minero-energetico-colombiano/xxx` — usar `/simec/` como canónica |
 | `simec/planeacion-energetica/piacl` | Plan Indicativo de Abastecimiento de Combustibles Líquidos; URL usa segmento `prospectiva-energetca` (typo real en la ruta) |
 | `simec/planeacion-energetica/pang` | Plan de Abastecimiento de Gas Natural; misma observación de URL con typo |
-| `simec/mineria` | Portal SIMCO; incluye estadísticas de producción, exportaciones y títulos mineros |
-| `simec/territorio-vivo` | Herramienta interactiva que cruza variables minero-energéticas con datos territoriales y socioeconómicos |
-| `simec/seguimiento-fncer/` | Página única con secciones, no subrutas. «Ir al Centro de Monitoreo» abre `app.upme.gov.co/CentroMonitoreo/6GW+` (seguimiento por proyecto, tecnología y estado); «Información de proyectos» enlaza a `upme.gov.co/upme-descargas/6gw/`; los geovisores (Seguimiento FNCER, Geoportal Sectorial GPS, Potencial Solar con IA y Techos Solares con IA, anunciado) viven en `sig.upme.gov.co` |
+| `simec/seguimiento-fncer/` | Página única con secciones, no subrutas. «Ir al Centro de Monitoreo» abre `app.upme.gov.co/CentroMonitoreo/6GW+` (seguimiento por proyecto, tecnología y estado); «Información de proyectos» enlaza a `upme.gov.co/upme-descargas/6gw/`; los geovisores (Seguimiento FNCER, Geoportal Sectorial GPS y Potencial Solar con IA) viven en `sig.upme.gov.co` |
 | `simec/siem/` | Página única: qué es el SIEM, guía de integración OCPI 2.2.1 (junio de 2026), preguntas frecuentes, glosario, video de socialización y normativa de electromovilidad (Ley 1964 de 2019; Resoluciones 40223 de 2021, 40123 de 2024 y 40559 de 2025) |
-| `simec/geovisores` | Alojados en `sig.upme.gov.co` (Experience Builder); 4 categorías: Distritos Mineros, Potencial Energético, Energía Eléctrica y Territorial |
-| `indicadores-y-graficos` | Dashboards Power BI con series históricas de indicadores energéticos y mineros |
-| `nosotros/biblioteca-juridica/circulares-upme/circulares-upme-energia-electrica` | Circulares externas del subsector eléctrico; publicación frecuente (varias por mes) |
-| `home/convocatorias/convocatorias-de-transmision` | Convocatorias UPME activas para nuevas líneas y subestaciones del STN; documentos técnicos descargables |
-| `ventanilla-unica-servicios/fondos-apoyo-financiero` | Radicación y seguimiento de proyectos que solicitan recursos de FAZNI, FAER, PRONE o FENOGE |
-| `ventanilla-unica-creg/ventanilla-creg-174/` | Página con pestañas: contexto, procedimiento con y sin estudio de conexión simplificado, reporte de proyectos, disponibilidad de la red y normativa. La radicación pasa por el Sistema Único de Usuarios (SUU); los requisitos están en `ventanilla-creg-174/requisitos-creg174/` y la guía de usuario en `docs.upme.gov.co`. Al 2026-10-30 el botón «Iniciar solicitud» figuraba como próximamente |
-| SIMEM | El portal SIMEM (`simem.co`) lo administra XM; se documenta en `navegar-xm/fuentes.md` |
-| `cio-upme/` | Los documentos del CIO UPME están alojados en `docs.upme.gov.co/CIO-UPME/Lineamientos/`; incluyen los planes BECO (balance energético), ICEE y hojas de ruta estadísticas |
-| `cio-sectorial/` | La UPME ejerce como CIO del sector minero-energético colombiano; esta página define las políticas y metodologías de gobernanza de datos que aplican a todas las entidades del sector |
+| `ventanilla-unica-creg/ventanilla-creg-174/` | Página con pestañas: contexto, procedimiento con y sin estudio de conexión simplificado, reporte de proyectos, disponibilidad de la red y normativa. La radicación pasa por el Sistema Único de Usuarios (SUU); los requisitos están en `ventanilla-creg-174/requisitos-creg174/` y la guía de usuario en `docs.upme.gov.co`. Si el botón «Iniciar solicitud» figura como próximamente, la radicación aún no está habilitada |
+| `cio-upme/` | Los documentos del CIO UPME están alojados en `docs.upme.gov.co/CIO-UPME/Lineamientos/` |

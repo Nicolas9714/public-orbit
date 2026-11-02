@@ -33,7 +33,4 @@ La Unidad Nacional para la Gestión del Riesgo de Desastres es la entidad del Es
 
 ## Notas de navegación
 
-- El sitio institucional (`https://portal.gestiondelriesgo.gov.co`) es SharePoint 2013 clásico; el Sistema Nacional de Información para la Gestión del Riesgo de Desastres, SNIGRD (`https://sni.gestiondelriesgo.gov.co`) es una aplicación de una sola página (SPA) moderna y separada que concentra los sistemas técnicos y geoespaciales vigentes — para datos de riesgo, geovisores y financiación, priorizar el SNIGRD sobre el portal institucional.
-- `https://sni.gestiondelriesgo.gov.co` y `https://snigrd.gestiondelriesgo.gov.co` son subdominios distintos y fácilmente confundibles: el primero es el portal informativo del SNIGRD, el segundo aloja trámites transaccionales (certificados del Registro Único de Damnificados, RUD, y registro de proveedores) mediante SPA con hash-routing.
-- El Geoportal UNGRD vive en un dominio externo sin `.gov.co` (`https://geoportalgestiondelriesgo.com`); no es un error de navegación.
-- El Registro Único de Damnificados legado se accede por IP directa sin HTTPS (`201.130.16.28:8080`), enlazado activamente desde el home del portal.
+- Si la consulta es de riesgo, geovisores o financiación, empezar por el SNIGRD (SPA) y no por el portal institucional (SharePoint clásico).

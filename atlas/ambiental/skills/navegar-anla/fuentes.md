@@ -7,7 +7,7 @@
 | Nombre | URL | Descripción | Verificado |
 |---|---|---|---|
 | VITAL — Ventanilla Integral de Trámites Ambientales en Línea | `https://vital-publico.minambiente.gov.co` | Portal público de consulta de expedientes, resoluciones y estado de trámites ambientales; recibe radicaciones de licencias y cambios menores; versión nueva que redirige desde legacy | 2026-06-01 |
-| VITAL — Buscador de trámites (legacy) | `https://vital.minambiente.gov.co/SILPA_UT_PRE/ReporteTramite/ReporteTramiteCP.aspx` | Redirige automáticamente (302) a `https://vital-publico.minambiente.gov.co/buscador`; la URL legacy sigue activa | 2026-06-01 |
+| VITAL — Buscador de trámites (legacy) | `https://vital.minambiente.gov.co/SILPA_UT_PRE/ReporteTramite/ReporteTramiteCP.aspx` | Redirige automáticamente (302) a `https://vital-publico.minambiente.gov.co/buscador` | 2026-06-01 |
 | VITAL — Búsqueda de EIA (legacy) | `https://vital.minambiente.gov.co/SILPA_UT_PRE/ReporteTramite/ReporteEstadoTramite.aspx?tipoBusqueda=eia` | Consulta específica de estudios de impacto ambiental (EIA) radicados ante la ANLA; puede redirigir al nuevo portal | 2026-06-01 |
 | GACETA ANLA — Consulta de expedientes | `https://gaceta.anla.gov.co:8443/Consultar-gaceta` | Búsqueda simple y avanzada de resoluciones, permisos, contratos y autocertificados; filtro por región operativa; no reconoce tildes; incluye video tutorial e instructivo PDF | 2026-06-01 |
 | AGIL — Sistema de Análisis Geográfico de Información en el Licenciamiento | `https://sig.anla.gov.co/seleccion.aspx` | Plataforma GIS de ANLA para gestión de información georeferenciada; requiere autenticación institucional; no tiene acceso público | 2026-06-01 |
@@ -84,16 +84,11 @@
 
 | Sección | Nota |
 |---|---|
-| `https://vital-publico.minambiente.gov.co` | El portal VITAL es operado por Minambiente, no por ANLA directamente. La URL legacy `https://vital.minambiente.gov.co/SILPA_UT_PRE/ReporteTramite/ReporteTramiteCP.aspx` redirige (302) automáticamente a `https://vital-publico.minambiente.gov.co/buscador`. Ambas versiones activas al 2026-06-01 |
-| `https://gaceta.anla.gov.co:8443/Consultar-gaceta` | Carga correctamente via WebFetch. Puerto 8443 accesible. La búsqueda no reconoce tildes; usar términos sin acentos. Permite filtrar por región operativa: Medio Magdalena, Caribe, Alto Magdalena–Cauca, Pacífico–Río Cauca, Norte Orinoquía–Catatumbo, Sur Orinoquía–Amazonas. Incluye video tutorial e instructivo PDF |
-| `https://sig.anla.gov.co/seleccion.aspx` | AGIL requiere autenticación institucional (modal "Usuarios Autenticados" / "Validar Usuario"). Sin acceso público. El portal externo de recepción geográfica es `https://geo.anla.gov.co/portal/#/login` (también requiere cuenta) |
-| `https://geovisor.anla.gov.co:8446` | SPA — carga correctamente desde red doméstica. Con browser se verificaron 4 grupos principales: Evaluación, Seguimiento, Regionalización y Referencia. Chrome puede mostrar advertencia de certificado SSL por puerto no estándar; aceptar la excepción para continuar. Puede ser bloqueado por firewalls corporativos |
-| `https://geo.anla.gov.co/dmi` | SPA — WebFetch devuelve solo "Dmi". Requiere browser para ver contenido del sistema de monitoreo de minería ilegal |
-| `https://geoexploraanla.anla.gov.co:8443` | SPA — WebFetch devuelve solo "Visor". Con browser se verificó como visor escolar gamificado con capas/herramientas Plantas, Animales y Líneas, más niveles de desafío |
-| `https://datosabiertos-anla.hub.arcgis.com` | SPA basada en ArcGIS Hub. Con browser se verificaron categorías, recursos descargables y capas internas de los mapas de proyectos en evaluación, proyectos en seguimiento y compensaciones |
-| `proyectos-de-interes-en-seguimiento` | ~28-30 proyectos activos organizados por 6 regiones operativas de la SSLA; sectores: energía, infraestructura, hidrocarburos, minería. Incluye proyecto transversal de polinizadores |
-| `proyectos-de-interes-en-evaluacion` | ~30+ proyectos en evaluación organizados por sector (hidrocarburos, minería, energía, infraestructura); formato de tarjetas con imagen y enlace a ficha de proyecto |
-| `RUIA` | URL real: `https://vital.minambiente.gov.co/SILPA_UT_PRE/RUIA/ConsultarSancion.aspx?Ubic=ext` — consulta pública sin autenticación de sanciones por NIT o nombre del infractor |
-| `wanla/eureka/` | URL activa: `https://www.anla.gov.co/wanla/eureka`. La URL `/eureka/` directa devuelve 404. Eureka!! es una base de conocimiento jurídico-técnico con 8 categorías de documentos; no es plataforma de innovación |
-| Certificaciones VITAL | Cinco tipos procesados vía VITAL: CEPD (emisiones vehículos), CEI (exclusión IVA), CADR (deducción renta), CSA (soluciones ambientales), CASP (alternativas sostenibles plástico reciclado) |
+| `https://vital-publico.minambiente.gov.co` | El portal VITAL es operado por Minambiente, no por ANLA directamente. |
+| `https://gaceta.anla.gov.co:8443/Consultar-gaceta` | La búsqueda no reconoce tildes; usar términos sin acentos. Permite filtrar por región operativa: Medio Magdalena, Caribe, Alto Magdalena–Cauca, Pacífico–Río Cauca, Norte Orinoquía–Catatumbo, Sur Orinoquía–Amazonas |
+| `https://sig.anla.gov.co/seleccion.aspx` | AGIL pide autenticación institucional en un modal («Usuarios Autenticados» / «Validar Usuario»). El portal externo de recepción geográfica, `https://geo.anla.gov.co/portal/#/login`, también requiere cuenta |
+| `https://geovisor.anla.gov.co:8446` | Chrome puede mostrar advertencia de certificado SSL por puerto no estándar; aceptar la excepción para continuar. Puede ser bloqueado por firewalls corporativos |
+| `https://geoexploraanla.anla.gov.co:8443` | SPA — WebFetch devuelve solo "Visor"; abrir con browser |
+| `https://datosabiertos-anla.hub.arcgis.com` | SPA basada en ArcGIS Hub; las categorías, los recursos descargables y las capas internas de los mapas se leen con browser |
+| `wanla/eureka/` | Si la URL `/eureka/` directa da 404, usar la ruta `wanla/eureka`. Eureka!! es una base de conocimiento jurídico-técnico, no una plataforma de innovación |
 | Tablero sancionatorios | Power BI ID: `r=eyJrIjoiNTliZDg3ZmQtM2VkZC00MTIzLTk0ZTctM2I0YzkzNDM1ODI1IiwidCI6IjZmMWNjYjk0LWFkYTUtNDM3Zi04NzZkLTQ5NzkyMGNjYmUxOCIsImMiOjR9` — accesible desde `oficina-asesora-juridica/actuaciones-sancionatorias-ambientales` |

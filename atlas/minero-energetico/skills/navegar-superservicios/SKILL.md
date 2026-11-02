@@ -5,7 +5,7 @@ description: "Guía de navegación para Superservicios: información reportada p
 
 # Superintendencia de Servicios Públicos Domiciliarios (Superservicios)
 
-La Superintendencia de Servicios Públicos Domiciliarios es una entidad descentralizada de carácter técnico, adscrita al Departamento Nacional de Planeación. Ejerce la inspección, vigilancia y control de las empresas que prestan servicios públicos domiciliarios en Colombia: energía eléctrica, gas natural, acueducto, alcantarillado y aseo.
+La Superintendencia de Servicios Públicos Domiciliarios es una entidad descentralizada de carácter técnico, adscrita al Departamento Nacional de Planeación. Ejerce la inspección, vigilancia y control de las empresas que prestan servicios públicos domiciliarios en Colombia: energía eléctrica, gas combustible, acueducto, alcantarillado y aseo.
 
 ## ¿Qué información publica?
 
@@ -36,8 +36,6 @@ La Superintendencia de Servicios Públicos Domiciliarios es una entidad descentr
 
 ## Notas de navegación
 
-- El SUI (`sui.superservicios.gov.co`) reúne todos los servicios públicos domiciliarios; al consultar, filtrar por sector para limitar los resultados a energía o gas.
-- `superservicios.gov.co` está detrás de un WAF (firewall de aplicaciones web) Incapsula que responde HTTP 200 con una página de bloqueo («Request unsuccessful») a clientes sin navegador (curl, lectores de páginas); en un navegador con ventana carga con normalidad (verificado el 2026-10-31).
-- El sitio se reorganizó en octubre de 2026 y algunas rutas responden 404 de forma intermitente; reintentar antes de darlas por caídas. Algunas rutas vigentes llevan el prefijo `/index.php/` (`/index.php/Normativa`, `/index.php/participa/observatorio`). El mapa del sitio está en `superservicios.gov.co/sitemap`.
+- `superservicios.gov.co` está detrás de un WAF (firewall de aplicaciones web) Incapsula que responde HTTP 200 con una página de bloqueo («Request unsuccessful») a clientes sin navegador (curl, lectores de páginas). En un navegador con ventana carga con normalidad.
+- Si una ruta responde 404, reintentar antes de darla por caída y probar con el prefijo `/index.php/` (`/index.php/Normativa`, `/index.php/participa/observatorio`). El mapa del sitio está en `superservicios.gov.co/sitemap`.
 - La Superintendencia vigila servicios más allá del energético (acueducto, alcantarillado, aseo); muchas secciones del sitio los cubren todos.
-- El geoportal (`geoportal.superservicios.gov.co`) está alojado en ArcGIS Online.

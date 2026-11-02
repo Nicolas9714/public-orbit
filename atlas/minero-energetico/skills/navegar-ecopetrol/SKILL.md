@@ -32,7 +32,5 @@ Ecopetrol S.A. es la principal empresa de petróleo y gas de Colombia. Es una so
 
 ## Notas de navegación
 
-- Los PDF de informes anuales y de sostenibilidad se descargan desde el subdominio `files.ecopetrol.com.co`, un servidor de archivos aparte del portal; los enlaces directos están en `fuentes.md`.
-- Algunas URLs del portal principal redirigen con código 302 al subdominio `nuevoportal.ecopetrol.com.co`; el contenido es equivalente; ambas rutas funcionan.
-- El portal comercial opera bajo la ruta `/multisitios/comercial/` dentro del mismo dominio.
-- El Grupo Ecopetrol incluye filiales con sitios propios: ISA (`isa.co`), Cenit (`cenit-transporte.com`), Reficar (`reficar.com.co`), Hocol (`hocol.com.co`), entre otras; el portal de Ecopetrol enlaza a cada una desde la sección Grupo Ecopetrol.
+- Si una URL de `www.ecopetrol.com.co/wps/portal/` redirige (302) a `nuevoportal.ecopetrol.com.co`, o al revés, el contenido es equivalente. Seguir la redirección.
+- El Grupo Ecopetrol incluye filiales con sitios propios: ISA (`isa.co`), Cenit (`cenit-transporte.com`), Reficar (`reficar.com.co`), Hocol (`hocol.com.co`), entre otras. Las consultas sobre ellas se resuelven en esos sitios, que el portal enlaza desde la sección Grupo Ecopetrol.

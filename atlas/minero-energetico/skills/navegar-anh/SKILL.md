@@ -33,8 +33,5 @@ La Agencia Nacional de Hidrocarburos es una Agencia Estatal de Naturaleza Especi
 
 ## Notas de navegación
 
-- Las URLs del sitio llevan tildes (`hidrocarburos/contratos-y-reglamentación/`); al consultarlas desde código o con `curl` hay que codificarlas en porcentaje (`reglamentaci%C3%B3n`), porque con la tilde cruda responden 404. Los enlaces del sitio ya vienen codificados.
+- Las URLs del sitio llevan tildes. Si una ruta responde 404 al consultarla desde código o con `curl`, codificarla en porcentaje (`reglamentaci%C3%B3n`). Los enlaces del sitio ya vienen codificados.
 - Todo el sitio cuelga de `anh.gov.co/es/` (español) y `anh.gov.co/en/` (inglés).
-- El Mapa de Tierras abre en un subdominio aparte, `geovisor.anh.gov.co/tierras/`, que carga de forma pública, sin registro.
-- Los títulos del menú de Contratos y Reglamentación no coinciden con el contenido de dos páginas: `contratación-ep-y-teas` muestra el estado de contratos y convenios, y `relación-de-áreas-asignadas` lista los contratos firmados.
-- `estrategia-territorial` aparece en el menú, pero la página solo anuncia que la sección está en renovación.

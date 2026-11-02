@@ -35,9 +35,4 @@ XM, filial del Grupo ISA, es una empresa de servicios públicos mixta que opera 
 
 ## Notas de navegación
 
-- La API pública (`servapibi.xm.com.co`) no requiere autenticación y es el acceso recomendado para extraer series históricas de manera programática. La librería `pydataxm` facilita su uso desde Python.
-- El portal SINERGOX es para agentes registrados del mercado y requiere autenticación; no confundir con la API pública.
-- El SIMEM (`simem.co`) es el portal de datos abiertos del mercado; tiene su propia API documentada en la sección de catálogo de datos.
-- Las URLs de planeación están duplicadas: los resultados de estudios están bajo `operación/planeación/` y las bases de datos descargables de largo y mediano plazo bajo `planeación/`.
-- Las rutas del sitio con tildes (`planeación`, `operación`) responden 404 si se piden con caracteres crudos desde herramientas como `curl`; usar la ruta codificada (`planeaci%C3%B3n`) o navegar desde los menús. Algunas páginas de resoluciones (por ejemplo `resoluciones/mercado/res-creg-176-de-2021`) devolvieron 403 en la verificación.
-- `sinergox.xm.com.co` está detrás de un WAF (firewall de aplicaciones web) que bloquea navegación sin interfaz gráfica; abrirlo con navegador en modo con ventana (`--headed`).
+- Si una ruta con tilde (`planeación`, `operación`) responde 404 al pedirla con caracteres crudos desde `curl`, usar la ruta codificada (`planeaci%C3%B3n`) o navegar desde los menús.

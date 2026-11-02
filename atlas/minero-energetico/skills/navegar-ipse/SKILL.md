@@ -26,7 +26,3 @@ El Instituto de Planificación y Promoción de Soluciones Energéticas para las 
 
 1. Consulta `mapa-web.md` para ubicar el geovisor, los boletines del CNM, los proyectos o la normativa ZNI.
 2. Consulta `fuentes.md` para acceder directamente al SIGIPSE, CNM, datasets o guías de proyectos.
-
-## Notas de navegación
-
-- Los visores de SIGIPSE están en el subdominio `sigipse.ipse.gov.co` (ArcGIS Online); los enlaces directos a cada visor están en `fuentes.md`.

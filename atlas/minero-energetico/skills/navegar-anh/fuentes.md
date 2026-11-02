@@ -86,9 +86,5 @@
 
 | Sección | Nota |
 |---|---|
-| `mapa-de-tierras/` | Geovisor principal; permite consultar bloque por bloque con operador, estado y tipo de contrato. El geovisor (`geovisor.anh.gov.co/tierras/`) carga de forma pública, sin registro |
+| `mapa-de-tierras/` | El geovisor (`geovisor.anh.gov.co/tierras/`) carga de forma pública, sin registro; permite consultar bloque por bloque con operador, estado y tipo de contrato |
 | `operaciones-y-regalías/sistemas-integrados-operaciones/` | Las estadísticas de producción se publican con rezago aproximado de un mes |
-| `hidrocarburos/oportunidades-disponibles/ronda-colombia-eólica-costa-afuera/` | Ronda offshore para energía eólica marina costa afuera; sección reciente |
-| `normatividad2/decreto-unico/` | Árbol muy profundo en el CSV; navegación interna densa con capítulos y subsecciones del DUR de hidrocarburos y energía |
-| `la-anh/serie-anh-30` | Serie de publicaciones técnicas propias de la ANH, de alto valor sectorial |
-| `hidrocarburos/entrega-de-información-técnica` | Manuales, anexos, acuerdos y resoluciones para que los contratistas entreguen información técnica al Banco de Información Petrolera del Servicio Geológico Colombiano |

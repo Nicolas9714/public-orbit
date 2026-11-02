@@ -30,9 +30,3 @@ La Agencia Nacional de Minería es una agencia estatal de naturaleza especial ad
 
 1. Consulta `mapa-web.md` para ubicar el catastro, estadísticas o normativa minera.
 2. Consulta `fuentes.md` para acceder directamente a AnnA Minería, la Cuadrícula Minera o los datos abiertos de producción.
-
-## Notas de navegación
-
-- AnnA Minería (SIGM, Sistema de Información de Gestión Minera) es la plataforma vigente del catastro; requiere registro de usuario; la plataforma anterior (Génesis) se mantiene activa para consulta de títulos e históricos.
-- El visor público SIGMExt (`annamineria.anm.gov.co/Html5Viewer/`) y la descarga de la Cuadrícula Minera desde `anm.gov.co/anna-mineria` no piden login; el resto de AnnA Minería sí.
-- El normograma está organizado por etapa del ciclo del proyecto minero, no cronológicamente, lo que facilita la consulta por fase.

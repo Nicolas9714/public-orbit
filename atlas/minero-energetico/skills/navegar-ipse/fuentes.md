@@ -63,11 +63,6 @@
 
 | Sección | Nota |
 |---|---|
-| `sigipse/` | SIGIPSE usa ArcGIS Online (sigipse.ipse.gov.co); el portal aloja los visores de caracterización y electrificación; los URLs de webappviewer contienen IDs específicos — usar los registrados en la tabla de geovisores |
-| `cnm/` | El CNM publica boletines anuales sobre el estado de la prestación del servicio de energía en las ZNI; organizado por año desde 2014; no es un sistema transaccional sino un repositorio de informes |
-| `web.ipse.gov.co` | Sistema web y app móvil (disponible en Google Play) para gestión y caracterización de usuarios ZNI; el mismo ecosistema que el SIGIPSE pero con interfaz de campo para operadores |
+| `sigipse/` | Las URLs de webappviewer contienen IDs específicos; usar las registradas en la tabla de geovisores |
 | `normatividad/` | El normograma está organizado por etapa del ciclo de vida de un proyecto energético ZNI: estructuración, viabilización, implementación, seguimiento, entrega de activos; más útil que un normograma cronológico |
 | `datos-abiertos/` | La página de datos abiertos enlaza directamente al dataset en datos.gov.co; IPSE no tiene portal propio de datos abiertos — el catálogo está en datos.gov.co bajo categoría "Minas y Energía" |
-| `controldoc.ipse.gov.co` | Sistema controldoc es la plataforma para radicación de PQRSD y trámites; la sede electrónica es el punto de entrada para presentar proyectos energéticos ante el IPSE |
-| `solicitud-de-proyectos` | Cualquier entidad territorial, operador o comunidad puede presentar un proyecto energético para ZNI a través de la sede electrónica; la guía de estructuración orienta el proceso |
-| `innovacion-energetica/` | La sección "Píldoras Energéticas" es material educativo en video sobre tecnologías ZNI (solar, híbridos, comunidades energéticas); la biblioteca energética contiene documentos técnicos de referencia |

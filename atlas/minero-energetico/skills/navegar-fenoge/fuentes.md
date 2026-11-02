@@ -50,16 +50,3 @@
 |---|---|---|---|
 | Proyectos en ejecución | `fenoge.gov.co/proyectos/` | Listado actualizado de proyectos en ejecución con ficha por proyecto | 2026-05-30 |
 | Proyectos ejecutados | `fenoge.gov.co/proyectos/proyectos-ejecutados/` | Portafolio histórico de proyectos finalizados | 2026-05-30 |
-
----
-
-## Notas por sección
-
-| Sección | Nota |
-|---|---|
-| `fenoge.gov.co` | El dominio correcto es `fenoge.gov.co` — no `fenoge.com` (error de conexión); el sitio estuvo con intermitencias por mantenimiento en la sesión de verificación |
-| `proyectos/` | Cada proyecto tiene una ficha propia con descripción, beneficiarios y región; los proyectos en ejecución incluyen: Ecoescuelas, Colombia Cero Humo (estufas limpias), Caribe Cambia tu Energía (recambio electrodomésticos), Hogares Energéticamente Sostenibles, Energía Solar para Economías Populares |
-| `convocatorias` | FENOGE opera como fondo: no ejecuta directamente sino que financia a terceros; el proceso de acceso pasa por criterios de elegibilidad → presentación → aprobación; la sede electrónica usa el sistema del Ministerio de Energía |
-| `EN-Comunidad` | Convocatoria principal de 2025-2026; financia 55 proyectos y estudios técnicos en 43 municipios para impulsar la transición energética sostenible |
-| `plan-de-transicion-energetica-popular/` | Documento estratégico del FENOGE que orienta la asignación de recursos hacia comunidades vulnerables y territorios con brechas energéticas; URL real: `fenoge.gov.co/ptep-fenoge/` |
-| `gestion-del-conocimiento/` | La sección compila material técnico-conceptual sobre FNCER e hidrógeno; útil para entender los criterios técnicos que FENOGE aplica en la evaluación de proyectos |

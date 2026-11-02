@@ -60,7 +60,6 @@
 |---|---|---|---|
 | Colecciones Biológicas IAvH | `https://colecciones.humboldt.org.co` | Portal de las 11 colecciones biológicas del IAvH: aves (IAvH-A), mamíferos (IAvH-M), anfibios, reptiles, peces, entomología, herbario Federico Medem, semillas, colección de sonidos Mauricio Álvarez Rebolledo, entre otras | 2026-06-15 |
 | Especímenes Tipo | `https://colecciones.humboldt.org.co/especimenes-tipo/` | Catálogo de especímenes tipo como referencias taxonómicas | 2026-06-15 |
-| Registro Nacional de Colecciones (RNC) | `https://rnc.humboldt.org.co/` | Registro Único Nacional de Colecciones biológicas de Colombia; IAvH actúa como administrador; portal accesible con contenido de colecciones biológicas al 2026-07-04 | 2026-07-04 |
 | Datos Biocultural | `https://biocultural.humboldt.org.co/dataverse/iavh_i2d` | Catálogo de datos y metadatos socioecológicos bajo estándar DDI; 73 datasets, 241 archivos, filtrables por tema, región y tipo de datos | 2026-06-15 |
 
 ---
@@ -69,12 +68,8 @@
 
 | Sección | Nota |
 |---|---|
-| `https://datos.humboldt.org.co` | URL real del sistema I2D; la página principal describe los cuatro componentes: WIKI, CEIBA, VISOR y GEONETWORK |
-| `https://i2d.humboldt.org.co/visor-I2D/` | Visor geográfico con dos catálogos de datos integrados (Ceiba y GeoNetwork); permite descargar reportes con registros biológicos y listados de especies por municipio |
 | `https://biomodelos.humboldt.org.co` | Requiere registro para descargar datos y contribuir con curación de registros; la consulta básica de mapas de distribución es pública |
 | `https://colecciones.humboldt.org.co` | Portal de 11 colecciones biológicas físicas; para préstamos, depósitos o visitas científicas se requiere solicitud formal |
-| `https://rnc.humboldt.org.co/` | Al 2026-07-04 el portal responde por HTTP y HTTPS (200) con contenido del Registro Nacional de Colecciones biológicas; la ruta `/wp/` también resuelve (200). Reactivado respecto al micrositio conmemorativo "30 años" que servía al 2026-06-15. |
 | `https://reporte.humboldt.org.co/biodiversidad/` | Redirige desde `https://reporte.humboldt.org.co` a `https://reporte.humboldt.org.co/biodiversidad/`; usar la URL con ruta completa |
-| `https://catalogo.humboldt.org.co` | Redirige a `https://catalogo.humboldt.org.co/cgi-bin/koha/opac-main.pl`; sistema Koha de código abierto |
 | `https://biodiversidad.co` | SiB Colombia: coordinado por el IAvH pero es una red nacional; incluye portal de datos, IPT GBIF, campus virtual y formación |
 | `https://ecosistema.humboldt.org.co` | Dominio de intranet institucional; no tiene contenido público accesible |

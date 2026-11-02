@@ -256,15 +256,6 @@ portal.gestiondelriesgo.gov.co/
 │   └── aula-virtual/
 │       └── recorrido-guiado-megir
 │
-├── geoportalgestiondelriesgo.com/
-│   └── version-publica-de-capas-geoespaciales/
-│       ├── conocimiento
-│       ├── reduccion
-│       ├── manejo
-│       ├── limites-administrativos
-│       ├── satelital
-│       └── acceso-a-version-pro
-│
 ├── busqueda.gestiondelriesgo.gov.co/
 │   ├── fondos
 │   └── manual

@@ -29,8 +29,6 @@ El Fondo de Energías No Convencionales y Gestión Eficiente de Energía (FENOGE
 
 ## Notas de navegación
 
-- El dominio correcto es `fenoge.gov.co`; `fenoge.com` no conecta. El sitio muestra avisos de intermitencias por mantenimiento.
+- El sitio oficial está en `fenoge.gov.co`. Si una ruta de `fenoge.com` falla, usar el dominio `.gov.co`.
 - FENOGE financia a terceros y no ejecuta directamente; por eso la información de acceso está en convocatorias y criterios de elegibilidad, no en trámites propios.
-- Las convocatorias cuelgan de rutas distintas (`/services/`, `/convocatoria/` y páginas en la raíz); los enlaces exactos están en `fuentes.md`.
-- La ruta real del PTEP es `fenoge.gov.co/ptep-fenoge/`, no la que sugiere el menú.
-- Las páginas de estudios de mercado y de procesos de contratación funcionan como listados de avisos; el enlace de Habeas Data apunta a una página en construcción.
+- Las convocatorias cuelgan de rutas distintas (`/services/`, `/convocatoria/` y páginas en la raíz). Los enlaces exactos están en `fuentes.md`.

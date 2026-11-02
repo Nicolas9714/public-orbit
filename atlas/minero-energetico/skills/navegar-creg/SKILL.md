@@ -34,6 +34,4 @@ La Comisión de Regulación de Energía y Gas (CREG) es una unidad administrativ
 
 ## Notas de navegación
 
-- El Gestor Normativo Alejandría (`gestornormativo.creg.gov.co`) es un subdominio separado del sitio principal y el sistema canónico para buscar normativa; sus compilaciones únicas, con las versiones vigentes, sirven mejor para consultar marcos regulatorios actuales que el texto original.
-- El SCIR requiere credenciales de empresa regulada; el SICT es de acceso público.
-- El sitio principal organiza sus páginas con identificadores numéricos (`/15004`) que redirigen a la URL completa; los enlaces directos a secciones clave están en `fuentes.md`.
+- Si solo se conoce el identificador numérico de una página (`/15004`), el sitio principal redirige a la URL completa (`/publicaciones/ID/slug/`). Los enlaces directos a secciones clave están en `fuentes.md`.

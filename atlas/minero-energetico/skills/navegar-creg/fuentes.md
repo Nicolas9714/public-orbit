@@ -68,17 +68,14 @@
 
 | Sección | Nota |
 |---|---|
-| URL scheme de CREG | El sitio usa el patrón `/publicaciones/ID/slug/` para todas sus páginas (e.g., `/publicaciones/15004/energia-electrica/`); los IDs cortos como `/15004` redirigen a la URL completa; el árbol del mapa usa slugs semánticos |
 | `loader.php?tipo=RE` | Las resoluciones individuales usan `&idDirectorio=XXXXXX`; el listado sin ID muestra las más recientes; para búsqueda histórica usar el Gestor Normativo |
-| `gestornormativo.creg.gov.co` | Sistema "Alejandría 2.0"; fuente canónica para resoluciones originales, proyectos, circulares y compilaciones consolidadas; subdominio separado del sitio principal |
 | `gestornormativo.creg.gov.co/gestor/entorno/compilaciones_unicas.html` | Versiones compiladas (vigentes) de las resoluciones por subsector; 7 categorías: energía eléctrica, gas natural, GLP, combustibles líquidos, código de redes, cargo por confiabilidad, derechos y deberes de usuarios; más útil que el texto original para consulta de marcos regulatorios actuales |
 | `gestornormativo.creg.gov.co/gestor/entorno/resoluciones_originales.html` | 8 vistas de acceso: cronológica, no derogadas, derogadas, contribución especial, generales por servicio, generales por servicio y actividad, particulares cronológico, particulares por empresa |
 | `gestornormativo.creg.gov.co/gestor/entorno/circulares.html` | 3 vistas: por orden cronológico, por servicio, por servicio y actividad |
-| `gestornormativo.creg.gov.co/gestor/entorno/compilacion_normativa_jurisprudencia.html` | Incluye normas de múltiples entidades (no solo CREG): Ministerios, Superintendencias, DNP, Banco de la República; organizada por tipo de documento (constitución, leyes, decretos, actos administrativos, jurisprudencia); fuente para contexto normativo sectorial más allá de la regulación CREG |
-| `gestornormativo.creg.gov.co/gestor/entorno/novedades_regulatorias.html` | Novedad regulatoria desde 2019-11-30; filtrable por tipo de acto (autos, circulares, proyectos, resoluciones) y por servicio (electricidad, gas natural, GLP, combustibles, aspectos generales) |
+| `gestornormativo.creg.gov.co/gestor/entorno/novedades_regulatorias.html` | Cubre las novedades desde 2019-11-30 |
 | `gestornormativo.creg.gov.co/gestor/entorno/respuestas.html` | Módulo de IA con carga de archivos; devuelve respuestas informativas sobre regulación; permite descargar PDF; no constituye concepto jurídico vinculante |
 | `gestornormativo.creg.gov.co/gestor/entorno/indices_tematicos_circulares_por_servicio.html` | Índice por tipo de servicio (eléctrico, gas, GLP, combustibles); facilita búsqueda temática de circulares |
-| `scir.creg.gov.co` | SCIR: plataforma de cargue para empresas reguladas; requiere credenciales; JS-rendered (WebFetch no extrae estructura); ocasionalmente fuera de servicio por mantenimiento |
+| `scir.creg.gov.co` | SCIR: plataforma de cargue para empresas reguladas; requiere credenciales; JS-rendered (WebFetch no extrae estructura) |
 | `apps.creg.gov.co` | SICT — Sistema Integrado de Cargos de Transporte de Gas Natural; acceso público sin login (solo lectura); construido sobre PowerApps (Microsoft); sin sub-navegación pública |
 | `energia-electrica/autogeneracion-a-pequena-escala-y-generacion-distribuida` | URL real: `/publicaciones/15064/autogeneracion-a-pequena-escala-y-generacion-distribuida/`; marco regulatorio clave para prosumidores y generación distribuida |
 | `energia-electrica/medicion-avanzada-ami` | URL real: `/publicaciones/15067/medicion-avanzada-ami/`; regulación de infraestructura de medición avanzada |

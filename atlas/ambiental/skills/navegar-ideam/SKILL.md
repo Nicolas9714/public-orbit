@@ -34,6 +34,4 @@ El IDEAM es un establecimiento público adscrito al Ministerio de Ambiente y Des
 
 ## Notas de navegación
 
-- El DHIME (`https://dhime.ideam.gov.co/atencionciudadano/`) es el portal público de acceso a los datos; el acceso interno a la plataforma AQUARIUS requiere credenciales institucionales.
-- Los geovisores del IDEAM están alojados en el subdominio `https://visualizador.ideam.gov.co` (ArcGIS Online); el punto de entrada es el Geoportal Ambiental Institucional en `https://ideam.gov.co/geoportal-ambiental-institucional`.
-- SISAIRE (`https://sisaire.ideam.gov.co`) y FEWS (`https://fews.ideam.gov.co`) son subdominios propios; presentaron errores de certificado SSL durante la verificación — usar el Geoportal como acceso alternativo si el acceso directo falla.
+- Para consultas geoespaciales, empezar por el Geoportal Ambiental Institucional; los geovisores del IDEAM viven en el subdominio `visualizador.ideam.gov.co` (ArcGIS Online).

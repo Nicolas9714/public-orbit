@@ -76,8 +76,7 @@ humboldt.org.co/
 │   │       ├── portafolios.humboldt.org.co/
 │   │       ├── reporte-biodiversidad-cap4/
 │   │       └── weplan-colombia/
-│   ├── reporte.humboldt.org.co/biodiversidad/
-│   └── rnc.humboldt.org.co/
+│   └── reporte.humboldt.org.co/biodiversidad/
 │
 ├── colecciones.humboldt.org.co/
 │   ├── vertebrados

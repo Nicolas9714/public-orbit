@@ -91,28 +91,7 @@
 
 | Sección | Nota |
 |---|---|
-| `energia-electrica-2/funcionamiento-del-sector` | Informes mensuales de variables del sector eléctrico |
-| `energia-electrica-2/reglamentos-tecnicos` | RETIE (instalaciones eléctricas), RETIQ (etiquetado energético), RETILAP (iluminación y alumbrado público) y RETSIT (instalaciones térmicas) |
-| `energia-electrica-2/planes-expansion` | Planes anuales de expansión de generación y transmisión aprobados por el ministerio |
-| `energia-electrica-2/fondos-especiales` | FENOGE (renovables y eficiencia), FAZNI (zonas no interconectadas), FAER (rurales interconectadas) y PRONE (normalización de redes) |
-| `energia-electrica-2/subsidios` | FSSRI (solidaridad y redistribución de ingresos) y FOES (energía social) |
-| `energia-electrica-2/declaratoria-de-utilidad-publica-e-interes-social-dupis` | URL real con encoding: `.../declaratoria-de-utilidad-p%C3%BAblica-e-inter%C3%A9s-social-dupis/` |
-| `hidrocarburos/funcionamiento-del-sector` | Ocho sub-secciones: gas natural, GLP, estadísticas, biogás/biometano, fondos especiales, upstream, midstream y downstream |
-| `fuentes-no-convencionales-fncer` | Acordeones por tecnología (7 fuentes) y por modalidad (6 tipos); enlaza externamente a `ecosistema-hidrogeno-colombia/` |
-| `eficiencia-energetica` | PROURE, metas obligatorias, ciudades energéticas, medidores inteligentes, movilidad eléctrica y cultura energética |
-| `asuntos-nucleares` | Tres acordeones: reglamentación nuclear, acuerdos internacionales y gestión de desechos; tablas de dosimetría e instalaciones licenciadas |
-| `cierre-de-brechas` | Mapas interactivos de cobertura por subsector: energía, hidrocarburos y minería |
-| `infraestructura-de-datos-espaciales/catalogo-metadatos` | GeoNetwork en `geonetwork.minenergia.gov.co` |
-| `infraestructura-de-datos-espaciales/geovisor-sectorial` | Geovisor en `geovisor.minenergia.gov.co/visor-ide-me/`; integra capas de ANH, ANM, SGC, CREG, IPSE, UPME y FENOGE |
-| `infraestructura-de-datos-espaciales/catalogo-geoservicios` | GeoServer en `geoserver.minenergia.gov.co/geoserver/web/` |
-| `ambiental-social/cambio-climatico/pigccme` | El aplicativo en `pigccme.minenergia.gov.co` dejó de resolver entre su verificación del 29 de mayo y la comprobación del 11 de agosto de 2026. No se encontró un sucesor funcional y la página oficial de cambio climático todavía enlaza sus rutas caídas. La explicación del Plan Integral de Gestión del Cambio Climático del Sector Minero Energético (PIGCCme), sus componentes y documentos permanece en `https://www.minenergia.gov.co/es/misional/ambiental-social/cambio-clim%C3%A1tico/` |
-| `ambiental-social/estrategia-relacionamiento-territorial` | ERT con mapa de territorios priorizados, planes de trabajo territorial y estrategia de hidrocarburos |
-| `ambiental-social/estrategia-relacionamiento-territorial/visor-conflictos` | Geovisor en `oaas_visor_conflictos.minenergia.gov.co`; público desde navegador; bloqueado por WAF en modo headless |
-| `ambiental-social/gestion-del-riesgo-de-desastres-grd/pgrdsme` | Portal en `pgrdsme.minenergia.gov.co`; sección `documentos/` con política y materiales |
-| `ambiental-social/enfoque-genero` | Estrategia de transversalización, protocolo de prevención y guías prácticas |
-| `ambiental-social/derechos-humanos` | Política de DDHH, guía introductoria y ABC de debida diligencia |
-| `sistema-general-de-regalias` | Seguimiento a regalías del sector; convocatorias anuales de proyectos de inversión |
+| `ambiental-social/cambio-climatico/pigccme` | Los enlaces de la página de cambio climático a `pigccme.minenergia.gov.co` no resuelven (el dominio no tiene registro DNS); la explicación del PIGCCme, sus componentes y documentos está en esa misma página, la de cambio climático de la tabla de documentos |
+| `ambiental-social/gestion-del-riesgo-de-desastres-grd/pgrdsme` | La sección `documentos/` del portal reúne la política y los materiales |
 | `unidad-de-resultados` | Seguimiento a metas del ministerio; requiere login para acceder |
 | `micrositios/transicion-energetica-justa/educacion-tej/` | Sub-portal de cursos TEJ; URL real: `/es/micrositios/educacion-tej/` |
-| `repositorio-normativo/normativa` | Buscador centralizado de normativa vigente por tipo de acto y año |
-| `repositorio-normativo/agenda-normativa-regulatoria` | Proyectos de norma en elaboración o consulta pública |

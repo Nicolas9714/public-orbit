@@ -66,6 +66,4 @@
 
 | Sección | Nota |
 |---|---|
-| `sui.superservicios.gov.co` | SUI es el sistema de reporte obligatorio para todos los prestadores; contiene datos financieros, tarifarios y de calidad de servicio; acceso público para consultas; cargue requiere autenticación de prestador |
-| `geoportal.superservicios.gov.co` | Alojado en ArcGIS Online; mapas de cobertura, indicadores de calidad y empresas prestadoras georreferenciadas por municipio |
-| Migración del sitio (2026-10) | El sitio se reorganizó en octubre de 2026 y algunas rutas respondieron 404 de forma intermitente en la verificación manual del 2026-10-31; las mismas rutas funcionaron al reintentar. |
+| `sui.superservicios.gov.co` | SUI reúne todos los servicios públicos domiciliarios; al consultar, filtrar por sector para limitar los resultados a energía o gas; acceso público para consultas; el cargue requiere autenticación de prestador |

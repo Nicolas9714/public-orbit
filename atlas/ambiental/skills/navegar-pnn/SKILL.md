@@ -29,13 +29,3 @@ Parques Nacionales Naturales de Colombia es la entidad adscrita al Ministerio de
 
 1. Consulta `mapa-web.md` para ubicar la sección relevante dentro del sitio y sus subdominios.
 2. Consulta `fuentes.md` para acceder directamente al RUNAP, GeoNetwork, geovisor, estadísticas de visitantes y planes de manejo.
-
-## Notas de navegación
-
-- El **RUNAP** (`https://runap.parquesnacionales.gov.co`) es una aplicación que carga por JavaScript; el visor embebido no se renderiza sin él, pero la URL raíz es accesible.
-- La información institucional del **SINAP** vive en `https://parquesnacionales.gov.co/sistema-nacional-de-areas-protegidas/`; el antiguo dominio `sinap.parquesnacionales.gov.co` está inactivo.
-- El **geovisor principal** (`https://mapas.parquesnacionales.gov.co`) redirige a ArcGIS Online — requiere navegador con JavaScript para cargar las capas.
-- **GeoNetwork** (`https://geonetwork.parquesnacionales.gov.co`) devuelve HTTP 403 — acceso bloqueado para crawlers; navegar directamente desde el navegador.
-- El portal de cooperación con la Unión Europea (`https://ue.parquesnacionales.gov.co`) también devuelve HTTP 403.
-- El **Certificador SINAP** (`https://cert.parquesnacionales.gov.co`) requiere autenticación; solo disponible información pública mínima.
-- Las estadísticas de visitantes están en `ecoturismo/#estadisticas_visitantes` (ancla en la misma página, no URL independiente).
