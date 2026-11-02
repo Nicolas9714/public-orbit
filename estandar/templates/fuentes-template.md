@@ -71,7 +71,9 @@ Una sección de detalle (capas o módulos de un recurso ya listado) se llama
 
 Una sección propia de la entidad solo cuando su contenido no cabe en ninguna de las anteriores;
 su título nombra un tipo de recurso, no un proyecto ni una marca, y va después del núcleo.
-## Notas por sección siempre al final.
+## Notas por sección siempre al final. Recoge lo que solo sirve al usar un recurso y sigue las
+reglas de redacción de «Notas de navegación» en la plantilla de SKILL.md. La primera columna
+identifica el recurso; la nota no repite una URL que ya esté en las tablas.
 
 No incluir:
 - ## Fuentes complementarias (eliminado del estándar)

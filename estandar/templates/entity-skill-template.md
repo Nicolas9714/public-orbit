@@ -49,5 +49,20 @@ description: Guía para navegar el sitio oficial de <Nombre Entidad> y encontrar
 
 ## Notas de navegación
 
-<!-- Advertencias y particularidades del sitio: requiere login, WAF, SPA, subdominios clave, etc.
-     Omitir esta sección si no hay advertencias relevantes. -->
+<!-- Solo lo que orienta cualquier consulta sobre la entidad o varios de sus
+     recursos: bloqueos o patrones de URL de todo el sitio, el sistema por donde
+     conviene empezar, el alcance de la entidad, las consultas que atiende otra
+     skill y los avisos sobre `mapa-web.md` o `fuentes.md`. Lo que solo sirve al
+     usar un recurso va en «Notas por sección» de `fuentes.md`.
+     Cuatro reglas de redacción, también para esas notas:
+     - Sin estados puntuales («hoy da 404», «en renovación»). Si un enlace está
+       roto, se corrige o se quita su fila en `fuentes.md`.
+     - Se redacta como condición y acción: «si responde 403, abrir con navegador».
+     - Si la URL ya está en una tabla de `fuentes.md`, la nota nombra el sistema y
+       no la repite. Se escribe una ruta solo cuando el patrón es el contenido de
+       la nota (`/index.php/`, `reglamentaci%C3%B3n`).
+     - Se escribe solo si, sin la nota, el agente fallaría, gastaría intentos o
+       concluiría algo falso.
+     Las notas no llevan revisión periódica ni fecha propia: se agregan cuando
+     alguien tropieza en un uso real y se corrigen cuando se detecta el cambio.
+     Omitir esta sección si ninguna nota cumple estas condiciones. -->
