@@ -5,7 +5,7 @@ description: "Guía de navegación para FENOGE: convocatorias de financiación, 
 
 # Fondo de Energías No Convencionales y Gestión Eficiente de Energía (FENOGE)
 
-El Fondo de Energías No Convencionales y Gestión Eficiente de Energía (FENOGE) es un fondo adscrito al Ministerio de Minas y Energía, creado por la Ley 1715 de 2014. Financia a terceros proyectos de energías renovables no convencionales y de gestión eficiente de la energía, especialmente en zonas no interconectadas y para poblaciones vulnerables.
+El Fondo de Energías No Convencionales y Gestión Eficiente de Energía (FENOGE) es un fondo creado por la Ley 1715 de 2014 y administrado por un patrimonio autónomo, constituido mediante el contrato de fiducia mercantil que suscribe el Ministerio de Minas y Energía. Financia a terceros proyectos de energías renovables no convencionales y de gestión eficiente de la energía, especialmente en zonas no interconectadas y para poblaciones vulnerables.
 
 ## ¿Qué información publica?
 

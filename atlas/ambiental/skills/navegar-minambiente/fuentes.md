@@ -116,7 +116,7 @@
 | Sección | Nota |
 |---|---|
 | `https://www.siac.gov.co` | Portal oficial del sistema ambiental del país; opera bajo coordinación del MADS con IDEAM, Humboldt, ANLA y Parques Nacionales; el catálogo de geoservicios tiene 7 páginas con servicios IDEAM documentados |
-| `https://www.siac.gov.co/sistemas-informacion` | Página de acceso a todos los subsistemas del SIAC; algunos redirigen a portales propios de entidades adscritas: SIB en `https://sibcolombia.net`, RUNAP en `https://runap.parquesnacionales.gov.co`, SIRH y SISAIRE en `https://ideam.gov.co` |
+| `https://www.siac.gov.co/sistemas-informacion` | Página de acceso a todos los subsistemas del SIAC; algunos redirigen a portales propios de entidades del sector: SIB en `https://sibcolombia.net`, RUNAP en `https://runap.parquesnacionales.gov.co`, SIRH y SISAIRE en `https://ideam.gov.co` |
 | Visor geográfico SIAC | URL real: `https://experience.arcgis.com/experience/ff2ff1394b504db583b751c234787313`; alojado en ArcGIS Experience Builder, no en subdominio propio del SIAC |
 | VITAL | URL pública verificada: `https://vital-publico.minambiente.gov.co/inicio`; subsistema de consulta de permisos y licencias ambientales del MADS; no es solo un alias SIAC |
 | `https://siac-datosabiertos-mads.hub.arcgis.com` | Hub de datos abiertos en ArcGIS; para descarga directa de datasets geoespaciales es la ruta más eficiente del MADS |

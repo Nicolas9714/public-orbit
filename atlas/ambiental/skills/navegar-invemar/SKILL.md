@@ -5,7 +5,7 @@ description: "Guía de navegación para INVEMAR: información ambiental marina y
 
 # Instituto de Investigaciones Marinas y Costeras José Benito Vives de Andréis (INVEMAR)
 
-El Instituto de Investigaciones Marinas y Costeras José Benito Vives de Andréis es el instituto científico de referencia del Estado colombiano, adscrito al Ministerio de Ambiente y Desarrollo Sostenible. Investiga y monitorea los ecosistemas marinos y costeros del Caribe y el Pacífico.
+El Instituto de Investigaciones Marinas y Costeras José Benito Vives de Andréis es el instituto científico de referencia del Estado colombiano, vinculado al Ministerio de Ambiente y Desarrollo Sostenible. Investiga y monitorea los ecosistemas marinos y costeros del Caribe y el Pacífico.
 
 ## ¿Qué información publica?
 

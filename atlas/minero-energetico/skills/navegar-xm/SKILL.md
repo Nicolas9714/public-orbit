@@ -5,7 +5,7 @@ description: "Guía de navegación para XM: datos operativos y de mercado eléct
 
 # XM S.A. E.S.P. — Operador del Sistema y Administrador del Mercado
 
-XM, filial del Grupo ISA, es una empresa de servicios públicos que opera el Sistema Interconectado Nacional (SIN) y actúa como Operador del Sistema de Transmisión Nacional (STN) y Administrador del Sistema de Intercambios Comerciales (ASIC) del mercado eléctrico colombiano. Coordina el despacho de la generación y liquida y administra las transacciones del mercado, por lo que es la fuente primaria de sus datos operativos y comerciales.
+XM, filial del Grupo ISA, es una empresa de servicios públicos mixta que opera el Sistema Interconectado Nacional (SIN) y administra el Mercado de Energía Mayorista. Presta los servicios de Centro Nacional de Despacho (CND), Administrador del Sistema de Intercambios Comerciales (ASIC) y Liquidador y Administrador de Cuentas (LAC), por lo que es la fuente primaria de los datos operativos y comerciales del mercado.
 
 ## ¿Qué información publica?
 

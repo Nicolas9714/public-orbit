@@ -5,7 +5,7 @@ description: "Guía de navegación para el Instituto Humboldt: datos de biodiver
 
 # Instituto de Investigación de Recursos Biológicos Alexander von Humboldt (IAvH)
 
-El Instituto de Investigación de Recursos Biológicos Alexander von Humboldt es un instituto de investigación científica adscrito al Ministerio de Ambiente y Desarrollo Sostenible. Investiga, conserva y divulga la diversidad biológica y sus recursos en la zona continental colombiana, coordina el Sistema de Información sobre Biodiversidad de Colombia (SiB Colombia) y administra el Registro Nacional de Colecciones biológicas (RNC).
+El Instituto de Investigación de Recursos Biológicos Alexander von Humboldt es un instituto de investigación científica vinculado al Ministerio de Ambiente y Desarrollo Sostenible. Investiga, conserva y divulga la diversidad biológica y sus recursos en la zona continental colombiana, coordina el Sistema de Información sobre Biodiversidad de Colombia (SiB Colombia) y administra el Registro Nacional de Colecciones biológicas (RNC).
 
 ## ¿Qué información publica?
 

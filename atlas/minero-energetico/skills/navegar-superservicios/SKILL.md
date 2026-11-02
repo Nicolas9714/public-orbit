@@ -5,7 +5,7 @@ description: "Guía de navegación para Superservicios: información reportada p
 
 # Superintendencia de Servicios Públicos Domiciliarios (Superservicios)
 
-La Superintendencia de Servicios Públicos Domiciliarios es una entidad de carácter técnico adscrita al Presidente de la República. Ejerce la inspección, vigilancia y control de las empresas que prestan servicios públicos domiciliarios en Colombia: energía eléctrica, gas natural, acueducto, alcantarillado y aseo.
+La Superintendencia de Servicios Públicos Domiciliarios es una entidad descentralizada de carácter técnico, adscrita al Departamento Nacional de Planeación. Ejerce la inspección, vigilancia y control de las empresas que prestan servicios públicos domiciliarios en Colombia: energía eléctrica, gas natural, acueducto, alcantarillado y aseo.
 
 ## ¿Qué información publica?
 
