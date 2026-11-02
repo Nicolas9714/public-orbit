@@ -5,7 +5,7 @@ description: "Guía de navegación para el SGC: datos geocientíficos, cartograf
 
 # Servicio Geológico Colombiano (SGC)
 
-El Servicio Geológico Colombiano (SGC) es una entidad adscrita al Ministerio de Ciencia, Tecnología e Innovación. Es la autoridad científica y técnica del Estado colombiano en materia de geología, geofísica, geomagnetismo, amenazas de origen geológico y recursos del subsuelo.
+El Servicio Geológico Colombiano (SGC) es una entidad adscrita al Ministerio de Minas y Energía. Es la autoridad científica y técnica del Estado colombiano en materia de geología, geofísica, geomagnetismo, amenazas de origen geológico y recursos del subsuelo.
 
 ## ¿Qué información publica?
 
