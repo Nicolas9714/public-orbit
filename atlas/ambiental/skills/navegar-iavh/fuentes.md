@@ -70,6 +70,7 @@
 |---|---|
 | `https://biomodelos.humboldt.org.co` | Requiere registro para descargar datos y contribuir con curación de registros; la consulta básica de mapas de distribución es pública |
 | `https://colecciones.humboldt.org.co` | Portal de 11 colecciones biológicas físicas; para préstamos, depósitos o visitas científicas se requiere solicitud formal |
+| `rnc.humboldt.org.co` | La página `/consulta` del sitio enlaza el Registro Único Nacional de Colecciones Biológicas. Si no conecta, para las colecciones del propio IAvH usar `https://colecciones.humboldt.org.co`, que no reemplaza al registro nacional |
 | `https://reporte.humboldt.org.co/biodiversidad/` | Redirige desde `https://reporte.humboldt.org.co` a `https://reporte.humboldt.org.co/biodiversidad/`; usar la URL con ruta completa |
 | `https://biodiversidad.co` | SiB Colombia: coordinado por el IAvH pero es una red nacional; incluye portal de datos, IPT GBIF, campus virtual y formación |
 | `https://ecosistema.humboldt.org.co` | Dominio de intranet institucional; no tiene contenido público accesible |

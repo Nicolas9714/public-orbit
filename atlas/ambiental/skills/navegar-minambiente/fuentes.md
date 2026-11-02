@@ -50,7 +50,7 @@
 |---|---|---|---|
 | SIAC — Datos abiertos MADS | `https://siac-datosabiertos-mads.hub.arcgis.com` | Hub de datos abiertos del MADS; datasets geoespaciales y tabulares descargables por temática ambiental | 2026-06-01 |
 | Portal de Economía Circular | `https://economiacircular.minambiente.gov.co` | Portal temático de la Estrategia Nacional de Economía Circular (ENEC); seis flujos de materiales, casos de estudio y gobernanza | 2026-06-01 |
-| Portal de Regalías Ambientales | `https://regalias.minambiente.gov.co` | Convocatorias y proyectos financiados con regalías del sector ambiental; reporta 29 proyectos por $477.000 millones | 2026-06-01 |
+| Portal de Regalías Ambientales | `https://regalias.minambiente.gov.co` | Convocatorias y proyectos financiados con regalías del sector ambiental | 2026-06-01 |
 | Respira 2030 | `https://respira2030.gov.co` | Portal de la iniciativa de siembra de 500 millones de árboles; registro de árboles plantados por actores públicos y privados | 2026-06-01 |
 | Colombia Carbono Neutral | `https://carbononeutral.minambiente.gov.co` | Portal del Programa Nacional de Carbono Neutralidad; incluye calculadora de huella de carbono y recursos para sector público y privado | 2026-06-01 |
 | Mi Huella de Carbono | `https://mi-huella-c.minambiente.gov.co` | Calculadora ciudadana de huella de carbono del PNCNRC; aplicación en subdominio propio, enlazada desde el portal de carbono neutralidad | 2026-08-10 |
