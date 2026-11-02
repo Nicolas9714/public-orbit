@@ -9,7 +9,9 @@ description: Guía para navegar el sitio oficial de <Nombre Entidad> y encontrar
      naturaleza jurídica y qué hace. Solo datos estables: sin cifras que
      cambian con el tiempo (participación accionaria, porcentaje de la
      producción nacional, número de usuarios, presupuesto). Esas cifras son
-     datos que la entidad publica y se consultan en sus fuentes, con fecha. -->
+     datos que la entidad publica y se consultan en sus fuentes, con fecha.
+     La naturaleza jurídica y la adscripción o vinculación se contrastan con la
+     norma vigente o la fuente oficial de la entidad. -->
 
 ## ¿Qué información publica?
 
@@ -29,11 +31,6 @@ description: Guía para navegar el sitio oficial de <Nombre Entidad> y encontrar
        «SIEM (Sistema de Interoperabilidad de Electromovilidad)», o se
        reescribe sin la sigla si el nombre completo se lee mejor. Quedan
        exentas las de uso corriente: API, IVA, CO2, PDF. -->
-
-- Publicaciones y estadísticas
-- Resoluciones y actos administrativos
-- Sistemas de información y geovisores
-- Convocatorias y trámites
 
 - Publicaciones y estadísticas
 - Resoluciones y actos administrativos
