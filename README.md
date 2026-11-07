@@ -2,6 +2,7 @@
   <img src="assets/public-orbit.svg" width="150" alt="Isotipo de Public Orbit">
   <h1>Public Orbit</h1>
   <p><em>Una infraestructura común para descubrir, conectar y navegar la información pública de Colombia.</em></p>
+  <p><a href="https://publicorbit.org">Sitio web</a> · <a href="https://publicorbit.org/docs/sobre-el-proyecto">Sobre el proyecto</a> · <a href="estandar/especificacion.md">Especificación</a></p>
   <table>
     <tr>
       <td align="center" colspan="2">
@@ -36,6 +37,8 @@ Hay un saber contenido en los datos y otro que reside en el camino para llegar a
 
 Al hacer explícito y compartible este conocimiento de navegación, Public Orbit busca ampliar la autonomía de quienes consultan información pública, ofreciendo puntos de entrada, criterios y recorridos que permitan formular mejores preguntas, contrastar fuentes y comprender cómo se organiza digitalmente la información y el conocimiento de cada sector.
 
+Por qué existe Public Orbit y los principios que lo sostienen se desarrollan en [Sobre el proyecto](https://publicorbit.org/docs/sobre-el-proyecto).
+
 ## Cómo funciona
 
 Un Atlas de Navegación está compuesto por skills que documentan cómo navegar la información pública de un sector. Cada entidad cuenta con una skill que describe sus rutas y fuentes de información, mientras una skill orquestadora organiza los recorridos que involucran a varias entidades del mismo ámbito.
@@ -50,6 +53,8 @@ navegar-entidad/
 ├── mapa-web.md    → Árbol curado de su sitio oficial
 └── fuentes.md     → Sistemas, portales y documentos clave
 ```
+
+A partir del `mapa-web.md` de cada entidad, el sitio construye sus [morfologías web](https://publicorbit.org/morfologias), representaciones visuales de la estructura de cada sitio oficial.
 
 El Nodo Nacional incorpora una capa de articulación entre atlas. Hace explícitas las conexiones entre sectores, reconoce dónde vive cada parte de un asunto y permite recorrer de forma conjunta información distribuida entre distintas entidades y competencias.
 
@@ -69,12 +74,6 @@ Cada atlas puede instalarse y funcionar por separado sin perder capacidad sector
 El trazo discontinuo marca los atlas en construcción: el Intersectorial y el de Transporte tienen sus entidades definidas, pero todavía no sus skills ni su orquestadora, así que aún no se registran arriba.
 
 El detalle de entidades vive en [`registro.md`](registro.md).
-
-## Sitio web
-
-Public Orbit puede explorarse en su [sitio web](https://publicorbit.org), que reúne los atlas, las entidades, las skills y la documentación del proyecto.
-
-El sitio también presenta las [morfologías web](https://publicorbit.org/morfologias), representaciones visuales construidas a partir del `mapa-web.md` de cada entidad.
 
 ## Qué contiene este repositorio
 
@@ -104,6 +103,8 @@ Hay dos rutas. En el [sitio web](https://publicorbit.org) cada skill y cada atla
 ### Instalación con un comando
 
 Abre una terminal en la carpeta de tu proyecto. Sin destino explícito, el instalador busca una carpeta existente en este orden: `.agents/skills`, `.claude/skills` y `.opencode/skills`. Si no encuentra ninguna, crea `.agents/skills`, destino neutral predeterminado. Para instalar globalmente, agrega `-Global` / `--global`: aplica el mismo criterio bajo tu carpeta de usuario.
+
+Por defecto Claude Code lee `.claude/skills`. Si el proyecto no tiene esa carpeta, o si también tiene `.agents/skills`, agrega `-Destino .claude\skills` / `--destino .claude/skills` al final del comando.
 
 En Windows, la primera línea prepara el instalador en la variable `$po` y la segunda instala el atlas. Si ya preparaste `$po` en esa misma terminal, basta la segunda línea.
 
