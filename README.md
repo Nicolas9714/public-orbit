@@ -138,13 +138,30 @@ macOS / Linux / Git Bash:
 curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas minero-energetico
 ```
 
+#### Todos los atlas
+
+Instala los atlas disponibles y la orquestadora nacional, `atlas-orquestador-colombia`.
+
+Windows (PowerShell):
+
+```powershell
+$po = [scriptblock]::Create((irm https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.ps1).TrimStart([char]0xFEFF))
+& $po -Atlas todos
+```
+
+macOS / Linux / Git Bash:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas todos
+```
+
 #### Qué instalar
 
 | Quiero instalar | PowerShell | Bash |
 | --- | --- | --- |
 | Un atlas | `& $po -Atlas ambiental` | `--atlas ambiental` |
 | Varios atlas | `& $po -Atlas ambiental,minero-energetico` | `--atlas ambiental,minero-energetico` |
-| Todos los atlas, opción explícita | `& $po -Atlas todos` | `--atlas todos` |
+| Todos los atlas | `& $po -Atlas todos` | `--atlas todos` |
 | Una skill | `& $po -Entidad navegar-anla` | `--entidad navegar-anla` |
 | Varias skills, de uno o más atlas | `& $po -Entidad navegar-anla,navegar-upme` | `--entidad navegar-anla,navegar-upme` |
 
