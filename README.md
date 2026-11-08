@@ -2,7 +2,7 @@
   <img src="assets/public-orbit.svg" width="150" alt="Isotipo de Public Orbit">
   <h1>Public Orbit</h1>
   <p><em>Una infraestructura común para descubrir, conectar y navegar la información pública de Colombia.</em></p>
-  <p><a href="https://publicorbit.org">Sitio web</a> · <a href="https://publicorbit.org/docs/sobre-el-proyecto">Sobre el proyecto</a> · <a href="estandar/especificacion.md">Especificación</a></p>
+  <p><a href="https://publicorbit.org">Sitio web</a> · <a href="https://publicorbit.org/docs/sobre-el-proyecto">Sobre el proyecto</a> · <a href="estandar/especificacion.md">Especificación</a> · <a href="#instalación">Instalación</a></p>
   <table>
     <tr>
       <td align="center" colspan="2">
@@ -108,6 +108,23 @@ Por defecto Claude Code lee `.claude/skills`. Si el proyecto no tiene esa carpet
 
 En Windows, la primera línea prepara el instalador en la variable `$po` y la segunda instala el atlas. Si ya preparaste `$po` en esa misma terminal, basta la segunda línea.
 
+#### Todos los atlas
+
+Instala los atlas disponibles y la orquestadora nacional, `atlas-orquestador-colombia`.
+
+Windows (PowerShell):
+
+```powershell
+$po = [scriptblock]::Create((irm https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.ps1).TrimStart([char]0xFEFF))
+& $po -Atlas todos
+```
+
+macOS / Linux / Git Bash:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas todos
+```
+
 #### Atlas de Navegación Ambiental de Colombia
 
 Windows (PowerShell):
@@ -136,23 +153,6 @@ macOS / Linux / Git Bash:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas minero-energetico
-```
-
-#### Todos los atlas
-
-Instala los atlas disponibles y la orquestadora nacional, `atlas-orquestador-colombia`.
-
-Windows (PowerShell):
-
-```powershell
-$po = [scriptblock]::Create((irm https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.ps1).TrimStart([char]0xFEFF))
-& $po -Atlas todos
-```
-
-macOS / Linux / Git Bash:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/Nicolas9714/public-orbit/main/instalar.sh | bash -s -- --atlas todos
 ```
 
 #### Qué instalar
